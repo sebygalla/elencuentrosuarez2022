@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+  <!--Reset Pro-->
+  <link rel="stylesheet" href="resetPro.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Custom Styles Media Querys -->
+  <link rel="stylesheet" href="mediaQuerys.css">
+</head>
+
+<body>
+
+  <!--contenedor general-->
+  <div class="contenedor">
+
+    <!--header-->
+    <header class="header">
+      <h2 class="header__titulo">¡Bienvenido al lugar de tu encuentro con Dios!</h2>
+    </header>
+
+    <!--Barra de navegacion-->
+    <nav class="navbar">
+
+      <img src="img/logo.jpg" class="navbar__logo" alt="">
+
+      <ul class="navbar__item">
+        <li class="navbar__link navbar__link--activo">inicio</li>
+        <li class="navbar__link">nosotros</li>
+        <li class="navbar__link">actividades</li>
+        <li class="navbar__link">galeria</li>
+        <li class="navbar__link">contacto</li>
+      </ul>
+
+      <div class="navbar__redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+      </div>
+
+    </nav>
+
+    <!--Main (Principal)-->
+    <main class="main">
+
+      <div class="main__text">
+        <h3 class="main__tituloPre">Iglesia Cristiana</h3>
+        <div class="main__linea"></div>
+        <h1 class="main__titulo">EL ENCUENTRO</h1>
+        <h4 class="main__tituloSub">Tristán Suárez</h4>
+      </div>
+
+      <div class="main__btn">
+        <a href="#rehma">
+          <input type="button" value="VER MÁS!">
+        </a>
+      </div>
+
+      <div class="main__social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/elencuentrosuarez?utm_medium=copy_link" target="_blank"><i
+            class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube "></i></a>
+      </div>
+
+    </main>
+
+    <!--Rehma-->
+
+    <article class="article" id="rehma">
+
+      <div class="article__card">
+
+
+        <svg viewBox="0 0 402 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path fill="rgba(218, 224, 230, 1)"
+            d="M 0 325 L -11.428571462631226 373.4285583496094 L -11.428571462631226 0 L 0 0 Z" stroke-width="0">
+          </path>
+          <path fill="rgba(218, 224, 230, 1)"
+            d="M -12.428571462631226 373.4285583496094 L 402 0 L 402 0 L -12.428571462631226 0 Z" stroke-width="0">
+          </path>
+        </svg>
+
+
+        <div class="article__texto" id="rehma-texto">
+          <blockquote cite="https://www.bible.com/es/bible/128/JOS.1.NVI">
+            <p class="article__parrafo">Ya te lo he ordenado: ¡Sé fuerte y valiente! <br> ¡No tengas miedo ni te
+              desanimes! Porque el Señor tu
+              Dios
+              te
+              acompañará donde quiera que vayas».
+
+              <br />
+              <br />
+              Josué 1:9 (NVI)
+            </p>
+          </blockquote>
+
+        </div>
+
+
+
+        <p class="article__pie">Palabra Rehma 2022</p>
+
+      </div>
+
+
+    </article>
+
+    <!--Precursores (Videos de Youtube)-->
+
+    <aside class="aside">
+      <div class="aside__texto">
+        <h2 class="aside__titulo">PRECURSORES</h2>
+        <h3 class="aside__subtitulo">escuchalos!</h3>
+      </div>
+
+
+      <div class="aside__iframe">
+        <iframe src="https://www.youtube.com/embed/s2sFTTzpoQg" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/H-dO9ptoajY" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </aside>
+
+
+
+
+    <!-- Actividades de la Iglesia-->
+
+    <section class="iglesia" id="actividades">
+
+      <div class="iglesia__text">
+        <h3 class="iglesia__tituloPre">Somos Iglesia!</h3>
+        <div class="iglesia__linea"></div>
+        <h1 class="iglesia__titulo">NUESTRAS ACTIVIDADES</h1>
+        <h4 class="iglesia__tituloSub">Tristán Suárez</h4>
+      </div>
+
+
+      <div class="iglesia__contenedor">
+
+        <!--Card adolescentes-->
+        <div class="iglesia__card">
+          <div class="iglesia__imagen iglesia__imagen--adolescentes">
+          </div>
+          <div class="iglesia__cardTexto">
+            <h1 class="iglesia__cardTitulo">Adolescentes</h1>
+            <p class="iglesia__cardParrafo">The cake at the Sacher hotel is amongst the finest in all the lands es un
+              servicio. </p>
+
+            <input type="button" class="iglesia__boton" value="VER MÁS!">
+
+
+
+          </div>
+        </div>
+
+        <!--Card jovenes-->
+        <div class="iglesia__card ">
+          <div class="iglesia__imagen iglesia__imagen--jovenes">
+          </div>
+          <div class="iglesia__cardTexto">
+            <h1 class="iglesia__cardTitulo">Jovenes</h1>
+            <p class="iglesia__cardParrafo">The cake at the Sacher hotel is amongst the finest in all the lands es un
+              servicio. </p>
+
+            <input type="button" class="iglesia__boton" value="VER MÁS!">
+
+
+          </div>
+        </div>
+
+
+        <!--Card matrimonios-->
+        <div class="iglesia__card ">
+          <div class="iglesia__imagen iglesia__imagen--matrimonios">
+          </div>
+          <div class="iglesia__cardTexto">
+            <h1 class="iglesia__cardTitulo">Matrimonios</h1>
+            <p class="iglesia__cardParrafo">The cake at the Sacher hotel is amongst the finest in all the lands es un
+              servicio. </p>
+
+            <input type="button" class="iglesia__boton" value="VER MÁS!">
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+
+      <div class="footer__grupo1">
+
+
+
+
+        <div class="footer__texto">
+          <h2 class="footer__titulo">COMUNIDAD</h2>
+          <P class="footer__parrafo">Iglesia El Encuentro Tristán Suárez
+            ¡Bienvenido al lugar de tu encuentro con Dios, gracias por acompañarnos!…</P>
+
+        </div>
+
+
+
+        <div class="footer__texto1">
+          <h2 class="footer__titulo1">SOBRE NOSOTROS</h2>
+          <P class="footer__parrafo1">Iglesia El Encuentro Tristán Suárez
+            ¡Bienvenido al lugar de tu encuentro con Dios, gracias por acompañarnos!…</P>
+
+        </div>
+
+        <div class="footer__texto2">
+          <h2 class="footer__titulo2">SIGUENOS</h2>
+          <div class="footer__social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer__grupo2">
+        <small>&copy; <b>sebygalla</b> - Todos los derechos reservados </small>
+      </div>
+
+
+
+    </footer>
+
+
+  </div>
+
+
+
+
+
+
+
+  <!-- Fontaewsome -->
+  <script src="https://kit.fontawesome.com/d5aeea23f5.js" crossorigin="anonymous"></script>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>
