@@ -180,8 +180,8 @@
 
     /*Grupo1*/
     .footer__grupo1 {
-        padding: 100px;
-        grid-template-columns: repeat(1, 400px);
+        padding: 60px;
+        grid-template-columns: 1fr;
     }
 
     /*Comunidad*/
