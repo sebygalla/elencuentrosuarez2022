@@ -26,13 +26,50 @@
 
     /*barra de navegacion*/
     .navbar__item {
-        display: none;
+        display: block;
+        background-color: white;
+        position: absolute;
+        top: 94px;
+        width: 90%;
+        height: 50vh;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        transform: translateX(-50em);
+        transition: all 1.2s ease-in-out;
+    }
+
+    .navbar__item--on {
+        transform: translateX(0);
+    }
+
+    .navbar__menu {
+        color: black;
+        font-size: 1.5em;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+
+    .navbar__link {
+        margin-bottom: 1em;
+
     }
 
     .navbar__redes a {
         display: none;
 
     }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
 
     /*Header*/
     .header__titulo {
@@ -75,8 +112,8 @@
         align-items: center;
         justify-content: center;
         grid-area: article;
-      
-      }
+
+    }
 
     .article__card {
         width: 85%;
