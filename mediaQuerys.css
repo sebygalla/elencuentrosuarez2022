@@ -1,10 +1,14 @@
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media (max-width: 580px) {
 
+    body {
+        background-color: whitesmoke;
+    }
+
     .contenedor {
         width: 95vw;
 
-        margin: 1.2em auto;
+        margin: .6em auto;
         grid-gap: .7em;
         display: grid;
 
@@ -32,8 +36,9 @@
 
     /*Header*/
     .header__titulo {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
+        color: white;
     }
 
 
@@ -63,8 +68,18 @@
 
 
     /*section Rehma */
+    .article {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: article;
+      
+      }
+
     .article__card {
-        width: 80%;
+        width: 85%;
         padding: 60px;
     }
 
@@ -200,11 +215,11 @@
 
     /*Sobre nosotros*/
     .footer__texto1 {
-        text-align: center;   
+        text-align: center;
     }
 
     .footer__titulo1 {
-        font-size: 18px;   
+        font-size: 18px;
     }
 
     .footer__parrafo1 {
@@ -230,6 +245,7 @@
 
     .footer__grupo2 {
         font-size: 18px;
+        color: white;
     }
 
 
