@@ -29,13 +29,13 @@
         display: block;
         background-color: white;
         position: absolute;
-        top: 94px;
-        width: 90%;
-        height: 50vh;
-        font-size: 1em;
+        top: 80px;
+        width: 95vw;
+        height: 100vh;
+        font-size: .8em;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         transform: translateX(-50em);
         transition: all 1.2s ease-in-out;
@@ -46,15 +46,32 @@
     }
 
     .navbar__menu {
+        display: block;
         color: black;
-        font-size: 1.5em;
+        font-size: 1.7em;
         margin-right: 20px;
         cursor: pointer;
     }
 
 
     .navbar__link {
-        margin-bottom: 1em;
+        padding: 1em;
+
+    }
+
+    /*Redes sociales--item*/
+    .navbar__redes--item {
+        font-size: 1.6em;
+        color: rgb(29, 9, 9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.5em;
+        
+    }
+
+    .navbar__redes--item a {
+        padding: 0 20px;
 
     }
 
@@ -107,7 +124,7 @@
     /*section Rehma */
     .article {
         width: 100%;
-        height: auto;
+        height: 40em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -206,7 +223,7 @@
     }
 
     .iglesia__titulo {
-        font-size: 32px;
+        line-height: 1.2em;
     }
 
 

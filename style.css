@@ -122,6 +122,11 @@ article[id] {
   color: rgb(194, 63, 102);
 }
 
+/*Redes sociales--item*/
+.navbar__redes--item {
+ display: none;
+}
+
 /*Redes sociales*/
 .navbar__redes {
   margin-right: 20px;
@@ -132,6 +137,10 @@ article[id] {
 .navbar__redes a {
   padding: 0 10px;
 
+}
+
+.navbar__menu{
+  display: none;
 }
 
 /*Final*/
