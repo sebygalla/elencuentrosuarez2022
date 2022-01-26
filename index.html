@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>Iglesia Cristiana "El Encuentro"- Tristán Suárez</title>
+  <link rel="icon" type="image/png" href="img/logotipo el encuentro.png" >
 
   <!-- HTML -->
 
@@ -18,6 +19,10 @@
 
   <!-- Custom Styles Media Querys -->
   <link rel="stylesheet" href="mediaQuerys.css">
+
+  <!--aos js. -->
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -48,8 +53,6 @@
           <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
 
-
-
       </ul>
 
       <div class="navbar__redes">
@@ -61,11 +64,6 @@
       <div class="navbar__menu">
         <i class="fas fa-bars"></i>
       </div>
-
-      <div class="navbar__close">
-        <i class="fas fa-times"></i>
-      </div>
-
 
     </nav>
 
@@ -187,7 +185,7 @@
 
 
         <!--Card niños-->
-        <div class="iglesia__card">
+        <div class="iglesia__card" data-aos="zoom-in">
           <div class="iglesia__imagen iglesia__imagen--niños">
           </div>
           <div class="iglesia__cardTexto">
@@ -204,7 +202,7 @@
 
 
         <!--Card pre-adolescentes-->
-        <div class="iglesia__card">
+        <div class="iglesia__card" data-aos="zoom-in">
           <div class="iglesia__imagen iglesia__imagen--preAdolescentes">
           </div>
           <div class="iglesia__cardTexto">
@@ -220,7 +218,7 @@
         </div>
 
         <!--Card adolescentes-->
-        <div class="iglesia__card">
+        <div class="iglesia__card" data-aos="zoom-in">
           <div class="iglesia__imagen iglesia__imagen--adolescentes">
           </div>
           <div class="iglesia__cardTexto">
@@ -236,7 +234,7 @@
         </div>
 
         <!--Card jovenes-->
-        <div class="iglesia__card ">
+        <div class="iglesia__card" data-aos="zoom-in">
           <div class="iglesia__imagen iglesia__imagen--jovenes">
           </div>
           <div class="iglesia__cardTexto">
@@ -252,7 +250,7 @@
 
 
         <!--Card matrimonios-->
-        <div class="iglesia__card ">
+        <div class="iglesia__card" data-aos="zoom-in">
           <div class="iglesia__imagen iglesia__imagen--matrimonios">
           </div>
           <div class="iglesia__cardTexto">
@@ -308,11 +306,11 @@
           <ul>
             <li class="footer__reuniones">
               <i class="fas fa-cross"></i>
-              <p class="footer__parrafo"><b>Cultos Centrales:</b>
-                Miercoles 19:00h y Domingos 10:30h
-                <b>Consultorio Pastoral:</b>
-                Marte 17h a. 20h
-                Miercoles 17hs a 19h</p>
+              <p class="footer__parrafo"><strong>Cultos Centrales:</strong>
+                Miercoles 19:00hs y Domingos 10:30hs
+                <strong>Consultorio Pastoral:</strong>
+                Martes 17hs a 20hs.
+                Miercoles 17hs a 19hs</p>
             </li>
           </ul>
         </div>
@@ -322,7 +320,7 @@
         <div class="footer__texto1">
           <h2 class="footer__titulo1">SOBRE NOSOTROS</h2>
           <P class="footer__parrafo1">Iglesia El Encuentro Tristán Suárez
-            ¡Bienvenido al lugar de tu encuentro con Dios, gracias por acompañarnos!…</P>
+            ¡Bienvenido al lugar de tu encuentro con Dios, gracias por acompañarnos!</P>
 
         </div>
         <!--SEGUINOS-->
@@ -340,19 +338,11 @@
       </div>
 
       <div class="footer__grupo2">
-        <small>&copy; <b>sebygalla 2022</b> - Todos los derechos reservados </small>
+        <small>&copy; <strong>2022 sebygalla</strong> - Todos los derechos reservados </small>
       </div>
 
-
-
     </footer>
-
-
   </div>
-
-
-
-
 
 
 
@@ -360,6 +350,13 @@
   <script src="https://kit.fontawesome.com/d5aeea23f5.js" crossorigin="anonymous"></script>
   <!-- Project -->
   <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
 </body>
 
 </html>

@@ -53,10 +53,8 @@
         cursor: pointer;
     }
 
-
     .navbar__link {
         padding: 1em;
-
     }
 
     /*Redes sociales--item*/
@@ -66,23 +64,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 2.5em;
-        
+        margin-top: 7.5em;  
     }
 
     .navbar__redes--item a {
         padding: 0 20px;
-
     }
 
     .navbar__redes a {
         display: none;
-
     }
-
-    .navbar__close{
-        display: none;
-    }
+    
 
 
 
@@ -101,16 +93,13 @@
         color: white;
     }
 
-
     .main__social {
         display: none;
     }
 
-
     .main__titulo {
         font-size: 42px;
     }
-
 
     .main__tituloPre {
         font-size: 20px;
@@ -118,7 +107,6 @@
 
     .main__tituloSub {
         font-size: 15px;
-
     }
 
     .main__btn {
@@ -135,7 +123,6 @@
         align-items: center;
         justify-content: center;
         grid-area: article;
-
     }
 
     .article__card {
@@ -255,22 +242,28 @@
 
     /*Grupo1*/
     .footer__grupo1 {
-        padding: 60px;
+        padding: 2.5em;
         grid-template-columns: 1fr;
+       
     }
 
     /*Comunidad*/
     .footer__texto {
-        text-align: left;
-        
+        text-align: center;   
+    }
+
+    .footer__correo{
+        display: block;
     }
 
     .footer__titulo {
-        font-size: 18px;
+        font-size: 23px;
     }
 
     .footer__parrafo {
         font-size: 14px;
+        font-weight: 100;
+        text-align: center;
     }
 
   
@@ -278,27 +271,41 @@
 
     /*Sobre nosotros*/
     .footer__texto1 {
-        text-align: left;
+        text-align: center;
+    }
+
+    .footer__reuniones{
+        display: block;
     }
 
     .footer__titulo1 {
-        font-size: 18px;
+        font-size: 23px;
     }
 
     .footer__parrafo1 {
         font-size: 14px;
+        font-weight: 100;
     }
 
 
     /*Siguenos*/
     .footer__texto2 {
-        text-align: left;
+        text-align: center;
         font-size: 18px;
+    }
+
+    .footer__titulo2{
+        font-size: 23px;
+    }
+
+    .footer__ubicacion{
+        display: block;
     }
 
     .footer__social {
         display: flex;
         align-items: center;
+        justify-content: center;
         
     }
 

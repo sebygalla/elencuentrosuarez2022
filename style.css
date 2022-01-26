@@ -106,16 +106,15 @@ article[id] {
 
 .navbar__link {
   list-style: none;
+  letter-spacing: 4px;
   margin: 0 18px;
   color: rgb(29, 9, 9);
   cursor: pointer;
 }
 
 .navbar__link:hover {
-  list-style: none;
-  margin: 0 18px;
   color: rgb(194, 63, 102);
-  cursor: pointer;
+
 }
 
 .navbar__link--activo {
@@ -142,15 +141,6 @@ article[id] {
 /*icono hamburguesa*/
 .navbar__menu {
   display: none;
-}
-/*icono cerrar*/
-.navbar__close{
-  display: block;
-  color: black;
-  font-size: 1.7em;
-  margin-right: 20px;
-  cursor: pointer;
-  z-index: 1;
 }
 
 
@@ -662,7 +652,10 @@ article[id] {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   position: relative;
+}
 
+.footer__grupo1 strong{
+  font-weight: bold;
 }
 
 /*Comunidad*/
@@ -783,4 +776,8 @@ article[id] {
   font-size: 20px;
   font-weight: 400;
   padding: 15px;
+}
+
+.footer__grupo2 strong{
+  font-weight: bold;
 }

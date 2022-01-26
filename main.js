@@ -1,9 +1,6 @@
 /*icono menu*/
 const btnMenu = document.querySelector('.navbar__menu');
 
-/*icono menu*/
-const closeMenu = document.querySelector('.navbar__close');
-
 /*enlaces*/
 const navItem = document.querySelector('.navbar__item');
 
@@ -12,24 +9,13 @@ const menuLinks = document.querySelectorAll('.navbar__link');
 
 /* evento click en menu hamburguesa*/
 btnMenu.addEventListener('click', function () {
-    navItem.classList.add('navbar__item--on');
-    btnMenu.style.display = 'none';
-    closeMenu.style.display = 'block';
+    navItem.classList.toggle('navbar__item--on');
 
 });
 
-/*evento click en cerrar */
-closeMenu.addEventListener('click', function () {
-    navItem.classList.remove('navbar__item--on');
-    closeMenu.style.display = 'none';
-    btnMenu.style.display = 'block';
-
-})
-
+/*evento click en cerrar al tocar cualquier parte la pantalla*/
 navItem.addEventListener('click', function () {
     navItem.classList.remove('navbar__item--on');
-    closeMenu.style.display = 'none';
-    btnMenu.style.display = 'block';
 });
 
 
