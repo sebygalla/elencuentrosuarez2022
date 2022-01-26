@@ -139,9 +139,22 @@ article[id] {
 
 }
 
+/*icono hamburguesa*/
 .navbar__menu {
   display: none;
 }
+/*icono cerrar*/
+.navbar__close{
+  display: block;
+  color: black;
+  font-size: 1.7em;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+
 
 /*Final*/
 
