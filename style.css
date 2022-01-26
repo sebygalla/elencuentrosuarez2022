@@ -59,7 +59,7 @@ article[id] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .6);
   z-index: 0;
 }
 
@@ -124,7 +124,7 @@ article[id] {
 
 /*Redes sociales--item*/
 .navbar__redes--item {
- display: none;
+  display: none;
 }
 
 /*Redes sociales*/
@@ -139,7 +139,7 @@ article[id] {
 
 }
 
-.navbar__menu{
+.navbar__menu {
   display: none;
 }
 
@@ -250,10 +250,54 @@ article[id] {
 }
 
 
+/*botón flotante de WhatsApp */
+
+.btn__wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 58px;
+  bottom: 1em;
+  right: 1em;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+/*Boton ir arriba*/
+
+
+.btn__scrolltop {
+  font-size: 20px;
+  position: fixed;
+  bottom: 10em;
+  right: 1.8em;
+  padding: 15px 19px;
+  background: red;
+  color: white;
+  border: none;
+
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transform: translateX(300px);
+  transition: .6s ease-in-out;
+  z-index: 999;
+}
+
+.btn__scrolltop--on {
+  transform: translateX(0px);
+}
+
+
+
+
 /*Rehma*/
-
-
-
 /*section Rehma */
 
 .article {
@@ -267,7 +311,7 @@ article[id] {
 }
 
 .article__card {
-  width: 60%;
+  width: 70%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -280,7 +324,7 @@ article[id] {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   margin: 17em auto;
 
-  padding: 100px;
+  padding: 40px;
 
 }
 
@@ -322,7 +366,7 @@ article[id] {
 
 .aside {
   width: 100%;
-  height: 60%;
+  height: auto;
 
   grid-area: aside;
 
@@ -350,7 +394,7 @@ article[id] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, .6);
   z-index: 0;
 
 
@@ -371,7 +415,7 @@ article[id] {
 }
 
 .aside__titulo {
-  font-size: 30px;
+  font-size: 35px;
 
 }
 
@@ -386,6 +430,7 @@ article[id] {
   width: 80%;
   height: auto;
   z-index: 1;
+  margin-bottom: 120px;
 
 
 }
@@ -423,22 +468,16 @@ article[id] {
   position: relative;
   text-align: center;
 
-  margin: 2em auto;
+  margin: 6em auto;
 
 }
 
-
 .iglesia__text {
-
   text-align: center;
   color: black;
   z-index: 1;
   margin-bottom: 70px;
-
 }
-
-
-
 
 .iglesia__titulo {
   font-size: 52px;
@@ -446,7 +485,6 @@ article[id] {
   font-weight: 900;
   margin: 15px auto;
 }
-
 
 .iglesia__tituloPre {
   font-size: 30px;
@@ -458,9 +496,7 @@ article[id] {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 5px;
-
 }
-
 
 .iglesia__linea {
   width: 90px;
@@ -468,14 +504,13 @@ article[id] {
   background-color: #00a8ff;
   text-align: center;
   margin: 15px auto;
-
 }
-
 
 .iglesia__contenedor {
   display: flex;
   flex-wrap: wrap;
-
+  align-items: center;
+  justify-content: center;
 }
 
 .iglesia__card {
@@ -498,26 +533,20 @@ article[id] {
   cursor: pointer;
 }
 
-
-
-
 .iglesia__cardTexto {
   grid-area: text;
-  width: 70%;
+  width: 75%;
   display: block;
   margin: 0 auto;
-
-
-
+  text-align: center;
 }
 
 .iglesia__cardTitulo {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 3px;
   color: black;
   margin-top: 20px;
-
 }
 
 .iglesia__cardParrafo {
@@ -548,6 +577,26 @@ article[id] {
 }
 
 /*modificadores de imagen*/
+.iglesia__imagen--niños {
+  grid-area: image;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  background: url('img/niños.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iglesia__imagen--preAdolescentes {
+  grid-area: image;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  background: url('img/preadolescente.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
 
 .iglesia__imagen--adolescentes {
   grid-area: image;
@@ -608,6 +657,7 @@ article[id] {
   padding: 15px 30px;
   text-align: left;
   color: #fff;
+
 }
 
 .footer__titulo {
@@ -618,11 +668,44 @@ article[id] {
   letter-spacing: 2px;
 }
 
-.footer__parrafo {
+/*ubicacion---*/
+.footer__ubicacion {
+  display: flex;
+  align-items: baseline;
   color: #efefef;
   margin-bottom: 10px;
   font-size: 16px;
 }
+
+/*email---*/
+.footer__correo {
+  display: flex;
+  align-items: baseline;
+  color: #efefef;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+/*Reuniones---*/
+.footer__reuniones {
+  display: flex;
+  align-items: baseline;
+  color: #efefef;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer__parrafo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #efefef;
+  margin-bottom: 10px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+
 
 
 
@@ -647,12 +730,11 @@ article[id] {
   color: #efefef;
   margin-bottom: 10px;
   font-size: 14px;
- 
 }
 
 
 /*Siguenos*/
-.footer__texto2{
+.footer__texto2 {
   padding: 15px 30px;
   text-align: left;
   color: #fff;
@@ -662,7 +744,7 @@ article[id] {
   letter-spacing: 2px;
 }
 
-.footer__social{
+.footer__social {
   display: flex;
   text-decoration: none;
   color: #fff;
@@ -670,12 +752,12 @@ article[id] {
   transition: all 300ms ease;
   padding: 0;
   margin: 0;
-  
+
 }
 
-.footer__social a{
+.footer__social a {
   padding: 10px;
- 
+
 }
 
 .footer__social a:hover {
