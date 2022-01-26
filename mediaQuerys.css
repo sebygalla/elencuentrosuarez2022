@@ -36,9 +36,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         transform: translateX(-50em);
         transition: all 1.2s ease-in-out;
+    }
+
+    .navbar__item li{
+        margin-top: 40px;
     }
 
     .navbar__item--on {
