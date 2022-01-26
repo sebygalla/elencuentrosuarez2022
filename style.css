@@ -281,7 +281,7 @@ article[id] {
   position: fixed;
   bottom: 10em;
   right: 1.8em;
-  padding: 15px 19px;
+  padding: 12px 16px;
   background: red;
   color: white;
   border: none;
@@ -290,7 +290,7 @@ article[id] {
   cursor: pointer;
   transform: translateX(300px);
   transition: .6s ease-in-out;
-  z-index: 999;
+  z-index: 1;
 }
 
 .btn__scrolltop--on {
