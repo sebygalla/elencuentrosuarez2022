@@ -1,5 +1,5 @@
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
-@media (max-width: 580px) {
+@media only screen and (max-width: 580px) {
 
     body {
         background-color: whitesmoke;
@@ -94,8 +94,11 @@
     .header__titulo {
         font-size: 16px;
         font-weight: 600;
-        color: white;
+        color: rgb(255, 255, 255);
     }
+
+    
+
 
     .main__social {
         display: none;
@@ -337,7 +340,7 @@
 }
 
 /*Small devices (landscape phones, less than 768px)*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .contenedor {
         width: 95vw;
@@ -357,12 +360,6 @@
             'section   section   section'
             'footer    footer    footer';
     }
-
-    /* header */
-    .header__titulo {
-        font-size: 25px;
-    }
-
 
     /*barra de navegacion*/
     .navbar__item {
