@@ -3,6 +3,7 @@
 
     body {
         background-color: whitesmoke;
+        width: 100%;
     }
 
     .contenedor {
@@ -28,17 +29,20 @@
     .navbar__item {
         display: block;
         background-color: white;
-        position: absolute;
-        top: -114px;
-        width: 95vw;
-        height: 120vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
         font-size: .8em;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translateX(-50em);
+        transform: translateY(-50em);
         transition: all 1.2s ease-in-out;
+
+
     }
 
     .navbar__item--on {
@@ -64,7 +68,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 1.5em;  
+        margin-top: 1.5em;
     }
 
     .navbar__redes--item a {
@@ -74,7 +78,7 @@
     .navbar__redes a {
         display: none;
     }
-    
+
 
 
 
@@ -112,6 +116,18 @@
     .main__btn {
         font-size: 12px;
     }
+
+    /*boton whatsapp*/
+    .btn__wsp {
+        right: 0.6em;
+        bottom: 3.5em;
+    }
+
+    /*ir arriba*/
+    .btn__scrolltop {
+        right: 1em;
+    }
+
 
 
 
@@ -244,15 +260,15 @@
     .footer__grupo1 {
         padding: 2.5em;
         grid-template-columns: 1fr;
-       
+
     }
 
     /*Comunidad*/
     .footer__texto {
-        text-align: center;   
+        text-align: center;
     }
 
-    .footer__correo{
+    .footer__correo {
         display: block;
     }
 
@@ -266,7 +282,7 @@
         text-align: center;
     }
 
-  
+
 
 
     /*Sobre nosotros*/
@@ -274,7 +290,7 @@
         text-align: center;
     }
 
-    .footer__reuniones{
+    .footer__reuniones {
         display: block;
     }
 
@@ -294,11 +310,11 @@
         font-size: 18px;
     }
 
-    .footer__titulo2{
+    .footer__titulo2 {
         font-size: 23px;
     }
 
-    .footer__ubicacion{
+    .footer__ubicacion {
         display: block;
     }
 
@@ -306,7 +322,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
 
     .footer__social a:hover {
@@ -318,11 +334,108 @@
         color: white;
     }
 
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
+
+    .contenedor {
+        width: 95vw;
+
+        margin: .6em auto;
+        grid-gap: .7em;
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            'header    header    header'
+            'nav       nav       nav'
+            'main      main      main'
+            'article   article   article'
+            'aside     aside     aside'
+            'section   section   section'
+            'footer    footer    footer';
+    }
+
+    /* header */
+    .header__titulo {
+        font-size: 25px;
+    }
 
 
+    /*barra de navegacion*/
+    .navbar__item {
+        display: block;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        font-size: .8em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50em);
+        transition: all 1.2s ease-in-out;
 
 
+    }
 
+    .navbar__item--on {
+        transform: translateX(0);
+    }
+
+    .navbar__menu {
+        display: block;
+        color: black;
+        font-size: 1.7em;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .navbar__link {
+        letter-spacing: 10px;
+        padding: 1em;
+    }
+
+    /*Redes sociales--item*/
+    .navbar__redes--item {
+        font-size: 2em;
+        color: rgb(29, 9, 9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5em;
+    }
+
+    .navbar__redes--item a {
+        padding: 0 20px;
+    }
+
+    .navbar__redes a {
+        display: none;
+    }
+
+
+    .iglesia__contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iglesia__card {
+        grid-template-columns: 260px;
+      }
+
+    .iglesia__cardTitulo{
+        font-size: 20px;
+    }
+      
 
 
 
