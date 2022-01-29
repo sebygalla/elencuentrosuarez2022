@@ -99,6 +99,7 @@ article[id] {
 /*Lista enlaces*/
 .navbar__item {
   font-size: 14px;
+  margin-right: 20px;
   font-weight: 600;
   display: flex;
   text-transform: uppercase;
@@ -107,7 +108,7 @@ article[id] {
 .navbar__link {
   list-style: none;
   letter-spacing: 4px;
-  margin: 0 18px;
+  margin: 0 12px;
   color: rgb(29, 9, 9);
   cursor: pointer;
 }
@@ -121,27 +122,17 @@ article[id] {
   color: rgb(194, 63, 102);
 }
 
-/*Redes sociales--item*/
-.navbar__redes--item {
-  display: none;
-}
-
-/*Redes sociales*/
-.navbar__redes {
-  margin-right: 20px;
-  color: rgb(29, 9, 9);
-  display: flex;
-}
-
-.navbar__redes a {
-  padding: 0 10px;
-
-}
 
 /*icono hamburguesa*/
 .navbar__menu {
   display: none;
 }
+
+.navbar__parrafo{
+  display: none;
+}
+
+
 
 
 
@@ -485,7 +476,7 @@ article[id] {
   text-align: center;
   color: black;
   z-index: 1;
-  margin-bottom: 70px;
+  
 }
 
 .iglesia__titulo {
@@ -605,16 +596,6 @@ article[id] {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-}
-
-.iglesia__imagen--adolescentes {
-  grid-area: image;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-
-  background: url('img/adolescentes.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .iglesia__imagen--jovenes {

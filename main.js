@@ -27,14 +27,24 @@ navItem.addEventListener('click', function () {
 
 //Scroll Efect
 
+navbar = document.querySelector('.navbar');
+navbarLogo = document.querySelector('.navbar__logo');
+
+
+
+
 const btn_scrolltop = document.getElementById('btn_scrolltop')
 btn_scrolltop.addEventListener('click', function () {
     window.scrollTo(0, 0)
 })
 
 window.onscroll = function () {
+
     add_btn_scrolltop()
+   
 };
+
+
 
 
 const add_btn_scrolltop = function () {
@@ -44,3 +54,4 @@ const add_btn_scrolltop = function () {
         btn_scrolltop.classList.add('btn__scrolltop--on')
     }
 };
+
