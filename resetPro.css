@@ -10,8 +10,8 @@
 
 /* Aquí definimos las Custom properties */
 :root{
-    --color-primario   : #181818;
-    --color-secundario : #f0f0f0;
+  --color-primario   : #f0f0f0;
+  --color-secundario : #181818;  
   
     /* Tipografía */
     --tipo-principal   : Helvetica, Arial, sans-serif;
@@ -24,6 +24,8 @@
       --color-primario   : #f0f0f0;
       --color-secundario : #181818;  
     }
+
+
   }
   
   /* Opcional */

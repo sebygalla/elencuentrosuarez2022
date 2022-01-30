@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cardo:ital@1&family=Irish+Grover&family=Poller+One&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap');
 
+:root{
+  /*Colores web*/
+  --color-uno     : #3498db;
+  --color-dos     : #8e44ad;
+  --color-tres    : #c0392b;
+  --color-cuatro  : #16a085;
+  --color-cinco   : #34495e;
+}
+
+
 body {
   font-size: 15pt;
   /* background: url('img/header.jpg');
@@ -67,6 +77,7 @@ article[id] {
   font-size: 30px;
   font-weight: 600;
   z-index: 9;
+ 
 }
 
 
@@ -120,6 +131,12 @@ article[id] {
 
 .navbar__link--activo {
   color: rgb(194, 63, 102);
+}
+
+/*icono buscar*/
+.navbar__buscar{
+  margin-right: 20px;
+  color: var(--color-cinco);
 }
 
 
@@ -211,7 +228,7 @@ article[id] {
 .main__linea {
   width: 90px;
   height: 2px;
-  background-color: #00a8ff;
+  background-color: var(--color-uno);
   text-align: center;
   margin: 15px auto;
 
@@ -220,17 +237,19 @@ article[id] {
 
 .main__btn {
   z-index: 0;
-  background-color: #00a8ff;
+  background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
-  font-size: 15px;
   color: white;
   margin: 15px auto;
   cursor: pointer;
-
 }
 
+
+
 .main__btn input {
+  font-size: 16px;
+  font-weight: 600;
   border: none;
   cursor: pointer;
 
@@ -239,7 +258,7 @@ article[id] {
 .main__btn:hover {
   border: none;
   cursor: pointer;
-  background-color: rgb(29, 9, 9);
+  background-color: var(--color-tres);
 
 }
 
@@ -279,7 +298,7 @@ article[id] {
   bottom: 10em;
   right: 35px;
   padding: 12px 16px;
-  background: red;
+  background: var(--color-tres);
   color: white;
   border: none;
 
@@ -484,6 +503,7 @@ article[id] {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   margin: 15px auto;
+ 
 }
 
 .iglesia__tituloPre {
@@ -501,7 +521,7 @@ article[id] {
 .iglesia__linea {
   width: 90px;
   height: 2px;
-  background-color: #00a8ff;
+  background-color: var(--color-uno);
   text-align: center;
   margin: 15px auto;
 }
@@ -563,7 +583,7 @@ article[id] {
   font-size: .7em;
   font-weight: 600;
   text-decoration: none;
-  background-color: #C87EDF;
+  background-color: var(--color-uno);
   border: 1px solid white;
   color: white;
   padding: 8px;
@@ -573,7 +593,7 @@ article[id] {
 }
 
 .iglesia__boton:hover {
-  background-color: #DF0D6C;
+  background-color: var(--color-cinco);
 }
 
 /*modificadores de imagen*/
@@ -627,7 +647,7 @@ article[id] {
 .footer {
   width: 100%;
   height: auto;
-  background-color: #2b0835;
+  background-color: var(--color-cinco);
   grid-area: footer;
 }
 
@@ -758,7 +778,7 @@ article[id] {
 }
 
 .footer__grupo2 {
-  background: black;
+  background: var(--color-uno);
   text-align: center;
   font-size: 20px;
   font-weight: 400;

@@ -175,12 +175,12 @@
     }
 
     .aside__iframe {
-        width: 60%;
+        width: 70%;
     }
 
     .aside__iframe iframe {
-        width: 300px;
-        height: 200px;
+        width: 700px;
+        height: 400;
     }
 
 
@@ -212,6 +212,7 @@
 
     .iglesia__titulo {
         line-height: 1.2em;
+        
     }
 
 
