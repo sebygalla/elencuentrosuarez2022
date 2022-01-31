@@ -14,7 +14,7 @@
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(7, auto);
+        grid-template-rows: repeat(8, auto);
         grid-template-areas:
             'header    header    header'
             'nav       nav       nav'
@@ -22,6 +22,7 @@
             'article   article   article'
             'aside     aside     aside'
             'section   section   section'
+            'form      form      form'
             'footer    footer    footer';
     }
 
@@ -73,7 +74,7 @@
         color: rgb(255, 255, 255);
     }
 
-    
+
 
 
     .main__social {
@@ -212,7 +213,7 @@
 
     .iglesia__titulo {
         line-height: 1.2em;
-        
+
     }
 
 
@@ -231,6 +232,18 @@
         align-items: center;
         justify-content: center;
     }
+
+
+    /*Formulario*/
+
+
+    .form__contenedor {
+        width: 100%;
+ 
+    }
+
+
+
 
 
 
@@ -327,7 +340,7 @@
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(7, auto);
+        grid-template-rows: repeat(8, auto);
         grid-template-areas:
             'header    header    header'
             'nav       nav       nav'
@@ -335,6 +348,7 @@
             'article   article   article'
             'aside     aside     aside'
             'section   section   section'
+            'form      form      form'
             'footer    footer    footer';
     }
 
@@ -375,7 +389,7 @@
         padding: 1em;
     }
 
-   
+
 
     .iglesia__contenedor {
         display: flex;
@@ -387,12 +401,21 @@
 
     .iglesia__card {
         grid-template-columns: 260px;
-      }
+    }
 
-    .iglesia__cardTitulo{
+    .iglesia__cardTitulo {
         font-size: 20px;
     }
-      
+
+
+    /*Formulario*/
+    .form__contenedor {
+        width: 80%;
+    }
+
+
+
+
 
 
 

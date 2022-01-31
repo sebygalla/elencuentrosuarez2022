@@ -48,10 +48,11 @@
         <li class="navbar__link"><a href="#contacto"></a>contacto</li>
 
         <p class="navbar__parrafo">
-          »Porque tanto amó Dios al mundo que dio a su Hijo unigénito, para que todo el que cree en él no se pierda, sino que tenga vida eterna. <br>
+          »Porque tanto amó Dios al mundo que dio a su Hijo unigénito, para que todo el que cree en él no se pierda,
+          sino que tenga vida eterna. <br>
           Juan 3:16- NVI
         </p>
-        
+
       </ul>
 
 
@@ -243,8 +244,17 @@
         </div>
       </div>
 
+    </section>
 
-
+    <section class="form">
+      <form action="enviar.php" method="post" class="form__contenedor">
+        <h2 class="form__titulo">CONTACTO</h2>
+        <input class="form__input" type="text" name="nombre" placeholder="Nombre" required>
+        <input class="form__input" type="text" name="correo" placeholder="Correo" required>
+        <input class="form__input" type="text" name="telefono" placeholder="Telefono" required>
+        <textarea class="form__textarea" name="mensaje" placeholder="Escriba aqui su mensaje" required></textarea>
+        <input class="form__button" type="submit" value="ENVIAR" id="boton">
+      </form>
 
     </section>
 
