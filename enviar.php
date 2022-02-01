@@ -1,4 +1,5 @@
 <?php
+    echo 'bienvenidos';
     $destino= "sebygalla@hotmail.com";
     $nombre= $_POST["nombre"];
     $correo= $_POST["correo"];
