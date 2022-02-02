@@ -15,7 +15,7 @@ body {
   /* background: url('img/header.jpg');
   background-size: cover;
   background-repeat: no-repeat; */
-  background-color: beige;
+  background-color: whitesmoke;
 }
 
 
@@ -40,7 +40,7 @@ article[id] {
     'header    header    header'
     'nav       nav       nav'
     'main      main      main'
-    'article   article   aside'
+    'aside   article   article'
     'section   section   section'
     'form      form      form'
     'footer    footer    footer';
@@ -645,7 +645,7 @@ article[id] {
 /*Formulario*/
 .form {
   width: 100%;
-  background: url(img/Alabanza2.jpg);
+  background: url(img/formulario.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

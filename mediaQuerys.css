@@ -239,7 +239,7 @@
 
     .form__contenedor {
         width: 100%;
- 
+
     }
 
 
@@ -300,7 +300,7 @@
     /*Siguenos*/
     .footer__texto2 {
         text-align: center;
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .footer__titulo2 {
@@ -316,6 +316,7 @@
         align-items: center;
         justify-content: center;
 
+
     }
 
     .footer__social a:hover {
@@ -328,6 +329,8 @@
     }
 
 }
+
+
 
 /*Small devices (landscape phones, less than 768px)*/
 @media only screen and (max-width: 768px) {
@@ -389,8 +392,14 @@
         padding: 1em;
     }
 
+    /*Header*/
+    .header__titulo {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+    }
 
-
+    /*iglesia*/
     .iglesia__contenedor {
         display: flex;
         flex-wrap: wrap;
@@ -412,6 +421,90 @@
     .form__contenedor {
         width: 80%;
     }
+
+
+    /*footer*/
+
+    /*Grupo1*/
+    .footer__grupo1 {
+        padding: 2.5em;
+        grid-template-columns: 1fr;
+
+    }
+
+    /*Comunidad*/
+    .footer__texto {
+        text-align: center;
+    }
+
+    .footer__correo {
+        display: block;
+    }
+
+    .footer__titulo {
+        font-size: 23px;
+    }
+
+    .footer__parrafo {
+        font-size: 14px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+
+
+
+    /*Sobre nosotros*/
+    .footer__texto1 {
+        text-align: center;
+    }
+
+    .footer__reuniones {
+        display: block;
+    }
+
+    .footer__titulo1 {
+        font-size: 23px;
+    }
+
+    .footer__parrafo1 {
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+
+    /*Siguenos*/
+    .footer__texto2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .footer__titulo2 {
+        font-size: 23px;
+    }
+
+    .footer__ubicacion {
+        display: block;
+    }
+
+    .footer__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .footer__social a:hover {
+        transform: scale(1.1);
+    }
+
+    .footer__grupo2 {
+        font-size: 18px;
+        color: white;
+    }
+
+
 
 
 
