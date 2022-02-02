@@ -110,7 +110,7 @@ article[id] {
 
 /*Lista enlaces*/
 .navbar__item {
-  font-size: 14px;
+  font-size: 12px;
   margin-right: 20px;
   font-weight: 600;
   display: flex;
@@ -368,6 +368,8 @@ article[id] {
 .article__pie {
   font-size: 12px;
   color: black;
+  letter-spacing: 5px;
+  margin-top: 2em;
 
 }
 
@@ -379,6 +381,10 @@ article[id] {
   z-index: -1;
 }
 
+
+.article__articulo{
+  grid-area: articulo;
+}
 
 /*Precursores (Videos de Youtube*/
 
@@ -684,7 +690,7 @@ article[id] {
   font-size: 14px;
   border: none;
   background: rgba(255, 255, 255, .4);
-  color: white;
+  color: black;
 }
 
 .form__textarea {
@@ -694,7 +700,7 @@ article[id] {
   font-size: 14px;
   border: none;
   background: rgba(255, 255, 255, .4);
-  color: white;
+  color: black;
 
 }
 
