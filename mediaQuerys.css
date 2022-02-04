@@ -164,7 +164,7 @@
     }
 
     .aside__titulo {
-        font-size: 25px;
+        font-size: 35px;
 
     }
 
@@ -177,11 +177,12 @@
 
     .aside__iframe {
         width: 70%;
+        display: block;
     }
 
     .aside__iframe iframe {
-        width: 700px;
-        height: 400;
+        width: 400px;
+        height: 200;
     }
 
 
@@ -239,6 +240,15 @@
 
     .form__contenedor {
         width: 100%;
+    }
+
+
+    .form__input {
+        color: black;
+    }
+
+    .form__textarea {
+        color: black;
 
     }
 
@@ -398,6 +408,57 @@
         font-weight: 600;
         color: rgb(255, 255, 255);
     }
+
+
+    /*Precursores (Videos de Youtube*/
+    .aside {
+        height: auto;
+    }
+
+    .aside::before {
+        height: auto;
+    }
+
+
+
+    .aside__texto {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        z-index: 1;
+        font-family: 'Cardo', serif;
+        margin-top: 50px;
+
+    }
+
+    .aside__titulo {
+        font-size: 35px;
+
+    }
+
+    .aside__subtitulo {
+        font-size: 15px;
+        margin-top: 10px;
+        letter-spacing: 5px;
+
+    }
+
+    .aside__iframe {
+        width: 70%;
+        display: block;
+    }
+
+    .aside__iframe iframe {
+        width: 400px;
+        height: 200;
+    }
+
+
+
+
+
 
     /*iglesia*/
     .iglesia__contenedor {
