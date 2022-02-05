@@ -80,7 +80,6 @@ article[id] {
   font-size: 30px;
   font-weight: 600;
   z-index: 9;
-
 }
 
 
@@ -318,64 +317,57 @@ article[id] {
 
 /* estructura de texto y foto */
 
-.mision{
+.mision {
   width: 100%;
   height: auto;
   grid-area: mision;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-around;
+  padding: 3em;
+  gap: 2em;
+  margin-bottom: 3em;
 }
 
 .mision__texto {
-  width: 60%;
-  padding: 20px 0 20px 0;
+  width: 50%;
   color: black;
-  
+
 
 }
 
 .mision__tituloPre {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Cardo', serif;
   font-weight: 100;
-  margin-left: 2em;
   margin-bottom: 20px;
 }
 
-.mision__linea {
-  width: 190px;
-  height: 2px;
-  background-color: var(--color-uno);
-  margin-left: 3em;
-  margin-bottom: 15px;
-  
-}
-
 .mision__titulo {
-  font-size: 52px;
+  font-size: 45px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  margin-left: 1.15em;
+
 }
 
 .mision__tituloSub {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 5px;
-  margin-left: 4em;
+
   margin-top: 10px;
 }
 
-.mision__parrafo{
-  font-size: 16px;
-  margin-left: 4em;
+.mision__parrafo {
+  font-size: 14px;
   margin-top: 25px;
   line-height: 23px;
+  text-align: justify;
 }
 
 .mision__imagen {
-  width: 30em;
+  width: 25em;
+ 
 }
 
 
