@@ -207,7 +207,8 @@
     }
 
     .mision__imagen {
-        width: 20em;
+        width: 14em;
+        padding: 2em;
     }
 
 
@@ -544,7 +545,7 @@
     }
 
     .mision__texto {
-        width: 80%;
+        width: 100%;
         padding: 20px 0 20px 0;
         color: black;
         text-align: justify;
