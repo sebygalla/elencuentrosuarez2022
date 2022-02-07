@@ -770,7 +770,7 @@ article[id] {
 
 .form__input {
   width: 100%;
-  background: rgba(0, 0, 0, .6);
+  /* background: rgba(0, 0, 0, .6); */
   margin-bottom: 20px;
   padding: 7px;
   font-size: 14px;

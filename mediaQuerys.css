@@ -327,14 +327,6 @@
     }
 
 
-    .form__input {
-        color: black;
-    }
-
-    .form__textarea {
-        color: black;
-
-    }
 
 
 
@@ -661,15 +653,7 @@
         width: 80%;
     }
 
-    .form__input{
-        color: black;
-        z-index: 1;
-    }
-    
-    .form__textarea{
-        color: black;
-        z-index: 1;
-    }
+
 
 
     /*footer*/
