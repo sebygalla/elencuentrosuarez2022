@@ -1,8 +1,5 @@
 /*Small devices (landscape phones, less than 768px)*/
-@media only screen and (max-width: 460px) {
-
-
-}
+@media only screen and (max-width: 460px) {}
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media only screen and (max-width: 580px) {
@@ -136,7 +133,7 @@
         grid-area: article;
     }
 
-    .article__texto{
+    .article__texto {
         width: 100%;
     }
 
@@ -167,7 +164,7 @@
     }
 
     .mision__texto {
-       
+
         padding: 10px 0 20px 0;
         color: white;
         text-align: justify;
@@ -203,7 +200,7 @@
         text-align: center;
         margin-top: 10px;
         color: white;
-    
+
     }
 
     .mision__parrafo {
@@ -283,7 +280,7 @@
         grid-area: section;
 
         display: flex;
-        
+
         flex-wrap: wrap;
         padding: 20px;
 
@@ -292,7 +289,7 @@
         position: relative;
         text-align: center;
 
-        
+
 
     }
 
@@ -484,7 +481,7 @@
         margin-left: 20px;
     }
 
- 
+
 
     /*Precursores (Videos de Youtube*/
     .aside {
@@ -548,7 +545,7 @@
         width: 100%;
         padding: 20px 0 20px 0;
         color: white;
-       
+
 
 
     }
@@ -651,6 +648,13 @@
     /*Formulario*/
     .form__contenedor {
         width: 80%;
+    }
+
+
+    .form__textarea {
+        background: rgba(255, 255, 255, 1);
+        
+
     }
 
 
