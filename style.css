@@ -20,7 +20,7 @@ body {
 
 
 article[id] {
-  scroll-margin-top: -120px;
+  scroll-margin-top: -60px;
 
 }
 
@@ -243,7 +243,6 @@ article[id] {
   background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
-  color: white;
   margin: 15px auto;
   cursor: pointer;
 }
@@ -255,6 +254,7 @@ article[id] {
   font-weight: 600;
   border: none;
   cursor: pointer;
+  color: white;
 
 }
 
@@ -333,6 +333,7 @@ article[id] {
   background: url(img/alabanza3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .mision::before {

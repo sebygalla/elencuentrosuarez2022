@@ -130,20 +130,24 @@
     /*section Rehma */
     .article {
         width: 100%;
-        height: 40em;
         display: flex;
         align-items: center;
         justify-content: center;
         grid-area: article;
     }
 
+    .article__texto{
+        width: 100%;
+    }
+
     .article__card {
-        width: 85%;
+        width: 80%;
         padding: 60px;
     }
 
     .article__parrafo {
         font-size: 20px;
+        padding: 0;
     }
 
     .article__pie {
@@ -279,7 +283,7 @@
         grid-area: section;
 
         display: flex;
-        flex-direction: column;
+        
         flex-wrap: wrap;
         padding: 20px;
 
@@ -288,7 +292,7 @@
         position: relative;
         text-align: center;
 
-        margin: 2em auto;
+        
 
     }
 
@@ -551,9 +555,8 @@
     .mision__texto {
         width: 100%;
         padding: 20px 0 20px 0;
-        color: black;
-        text-align: justify;
-        margin-top: 50px;
+        color: white;
+       
 
 
     }
