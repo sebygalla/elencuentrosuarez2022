@@ -333,7 +333,7 @@
         justify-content: center;
         transform: translateX(-130em);
         transition: all ease-in-out;
-     
+
 
     }
 
@@ -344,13 +344,13 @@
 
     .modal__contenedor {
         width: 90%;
-        height: 50%;
+        height: 60%;
         background-color: var(--color-cuatro);
         display: flex;
         gap: .5em;
         overflow: hidden;
         border-radius: 12px;
-     
+
 
     }
 
@@ -372,8 +372,6 @@
         margin: 0 auto;
         padding: 1em;
 
-
-
     }
 
     .modal__titulo {
@@ -389,6 +387,7 @@
     }
 
     .modal__cerrar {
+
         font-size: 15px;
         font-weight: 600;
         border: none;
@@ -729,6 +728,33 @@
     .iglesia__cardTitulo {
         font-size: 20px;
     }
+
+
+
+
+    /* Modal niños */
+ 
+
+  
+
+    .modal__contenedor {
+        width: 90%;
+        height: 60%;
+    }
+
+    .modal__picture {
+        width: 65em;
+    }
+
+
+    .modal__titulo {
+        font-size: 2em;
+        letter-spacing: .3em;
+
+    }
+
+
+
 
 
 

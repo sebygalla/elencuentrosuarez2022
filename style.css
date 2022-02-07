@@ -16,6 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat; */
   background-color: whitesmoke;
+  
 }
 
 
@@ -466,7 +467,7 @@ article[id] {
   width: 50vw;
   position: absolute;
   top: 200px;
-  left:-250px;
+  left: -250px;
   z-index: -1;
 }
 
@@ -734,7 +735,7 @@ article[id] {
 
 
 /* Modal niños */
-.modal{
+.modal {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, .9);
@@ -746,64 +747,71 @@ article[id] {
   align-items: center;
   justify-content: center;
   transform: translateX(-130em);
-  transition: all ease-in-out;
-  
 
 }
 
-.modal--on{
+.modal--on {
   transform: translateX(0);
 
 }
 
-.modal__contenedor{
-  width: 60%;
+.modal__contenedor {
+  width: 50%;
   height: 60%;
   background-color: var(--color-cuatro);
   display: flex;
   overflow: hidden;
-  
-   
+  border-radius: 18px;
+ 
+
+
 }
 
-.modal__picture{
-  width: 100em;
+.modal__picture {
+  width: 80em;
   background-image: url(img/niños.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -10em;
-  
+
 
 }
 
-.modal__texto{
+.modal__texto {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 2em;
 
-  
+
+
 }
 
-.modal__titulo{
+.modal__titulo {
   font-size: 2em;
-  
-  
+
+
 }
 
-.modal__parrafo{
+.modal__parrafo {
   font-size: 14px;
   line-height: 1.5em;
-  padding: 2em;
+  
 }
 
-.modal__cerrar{
-  font-size: 18px;
+.modal__cerrar {
+  font-size: 15px;
+  font-weight: 600;
   border: none;
   background-color: var(--color-dos);
- 
+  padding: .8em;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.modal__cerrar:hover {
+  background-color: var(--color-cinco);
 }
 
 
