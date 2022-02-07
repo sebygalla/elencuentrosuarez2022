@@ -663,10 +663,12 @@
 
     .form__input{
         color: black;
+        z-index: 1;
     }
     
     .form__textarea{
         color: black;
+        z-index: 1;
     }
 
 
