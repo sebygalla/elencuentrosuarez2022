@@ -733,6 +733,77 @@ article[id] {
 }
 
 
+/* Modal niños */
+.modal{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-130em);
+  transition: all ease-in-out;
+
+}
+
+.modal--on{
+  transform: translateX(0);
+
+}
+
+.modal__contenedor{
+  width: 60%;
+  height: 60%;
+  background-color: var(--color-cuatro);
+  display: flex;
+  gap: 1em;
+  overflow: hidden;
+   
+}
+
+.modal__picture{
+  width: 100em;
+  background-image: url(img/niños.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -10em;
+  
+
+}
+
+.modal__texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.modal__titulo{
+  font-size: 2em;
+  
+}
+
+.modal__parrafo{
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 2em;
+}
+
+.modal__cerrar{
+  font-size: 18px;
+  border: none;
+  background-color: var(--color-dos);
+  padding: .5em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 /*Formulario*/
 .form {

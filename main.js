@@ -76,3 +76,20 @@ async function handleSubmit(event){
         alert('Enviado exitosamente!')
     }
 }
+
+/* Modal */
+
+const btnModal = document.querySelector('.iglesia__boton');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.modal__cerrar');
+
+
+
+
+btnModal.addEventListener('click', function () {
+    modal.classList.add('modal--on');
+});
+
+close.addEventListener('click', function () {
+    modal.classList.remove('modal--on');
+});
