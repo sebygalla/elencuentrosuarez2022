@@ -53,8 +53,6 @@
         justify-content: center;
         transform: translateY(-50em);
         transition: all 1.2s ease-in-out;
-
-
     }
 
     .navbar__item--on {
@@ -165,9 +163,9 @@
     }
 
     .mision__texto {
-        width: 90%;
+       
         padding: 10px 0 20px 0;
-        color: black;
+        color: white;
         text-align: justify;
         margin-top: 50px;
 
@@ -180,6 +178,8 @@
         font-weight: 100;
         margin-bottom: 0 0 8px 0;
         text-align: center;
+        color: white;
+
     }
 
     .mision__titulo {
@@ -189,6 +189,7 @@
         text-align: center;
         line-height: 1.2em;
         margin-top: 10px;
+        color: white;
     }
 
     .mision__tituloSub {
@@ -197,6 +198,8 @@
         letter-spacing: 5px;
         text-align: center;
         margin-top: 10px;
+        color: white;
+    
     }
 
     .mision__parrafo {
@@ -204,6 +207,7 @@
         margin: 0 auto;
         padding: 0;
         line-height: 23px;
+        color: white;
     }
 
     .mision__imagen {

@@ -20,7 +20,7 @@ body {
 
 
 article[id] {
-  scroll-margin-top: 45px;
+  scroll-margin-top: -120px;
 
 }
 
@@ -34,7 +34,7 @@ article[id] {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, auto);
+  grid-template-rows: repeat(10, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -42,6 +42,7 @@ article[id] {
     'main      main      main'
     'article   article   article'
     'mision    mision    mision'
+    'banner    banner    banner'
     'aside     aside     aside '
     'section   section   section'
     'form      form      form'
@@ -78,7 +79,7 @@ article[id] {
 
 .header__titulo {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 300;
   z-index: 9;
 }
 
@@ -208,7 +209,7 @@ article[id] {
 .main__titulo {
   font-size: 52px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   margin: 15px auto;
 }
 
@@ -321,19 +322,40 @@ article[id] {
   width: 100%;
   height: auto;
   grid-area: mision;
+  position: relative;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
   padding: 3em;
   gap: 2em;
-  margin-bottom: 3em;
+
+  background: url(img/alabanza3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.mision::before {
+  width: 100%;
+  height: auto;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 0;
+}
+
+
+
 .mision__texto {
-  width: 50%;
-  color: black;
-
-
+  width: 80%;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  margin-top: 2em;
 }
 
 .mision__tituloPre {
@@ -344,9 +366,9 @@ article[id] {
 }
 
 .mision__titulo {
-  font-size: 45px;
+  font-size: 65px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
 
 }
 
@@ -355,20 +377,29 @@ article[id] {
   font-weight: 400;
   letter-spacing: 5px;
 
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .mision__parrafo {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
   font-size: 14px;
-  margin-top: 25px;
-  line-height: 23px;
+  line-height: 30px;
+  margin-top: 5em;
   text-align: justify;
 }
 
 .mision__imagen {
-  width: 25em;
- 
+  width: 20em;
 }
+
+/* .mision__spotify iframe{
+  border-radius: 8px;
+} */
+
+
+/* Banner Pastor */
 
 
 
@@ -383,10 +414,14 @@ article[id] {
   align-items: center;
   justify-content: center;
   grid-area: article;
+  background-color: white;
+  z-index: 0;
+  overflow: hidden;
+
 }
 
 .article__card {
-  width: 50%;
+  width: 60%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -394,17 +429,14 @@ article[id] {
   justify-content: center;
   text-align: center;
   position: relative;
-
   border-radius: 8px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  margin: 17em auto;
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10em auto;
   padding: 40px;
-
 }
 
 .article__texto {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,6 +445,7 @@ article[id] {
 
 .article__parrafo {
   text-align: center;
+  padding: 2em;
   color: black;
   font-size: 25px;
   line-height: 1.3em;
@@ -429,10 +462,10 @@ article[id] {
 }
 
 .article__card svg {
-  width: 30vw;
+  width: 50vw;
   position: absolute;
-  top: 180px;
-  left: -100px;
+  top: 200px;
+  left:-250px;
   z-index: -1;
 }
 
@@ -460,7 +493,7 @@ article[id] {
   padding: 0;
   position: relative;
 
-  background: url('img/alabanza3.jpg');
+  background: url(img/teclado.jpg);
   background-size: cover;
   background-attachment: fixed;
 
@@ -478,8 +511,6 @@ article[id] {
   bottom: 0;
   background-color: rgba(0, 0, 0, .7);
   z-index: 0;
-
-
 }
 
 
@@ -491,17 +522,17 @@ article[id] {
   color: white;
   z-index: 1;
   font-family: 'Cardo', serif;
-  margin-top: 100px;
+  margin-top: 6em;
 
 }
 
 .aside__titulo {
-  font-size: 65px;
+  font-size: 2.4em;
 
 }
 
 .aside__subtitulo {
-  font-size: 20px;
+  font-size: 1.4em;
   margin-top: 10px;
   letter-spacing: 5px;
 
@@ -521,9 +552,9 @@ article[id] {
 }
 
 .aside__iframe iframe {
-  width: 400px;
+  width: 600px;
   height: 300px;
-  margin: 2em auto;
+  margin: 4em auto;
 
 }
 
@@ -536,30 +567,25 @@ article[id] {
 /*iglesia */
 
 .iglesia {
-
   width: 100%;
   height: auto;
-
-
   grid-area: section;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 20px;
-
   align-items: center;
   justify-content: center;
   position: relative;
   text-align: center;
-
-  margin: 6em auto;
+  background-color: white;
 
 }
 
-.iglesia__text {
+.iglesia__texto {
   text-align: center;
   color: black;
+  margin: 4em;
   z-index: 1;
 
 }
@@ -606,7 +632,7 @@ article[id] {
   grid-template-areas: "image""text";
   border-radius: 18px;
   background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
   z-index: 1;
   position: relative;
@@ -818,7 +844,7 @@ article[id] {
 .footer__titulo {
   color: #fff;
   margin-bottom: 12px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -852,11 +878,12 @@ article[id] {
 }
 
 .footer__parrafo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #efefef;
-  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
   font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 10px;
   margin-left: 10px;
 }
 
@@ -876,15 +903,18 @@ article[id] {
 .footer__titulo1 {
   color: #fff;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
 .footer__parrafo1 {
-  color: #efefef;
-  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
   font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 
 
@@ -896,6 +926,15 @@ article[id] {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+
+.footer__titulo2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
   letter-spacing: 2px;
 }
 
@@ -912,6 +951,7 @@ article[id] {
 
 .footer__social a {
   padding: 10px;
+  color: white;
 
 }
 
