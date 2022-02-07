@@ -318,6 +318,93 @@
     }
 
 
+
+    /* Modal niños */
+    .modal {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-130em);
+        transition: all ease-in-out;
+     
+
+    }
+
+    .modal--on {
+        transform: translateX(0);
+
+    }
+
+    .modal__contenedor {
+        width: 90%;
+        height: 50%;
+        background-color: var(--color-cuatro);
+        display: flex;
+        gap: .5em;
+        overflow: hidden;
+        border-radius: 12px;
+     
+
+    }
+
+    .modal__picture {
+        width: 60em;
+        background-image: url(img/niños.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -5em;
+
+
+    }
+
+    .modal__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding: 1em;
+
+
+
+    }
+
+    .modal__titulo {
+        font-size: 1.5em;
+        letter-spacing: .3em;
+
+    }
+
+    .modal__parrafo {
+        font-size: 12px;
+        line-height: 1.5em;
+        padding: 0em;
+    }
+
+    .modal__cerrar {
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        background-color: var(--color-dos);
+        padding: .8em;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .modal__cerrar:hover {
+        background-color: var(--color-cinco);
+    }
+
+
+
+
     /*Formulario*/
 
 
@@ -549,9 +636,6 @@
         width: 100%;
         padding: 20px 0 20px 0;
         color: white;
-
-
-
     }
 
     .mision__tituloPre {
@@ -657,8 +741,6 @@
 
     .form__textarea {
         background: rgba(255, 255, 255, 1);
-        
-
     }
 
 

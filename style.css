@@ -747,6 +747,7 @@ article[id] {
   justify-content: center;
   transform: translateX(-130em);
   transition: all ease-in-out;
+  
 
 }
 
@@ -760,8 +761,8 @@ article[id] {
   height: 60%;
   background-color: var(--color-cuatro);
   display: flex;
-  gap: 1em;
   overflow: hidden;
+  
    
 }
 
@@ -780,18 +781,19 @@ article[id] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: left;
+
+  
 }
 
 .modal__titulo{
   font-size: 2em;
+  
   
 }
 
 .modal__parrafo{
   font-size: 14px;
   line-height: 1.5em;
-  text-align: justify;
   padding: 2em;
 }
 
@@ -799,7 +801,7 @@ article[id] {
   font-size: 18px;
   border: none;
   background-color: var(--color-dos);
-  padding: .5em;
+ 
   border-radius: 8px;
   cursor: pointer;
 }
