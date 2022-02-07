@@ -738,7 +738,7 @@ article[id] {
 .modal {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, .95);
   position: fixed;
   top: 0;
   left: 0;
@@ -758,21 +758,11 @@ article[id] {
 .modal__contenedor {
   width: 50%;
   height: 60%;
-  background-color: var(--color-cuatro);
+  background-color: white;
   display: flex;
-  overflow: hidden;
   border-radius: 18px;
+  transition: all 500ms ease;
  
-
-
-}
-
-.modal__picture {
-  width: 80em;
-  background-image: url(img/niños.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -10em;
 
 
 }
@@ -780,23 +770,26 @@ article[id] {
 .modal__texto {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-evenly;
   padding: 2em;
-
-
-
 }
 
 .modal__titulo {
   font-size: 2em;
+  color: black;
+  letter-spacing: .4em;
 
 
 }
 
 .modal__parrafo {
+  color: black;
   font-size: 14px;
   line-height: 1.5em;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 1em 0 1em 0;
   
 }
 
@@ -804,9 +797,9 @@ article[id] {
   font-size: 15px;
   font-weight: 600;
   border: none;
-  background-color: var(--color-dos);
-  padding: .8em;
-  border-radius: 8px;
+  background-color: var(--color-uno);
+  padding: .8em 6px .8em 6px;
+  border-radius: 4px;
   cursor: pointer;
 }
 

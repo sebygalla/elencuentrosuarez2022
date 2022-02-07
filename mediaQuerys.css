@@ -320,88 +320,25 @@
 
 
     /* Modal niños */
-    .modal {
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, .9);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(-130em);
-        transition: all ease-in-out;
 
-
+    .modal__contenedor{
+        width: 80%;
     }
 
-    .modal--on {
-        transform: translateX(0);
-
+    .modal__titulo{
+        padding: .5em;
+        margin-bottom: .5em;
     }
 
-    .modal__contenedor {
-        width: 90%;
-        height: 60%;
-        background-color: var(--color-cuatro);
-        display: flex;
-        gap: .5em;
-        overflow: hidden;
-        border-radius: 12px;
-
-
-    }
-
-    .modal__picture {
-        width: 60em;
-        background-image: url(img/niños.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: -5em;
-
-
-    }
-
-    .modal__texto {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: space-evenly;
-        margin: 0 auto;
-        padding: 1em;
-
-    }
-
-    .modal__titulo {
-        font-size: 1.5em;
-        letter-spacing: .3em;
-
-    }
-
-    .modal__parrafo {
+    .modal__parrafo{
         font-size: 12px;
-        line-height: 1.5em;
-        padding: 0em;
+        padding: 2em 0 2em 0;
     }
 
-    .modal__cerrar {
-
-        font-size: 15px;
-        font-weight: 600;
-        border: none;
-        background-color: var(--color-dos);
-        padding: .8em;
-        border-radius: 8px;
-        cursor: pointer;
+    .modal__cerrar{
+        margin-top: 2.5em;
     }
-
-    .modal__cerrar:hover {
-        background-color: var(--color-cinco);
-    }
-
-
+   
 
 
     /*Formulario*/
@@ -733,26 +670,30 @@
 
 
     /* Modal niños */
+
+
+     .modal__contenedor{
+        width: 80%;
+    }
+
+    .modal__titulo{
+        padding: .5em;
+        margin-bottom: .3em;
+    }
+
+    .modal__parrafo{
+        font-size: 12px;
+        padding: 2em 0 2em 0;
+    }
+
+    .modal__cerrar{
+        margin-top: 2.5em;
+    }
+   
+
  
 
   
-
-    .modal__contenedor {
-        width: 90%;
-        height: 60%;
-    }
-
-    .modal__picture {
-        width: 65em;
-    }
-
-
-    .modal__titulo {
-        font-size: 2em;
-        letter-spacing: .3em;
-
-    }
-
 
 
 
