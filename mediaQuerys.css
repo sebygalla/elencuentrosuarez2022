@@ -661,6 +661,14 @@
         width: 80%;
     }
 
+    .form__input{
+        color: black;
+    }
+    
+    .form__textarea{
+        color: black;
+    }
+
 
     /*footer*/
 
