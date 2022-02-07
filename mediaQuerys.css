@@ -161,6 +161,8 @@
 
     .mision {
         flex-direction: column;
+        margin: 0;
+        padding: 1.5em;
     }
 
     .mision__texto {
@@ -539,6 +541,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0;
+        padding: 1.5em;
     }
 
     .mision__texto {
