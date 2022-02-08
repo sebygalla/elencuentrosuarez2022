@@ -762,6 +762,7 @@ article[id] {
   display: flex;
   border-radius: 18px;
   transition: all 500ms ease;
+  overflow: hidden;
  
 
 
@@ -769,7 +770,7 @@ article[id] {
 
 .modal__texto {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   padding: 2em;

@@ -326,17 +326,17 @@
     }
 
     .modal__titulo{
-        padding: .5em;
-        margin-bottom: .5em;
+        padding: .1em;
+        margin-bottom: .1em;
     }
 
     .modal__parrafo{
         font-size: 12px;
-        padding: 2em 0 2em 0;
+        padding: 1em 0 1em 0;
     }
 
     .modal__cerrar{
-        margin-top: 2.5em;
+        margin-top: 2em;
     }
    
 
