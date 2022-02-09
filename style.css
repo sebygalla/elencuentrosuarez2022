@@ -16,7 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat; */
   background-color: whitesmoke;
-  
+
 }
 
 
@@ -735,78 +735,94 @@ article[id] {
 
 
 /* Modal niños */
-.modal {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, .95);
+
+.container-all {
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+ visibility: hidden;
+ opacity: 0;
+ transition: all 600ms;
   z-index: 999;
+}
+
+.container-all:target{
+  background: rgba(0, 0, 0, .8);
+  visibility: visible;
+  opacity: 1;
+}
+
+.container-all:target .popup{
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  visibility: visible;
+}
+
+
+
+
+.popup {
+  width: 100%;
+  height: 500px;
+  max-width: 800px;
+  height: 500px;
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateX(-130em);
-
-}
-
-.modal--on {
-  transform: translateX(0);
-
-}
-
-.modal__contenedor {
-  width: 50%;
-  height: 60%;
+  top: 50%;
+  left: 50%;
+  transform: rotate(90deg) translate(-150% , 230%);
+  transition: all 600ms;
   background-color: white;
-  display: flex;
-  border-radius: 18px;
-  transition: all 500ms ease;
-  overflow: hidden;
- 
-
-
 }
 
-.modal__texto {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2em;
+.img {
+  width: 40%;
+  background-image: url(img/niños.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.modal__titulo {
-  font-size: 2em;
+.container-text {
+  width: 60%;
+  padding: 50px;
+  overflow-y: auto;
+}
+
+.container-text h1 {
+  font-size: 30px;
   color: black;
-  letter-spacing: .4em;
-
-
 }
 
-.modal__parrafo {
+.container-text p {
   color: black;
-  font-size: 14px;
-  line-height: 1.5em;
-  border-top: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
-  padding: 1em 0 1em 0;
-  
+  margin-top: 20px;
+  font-size: 16px;
 }
 
-.modal__cerrar {
-  font-size: 15px;
-  font-weight: 600;
-  border: none;
-  background-color: var(--color-uno);
-  padding: .8em 6px .8em 6px;
-  border-radius: 4px;
-  cursor: pointer;
+.btn-close-popup{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right:-18px;
+  top:-18px;
+  padding: 18px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  line-height: 10px;
 }
 
-.modal__cerrar:hover {
-  background-color: var(--color-cinco);
-}
+
+
+
+
+
 
 
 /*Formulario*/

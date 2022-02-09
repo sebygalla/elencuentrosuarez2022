@@ -248,7 +248,7 @@
         </div>
 
         <!--Card jovenes-->
-        <div class="iglesia__card" data-aos="zoom-in">
+        <div class="iglesia__card" id="iglesiaCardJovenes" data-aos="zoom-in">
           <div class="iglesia__imagen iglesia__imagen--jovenes">
           </div>
           <div class="iglesia__cardTexto">
@@ -256,7 +256,10 @@
             <p class="iglesia__cardParrafo">The cake at the Sacher hotel is amongst the finest in all the lands es un
               servicio. </p>
 
-            <input type="button" class="iglesia__boton" value="VER MÁS!">
+
+            <a href="#modal">
+              <input type="button" class="iglesia__boton" value="VER MÁS!">
+            </a>
           </div>
         </div>
 
@@ -277,29 +280,32 @@
 
     </section>
 
-    <!--Modal niños-->
+    <!--Modal jovenes -->
 
-    <div class="modal" id="modal">
-      <div class="modal__contenedor">
+    <div class="container-all" id="modal">
 
-
-        <div class="modal__texto">
-          <h1 class="modal__titulo">NIÑOS</h1>
-          <p class="modal__parrafo">
-            En el Encuentro de Niños, acompañamos a los niños de entre 3 y 10 años, a encontrarse con Su Creador y
-            Salvador.
-            Para ello, utilizamos una dinámica que cambia cada domingo, abordando las verdades de la Palabra de Dios,
-            desde la enseñanza experimental, la adoración íntima y la recreación.
-
-
-          </p>
-          <input type="button" class="modal__cerrar" value="CERRAR">
+      <div class="popup">
+        <div class="img"></div>
+        <div class="container-text">
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ratione quidem sequi dolores, mollitia sed
+            nihil vitae atque blanditiis dolore vero voluptatum placeat tempore aliquam veniam vel deleniti praesentium
+            quia maiores reiciendis. Culpa maxime minus, tempore architecto, autem eligendi quia accusamus ipsa,
+            similique itaque eos quos! Tempore harum aliquid aspernatur!</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo rerum culpa neque eos esse. Aspernatur
+            dolor tenetur aperiam sequi dicta!</p>
         </div>
+
+        <a href="#iglesiaCardJovenes" class="btn-close-popup">X</a>
       </div>
 
 
 
+
+
+
     </div>
+
 
     <!--Formulario-->
     <section class="form">
