@@ -10,8 +10,8 @@
 
 /* Aquí definimos las Custom properties */
 :root{
-  --color-primario   : #f0f0f0;
-  --color-secundario : #181818;  
+  /* --color-primario   : #f0f0f0;
+  --color-secundario : #181818;   */
   
     /* Tipografía */
     --tipo-principal   : Helvetica, Arial, sans-serif;
@@ -19,24 +19,24 @@
   }
     
   /* Las adaptamos al modo oscuro */
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     :root{
       --color-primario   : #f0f0f0;
       --color-secundario : #181818;  
     }
 
 
-  }
+  } */
   
   /* Opcional */
   /* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-  @media (prefers-contrast: high){
+  /* @media (prefers-contrast: high){
       :root{
         --color-primario   : black;
         --color-secundario : white; 
       }
   }
-  
+   */
   /* Opcional */
   /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
   @media (prefers-reduced-motion: reduce) {
@@ -170,8 +170,8 @@
     min-height  : 100vh;
     font-size   : 100%;
     font-family : var(--tipo-principal);
-    color       : var(--color-primario);
-    background-color: var(--color-secundario);
+    /* color       : var(--color-primario);
+    background-color: var(--color-secundario); */
     /* opcional */ line-height: 1.4em;
     /* opcional */ hyphens: auto;
     /* opcional */ font-smooth: always;

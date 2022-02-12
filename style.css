@@ -82,6 +82,7 @@ article[id] {
   font-size: 30px;
   font-weight: 300;
   z-index: 9;
+  color: white;
 }
 
 
@@ -118,18 +119,27 @@ article[id] {
   font-weight: 600;
   display: flex;
   text-transform: uppercase;
+  color: black;
 }
 
 .navbar__link {
   list-style: none;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   margin: 0 12px;
-  color: rgb(29, 9, 9);
+  
+ 
+  padding: 5px;
   cursor: pointer;
+ 
 }
 
-.navbar__link:hover {
-  color: rgb(194, 63, 102);
+.navbar__link a:hover {
+ background-color: var(--color-uno);
+ color: white;
+ 
+  
+ 
+
 
 }
 
@@ -736,7 +746,7 @@ article[id] {
 
 /* Modal niños */
 
-.container-all {
+.popup__container{
   width: 100%;
   height: 100%;
   position: fixed;
@@ -747,17 +757,17 @@ article[id] {
   padding: 40px;
  visibility: hidden;
  opacity: 0;
- transition: all 600ms;
+ transition: all 800ms;
   z-index: 999;
 }
 
-.container-all:target{
+.popup__container:target{
   background: rgba(0, 0, 0, .8);
   visibility: visible;
   opacity: 1;
 }
 
-.container-all:target .popup{
+.popup__container:target .popup__card{
   top: 50%;
   left: 50%;
   transform: rotate(0deg) translate(-50%, -50%);
@@ -767,7 +777,7 @@ article[id] {
 
 
 
-.popup {
+.popup__card {
   width: 100%;
   height: 500px;
   max-width: 800px;
@@ -777,35 +787,35 @@ article[id] {
   top: 50%;
   left: 50%;
   transform: rotate(90deg) translate(-150% , 230%);
-  transition: all 600ms;
+  transition: all 800ms;
   background-color: white;
 }
 
-.img {
+.popup__img {
   width: 40%;
   background-image: url(img/niños.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.container-text {
+.popup__text {
   width: 60%;
   padding: 50px;
   overflow-y: auto;
 }
 
-.container-text h1 {
+.popup__text h1 {
   font-size: 30px;
   color: black;
 }
 
-.container-text p {
+.popup__text p {
   color: black;
   margin-top: 20px;
   font-size: 16px;
 }
 
-.btn-close-popup{
+.popupBtn__close{
   width: 50px;
   height: 50px;
   position: absolute;
