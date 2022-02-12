@@ -79,7 +79,8 @@ article[id] {
 }
 
 .header__titulo {
-  font-size: 30px;
+  font-size: 20px;
+  letter-spacing: 6px;
   font-weight: 300;
   z-index: 9;
   color: white;
@@ -124,27 +125,18 @@ article[id] {
 
 .navbar__link {
   list-style: none;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
   margin: 0 12px;
-  
- 
-  padding: 5px;
+
+
+  padding: 8px;
   cursor: pointer;
- 
-}
-
-.navbar__link a:hover {
- background-color: var(--color-uno);
- color: white;
- 
-  
- 
-
 
 }
 
 .navbar__link--activo {
-  color: rgb(194, 63, 102);
+  border-bottom: 2px solid var(--color-cuatro);
+  
 }
 
 /*icono buscar*/
@@ -222,6 +214,7 @@ article[id] {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin: 15px auto;
+  letter-spacing: 6px;
 }
 
 
@@ -405,6 +398,13 @@ article[id] {
 .mision__imagen {
   width: 20em;
 }
+
+.mision__icono{
+  font-size: 5em;
+  margin: 2em;
+
+}
+
 
 /* .mision__spotify iframe{
   border-radius: 8px;
@@ -746,7 +746,7 @@ article[id] {
 
 /* Modal niños */
 
-.popup__container{
+.popup__container {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -755,19 +755,19 @@ article[id] {
   right: 0;
   bottom: 0;
   padding: 40px;
- visibility: hidden;
- opacity: 0;
- transition: all 800ms;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 800ms;
   z-index: 999;
 }
 
-.popup__container:target{
+.popup__container:target {
   background: rgba(0, 0, 0, .8);
   visibility: visible;
   opacity: 1;
 }
 
-.popup__container:target .popup__card{
+.popup__container:target .popup__card {
   top: 50%;
   left: 50%;
   transform: rotate(0deg) translate(-50%, -50%);
@@ -786,7 +786,7 @@ article[id] {
   display: flex;
   top: 50%;
   left: 50%;
-  transform: rotate(90deg) translate(-150% , 230%);
+  transform: rotate(90deg) translate(-150%, 230%);
   transition: all 800ms;
   background-color: white;
 }
@@ -815,12 +815,12 @@ article[id] {
   font-size: 16px;
 }
 
-.popupBtn__close{
+.popupBtn__close {
   width: 50px;
   height: 50px;
   position: absolute;
-  right:-18px;
-  top:-18px;
+  right: -18px;
+  top: -18px;
   padding: 18px;
   background: black;
   color: white;
@@ -938,7 +938,7 @@ article[id] {
 /*Comunidad*/
 .footer__texto {
   padding: 15px 30px;
-  text-align: left;
+  text-align: justify;
   color: #fff;
 
 }
@@ -958,6 +958,7 @@ article[id] {
   color: #efefef;
   margin-bottom: 10px;
   font-size: 16px;
+  
 }
 
 /*email---*/
@@ -1067,6 +1068,7 @@ article[id] {
   font-size: 20px;
   font-weight: 400;
   padding: 15px;
+  color: white;
 }
 
 .footer__grupo2 strong {
