@@ -136,7 +136,7 @@ article[id] {
 
 .navbar__link--activo {
   border-bottom: 2px solid var(--color-cuatro);
-  
+
 }
 
 /*icono buscar*/
@@ -399,7 +399,7 @@ article[id] {
   width: 20em;
 }
 
-.mision__icono{
+.mision__icono {
   font-size: 5em;
   margin: 2em;
 
@@ -958,7 +958,7 @@ article[id] {
   color: #efefef;
   margin-bottom: 10px;
   font-size: 16px;
-  
+
 }
 
 /*email---*/
@@ -1073,4 +1073,9 @@ article[id] {
 
 .footer__grupo2 strong {
   font-weight: bold;
+}
+
+
+
+
 }
