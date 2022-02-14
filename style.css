@@ -35,13 +35,14 @@ article[id] {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, auto);
+  grid-template-rows: repeat(11, auto);
   grid-template-areas:
 
     'header    header    header'
     'nav       nav       nav'
     'main      main      main'
     'article   article   article'
+    'nosotros  nosotros  nosotros'
     'mision    mision    mision'
     'banner    banner    banner'
     'aside     aside     aside '
@@ -104,6 +105,7 @@ article[id] {
   top: 0;
   left: 0;
   z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
 
 }
 
@@ -127,11 +129,8 @@ article[id] {
   list-style: none;
   letter-spacing: 2px;
   margin: 0 12px;
-
-
   padding: 8px;
   cursor: pointer;
-
 }
 
 .navbar__link--activo {
@@ -308,7 +307,6 @@ article[id] {
   background: var(--color-tres);
   color: white;
   border: none;
-
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transform: translateX(300px);
@@ -319,6 +317,179 @@ article[id] {
 .btn__scrolltop--on {
   transform: translateX(0px);
 }
+
+
+
+/*Rehma*/
+/*section Rehma */
+
+.article {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: article;
+  background-color: white;
+  z-index: 0;
+  overflow: hidden;
+
+}
+
+.article__card {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10em auto;
+  padding: 40px;
+}
+
+.article__texto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.article__parrafo {
+  text-align: center;
+  padding: 2em;
+  color: black;
+  font-size: 25px;
+  line-height: 1.3em;
+  font-family: 'Cardo', serif;
+  z-index: 1;
+}
+
+.article__pie {
+  font-size: 12px;
+  color: black;
+  letter-spacing: 5px;
+  margin-top: 2em;
+
+}
+
+.article__card svg {
+  width: 50vw;
+  position: absolute;
+  top: 200px;
+  left: -250px;
+  z-index: -1;
+}
+
+
+.article__articulo {
+  grid-area: articulo;
+}
+
+
+
+
+/* Nosotros */
+
+.nosotros {
+  grid-area: nosotros;
+  width: 100%;
+  height: auto;
+  background-color: rgba(187, 176, 176, 0.302);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  align-items: baseline;
+  justify-content: space-between;
+
+}
+
+/* texto e imagen Uno */
+.nosotros__textoUno {
+  width: 100%;
+  color: black;
+  padding: 50px;
+  text-align: left;
+  /* background-color: var(--color-dos); */
+}
+
+.nosotros__titulo--uno {
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.nosotros__tituloSub--uno {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 12px;
+  margin-top: 20px;
+}
+
+.nosotros__parrafo--uno {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 30px;
+  margin-top: 2em;
+  text-align: justify;
+}
+
+.nosotros__imagenUno {
+  padding: 20px;
+}
+
+/* texto e imagen Dos */
+
+.nosotros__textoDos {
+  width: 100%;
+  color: black;
+  padding: 50px;
+  text-align: right;
+  /* background-color: var(--color-tres); */
+}
+
+
+.nosotros__titulo--dos {
+  font-size: 65px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.nosotros__tituloSub--dos {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-top: 20px;
+}
+
+.nosotros__parrafo--dos {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 30px;
+  margin-top: 2em;
+  text-align: justify;
+}
+
+.nosotros__imagenDos {
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 /* estructura de texto y foto */
 
@@ -414,77 +585,6 @@ article[id] {
 /* Banner Pastor */
 
 
-
-
-/*Rehma*/
-/*section Rehma */
-
-.article {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: article;
-  background-color: white;
-  z-index: 0;
-  overflow: hidden;
-
-}
-
-.article__card {
-  width: 60%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 10em auto;
-  padding: 40px;
-}
-
-.article__texto {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.article__parrafo {
-  text-align: center;
-  padding: 2em;
-  color: black;
-  font-size: 25px;
-  line-height: 1.3em;
-  font-family: 'Cardo', serif;
-  z-index: 1;
-}
-
-.article__pie {
-  font-size: 12px;
-  color: black;
-  letter-spacing: 5px;
-  margin-top: 2em;
-
-}
-
-.article__card svg {
-  width: 50vw;
-  position: absolute;
-  top: 200px;
-  left: -250px;
-  z-index: -1;
-}
-
-
-.article__articulo {
-  grid-area: articulo;
-}
 
 
 
@@ -762,7 +862,7 @@ article[id] {
 }
 
 .popup__container:target {
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.9);
   visibility: visible;
   opacity: 1;
 }
