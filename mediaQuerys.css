@@ -38,8 +38,8 @@
         grid-gap: .7em;
         display: grid;
 
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, auto);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
         grid-template-areas:
             'header    header    header'
             'nav       nav       nav'
@@ -199,7 +199,8 @@
     }
 
     .nosotros__imagenUno {
-        padding: 10px;
+        width: 100%;
+        
     }
 
     /* texto e imagen Dos */
@@ -225,7 +226,8 @@
     }
 
     .nosotros__imagenDos {
-        padding: 10px;
+        width: 100%;
+    
     }
 
 
@@ -668,6 +670,7 @@
     }
 
     .nosotros__parrafo--uno{
+        line-height: 22px;
         text-align: justify;
     }
 
@@ -683,6 +686,7 @@
     }
 
     .nosotros__parrafo--dos{
+        line-height: 22px;
         text-align: justify;
     }
 
