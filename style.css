@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cardo:ital@1&family=Irish+Grover&family=Poller+One&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cardo:ital@1&family=Irish+Grover&family=Montserrat:wght@100;300;400;600;900&family=Poller+One&family=Poppins:wght@100&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap');
 
 :root {
   /*Colores web*/
@@ -80,11 +80,14 @@ article[id] {
 }
 
 .header__titulo {
-  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 6px;
-  font-weight: 300;
-  z-index: 9;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
   color: white;
+  z-index: 1;
 }
 
 
@@ -436,12 +439,12 @@ article[id] {
 }
 
 .nosotros__parrafo--uno {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
-  font-size: 12px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 21px;
   margin-top: 2em;
-  text-align: justify;
+  text-align: left;
 }
 
 .nosotros__imagenUno {
@@ -477,12 +480,12 @@ article[id] {
 }
 
 .nosotros__parrafo--dos {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
-  font-size: 12px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 21px;
   margin-top: 2em;
-  text-align: justify;
+  text-align: right;
 }
 
 .nosotros__imagenDos {
@@ -536,7 +539,7 @@ article[id] {
 
 
 .mision__texto {
-  width: 80%;
+  width: 95%;
   color: white;
   z-index: 1;
   text-align: center;
@@ -566,13 +569,13 @@ article[id] {
 }
 
 .mision__parrafo {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
-  font-size: 14px;
-  line-height: 30px;
-  margin-top: 5em;
-  text-align: justify;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 4em;
+  text-align: left;
 }
 
 .mision__imagen {
@@ -768,7 +771,7 @@ article[id] {
 
 .iglesia__cardTexto {
   grid-area: text;
-  width: 75%;
+  width: 95%;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -783,16 +786,17 @@ article[id] {
 }
 
 .iglesia__cardParrafo {
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   color: black;
   text-align: justify;
   padding: 0px;
-  line-height: 20px;
+  line-height: 21px;
   margin: 15px;
 }
 
 .iglesia__boton {
-  width: 50%;
+  width: 40%;
   font-size: .7em;
   font-weight: 600;
   text-decoration: none;
@@ -908,6 +912,7 @@ article[id] {
 }
 
 .popup__text {
+  font-family: 'Montserrat', sans-serif;
   width: 60%;
   padding: 50px;
   overflow-y: auto;
@@ -919,9 +924,11 @@ article[id] {
 }
 
 .popup__text p {
+  font-family: 'Montserrat', sans-serif;
   color: black;
   margin-top: 20px;
   font-size: 16px;
+  line-height: 21px;
 }
 
 .popupBtn__close {
@@ -1121,12 +1128,15 @@ article[id] {
 }
 
 .footer__parrafo1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 21px;
   margin-bottom: 10px;
+  
+
+ 
 }
 
 
@@ -1172,9 +1182,10 @@ article[id] {
 }
 
 .footer__grupo2 {
+  font-family: 'Montserrat', sans-serif;
   background: var(--color-uno);
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   padding: 15px;
   color: white;
@@ -1182,9 +1193,9 @@ article[id] {
 
 .footer__grupo2 strong {
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
 
 
-}
