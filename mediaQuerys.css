@@ -354,7 +354,7 @@
     .popup__card {
         display: flex;
         flex-direction: column;
-        height: 90%;
+        height: 80%;
         max-height: 800px;
     }
 
@@ -1018,5 +1018,108 @@
 
     .popup__social a:hover {
         color: aqua;
+    }
+
+
+
+
+    /*footer*/
+
+    /*Grupo1*/
+    .footer__grupo1 {
+        padding: 2.5em;
+        grid-template-columns: 1fr;
+
+    }
+
+    /*Comunidad*/
+    .footer__texto {
+        text-align: left;
+        padding: 0;
+    }
+
+    .footer__correo {
+        display: block;
+    }
+    .footer__correo i{
+        display: none;
+    }
+
+    .footer__titulo {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .footer__parrafo {
+        font-size: 14px;
+        font-weight: 100;
+        text-align: left;
+        margin-left: 0;
+    }
+
+
+
+
+    /*Sobre nosotros*/
+    .footer__texto1 {
+        text-align: left;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer__reuniones {
+        display: block;
+    }
+    .footer__reuniones i{
+        display: none;
+    }
+
+    .footer__titulo1 {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .footer__parrafo1 {
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+
+    /*Siguenos*/
+    .footer__texto2 {
+        text-align: left;
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .footer__titulo2 {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .footer__ubicacion {
+        display: block;
+    }
+    .footer__ubicacion i{
+        display: none;
+    }
+
+    .footer__social {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+    .footer__social a{
+        font-size: 20px;
+    }
+
+    .footer__social a:hover {
+        transform: scale(1.1);
+    }
+
+    .footer__grupo2 {
+        font-size: 14px;
+        color: white;
+        margin: 0 auto;
     }
 }
