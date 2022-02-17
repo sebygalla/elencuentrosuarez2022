@@ -35,7 +35,7 @@ article[id] {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(11, auto);
+  grid-template-rows: repeat(10, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -44,7 +44,6 @@ article[id] {
     'article   article   article'
     'nosotros  nosotros  nosotros'
     'mision    mision    mision'
-    'banner    banner    banner'
     'aside     aside     aside '
     'section   section   section'
     'form      form      form'
@@ -461,7 +460,7 @@ article[id] {
   padding: 50px;
   text-align: right;
   /* background-color: var(--color-tres); */
-  
+
 }
 
 
@@ -892,9 +891,8 @@ article[id] {
 
 .popup__card {
   width: 100%;
-  height: 500px;
   max-width: 800px;
-  height: 500px;
+  height: 400px;
   position: relative;
   display: flex;
   top: 50%;
@@ -906,7 +904,7 @@ article[id] {
 
 .popup__img {
   width: 40%;
-  background-image: url(img/niños.jpg);
+  background-image: url(img/alabanza3.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -916,6 +914,7 @@ article[id] {
   width: 60%;
   padding: 50px;
   overflow-y: auto;
+  text-align: center;
 }
 
 .popup__text h1 {
@@ -942,6 +941,29 @@ article[id] {
   color: white;
   border-radius: 50%;
   line-height: 10px;
+}
+
+
+.popup__social {
+  display: flex;
+  text-decoration: none;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+  padding: 0;
+  margin: 10px;
+
+}
+
+.popup__social a {
+  padding: 10px;
+  color: black;
+
+}
+
+.popup__social a:hover {
+  color: aqua;
 }
 
 
@@ -1134,9 +1156,9 @@ article[id] {
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 10px;
-  
 
- 
+
+
 }
 
 
@@ -1195,7 +1217,3 @@ article[id] {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
-
-
-
-
