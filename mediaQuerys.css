@@ -193,7 +193,7 @@
     .nosotros__textoUno {
         width: 100%;
         margin: 0 auto;
-        padding: 0;
+        padding: 1em;
     }
 
     .nosotros__titulo--uno {
@@ -230,7 +230,7 @@
     .nosotros__textoDos {
         width: 100%;
         margin: 0 auto;
-        padding: 0;
+        padding: 1em;
     }
 
     .nosotros__titulo--dos {
