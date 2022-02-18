@@ -192,14 +192,15 @@
     /* texto e imagen Uno */
     .nosotros__textoUno {
         width: 100%;
-        margin: 0 auto;
+        text-align: center;
         padding: 1em;
+        margin: 2em auto;
     }
 
     .nosotros__titulo--uno {
         font-size: 90px;
         letter-spacing: 0;
-        margin: 0 auto;
+        margin: .4em auto;
         text-align: center;
     }
 
@@ -224,13 +225,15 @@
     .nosotros__imagenUno {   
         width: 100%;
         margin: 0 auto;
+        padding: 0;
     }
 
     /* texto e imagen Dos */
     .nosotros__textoDos {
         width: 100%;
-        margin: 0 auto;
+        text-align: center;
         padding: 1em;
+        margin: 2em auto;
     }
 
     .nosotros__titulo--dos {
@@ -260,6 +263,7 @@
         width: 100%;
         margin: 0 auto;
         order: 4;
+        padding: 0;
 
     }
 
