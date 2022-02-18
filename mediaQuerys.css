@@ -191,7 +191,7 @@
 
     /* texto e imagen Uno */
     .nosotros__textoUno {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -227,7 +227,7 @@
 
     /* texto e imagen Dos */
     .nosotros__textoDos {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -284,7 +284,7 @@
     }
 
     .mision__tituloPre {
-        font-size: 20px;
+        font-size: 22px;
         font-family: 'Cardo', serif;
         font-weight: 100;
         margin-bottom: 8px;
@@ -693,10 +693,10 @@
 
     .mision__texto {
 
-        padding: 10px 0 20px 0;
+        padding: 0px 0 20px 0;
         color: white;
         text-align: justify;
-        margin-top: 50px;
+        margin-top: 50px auto;
 
 
     }
@@ -705,24 +705,24 @@
         font-size: 18px;
         font-family: 'Cardo', serif;
         font-weight: 100;
-        margin-bottom: 0 0 8px 0;
         text-align: center;
         color: white;
 
     }
 
     .mision__titulo {
-        font-size: 40px;
+        font-size: 80px;
         font-family: 'Roboto', sans-serif;
-        font-weight: 900;
+        font-weight: 400;
         text-align: center;
         color: white;
+        line-height: .9em;
     }
 
     .mision__tituloSub {
         font-size: 12px;
         font-weight: 400;
-        letter-spacing: 5px;
+        letter-spacing: 8px;
         text-align: center;
         line-height: 1px;
         margin-bottom: 40px;
@@ -731,10 +731,11 @@
     }
 
     .mision__parrafo {
-        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
         margin: 0 auto;
         padding: 0;
-        line-height: 23px;
+        line-height: 20px;
         color: white;
         text-align: justify;
     }
@@ -762,7 +763,6 @@
         height: auto;
         text-align: center;
         color: white;
-        font-size: 30px;
         z-index: 1;
         font-family: 'Cardo', serif;
         margin-top: 50px;
@@ -770,14 +770,14 @@
     }
 
     .aside__titulo {
-        font-size: 35px;
+        font-size: 45px;
 
     }
 
     .aside__subtitulo {
-        font-size: 15px;
+        font-size: 25px;
         margin-top: 10px;
-        letter-spacing: 5px;
+        letter-spacing: 6px;
 
     }
 
