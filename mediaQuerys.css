@@ -198,9 +198,9 @@
     }
 
     .nosotros__titulo--uno {
-        font-size: 90px;
-        letter-spacing: 0;
-        margin: .4em auto;
+        font-size: 50px;
+        letter-spacing: 8px;
+        margin: 0 auto;
         text-align: center;
     }
 
@@ -216,14 +216,14 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         letter-spacing: 0px;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 20px;
         text-align: justify;
 
     }
 
-    .nosotros__imagenUno {   
-        width: 100%;
+    .nosotros__imagenUno {
+        width: 95%;
         margin: 0 auto;
         padding: 0;
     }
@@ -237,9 +237,10 @@
     }
 
     .nosotros__titulo--dos {
-        font-size: 90px;
-        letter-spacing: 0;
+        font-size: 50px;
+        letter-spacing: 8px;
         margin: 0 auto;
+        text-align: center;
     }
 
     .nosotros__tituloSub--dos {
@@ -254,13 +255,13 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         letter-spacing: 0px;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 20px;
         text-align: justify;
     }
 
     .nosotros__imagenDos {
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
         order: 4;
         padding: 0;
@@ -717,8 +718,8 @@
     }
 
     .mision__titulo {
-        font-size: 80px;
-        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         text-align: center;
         color: white;
@@ -727,22 +728,27 @@
 
     .mision__tituloSub {
         font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 8px;
-        text-align: center;
-        line-height: 1px;
         margin-bottom: 40px;
         color: white;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 15px;
+        text-align: center;
+        margin: 25px auto;
 
     }
 
     .mision__parrafo {
-        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         margin: 0 auto;
         padding: 0;
-        line-height: 20px;
         color: white;
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0px;
+        font-size: 12px;
+        line-height: 20px;
         text-align: justify;
     }
 
@@ -770,20 +776,19 @@
         text-align: center;
         color: white;
         z-index: 1;
-        font-family: 'Cardo', serif;
         margin-top: 50px;
 
     }
 
     .aside__titulo {
-        font-size: 45px;
+        font-size: 50px;
 
     }
 
     .aside__subtitulo {
-        font-size: 25px;
+        font-size: 15px;
         margin-top: 10px;
-        letter-spacing: 6px;
+        letter-spacing: 8px;
 
     }
 
@@ -831,13 +836,15 @@
 
 
     .iglesia__tituloPre {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     .iglesia__tituloSub {
-        font-size: 15px;
-        font-weight: 400;
-        letter-spacing: 5px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 15px;
+
+        
 
     }
 

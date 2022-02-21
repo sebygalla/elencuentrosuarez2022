@@ -136,7 +136,8 @@ article[id] {
 }
 
 .navbar__link--activo {
-  border-bottom: 2px solid var(--color-cuatro);
+  /* border-bottom: 2px solid var(--color-cuatro); */
+  color: var(--color-tres);
 
 }
 
@@ -425,7 +426,7 @@ article[id] {
 
 .nosotros__titulo--uno {
   font-size: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   letter-spacing: 15px;
 }
@@ -466,7 +467,7 @@ article[id] {
 
 .nosotros__titulo--dos {
   font-size: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   letter-spacing: 15px;
 }
@@ -546,7 +547,7 @@ article[id] {
 }
 
 .mision__tituloPre {
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Cardo', serif;
   font-weight: 100;
   margin-bottom: 20px;
@@ -554,7 +555,8 @@ article[id] {
 
 .mision__titulo {
   font-size: 65px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 10px;
   font-weight: 400;
 
 }
@@ -562,7 +564,7 @@ article[id] {
 .mision__tituloSub {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 
   margin-top: 20px;
 }
@@ -640,20 +642,20 @@ article[id] {
   text-align: center;
   color: white;
   z-index: 1;
-  font-family: 'Cardo', serif;
   margin-top: 6em;
 
 }
 
 .aside__titulo {
-  font-size: 2.4em;
+  font-size: 65px;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 .aside__subtitulo {
-  font-size: 1.4em;
-  margin-top: 10px;
-  letter-spacing: 5px;
+  font-size: 1em;
+  margin-top: 30px;
+  letter-spacing: 10px;
 
 }
 
@@ -711,14 +713,14 @@ article[id] {
 
 .iglesia__titulo {
   font-size: 52px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   margin: 15px auto;
 
 }
 
 .iglesia__tituloPre {
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Cardo', serif;
   font-weight: 100;
 }
@@ -726,7 +728,7 @@ article[id] {
 .iglesia__tituloSub {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 
 .iglesia__linea {
@@ -996,11 +998,13 @@ article[id] {
 
 .form__titulo {
   color: white;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-align: center;
   margin: 0;
-  font-size: 25px;
+  font-size: 35px;
   margin-bottom: 20px;
+  letter-spacing: 5px;
 }
 
 .form__input {
@@ -1066,11 +1070,12 @@ article[id] {
 }
 
 .footer__grupo1 strong {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /*Comunidad*/
 .footer__texto {
+  
   padding: 15px 30px;
   text-align: justify;
   color: #fff;
@@ -1078,11 +1083,12 @@ article[id] {
 }
 
 .footer__titulo {
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   margin-bottom: 12px;
   font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 6px;
 }
 
 /*ubicacion---*/
@@ -1141,8 +1147,8 @@ article[id] {
   color: #fff;
   margin-bottom: 10px;
   font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 6px;
 }
 
 .footer__parrafo1 {
@@ -1174,7 +1180,7 @@ article[id] {
   color: #fff;
   margin-bottom: 10px;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
@@ -1210,6 +1216,6 @@ article[id] {
 }
 
 .footer__grupo2 strong {
-  font-weight: bold;
+  font-weight: 600;
   font-family: 'Montserrat', sans-serif;
 }
