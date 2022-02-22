@@ -57,7 +57,7 @@
     .header__titulo {
         font-size: 15px;
         letter-spacing: 4px;
-        font-weight: 300;
+        font-weight: 600;
         z-index: 9;
         color: white;
     }
@@ -223,9 +223,10 @@
     }
 
     .nosotros__imagenUno {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
         padding: 0;
+        border: 5px solid white;
     }
 
     /* texto e imagen Dos */
@@ -261,10 +262,11 @@
     }
 
     .nosotros__imagenDos {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
         order: 4;
         padding: 0;
+        border: 5px solid white;
 
     }
 
@@ -468,6 +470,7 @@
         font-size: 14px;
         font-weight: 100;
         text-align: center;
+        line-height: 25px;
     }
 
 
@@ -489,6 +492,7 @@
     .footer__parrafo1 {
         font-size: 14px;
         font-weight: 100;
+        line-height: 25px;
     }
 
 
@@ -965,7 +969,7 @@
 
     .header__titulo {
         font-size: 10px;
-        font-weight: 300;
+        font-weight: 600;
         letter-spacing: 2px;
     }
 
@@ -1049,11 +1053,13 @@
 
     .footer__titulo {
         font-size: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 5px;
     }
 
     .footer__parrafo {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 100;
         text-align: left;
         margin-left: 0;
@@ -1079,11 +1085,12 @@
 
     .footer__titulo1 {
         font-size: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 5px;
     }
 
     .footer__parrafo1 {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 100;
     }
 
@@ -1097,7 +1104,8 @@
 
     .footer__titulo2 {
         font-size: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 5px;
     }
 
     .footer__ubicacion {
