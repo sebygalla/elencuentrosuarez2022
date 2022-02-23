@@ -226,7 +226,7 @@
         width: 100%;
         margin: 0 auto;
         padding: 0;
-        border: 5px solid white;
+        /* border: 5px solid white; */
     }
 
     /* texto e imagen Dos */
@@ -266,7 +266,7 @@
         margin: 0 auto;
         order: 4;
         padding: 0;
-        border: 5px solid white;
+        /* border: 5px solid white; */
 
     }
 
@@ -832,7 +832,8 @@
 
 
     }
-    .iglesia__texto{
+
+    .iglesia__texto {
         line-height: 8px;
     }
 
@@ -852,7 +853,7 @@
         font-weight: 600;
         letter-spacing: 15px;
 
-        
+
 
     }
 
@@ -971,10 +972,11 @@
 /*Small devices (landscape phones, less than 768px)*/
 @media only screen and (max-width: 460px) {
 
-    .loader__imagen{
+    .loader__imagen {
         width: 80px;
     }
-    .loader__texto{
+
+    .loader__texto {
         font-size: 12px;
     }
 
@@ -1036,8 +1038,14 @@
         color: aqua;
     }
 
-
-
+    /* nosotros */
+    .nosotros__titulo--dos {
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        letter-spacing: 15px;
+        line-height: 50px;
+    }
 
     /*footer*/
 

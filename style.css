@@ -79,6 +79,7 @@ article[id] {
 
 .loader__texto {
   display: block;
+  color: black;
   font-family: monospace;
   font-size: 15px;
   white-space: nowrap;
@@ -172,7 +173,6 @@ article[id] {
 
 /*Lista enlaces*/
 .navbar__item {
-  font-size: 12px;
   margin-right: 4em;
   font-weight: 600;
   display: flex;
@@ -181,6 +181,7 @@ article[id] {
 }
 
 .navbar__link {
+  font-size: 12px;
   list-style: none;
   letter-spacing: 2px;
   margin: 0 12px;
@@ -191,6 +192,7 @@ article[id] {
 .navbar__link--activo {
   /* border-bottom: 2px solid var(--color-cuatro); */
   color: var(--color-tres);
+  
 
 }
 
@@ -480,6 +482,7 @@ article[id] {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   letter-spacing: 15px;
+  
 }
 
 .nosotros__tituloSub--uno {
