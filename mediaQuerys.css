@@ -832,9 +832,13 @@
 
 
     }
+    .iglesia__texto{
+        line-height: 8px;
+    }
 
     .iglesia__titulo {
         line-height: 1.2em;
+        letter-spacing: 8px;
 
     }
 
