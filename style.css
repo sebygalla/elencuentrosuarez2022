@@ -171,7 +171,7 @@ article[id] {
 
 /*Logo*/
 .navbar__logo {
-  width: 50px;
+  width: 45px;
   margin-left: 4em;
 }
 
@@ -196,8 +196,6 @@ article[id] {
 .navbar__link--activo {
   /* border-bottom: 2px solid var(--color-cuatro); */
   color: var(--color-tres);
-
-
 }
 
 /*icono buscar*/
@@ -205,7 +203,6 @@ article[id] {
   margin-right: 20px;
   color: var(--color-cinco);
 }
-
 
 /*icono hamburguesa*/
 .navbar__menu {
@@ -217,18 +214,12 @@ article[id] {
 }
 
 
-
-
-
-
-/*Final*/
-
 /*Main (contendido principal*/
 
 .main {
   width: 100%;
   height: 600px;
-  background: url('img/alabanza4.jpg');
+  background: url('img/main.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 1em;
@@ -239,8 +230,6 @@ article[id] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .main::before {
@@ -252,35 +241,32 @@ article[id] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .7);
   z-index: 0;
 }
 
 .main__text {
-
   text-align: center;
   color: white;
   z-index: 1;
-
 }
 
 .main__social {
   display: none;
 }
 
-
-
 .main__titulo {
   font-size: 52px;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin: 15px auto;
-  letter-spacing: 6px;
+  letter-spacing: 8px;
 }
 
 
 .main__tituloPre {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Cardo', serif;
   font-weight: 100;
 }
@@ -288,7 +274,7 @@ article[id] {
 .main__tituloSub {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing:15px;
 
 }
 
@@ -339,7 +325,7 @@ article[id] {
   height: 55px;
   line-height: 55px;
   bottom: 1.8em;
-  right: 33px;
+  right: 26px;
   background: #0df053;
   color: #fff;
   border-radius: 50px;
@@ -364,7 +350,7 @@ article[id] {
   font-size: 20px;
   position: fixed;
   bottom: 10em;
-  right: 35px;
+  right: 27px;
   padding: 12px 16px;
   background: var(--color-tres);
   color: white;
@@ -461,8 +447,9 @@ article[id] {
   grid-area: nosotros;
   width: 100%;
   height: auto;
-  background-color: #DFDBE5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-color: #f5f2f8c4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.3'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
@@ -482,7 +469,7 @@ article[id] {
 }
 
 .nosotros__titulo--uno {
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   letter-spacing: 15px;
@@ -490,7 +477,7 @@ article[id] {
 }
 
 .nosotros__tituloSub--uno {
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 400;
   letter-spacing: 20px;
   margin-top: 10px;
@@ -501,14 +488,16 @@ article[id] {
   letter-spacing: 2px;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: justify;
 }
 
 .nosotros__imagenUno {
-  width: 100%;
+  width: 34em;
   height: auto;
-  padding: 20px;
+  padding: 60px;
+  position: relative;
+  top: 0px;
   /* border: 5px solid white; */
 }
 
@@ -518,14 +507,14 @@ article[id] {
   width: 100%;
   color: black;
   padding: 60px;
-  text-align: right;
+  text-align: left;
   /* background-color: var(--color-tres); */
 
 }
 
 
 .nosotros__titulo--dos {
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   letter-spacing: 15px;
@@ -533,10 +522,10 @@ article[id] {
 }
 
 .nosotros__tituloSub--dos {
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 400;
   letter-spacing: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .nosotros__parrafo--dos {
@@ -544,14 +533,16 @@ article[id] {
   letter-spacing: 2px;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: justify;
 }
 
 .nosotros__imagenDos {
-  width: 100%;
+  width: 34em;
   height: auto;
-  padding: 20px;
+  padding: 60px;
+  position: relative;
+  top: 10px;
   /* border: 5px solid white; */
 }
 
