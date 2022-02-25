@@ -37,7 +37,7 @@ article[id] {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, auto);
+  grid-template-rows: repeat(11, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -48,6 +48,7 @@ article[id] {
     'mision    mision    mision'
     'aside     aside     aside '
     'section   section   section'
+    'galeria   galeria   galeria'
     'form      form      form'
     'footer    footer    footer';
 }
@@ -512,7 +513,6 @@ article[id] {
 
 }
 
-
 .nosotros__titulo--dos {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
@@ -547,14 +547,6 @@ article[id] {
 }
 
 
-
-
-
-
-
-
-
-
 /* estructura de texto y foto */
 
 .mision {
@@ -568,7 +560,6 @@ article[id] {
   justify-content: space-around;
   padding: 3em;
   gap: 2em;
-
   background: url(img/alabanza3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -588,8 +579,6 @@ article[id] {
   background-color: rgba(0, 0, 0, .6);
   z-index: 0;
 }
-
-
 
 .mision__texto {
   width: 95%;
@@ -670,9 +659,7 @@ article[id] {
   background: url(img/teclado.jpg);
   background-size: cover;
   background-attachment: fixed;
-
 }
-
 
 .aside::before {
   width: 100%;
@@ -687,8 +674,6 @@ article[id] {
   z-index: 0;
 }
 
-
-
 .aside__texto {
   width: 100%;
   height: auto;
@@ -696,20 +681,17 @@ article[id] {
   color: white;
   z-index: 1;
   margin-top: 6em;
-
 }
 
 .aside__titulo {
   font-size: 65px;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 .aside__subtitulo {
   font-size: 1em;
   margin-top: 30px;
   letter-spacing: 10px;
-
 }
 
 .aside__iframe {
@@ -720,22 +702,13 @@ article[id] {
   margin-bottom: 120px;
   align-items: center;
   justify-content: space-around;
-
-
-
 }
 
 .aside__iframe iframe {
   width: 400px;
   height: 250px;
   margin: 4em auto;
-
 }
-
-
-
-
-
 
 
 /*iglesia */
@@ -770,8 +743,6 @@ article[id] {
   font-weight: 600;
   margin: 15px auto;
   letter-spacing: 10px;
-
-
 }
 
 .iglesia__tituloPre {
@@ -1014,6 +985,112 @@ article[id] {
 .popup__social a:hover {
   color: aqua;
 }
+
+/*Galeria*/
+.galeria{
+  grid-area: galeria;
+  width: 100%;
+  height: auto;
+  background-color: #f5f2f8c4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.3'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: .8em;
+}
+
+.galeria__titulo {
+  font-size: 65px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 10px;
+  padding: .8em 0 1.4em;
+  color: black;
+}
+
+.galeria__picture{
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.galeria__picture::before{
+  content: "El Encuentro";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5b40f3a6;
+  transform: scale(0);
+  transition: transform .4s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.galeria__picture:hover::before{
+  transform: scale(1) rotate(360deg);
+}
+
+.galeria__grid{
+  padding-bottom: 3em;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+  grid-template-areas: 
+  "img1 img1 img2 img3"
+  "img1 img1 img4 img4"
+  "img5 img5 img6 img7"
+  "img5 img5 img8 img8";
+  gap: .8em;
+}
+
+.galeria__picture--g1{
+  grid-area: img1;
+}
+
+.galeria__picture--g2{
+  grid-area: img2;
+}
+
+.galeria__picture--g3{
+  grid-area: img3;
+}
+
+.galeria__picture--g4{
+  grid-area: img4;
+}
+
+.galeria__picture--g5{
+  grid-area: img5;
+}
+
+.galeria__picture--g6{
+  grid-area: img6;
+}
+
+.galeria__picture--g7{
+  grid-area: img7;
+}
+
+.galeria__picture--g8{
+  grid-area: img8;
+}
+
+.galeria__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 
 

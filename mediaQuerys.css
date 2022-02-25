@@ -39,7 +39,7 @@
         display: grid;
 
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(10, auto);
+        grid-template-rows: repeat(11, auto);
         grid-template-areas:
             'header    header    header'
             'nav       nav       nav'
@@ -49,6 +49,7 @@
             'mision    mision    mision'
             'aside     aside     aside'
             'section   section   section'
+            'galeria   galeria   galeria'
             'form      form      form'
             'footer    footer    footer';
     }
@@ -420,6 +421,31 @@
 
     }
 
+    .galeria__titulo {
+        font-size: 50px;
+        padding: .8em 0 .4em;
+    }
+
+    .galeria__picture::before {
+        font-size: 1rem;
+    }
+
+    .galeria__grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img1 img1"
+            "img1 img1"
+            "img2 img3"
+            "img4 img4"
+            "img5 img5"
+            "img5 img5"
+            "img6 img7"
+            "img8 img8"
+            "img8 img8"
+            ;
+        gap: .8em;
+    }
+
 
 
 
@@ -558,6 +584,7 @@
             'mision    mision    mision'
             'aside     aside     aside '
             'section   section   section'
+            'galeria    galeria  galeria'
             'form      form      form'
             'footer    footer    footer';
 
@@ -1040,6 +1067,13 @@
         font-weight: 600;
         letter-spacing: 15px;
         line-height: 50px;
+    }
+
+    /* Galeria */
+    .galeria__titulo {
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
     }
 
     /*footer*/
