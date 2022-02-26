@@ -73,7 +73,7 @@ article[id] {
 }
 
 .loader__imagen {
-  width: 100px;
+  width: 70px;
   height: auto;
   z-index: 99999;
 }
@@ -82,7 +82,7 @@ article[id] {
   display: block;
   color: black;
   font-family: monospace;
-  font-size: 15px;
+  font-size: 13px;
   white-space: nowrap;
   border-right: 4px solid;
   width: 30ch;
@@ -147,8 +147,6 @@ article[id] {
   z-index: 1;
 
 }
-
-
 
 
 /*barra de navegacion*/
@@ -275,8 +273,7 @@ article[id] {
 .main__tituloSub {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing:15px;
-
+  letter-spacing: 15px;
 }
 
 
@@ -289,7 +286,6 @@ article[id] {
 
 }
 
-
 .main__btn {
   z-index: 0;
   background-color: var(--color-uno);
@@ -299,22 +295,18 @@ article[id] {
   cursor: pointer;
 }
 
-
-
 .main__btn input {
   font-size: 16px;
   font-weight: 600;
   border: none;
   cursor: pointer;
   color: white;
-
 }
 
 .main__btn:hover {
   border: none;
   cursor: pointer;
   background-color: var(--color-tres);
-
 }
 
 
@@ -344,8 +336,8 @@ article[id] {
   background-color: #fff;
 }
 
-/*Boton ir arriba*/
 
+/*Boton ir arriba*/
 
 .btn__scrolltop {
   font-size: 20px;
@@ -367,10 +359,7 @@ article[id] {
   transform: translateX(0px);
 }
 
-
-
 /*Rehma*/
-/*section Rehma */
 
 .article {
   width: 100%;
@@ -382,7 +371,6 @@ article[id] {
   background-color: white;
   z-index: 0;
   overflow: hidden;
-
 }
 
 .article__card {
@@ -405,7 +393,6 @@ article[id] {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .article__parrafo {
@@ -423,7 +410,6 @@ article[id] {
   color: black;
   letter-spacing: 5px;
   margin-top: 2em;
-
 }
 
 .article__card svg {
@@ -434,13 +420,9 @@ article[id] {
   z-index: -1;
 }
 
-
 .article__articulo {
   grid-area: articulo;
 }
-
-
-
 
 /* mision y vision */
 
@@ -461,12 +443,11 @@ article[id] {
 }
 
 /* texto e imagen Uno */
+
 .nosotros__textoUno {
   width: 100%;
   color: black;
   padding: 60px;
-
-  /* background-color: var(--color-dos); */
 }
 
 .nosotros__titulo--uno {
@@ -499,7 +480,6 @@ article[id] {
   padding: 60px;
   position: relative;
   top: 0px;
-  /* border: 5px solid white; */
 }
 
 /* texto e imagen Dos */
@@ -543,7 +523,6 @@ article[id] {
   padding: 60px;
   position: relative;
   top: 10px;
-  /* border: 5px solid white; */
 }
 
 
@@ -564,7 +543,6 @@ article[id] {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 .mision::before {
@@ -628,20 +606,7 @@ article[id] {
 .mision__icono {
   font-size: 5em;
   margin: 2em;
-
 }
-
-
-/* .mision__spotify iframe{
-  border-radius: 8px;
-} */
-
-
-/* Banner Pastor */
-
-
-
-
 
 
 /*Precursores (Videos de Youtube*/
@@ -843,6 +808,7 @@ article[id] {
   background-size: cover;
 }
 
+/*modificadores de preAdolescentes*/
 .iglesia__imagen--preAdolescentes {
   grid-area: image;
   border-top-left-radius: 8px;
@@ -854,6 +820,7 @@ article[id] {
   background-position-y: center;
 }
 
+/*modificadores de jovenes*/
 .iglesia__imagen--jovenes {
   grid-area: image;
   border-top-left-radius: 8px;
@@ -865,12 +832,37 @@ article[id] {
   background-position-y: center;
 }
 
+/*modificadores de matrimonios*/
 .iglesia__imagen--matrimonios {
   grid-area: image;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
   background: url('img/matrimonios.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*modificadores de Alabanza*/
+.iglesia__imagen--alabanza {
+  grid-area: image;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  background: url('img/Alabanza2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+/*modificadores de evangelismo*/
+.iglesia__imagen--evangelismo {
+  grid-area: image;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  background: url('img/alabanza3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -987,12 +979,12 @@ article[id] {
 }
 
 /*Galeria*/
-.galeria{
+.galeria {
   grid-area: galeria;
   width: 100%;
   height: auto;
-  background-color: #f5f2f8c4;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.3'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 
   display: flex;
   flex-direction: column;
@@ -1003,7 +995,7 @@ article[id] {
 }
 
 .galeria__titulo {
-  font-size: 65px;
+  font-size: 50px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   letter-spacing: 10px;
@@ -1011,20 +1003,20 @@ article[id] {
   color: black;
 }
 
-.galeria__picture{
+.galeria__picture {
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
 
-.galeria__picture::before{
+.galeria__picture::before {
   content: "El Encuentro";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #5b40f3a6;
+  background-color: #6c678ba6;
   transform: scale(0);
   transition: transform .4s;
   color: white;
@@ -1034,60 +1026,61 @@ article[id] {
   font-size: 1.5em;
 }
 
-.galeria__picture:hover::before{
+.galeria__picture:hover::before {
   transform: scale(1) rotate(360deg);
 }
 
-.galeria__grid{
+.galeria__grid {
   padding-bottom: 3em;
   padding-top: 1em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 160px;
-  grid-template-areas: 
-  "img1 img1 img2 img3"
-  "img1 img1 img4 img4"
-  "img5 img5 img6 img7"
-  "img5 img5 img8 img8";
+  grid-template-areas:
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img4"
+    "img5 img5 img6 img7"
+    "img5 img5 img8 img8";
   gap: .8em;
 }
 
-.galeria__picture--g1{
+.galeria__picture--g1 {
   grid-area: img1;
 }
 
-.galeria__picture--g2{
+.galeria__picture--g2 {
   grid-area: img2;
 }
 
-.galeria__picture--g3{
+.galeria__picture--g3 {
   grid-area: img3;
 }
 
-.galeria__picture--g4{
+.galeria__picture--g4 {
   grid-area: img4;
 }
 
-.galeria__picture--g5{
+.galeria__picture--g5 {
   grid-area: img5;
 }
 
-.galeria__picture--g6{
+.galeria__picture--g6 {
   grid-area: img6;
 }
 
-.galeria__picture--g7{
+.galeria__picture--g7 {
   grid-area: img7;
 }
 
-.galeria__picture--g8{
+.galeria__picture--g8 {
   grid-area: img8;
 }
 
-.galeria__img{
+.galeria__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 
 
