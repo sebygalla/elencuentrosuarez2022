@@ -9,7 +9,6 @@
   --color-cinco: #34495e;
 }
 
-
 body {
   font-size: 15pt;
   /* background: url('img/header.jpg');
@@ -17,13 +16,15 @@ body {
   background-repeat: no-repeat; */
   background-color: whitesmoke;
 
-
 }
 
 
 article[id] {
-  scroll-margin-top: -60px;
+  scroll-margin-top: -25px;
+}
 
+section[id] {
+  scroll-margin-top: 80px;
 }
 
 
@@ -52,7 +53,6 @@ article[id] {
     'form      form      form'
     'footer    footer    footer';
 }
-
 
 
 /*Louder*/
@@ -104,10 +104,6 @@ article[id] {
 }
 
 
-
-
-
-
 /*header*/
 .header {
   width: 100%;
@@ -120,7 +116,6 @@ article[id] {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .header::before {
@@ -145,7 +140,6 @@ article[id] {
   text-align: left;
   color: white;
   z-index: 1;
-
 }
 
 
@@ -170,7 +164,7 @@ article[id] {
 
 /*Logo*/
 .navbar__logo {
-  width: 45px;
+  width: 40px;
   margin-left: 4em;
 }
 
@@ -184,7 +178,7 @@ article[id] {
 }
 
 .navbar__link {
-  font-size: 12px;
+  font-size: 11px;
   list-style: none;
   letter-spacing: 2px;
   margin: 0 12px;
@@ -255,17 +249,16 @@ article[id] {
 }
 
 .main__titulo {
-  font-size: 52px;
-  /* font-family: 'Roboto', sans-serif; */
+  font-size: 6em;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  margin: 15px auto;
+  font-weight: 600;
+  margin: 55px auto;
   letter-spacing: 8px;
 }
 
-
 .main__tituloPre {
   font-size: 25px;
+  letter-spacing: 8px;
   font-family: 'Cardo', serif;
   font-weight: 100;
 }
@@ -276,6 +269,19 @@ article[id] {
   letter-spacing: 15px;
 }
 
+.main__tituloFondo {
+  position: absolute;
+  top: .4em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 310px;
+  letter-spacing: 5px;
+  line-height: 80px;
+  font-family: 'Cardo', serif;
+  color: rgba(138, 128, 128, 0.05);
+
+}
 
 .main__linea {
   width: 90px;
@@ -283,11 +289,10 @@ article[id] {
   background-color: var(--color-uno);
   text-align: center;
   margin: 15px auto;
-
 }
 
 .main__btn {
-  z-index: 0;
+  z-index: 1;
   background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
@@ -697,7 +702,7 @@ article[id] {
 .iglesia__texto {
   text-align: center;
   color: black;
-  margin: 4em;
+  margin: 3em;
   z-index: 1;
 
 }
@@ -984,7 +989,7 @@ article[id] {
   width: 100%;
   height: auto;
 
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  background-image: linear-gradient(45deg, #eef0f752 0%, #e4efe9 100%);
 
   display: flex;
   flex-direction: column;
@@ -1010,7 +1015,7 @@ article[id] {
 }
 
 .galeria__picture::before {
-  content: "El Encuentro";
+  content: "Tristán Suárez";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1020,10 +1025,11 @@ article[id] {
   transform: scale(0);
   transition: transform .4s;
   color: white;
+  letter-spacing: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: .6em;
 }
 
 .galeria__picture:hover::before {
