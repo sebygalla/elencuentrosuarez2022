@@ -280,6 +280,7 @@ section[id] {
   line-height: 80px;
   font-family: 'Cardo', serif;
   color: rgba(138, 128, 128, 0.05);
+  overflow: hidden;
 
 }
 
