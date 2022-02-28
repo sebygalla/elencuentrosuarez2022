@@ -204,12 +204,14 @@
         text-align: center;
         padding: 1em;
         margin: 2em auto;
+        background-color: white;
+        border-radius: 20px;
     }
 
     .nosotros__titulo--uno {
         font-size: 50px;
         letter-spacing: 8px;
-        margin: 0 auto;
+        margin: 1em auto 0;
         text-align: center;
     }
 
@@ -222,6 +224,8 @@
     }
 
     .nosotros__parrafo--uno {
+        width: 90%;
+        margin: 0 auto 2em;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         letter-spacing: 0px;
@@ -243,13 +247,18 @@
         text-align: center;
         padding: 1em;
         margin: 2em auto;
+        background: white;
+        border-radius: 20px;
+
+
     }
 
     .nosotros__titulo--dos {
         font-size: 50px;
         letter-spacing: 8px;
-        margin: 0 auto;
+        margin: 1em auto 0;
         text-align: center;
+        order: 1;  
     }
 
     .nosotros__tituloSub--dos {
@@ -258,22 +267,26 @@
         letter-spacing: 15px;
         text-align: center;
         margin: 25px auto;
+        order: 2;
     }
 
     .nosotros__parrafo--dos {
+        width: 90%;
+        margin: 0 auto 2em;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         letter-spacing: 0px;
         font-size: 12px;
         line-height: 20px;
         text-align: justify;
+        order: 3;
     }
 
     .nosotros__imagenDos {
         width: 100%;
         margin: 0 auto;
-        order: 4;
         padding: 0;
+        order: 4;
     }
 
 
