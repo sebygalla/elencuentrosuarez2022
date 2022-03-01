@@ -1,11 +1,18 @@
+@media only screen and (max-width: 1041px) {
+
+    .navbar__link{
+        font-size: 10px;
+        list-style: none;
+        letter-spacing: 0;
+        margin: 0 4px;
+        padding: 4px;
+        cursor: pointer;
+    }
+}
+
 /*Small devices (landscape phones, less than 768px)*/
 @media only screen and (max-width: 850px) {
 
-    /*Lista enlaces*/
-    .navbar__item {
-        font-size: 10px;
-        margin-right: 1em;
-    }
 
     .header__titulo {
         font-size: 12px;
@@ -16,10 +23,11 @@
     }
 
     .navbar__link {
+        font-size: 10px;
         list-style: none;
-        letter-spacing: 2px;
+        letter-spacing: 0;
         margin: 0 4px;
-        padding: 8px;
+        padding: 4px;
         cursor: pointer;
     }
 
@@ -79,6 +87,8 @@
         justify-content: center;
         transform: translateY(-80em);
         transition: all 1.2s ease-in-out;
+
+        
 
 
     }
@@ -151,7 +161,12 @@
     }
 
     .aside__titulo {
-        font-size: 35px;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        line-height: 1.2em;
+        margin-top: 10px;
+        letter-spacing: 3px;
 
     }
 
@@ -205,7 +220,7 @@
         padding: 1em;
         margin: 2em auto;
         background-color: white;
-       
+
     }
 
     .nosotros__titulo--uno {
@@ -258,7 +273,7 @@
         letter-spacing: 8px;
         margin: 1em auto 0;
         text-align: center;
-        order: 1;  
+        order: 1;
     }
 
     .nosotros__tituloSub--dos {
@@ -695,7 +710,7 @@
         font-family: 'Cardo', serif;
         color: rgba(138, 128, 128, 0.10);
         user-select: none;
-    
+
     }
 
     .main__tituloSub {
@@ -850,7 +865,13 @@
     }
 
     .aside__titulo {
-        font-size: 50px;
+        font-size: 40px;
+        letter-spacing: 8px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        line-height: 1.2em;
+        margin-top: 10px;
+        font-weight: 100;
 
     }
 
@@ -905,6 +926,7 @@
     .iglesia__titulo {
         line-height: 1.2em;
         letter-spacing: 8px;
+        font-weight: 400;
 
     }
 
