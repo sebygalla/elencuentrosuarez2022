@@ -892,6 +892,47 @@
         height: 200;
     }
 
+    /* aside podcast */
+    .aside__texto2 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        color: white;
+        z-index: 1;
+        margin-top: 50px;
+
+    }
+
+    .aside__titulo2 {
+        font-size: 40px;
+        letter-spacing: 8px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        line-height: 1.2em;
+        margin-top: 10px;
+        font-weight: 100;
+
+    }
+
+    .aside__subtitulo2 {
+        font-size: 15px;
+        margin-top: 10px;
+        letter-spacing: 8px;
+
+    }
+
+    .aside__iframe {
+        width: 70%;
+        display: block;
+    }
+
+    .aside__iframe iframe {
+        width: 400px;
+        height: 200;
+    }
+
+
+
 
 
 
