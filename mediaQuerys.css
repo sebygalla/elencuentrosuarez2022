@@ -1075,7 +1075,7 @@
 
 
     .form__contenedor {
-        width: 100%;
+        width: 90%;
     }
 
 
@@ -1091,7 +1091,6 @@
     .footer__grupo1 {
         padding: 2.5em;
         grid-template-columns: 1fr;
-
     }
 
     /*Comunidad*/
