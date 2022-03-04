@@ -233,6 +233,16 @@ section[id] {
     cursor: pointer;
 }
 
+.aside__social{
+    font-size: 1em;
+    display: flex;
+}
+
+.aside__social i{
+   margin: 10px;
+   color: var(--color-cinco);
+}
+
 /*footer*/
 .footer {
     width: 100%;

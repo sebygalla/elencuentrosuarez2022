@@ -598,8 +598,7 @@ section[id] {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 10px;
-
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .mision__parrafo {
@@ -744,7 +743,7 @@ section[id] {
   background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
-  margin: 2em auto 4em;
+  margin: 2em auto 8em;
   cursor: pointer;
 }
 
@@ -811,10 +810,7 @@ section[id] {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 10px;
-
-  font-size: 1em;
   margin-top: 30px;
-  letter-spacing: 10px;
 }
 
 .iglesia__contenedor {
@@ -1225,10 +1221,10 @@ section[id] {
 .form__titulo {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   margin: 0;
-  font-size: 35px;
+  font-size: 1em;
   margin-bottom: 20px;
   letter-spacing: 5px;
 }
@@ -1289,11 +1285,14 @@ section[id] {
 /*Grupo1*/
 .footer__grupo1 {
   width: 100%;
+  max-width: 1200px;
   display: grid;
   padding: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   position: relative;
+
+  
 }
 
 .footer__grupo1 strong {
@@ -1302,12 +1301,9 @@ section[id] {
 
 /*Comunidad*/
 .footer__texto {
-
   padding: 15px 30px;
-  text-align: justify;
+  text-align: left;
   color: #fff;
-
-
 }
 
 .footer__titulo {
@@ -1317,6 +1313,7 @@ section[id] {
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 6px;
+
 }
 
 /*ubicacion---*/
@@ -1353,9 +1350,8 @@ section[id] {
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 21px;
   margin-bottom: 10px;
-  margin-left: 10px;
 }
 
 
