@@ -869,7 +869,7 @@
 
     /*Precursores (Videos de Youtube*/
     .aside {
-        
+
         height: auto;
     }
 
@@ -907,7 +907,7 @@
 
     }
 
-  
+
     .aside__iframe {
         width: 90%;
         display: flex;
@@ -993,11 +993,11 @@
     .aside__iframe {
         width: 90%;
         display: block;
-        
+
     }
 
     .aside__iframe iframe {
-    
+
         width: 500px;
         height: 220px;
         margin: 4em auto;
@@ -1010,27 +1010,17 @@
 
 
     /*iglesia */
-
     .iglesia {
-
         width: 100%;
         height: auto;
-
-
         grid-area: section;
-
         display: flex;
-
         flex-wrap: wrap;
         padding: 20px;
-
         align-items: center;
         justify-content: center;
         position: relative;
         text-align: center;
-
-
-
     }
 
     .iglesia__texto {
@@ -1041,9 +1031,7 @@
         line-height: 1.2em;
         letter-spacing: 8px;
         font-weight: 400;
-
     }
-
 
     .iglesia__tituloPre {
         font-size: 18px;
@@ -1053,9 +1041,6 @@
         font-size: 10px;
         font-weight: 600;
         letter-spacing: 15px;
-
-
-
     }
 
     .iglesia__contenedor {
@@ -1072,18 +1057,9 @@
 
 
     /*Formulario*/
-
-
     .form__contenedor {
         width: 90%;
     }
-
-
-
-
-
-
-
 
     /*footer*/
 
@@ -1250,17 +1226,26 @@
     /* Galeria */
     .galeria__titulo {
         font-size: 35px;
-        line-height: 35px;
         text-align: center;
+        padding: 0;
+    }
+
+
+    .galeria__subtitulo {
+        font-size: 1em;
+        margin-top: 0px;
+        letter-spacing: 10px;
+    }
+
+    .galeria__texto {
+        margin: 1em auto 1em;
     }
 
     /*footer*/
-
     /*Grupo1*/
     .footer__grupo1 {
         padding: 2.5em;
         grid-template-columns: 1fr;
-
     }
 
     /*Comunidad*/
