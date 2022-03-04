@@ -34,14 +34,12 @@ section[id] {
     max-width: 65em;
 
     margin: 1.2em auto;
-    grid-gap: .7em;
+    grid-gap: 1.7em;
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-
-
         'nav       nav       nav'
         'aside     aside     aside '
         'footer    footer    footer';
@@ -279,6 +277,21 @@ section[id] {
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media only screen and (max-width: 580px) {
+
+    /*Contenedor general (grilla layaut)*/
+    .contenedor {
+        width: 95vw;
+        margin: 0em auto;
+        grid-gap: 0em;
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            'nav'
+            'aside'
+            'footer';
+    }
 
     .navbar__link:hover {
         transform: scale(1.2);
