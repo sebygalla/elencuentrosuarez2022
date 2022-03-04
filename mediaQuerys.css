@@ -177,13 +177,17 @@
     }
 
     .aside__iframe {
-        width: 70%;
-        display: block;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
     }
 
     .aside__iframe iframe {
         width: 400px;
-        height: 200;
+        height: 300;
     }
 
     /*rehma*/
@@ -478,29 +482,14 @@
         gap: .8em;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     /*Formulario*/
     .form__contenedor {
         width: 80%;
     }
 
-
     .form__textarea {
         background: rgba(255, 255, 255, 1);
     }
-
-
-
 
     /*footer*/
 
@@ -508,7 +497,6 @@
     .footer__grupo1 {
         padding: 2.5em;
         grid-template-columns: 1fr;
-
     }
 
     /*Comunidad*/
@@ -881,6 +869,7 @@
 
     /*Precursores (Videos de Youtube*/
     .aside {
+        
         height: auto;
     }
 
@@ -918,14 +907,19 @@
 
     }
 
+  
     .aside__iframe {
-        width: 70%;
-        display: block;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
     }
 
     .aside__iframe iframe {
         width: 400px;
-        height: 200;
+        height: 300px;
     }
 
     /* aside podcast */
