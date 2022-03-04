@@ -991,13 +991,16 @@
     }
 
     .aside__iframe {
-        width: 70%;
+        width: 90%;
         display: block;
+        
     }
 
     .aside__iframe iframe {
-        width: 400px;
-        height: 200;
+    
+        width: 500px;
+        height: 220px;
+        margin: 4em auto;
     }
 
 
