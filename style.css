@@ -38,14 +38,15 @@ section[id] {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(11, auto);
+  grid-template-rows: repeat(13, auto);
   grid-template-areas:
 
     'header    header    header'
     'nav       nav       nav'
     'main      main      main'
     'article   article   article'
-    'nosotros  nosotros  nosotros'
+    'divLeft   divLeft   divLeft'
+    'divRight  divRight  divRight'
     'mision    mision    mision'
     'aside     aside     aside '
     'section   section   section'
@@ -435,79 +436,36 @@ section[id] {
   grid-area: articulo;
 }
 
-/* mision y vision */
 
-.nosotros {
-  grid-area: nosotros;
-  width: 100%;
-  height: auto;
-  /* background-color: #f5f2f8c4; */
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.3'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-  background-color: white;
 
+/* Pantalla dividida izquierda*/
+
+.dividida__left {
+  grid-area: divLeft;
+  height: 100%;
+  background-image: url(img/teclado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: flex-start;
-  justify-content: center;
   padding: 0px;
   overflow: hidden;
-
 }
 
-/* texto e imagen Uno */
-
-.nosotros__textoUno {
-  width: 90%;
-  color: black;
-  padding: 60px;
-
-
-}
-
-.nosotros__titulo--uno {
-  font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  letter-spacing: 15px;
-
-}
-
-.nosotros__tituloSub--uno {
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 20px;
-  margin-top: 10px;
-}
-
-.nosotros__parrafo--uno {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px;
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: 10px;
-  text-align: justify;
-}
-
-.nosotros__imagenUno {
+.left__textoDos {
   width: 100%;
-  height: auto;
-  padding: 60px;
-  position: relative;
-  top: 0px;
-}
-
-/* texto e imagen Dos */
-
-.nosotros__textoDos {
-  width: 100%;
-  color: black;
+  color: white;
+  margin: 0 auto;
   padding: 60px;
   text-align: left;
+  /* background: linear-gradient( var(--color-tres), rgba(255, 255, 255, 0.289), rgba(0, 0, 255, 0.1)); */
+  background-color: rgba(59, 64, 134, 0.275);
 
 
 }
 
-.nosotros__titulo--dos {
+.left__titulo--dos {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -515,14 +473,14 @@ section[id] {
   line-height: 50px;
 }
 
-.nosotros__tituloSub--dos {
+.left__tituloSub--dos {
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 20px;
   margin-top: 10px;
 }
 
-.nosotros__parrafo--dos {
+.left__parrafo--dos {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   font-size: 14px;
@@ -531,16 +489,72 @@ section[id] {
   text-align: justify;
 }
 
-.nosotros__imagenDos {
-  width: 100%;
+.left__imagen--right {
+  width: 50%;
   height: auto;
-  padding: 60px;
-  position: relative;
-  top: 10px;
-
 }
 
 
+/* Pantalla dividida derecha*/
+
+.dividida__right {
+  grid-area: divRight;
+  height: 100%;
+  background-image: url(img/alabanza4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px;
+  overflow: hidden;
+
+}
+
+.right__textoDos {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  padding: 60px;
+  text-align: right;
+  /* background: linear-gradient( var(--color-tres), rgba(255, 255, 255, 0.289), rgba(0, 0, 255, 0.1)); */
+  background-color: rgba(131, 26, 26, 0.541);
+
+
+}
+
+.right__titulo--dos {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 15px;
+  line-height: 50px;
+}
+
+.right__tituloSub--dos {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 20px;
+  margin-top: 10px;
+}
+
+.right__parrafo--dos {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.right__imagen--left {
+  width: 50%;
+  height: auto;
+}
+
+
+
+/* mision y vision */
 /* estructura de texto y foto */
 
 .mision {
@@ -1293,7 +1307,7 @@ section[id] {
   grid-template-rows: 1fr;
   position: relative;
 
-  
+
 }
 
 .footer__grupo1 strong {
