@@ -1154,8 +1154,9 @@
         color: aqua;
     }
 
-    
+
     /* Nosotros */
+    /* left */
     .dividida__left {
         grid-area: divLeft;
         height: 100%;
@@ -1165,19 +1166,41 @@
         background-position: center;
         display: grid;
         grid-template-columns: 1fr;
-       
+
     }
 
     .left__textoDos {
-        width: 80vw;
+        width: 85vw;
         height: auto;
         border-radius: 20px;
         color: white;
         margin: 20px auto;
         background-color: rgba(59, 64, 134, .7);
+        padding: 40px;
     }
 
+    .left__titulo--dos {
+        text-align: center;
+        letter-spacing: 10px;
+    }
 
+    .left__tituloSub--dos {
+        text-align: center;
+        letter-spacing: 10px;
+        margin-top: 8px;
+    }
+
+    .left__parrafo--dos {
+        letter-spacing: 2px;
+        margin-top: 20px;  
+    }
+
+    .left__imagen--right {
+        width: 10%;
+        height: auto;
+    }
+
+    /* right */
 
     .dividida__right {
         grid-area: divRight;
@@ -1188,21 +1211,39 @@
         background-position: top;
         display: grid;
         grid-template-columns: 1fr;
-        overflow: hidden;
-
     }
 
     .right__textoDos {
-        width: 80vw;
+        width: 85vw;
+        height: auto;
+        border-radius: 20px;
         color: white;
         margin: 20px auto;
-        border-radius: 20px;
-        padding: 60px;
-        text-align: right;
         background-color: rgba(131, 26, 26, 0.541);
-
-
+        padding: 40px;
     }
+
+    .right__titulo--dos {
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    .right__tituloSub--dos {
+        text-align: center;
+        letter-spacing: 10px;
+        margin-top: 8px;
+    }
+
+    .right__parrafo--dos {
+        letter-spacing: 2px;
+        margin-top: 20px;  
+    }
+
+    .right__imagen--left {
+        width: 10%;
+        height: auto;
+    }
+
 
 
     /* Galeria */
