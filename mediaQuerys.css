@@ -1169,7 +1169,7 @@
     }
 
     .left__textoDos {
-        width: 90%;
+        width: 90vw;
         height: auto;
         border-radius: 20px;
         color: white;
@@ -1193,7 +1193,7 @@
     }
 
     .right__textoDos {
-        width: 90%;
+        width: 90vw;
         color: white;
         margin: 20px auto;
         border-radius: 20px;
