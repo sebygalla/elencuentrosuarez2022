@@ -1175,8 +1175,10 @@
         border-radius: 20px;
         color: white;
         margin: 20px auto;
-        background-color: rgba(59, 64, 134, .7);
         padding: 40px;
+
+        background: rgba(122, 23, 23, 0.8);
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     }
 
     .left__titulo--dos {
@@ -1219,8 +1221,14 @@
         border-radius: 20px;
         color: white;
         margin: 20px auto;
-        background-color: rgba(131, 26, 26, 0.541);
+        
         padding: 40px;
+
+        background: rgba(0, 0, 0, .8);
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+
+      
+       
     }
 
     .right__titulo--dos {
