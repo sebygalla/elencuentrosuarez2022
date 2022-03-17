@@ -115,6 +115,7 @@
         margin-left: 20px;
     }
 
+
     /* Main Pricipal */
     .main__titulo {
         font-size: 40px;
@@ -198,6 +199,16 @@
         width: 95%;
         padding: 60px;
     }
+
+    /*Nosotros*/
+
+    .right__frase {
+        display: none;
+    }
+    .left__frase {
+        display: none;
+    }
+
 
 
     /* estructura de texto y foto */
@@ -1194,7 +1205,7 @@
 
     .left__parrafo--dos {
         letter-spacing: 2px;
-        margin-top: 20px;  
+        margin-top: 20px;
     }
 
     .left__imagen--right {
@@ -1221,14 +1232,14 @@
         border-radius: 20px;
         color: white;
         margin: 20px auto;
-        
+
         padding: 40px;
 
         background: rgba(0, 0, 0, .8);
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 
-      
-       
+
+
     }
 
     .right__titulo--dos {
@@ -1244,7 +1255,7 @@
 
     .right__parrafo--dos {
         letter-spacing: 2px;
-        margin-top: 20px;  
+        margin-top: 20px;
     }
 
     .right__imagen--left {
