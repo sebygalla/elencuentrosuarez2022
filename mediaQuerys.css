@@ -205,6 +205,7 @@
     .right__frase {
         display: none;
     }
+
     .left__frase {
         display: none;
     }
@@ -1096,7 +1097,7 @@
 
 }
 
-/*Small devices (landscape phones, less than 768px)*/
+/*Small devices (landscape phones, less than 460px)*/
 @media only screen and (max-width: 460px) {
 
     .loader__imagen {
@@ -1167,29 +1168,23 @@
 
 
     /* Nosotros */
+
     /* left */
     .dividida__left {
-        grid-area: divLeft;
-        height: 100%;
-        background-image: url(img/teclado.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: grid;
-        grid-template-columns: 1fr;
-
+        background-image: url(img/nosotros\ \(600x400px\).jpg);
     }
 
     .left__textoDos {
         width: 85vw;
-        height: auto;
-        border-radius: 20px;
-        color: white;
         margin: 20px auto;
         padding: 40px;
-
-        background: rgba(122, 23, 23, 0.8);
+        background: rgba(255, 255, 255, 0.1);
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    .dividida__left::before {
+        background-color: rgba(0, 0, 0, .5);
     }
 
     .left__titulo--dos {
@@ -1216,14 +1211,7 @@
     /* right */
 
     .dividida__right {
-        grid-area: divRight;
-        height: 100%;
-        background-image: url(img/alabanza4.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        display: grid;
-        grid-template-columns: 1fr;
+        background-image: url(img/javier2.jpg);
     }
 
     .right__textoDos {
@@ -1232,14 +1220,15 @@
         border-radius: 20px;
         color: white;
         margin: 20px auto;
-
         padding: 40px;
-
-        background: rgba(0, 0, 0, .8);
+        background: #c03a2bcc;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        
+    }
 
-
-
+    .dividida__right::before {
+        background-color: rgba(255, 255, 255, .6);
     }
 
     .right__titulo--dos {
