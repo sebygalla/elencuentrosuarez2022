@@ -1211,7 +1211,7 @@
     /* right */
 
     .dividida__right {
-        background-image: url(img/javier2.jpg);
+        background-image: url(img/javier.jpg);
     }
 
     .right__textoDos {
@@ -1224,11 +1224,11 @@
         background: #c03a2bcc;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
         z-index: 1;
-        
     }
 
+
     .dividida__right::before {
-        background-color: rgba(255, 255, 255, .6);
+        background-color: rgba(0, 0, 0, .7);
     }
 
     .right__titulo--dos {

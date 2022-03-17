@@ -432,7 +432,7 @@ section[id] {
 
 /* Pantalla dividida izquierda*/
 
-.dividida__left{
+.dividida__left {
   grid-area: divLeft;
   height: 100%;
   background-image: url(img/nosotros\ \(600x400px\).jpg);
@@ -446,7 +446,7 @@ section[id] {
   position: relative;
 }
 
-.dividida__left::before{
+.dividida__left::before {
   width: 100%;
   height: auto;
   content: '';
@@ -464,9 +464,9 @@ section[id] {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-} 
+}
 
-.left__frase{
+.left__frase {
   color: white;
   text-align: center;
   font-family: 'Cardo', serif;
@@ -474,8 +474,8 @@ section[id] {
   font-weight: 100;
   padding: 1.5em;
   z-index: 1;
-  
-  
+
+
 }
 
 .left__textoDos {
@@ -534,7 +534,7 @@ section[id] {
 
 }
 
-.dividida__right::before{
+.dividida__right::before {
   width: 100%;
   height: auto;
   content: '';
@@ -553,17 +553,17 @@ section[id] {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-} 
+}
 
 
-.right__frase{
+.right__frase {
   color: white;
   text-align: center;
   font-family: 'Cardo', serif;
   font-size: 25px;
   font-weight: 100;
   padding: 1.5em;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .right__textoDos {
