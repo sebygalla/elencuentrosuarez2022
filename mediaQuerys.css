@@ -8,6 +8,27 @@
         padding: 4px;
         cursor: pointer;
     }
+
+    
+    .aside__iframe {
+        display: flex;
+        width: 90%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 120px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .aside__iframe iframe {
+        width: 350px;
+        height: 250px;
+        margin: 4em auto;
+    }
+
+    .aside__iframe--podcast{
+        margin: 2em auto;
+    }
 }
 
 /*Small devices (landscape phones, less than 768px)*/
@@ -29,6 +50,27 @@
         margin: 0 4px;
         padding: 4px;
         cursor: pointer;
+    }
+
+    .aside__iframe {
+        display: flex;
+        width: 90%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 120px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .aside__iframe iframe {
+        width: 300px;
+        height: 200px;
+        row-gap: 1em;
+        margin: 4em auto;
+    }
+
+    .aside__iframe--podcast{
+        margin: 2em auto;
     }
 
 }
@@ -510,9 +552,10 @@
         width: 50px;
         height: auto;
         z-index: 99999;
+        margin-bottom: 50%;
     }
 
-    .loader__texto {
+    /* .loader__texto {
         display: block;
         color: black;
         font-family: monospace;
@@ -520,10 +563,9 @@
         white-space: nowrap;
         border-right: 4px solid;
         width: 30ch;
-
         animation: typing 2s steps(12), blink .5s infinite step-end alternate;
         overflow: hidden;
-    }
+    } */
 
     .contenedor {
         width: 95vw;
@@ -1221,7 +1263,7 @@
         color: white;
         margin: 20px auto;
         padding: 40px;
-        background: #c03a2bcc;
+        background: #c03a2b75;
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
         z-index: 1;
     }

@@ -18,12 +18,19 @@ body {
 
 }
 
-
 article[id] {
   scroll-margin-top: -25px;
 }
 
 section[id] {
+  scroll-margin-top: 80px;
+}
+
+section[class = galeria]{
+  scroll-margin-top: 20px;
+}
+
+aside[class = aside]{
   scroll-margin-top: 80px;
 }
 
@@ -74,11 +81,13 @@ section[id] {
 }
 
 .loader__imagen {
-  width: 70px;
+  width: 100px;
   height: auto;
   z-index: 99999;
+ 
+ 
 }
-
+/* 
 .loader__texto {
   display: block;
   color: black;
@@ -102,7 +111,7 @@ section[id] {
   50% {
     border-color: transparent
   }
-}
+} */
 
 
 /*header*/
@@ -573,7 +582,7 @@ section[id] {
   padding: 60px;
   text-align: right;
   /* background: linear-gradient( var(--color-tres), rgba(255, 255, 255, 0.289), rgba(0, 0, 255, 0.1)); */
-  background-color: rgba(131, 26, 26, 0.541);
+  background: #c03a2b75;
   z-index: 9;
 
 
