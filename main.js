@@ -29,6 +29,45 @@ navItem.addEventListener('click', function () {
     navItem.classList.remove('navbar__item--on');
 });
 
+// Carrousel
+
+let grande = document.querySelector(".mision__grande");
+let punto = document.querySelectorAll('.btn-punto');
+
+//Recorrer todos los punto
+punto.forEach(function (cadaPunto, i) {
+    //Asignamos el evento click a cada punto 
+    punto[i].addEventListener('click', function () {
+
+        //Obtenemos la posicion del punto y la guardamos
+        let posicion = i;
+        //Calculando el espacio que debe DESPLAZAR el carrousel (Grande)
+        let operacion = posicion * -50;
+
+        //Movemos el grande
+        grande.style.transform = `translateX(${operacion}%)`;
+
+        //ecorremos todos los puntos
+        punto.forEach((cadaPunto, i) => {
+            //Quitamos la clase activo a todos los puntos
+            punto[i].classList.remove('carrousel__punto--activo')
+        });
+        //agregamos la clase activo al punto que hemos hecho click
+        punto[i].classList.add('carrousel__punto--activo');
+
+    });
+
+
+});
+
+
+
+
+
+
+
+
+
 
 
 
@@ -104,3 +143,25 @@ btnModal.addEventListener('click', function () {
 close.addEventListener('click', function () {
     modal.classList.remove('modal--on');
 });
+
+
+
+
+
+
+// puntito.forEach((cadaPunto, i)=> {
+//     puntito[i].addEventListener('click', () => {
+
+//         // let posicion = i;
+//         // let operacion = posicion * -50;
+
+//         // grande.style.transform = `translateX(${operacion}%)`;
+
+//         // punto.forEach((cadaPunto, i) => {
+//         //     punto[i].classList.remove('carrousel__punto--activo')
+//         // });
+//         // punto[i].classList.add('carrousel__punto--activo');
+
+//        alert("hola");
+//     });
+// });

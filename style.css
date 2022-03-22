@@ -322,7 +322,6 @@ aside[class = aside]{
   background-color: var(--color-tres);
 }
 
-
 /*botón flotante de WhatsApp */
 
 .btn__wsp {
@@ -619,11 +618,13 @@ aside[class = aside]{
 
 .mision {
   width: 100%;
-  height: auto;
+
+
+
   grid-area: mision;
   position: relative;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   padding: 3em;
@@ -636,7 +637,7 @@ aside[class = aside]{
 
 .mision::before {
   width: 100%;
-  height: auto;
+ 
   content: '';
   position: absolute;
   top: 0;
@@ -693,6 +694,77 @@ aside[class = aside]{
 .mision__icono {
   font-size: 5em;
   margin: 2em;
+}
+
+
+/* Mision Carrousel */
+.mision__carrousel{
+  width: 90%;
+  height: 45%;
+  max-width: 120em;
+  background-color: lightskyblue;
+  z-index: 9;
+
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  overflow: hidden;
+ 
+
+
+ 
+}
+
+.mision__grande{
+  width: 200%;
+ 
+  background-color: orange;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0em;
+
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+
+.grande--img{
+  width: calc(100% /2 );
+  object-fit: cover;
+  height: auto;
+  background-color: lime;
+  padding: 1em;
+}
+
+.mision__carrousel--puntos{
+  width: 100%;
+  height: 600px;
+  background-color: #c0392b;
+  padding: 1em;
+  
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+}
+
+.btn-punto{
+  width: 2em;
+  height: 2em;
+  background-color: #a33a80;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.carrousel__punto--activo{
+  background-color: orange;
 }
 
 
