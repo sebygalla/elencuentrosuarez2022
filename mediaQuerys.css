@@ -575,7 +575,7 @@
         display: grid;
 
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, auto);
+        grid-template-rows: repeat(13, auto);
         grid-template-areas:
 
             'header    header    header'
@@ -585,6 +585,7 @@
             'divLeft   divLeft   divLeft'
             'divRight  divRight  divRight'
             'mision    mision    mision'
+            'banner    banner    banner'
             'aside     aside     aside '
             'section   section   section'
             'galeria    galeria  galeria'
@@ -861,7 +862,7 @@
 
 
     /* Mision Carrousel */
-    .mision__carrousel {
+    /* .mision__carrousel {
         width: 90%;
         height: 20%;
         max-width: 120em;
@@ -930,7 +931,65 @@
         background-color: orange;
     }
 
+ */
 
+    /*Banner*/
+
+
+    /*Banner*/
+    .banner {
+        width: 100%;
+        height: auto;
+        grid-area: banner;
+        backdrop-filter: blur(20px);
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .banner__grande {
+        width: 200%;
+        height: 25vh;
+        display: flex;
+        flex-flow: row nowrap;
+        transition: all 1s ease-in-out;
+
+
+    }
+
+    .banner--img {
+        width: calc(100% /2);
+        padding: .5em;
+
+    }
+
+    .banner__carrousel--puntos {
+        width: 100%;
+        height: 20%;
+        /* background-color: #c0392b; */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .banner__punto {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        margin: .5em;
+        background-color: black;
+        cursor: pointer;
+
+    }
+
+    .banner__punto--activo {
+        background-color: orange;
+    }
 
 
 

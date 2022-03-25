@@ -26,11 +26,11 @@ section[id] {
   scroll-margin-top: 80px;
 }
 
-section[class = galeria]{
+section[class=galeria] {
   scroll-margin-top: 20px;
 }
 
-aside[class = aside]{
+aside[class=aside] {
   scroll-margin-top: 80px;
 }
 
@@ -45,7 +45,7 @@ aside[class = aside]{
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(13, auto);
+  grid-template-rows: repeat(14, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -55,6 +55,7 @@ aside[class = aside]{
     'divLeft   divLeft   divLeft'
     'divRight  divRight  divRight'
     'mision    mision    mision'
+    'banner    banner    banner'
     'aside     aside     aside '
     'section   section   section'
     'galeria   galeria   galeria'
@@ -84,9 +85,10 @@ aside[class = aside]{
   width: 100px;
   height: auto;
   z-index: 99999;
- 
- 
+
+
 }
+
 /* 
 .loader__texto {
   display: block;
@@ -618,26 +620,27 @@ aside[class = aside]{
 
 .mision {
   width: 100%;
-
-
-
+  height: 100%;
   grid-area: mision;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 3em;
-  gap: 2em;
-  background: url(img/alabanza3.jpg);
+  gap: 1em;
+  background-image: url(img/fondo\ mision.jpg);
+  /* background: url(img/alabanza3.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+
 }
 
 .mision::before {
   width: 100%;
- 
+
   content: '';
   position: absolute;
   top: 0;
@@ -649,11 +652,10 @@ aside[class = aside]{
 }
 
 .mision__texto {
-  width: 95%;
+  width: 100%;
   color: white;
   z-index: 1;
   text-align: center;
-  margin-top: 2em;
 }
 
 .mision__tituloPre {
@@ -677,7 +679,7 @@ aside[class = aside]{
 }
 
 .mision__parrafo {
-
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   font-size: 16px;
@@ -687,39 +689,28 @@ aside[class = aside]{
   text-align: left;
 }
 
-.mision__imagen {
-  width: 20em;
-}
-
-.mision__icono {
-  font-size: 5em;
-  margin: 2em;
-}
-
-
 /* Mision Carrousel */
-.mision__carrousel{
-  width: 90%;
-  height: 45%;
+/* .mision__carrousel {
+  width: 60%;
+  height: 40%;
   max-width: 120em;
-  background-color: lightskyblue;
-  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
 
+
+  z-index: 9;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
   justify-content: center;
-
   overflow: hidden;
- 
+  margin: 0 auto;
 
-
- 
 }
 
-.mision__grande{
+.mision__grande {
   width: 200%;
- 
   background-color: orange;
   display: flex;
   flex-flow: row nowrap;
@@ -727,49 +718,110 @@ aside[class = aside]{
   align-items: center;
   padding: 0em;
 
-  transition: all .5s ease;
+  transition: all .9s ease-in-out;
   transform: translateX(0%);
+
+
 }
 
-.grande--img{
-  width: calc(100% /2 );
-  object-fit: cover;
-  height: auto;
+.grande--img {
+  width: calc(100% /2);
+
   background-color: lime;
-  padding: 1em;
+  padding: 6em;
 }
 
-.mision__carrousel--puntos{
-  width: 100%;
-  height: 600px;
+.mision__carrousel--puntos {
+  width: 64%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+
+
   background-color: #c0392b;
   padding: 1em;
-  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
+.btn-punto {
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  background-color: #a33a80;
+
+  color: white;
+
+  margin-bottom: 1em;
+  margin: 10px;
+  cursor: pointer;
+  padding: 1em;
+}
+
+.carrousel__punto--activo {
+  background-color: orange;
+} */
+
+/*Banner*/
+.banner{
+  width: 100%;
+  height: auto;
+  grid-area: banner;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+
+}
+
+.banner__grande{
+  width: 200%;
+  height: 70vh;
+  display: flex;
+  flex-flow: row nowrap;
+  transition: all 1s ease-in-out;
+  
+  
+}
+
+.banner--img{
+  width: calc(100% /2);
+  padding: 1em;
+  
+}
+
+.banner__carrousel--puntos{
+  width: 100%;
+  height: 20%;
+  /* background-color: #c0392b; */
+  position: absolute;
+  left: 0;
+  bottom: 0; 
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   
-  
-  
 }
 
-.btn-punto{
-  width: 2em;
-  height: 2em;
-  background-color: #a33a80;
-  margin: 1em;
+.banner__punto{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: .5em;
+  background-color: black;
   cursor: pointer;
+
 }
 
-.carrousel__punto--activo{
+.banner__punto--activo {
   background-color: orange;
-}
+} 
 
 
 /*Precursores (Videos de Youtube*/
-
 .aside {
   width: 100%;
   height: auto;
