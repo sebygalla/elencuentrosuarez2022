@@ -5,7 +5,7 @@ window.onload = function () {
     loader.style.display = 'none';
 }
 
-
+alert("hola mundo!")
 
 
 
