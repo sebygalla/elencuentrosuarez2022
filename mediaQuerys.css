@@ -29,6 +29,16 @@
     .aside__iframe--podcast {
         margin: 2em auto;
     }
+
+    .aside__imagen{
+        width: 300px;
+    }
+
+    /* banner */
+    .banner__grande{
+        width: 100%;
+    }
+   
 }
 
 /*Small devices (landscape phones, less than 768px)*/
@@ -1432,6 +1442,12 @@
         height: auto;
     }
 
+    /*aside*/
+    .aside__imagen{
+        width: 250px;
+        flex-wrap: wrap;
+    }
+
 
 
     /* Galeria */
@@ -1557,4 +1573,5 @@
         color: white;
         margin: 0 auto;
     }
+
 }

@@ -45,7 +45,7 @@ aside[class=aside] {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(14, auto);
+  grid-template-rows: repeat(13, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -914,6 +914,15 @@ aside[class=aside] {
 
 /* aside ultimas reuniones */
 
+.aside__reuniones{
+  width: 100% ;
+  display: block;
+  flex-wrap: wrap;
+  text-align: center  ;
+  z-index: 1;
+
+}
+
 .aside__texto3 {
   width: 100%;
   height: auto;
@@ -937,17 +946,19 @@ aside[class=aside] {
 }
 
 .aside__btn {
+  width: 100px;
   z-index: 1;
   background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
-  margin: 2em auto 8em;
+  margin: 2em auto 2em;
   cursor: pointer;
 }
 
 .aside__btn input {
   font-size: 16px;
   font-weight: 600;
+  text-align: center;
   border: none;
   cursor: pointer;
   color: white;
@@ -957,6 +968,17 @@ aside[class=aside] {
   border: none;
   cursor: pointer;
   background-color: var(--color-tres);
+}
+
+.aside__imagen{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: 1em auto;
+  gap: 1em;
+
 }
 
 
@@ -980,6 +1002,7 @@ aside[class=aside] {
   position: relative;
   text-align: center;
   background-color: white;
+  background: linear-gradient(90deg, #f1f1f1, #d5d5d5)
 
 }
 
@@ -1409,7 +1432,7 @@ aside[class=aside] {
   justify-content: center;
   flex-wrap: wrap;
   width: 450px;
-  margin: 70px auto;
+  margin: 1em auto;
   background: rgba(0, 0, 0, .4);
   padding: 30px 20px;
   border-radius: 7px;

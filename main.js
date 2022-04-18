@@ -5,9 +5,6 @@ window.onload = function () {
     loader.style.display = 'none';
 }
 
-alert("hola mundo!")
-
-
 
 /*icono menu*/
 const btnMenu = document.querySelector('.navbar__menu');
