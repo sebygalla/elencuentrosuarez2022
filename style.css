@@ -505,15 +505,13 @@ aside[class=aside] {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  letter-spacing: 15px;
   line-height: 50px;
 }
 
 .left__tituloSub--dos {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .left__parrafo--dos {
@@ -553,7 +551,7 @@ aside[class=aside] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, .7);
   z-index: 1;
 }
 
@@ -593,15 +591,13 @@ aside[class=aside] {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  letter-spacing: 15px;
   line-height: 50px;
 }
 
 .right__tituloSub--dos {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .right__parrafo--dos {
@@ -629,8 +625,7 @@ aside[class=aside] {
   justify-content: space-between;
   padding: 3em;
   gap: 1em;
-  background-image: url(img/fondo\ mision.jpg);
-  /* background: url(img/alabanza3.jpg); */
+  background-image: linear-gradient(359.8deg, rgba(252, 255, 222, 1) 2.2%, rgba(182, 241, 171, 1) 99.3%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -662,20 +657,20 @@ aside[class=aside] {
   font-size: 20px;
   font-family: 'Cardo', serif;
   font-weight: 100;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .mision__titulo {
-  font-size: 65px;
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 8px;
+  font-weight: 600;
+  line-height: 50px;
 }
 
 .mision__tituloSub {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 10px;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .mision__parrafo {
@@ -685,88 +680,12 @@ aside[class=aside] {
   font-size: 16px;
   font-weight: 300;
   line-height: 25px;
-  margin-top: 4em;
-  text-align: left;
+  margin-top: 2em;
+  text-align: justify;
 }
-
-/* Mision Carrousel */
-/* .mision__carrousel {
-  width: 60%;
-  height: 40%;
-  max-width: 120em;
-  background-color: rgba(255, 255, 255, 0.089);
-  backdrop-filter: blur(20px);
-  border-radius: 10px;
-
-
-  z-index: 9;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: hidden;
-  margin: 0 auto;
-
-}
-
-.mision__grande {
-  width: 200%;
-  background-color: orange;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0em;
-
-  transition: all .9s ease-in-out;
-  transform: translateX(0%);
-
-
-}
-
-.grande--img {
-  width: calc(100% /2);
-
-  background-color: lime;
-  padding: 6em;
-}
-
-.mision__carrousel--puntos {
-  width: 64%;
-  height: 5%;
-  position: absolute;
-  bottom: 0;
-
-
-  background-color: #c0392b;
-  padding: 1em;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.btn-punto {
-  width: 2em;
-  height: 2em;
-  border-radius: 100%;
-  background-color: #a33a80;
-
-  color: white;
-
-  margin-bottom: 1em;
-  margin: 10px;
-  cursor: pointer;
-  padding: 1em;
-}
-
-.carrousel__punto--activo {
-  background-color: orange;
-} */
 
 /*Banner*/
-.banner{
+.banner {
   width: 100%;
   height: auto;
   grid-area: banner;
@@ -776,37 +695,37 @@ aside[class=aside] {
 
 }
 
-.banner__grande{
+.banner__grande {
   width: 200%;
   height: 70vh;
   display: flex;
   flex-flow: row nowrap;
   transition: all 1s ease-in-out;
-  
-  
+
+
 }
 
-.banner--img{
+.banner--img {
   width: calc(100% /2);
   padding: 1em;
-  
+
 }
 
-.banner__carrousel--puntos{
+.banner__carrousel--puntos {
   width: 100%;
   height: 20%;
   /* background-color: #c0392b; */
   position: absolute;
   left: 0;
-  bottom: 0; 
+  bottom: 0;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  
+
 }
 
-.banner__punto{
+.banner__punto {
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -818,7 +737,7 @@ aside[class=aside] {
 
 .banner__punto--activo {
   background-color: orange;
-} 
+}
 
 
 /*Precursores (Videos de Youtube*/
@@ -829,47 +748,55 @@ aside[class=aside] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  padding: 0;
+  justify-content: space-between;
+  padding: 30px;
   position: relative;
   background: url(img/teclado.jpg);
   background-size: cover;
   background-attachment: fixed;
+  gap: 5px;
 }
 
 .aside::before {
   width: 100%;
-  height: 100%;
+  height: auto;
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .9);
   z-index: 0;
 }
 
 .aside__texto {
-  width: 100%;
+  width: 30%;
   height: auto;
   text-align: center;
   color: white;
   z-index: 1;
-  margin-top: 6em;
+  background: rgba(59, 64, 134, 0.275);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+
 }
 
 .aside__titulo {
-  font-size: 65px;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  margin: 15px auto;
-  letter-spacing: 8px;
+  letter-spacing: 0px;
+  padding: 5px;
 }
 
 .aside__subtitulo {
-  font-size: 1em;
-  margin-top: 30px;
-  letter-spacing: 10px;
+  font-size: 15px;
+  padding: 10px;
+  letter-spacing: 0px;
 }
 
 .aside__iframe {
@@ -888,61 +815,83 @@ aside[class=aside] {
   margin: 4em auto;
 }
 
-/* aside podcast */
-
 .aside__texto2 {
-  width: 100%;
+  width: 30%;
   height: auto;
   text-align: center;
   color: white;
   z-index: 1;
-  margin-top: 6em;
+  background: rgba(192, 58, 43, 0.165);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+
 }
 
 .aside__titulo2 {
-  font-size: 65px;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  margin: 15px auto;
-  letter-spacing: 8px;
+  letter-spacing: 0px;
+  padding: 5px;
 }
 
 .aside__subtitulo2 {
-  font-size: 1em;
-  margin-top: 30px;
-  letter-spacing: 10px;
+  font-size: 15px;
+  padding: 10px;
+  letter-spacing: 0px;
 }
 
 /* aside ultimas reuniones */
 
-.aside__reuniones{
-  width: 100% ;
-  display: block;
+.aside__reuniones {
+  width: 30%;
+  display: flex;
   flex-wrap: wrap;
-  text-align: center  ;
+  text-align: center;
   z-index: 1;
+
+  background: rgba(63, 63, 63, 0.182);
+  border-radius: 10px;
 
 }
 
+.aside__reuniones i {
+  font-size: 50px;
+  color: white;
+  margin: 50px auto;
+  padding: 5px;
+}
+
 .aside__texto3 {
-  width: 100%;
+  width: 30%;
   height: auto;
   text-align: center;
   color: white;
   z-index: 1;
-  margin-top: 6em;
+  background: rgba(59, 64, 134, 0.275);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+
 }
 
 .aside__titulo3 {
-  font-size: 65px;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  margin: 15px auto;
-  letter-spacing: 8px;
+  letter-spacing: 0px;
+  padding: 5px;
 }
 
 .aside__subtitulo3 {
-  font-size: 1em;
-  margin-top: 30px;
-  letter-spacing: 10px;
+  font-size: 15px;
+  padding: 10px;
+  letter-spacing: 0px;
 }
 
 .aside__btn {
@@ -951,14 +900,15 @@ aside[class=aside] {
   background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
-  margin: 2em auto 2em;
+  margin: 0 auto;
+
   cursor: pointer;
 }
 
 .aside__btn input {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
-  text-align: center;
+  margin: 0 auto;
   border: none;
   cursor: pointer;
   color: white;
@@ -970,14 +920,14 @@ aside[class=aside] {
   background-color: var(--color-tres);
 }
 
-.aside__imagen{
+.aside__imagen {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  margin: 1em auto;
-  gap: 1em;
+  width: 800px;
+  margin: 3em auto;
+  gap: 10em;
 
 }
 
@@ -1003,7 +953,6 @@ aside[class=aside] {
   text-align: center;
   background-color: white;
   background: linear-gradient(90deg, #f1f1f1, #d5d5d5)
-
 }
 
 .iglesia__texto {
@@ -1015,10 +964,10 @@ aside[class=aside] {
 }
 
 .iglesia__titulo {
-  font-size: 65px;
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
-  margin: 15px auto;
-  letter-spacing: 8px;
+  font-weight: 600;
+  line-height: 50px;
 }
 
 .iglesia__tituloPre {
@@ -1030,8 +979,7 @@ aside[class=aside] {
 .iglesia__tituloSub {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 10px;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .iglesia__contenedor {
@@ -1310,16 +1258,16 @@ aside[class=aside] {
 }
 
 .galeria__titulo {
-  font-size: 65px;
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
-  margin: 15px auto;
-  letter-spacing: 8px;
+  font-weight: 600;
+  line-height: 50px;
 }
 
 .galeria__subtitulo {
-  font-size: 1em;
-  margin-top: 30px;
-  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
 }
 
 
@@ -1489,7 +1437,7 @@ aside[class=aside] {
 }
 
 /* Map */
-section .map{
+section .map {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1498,8 +1446,8 @@ section .map{
   height: 50%;
   margin: 1em auto;
   padding: 60px 40px;
- 
- 
+
+
 }
 
 
@@ -1677,4 +1625,799 @@ section .map{
 .footer__grupo2 strong {
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* Media querys */
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 918px) {
+
+  .header__titulo {
+    font-size: 12px;
+  }
+
+  .navbar__logo {
+    margin-left: 40px;
+  }
+
+  .navbar__item {
+    margin-right: 40px;
+  }
+
+  .navbar__link {
+    font-size: 8px;
+    margin: 5px;
+  }
+
+  .left__frase {
+    display: none;
+  }
+
+  .right__frase {
+    display: none;
+  }
+}
+
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 675px) {
+
+  body {
+    background-color: whitesmoke;
+    width: 100%;
+  }
+
+
+  /*Louder*/
+
+  .loader__contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader__imagen {
+    width: 50px;
+    height: auto;
+    z-index: 99999;
+    margin-bottom: 50%;
+  }
+
+  /* .loader__texto {
+      display: block;
+      color: black;
+      font-family: monospace;
+      font-size: 8px;
+      white-space: nowrap;
+      border-right: 4px solid;
+      width: 30ch;
+      animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+      overflow: hidden;
+  } */
+
+  .contenedor {
+    width: 95vw;
+    margin: .6em auto;
+    grid-gap: 1em;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(13, auto);
+    grid-template-areas:
+
+      'header    header    header'
+      'nav       nav       nav'
+      'main      main      main'
+      'article   article   article'
+      'divLeft   divLeft   divLeft'
+      'divRight  divRight  divRight'
+      'mision    mision    mision'
+      'banner    banner    banner'
+      'aside     aside     aside '
+      'section   section   section'
+      'galeria    galeria  galeria'
+      'form      form      form'
+      'footer    footer    footer';
+
+  }
+
+  /*barra de navegacion*/
+
+
+  .navbar__item {
+    display: block;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50em);
+    transition: all 1.2s ease-in-out;
+  }
+
+  .navbar__item--on {
+    transform: translateX(0);
+  }
+
+  .navbar__menu {
+    display: block;
+    color: black;
+    font-size: 1.4em;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .navbar__link {
+    padding: 1em;
+  }
+
+
+  /*Logo*/
+  .navbar__logo {
+    width: 45px;
+    margin-left: 20px;
+  }
+
+  .header__titulo {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    z-index: 9;
+    color: white;
+  }
+
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .main__social {
+    display: none;
+  }
+
+  .main__titulo {
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 5px auto;
+    letter-spacing: 3px;
+  }
+
+  .main__tituloPre {
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+
+  .main__tituloFondo {
+    position: absolute;
+    top: .4em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 210px;
+    letter-spacing: 1px;
+    line-height: 80px;
+    font-family: 'Cardo', serif;
+    color: rgba(138, 128, 128, 0.10);
+    user-select: none;
+
+  }
+
+  .main__tituloSub {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+
+  .main__btn {
+    font-size: 12px;
+  }
+
+  /*boton whatsapp*/
+  .btn__wsp {
+    right: 0.6em;
+    bottom: 3.5em;
+  }
+
+  /*ir arriba*/
+  .btn__scrolltop {
+    right: 1em;
+  }
+
+
+
+
+  /*section Rehma */
+  .article {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: article;
+  }
+
+  .article__texto {
+    width: 100%;
+  }
+
+  .article__card {
+    max-width: 600px;
+    width: 95%;
+    padding: 60px;
+  }
+
+  .article__parrafo {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .article__pie {
+    font-size: 10px;
+  }
+
+  .article__card svg {
+    top: 230px;
+    left: -60px;
+  }
+
+
+  /* Nosotros */
+  .dividida__left {
+    grid-area: divLeft;
+    height: 100%;
+    background-image: url(img/teclado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+
+  .left__textoDos {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(59, 64, 134, .7);
+  }
+
+
+
+  .dividida__right {
+    grid-area: divRight;
+    height: 100%;
+    background-image: url(img/alabanza4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+
+  }
+
+  .right__textoDos {
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(131, 26, 26, 0.541);
+
+
+  }
+
+
+
+  /* estructura de texto y foto */
+
+  .mision {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+
+  .mision__texto {
+    padding: 0px 0 20px 0;
+    color: white;
+    text-align: center;
+    margin-top: 50px auto;
+  }
+
+  .mision__tituloSub {
+    margin-bottom: 10px;
+  }
+
+  /*Banner*/
+  .banner {
+    width: 100%;
+    height: auto;
+    grid-area: banner;
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  .banner__grande {
+    width: 200%;
+    height: 25vh;
+    display: flex;
+    flex-flow: row nowrap;
+    transition: all 1s ease-in-out;
+
+
+  }
+
+  .banner--img {
+    width: calc(100% /2);
+    padding: .5em;
+
+  }
+
+  .banner__carrousel--puntos {
+    width: 100%;
+    height: 20%;
+    /* background-color: #c0392b; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .banner__punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: .5em;
+    background-color: black;
+    cursor: pointer;
+
+  }
+
+  .banner__punto--activo {
+    background-color: orange;
+  }
+
+
+
+
+
+
+
+
+  /*Precursores (Videos de Youtube*/
+
+  /* aside presursores*/
+  .aside__texto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    margin-top: 50px;
+
+  }
+
+  .aside__titulo {
+    font-size: 40px;
+    letter-spacing: 8px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: 100;
+
+  }
+
+  .aside__subtitulo {
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 8px;
+
+  }
+
+  .aside__iframe {
+    width: 90%;
+    display: block;
+
+  }
+
+  .aside__iframe iframe {
+
+    width: 500px;
+    height: 220px;
+    margin: 4em auto;
+  }
+
+
+
+  /* aside podcast */
+  .aside__texto2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    margin-top: 50px;
+
+  }
+
+  .aside__titulo2 {
+    font-size: 40px;
+    letter-spacing: 8px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: 100;
+
+  }
+
+  .aside__subtitulo2 {
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 8px;
+
+  }
+
+  .aside__iframe {
+    width: 70%;
+    display: block;
+  }
+
+  .aside__iframe iframe {
+    width: 400px;
+    height: 200;
+  }
+
+  /* aside ultimas reuniones */
+  .aside__texto3 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    margin-top: 50px;
+
+  }
+
+  .aside__titulo3 {
+    font-size: 40px;
+    letter-spacing: 8px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 1.2em;
+    margin-top: 10px;
+    font-weight: 100;
+
+  }
+
+  .aside__subtitulo3 {
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 8px;
+
+  }
+
+  .aside__iframe {
+    width: 90%;
+    display: block;
+
+  }
+
+  .aside__iframe iframe {
+
+    width: 500px;
+    height: 220px;
+    margin: 4em auto;
+  }
+
+  .aside__imagen {
+    width: 250px;
+    flex-wrap: wrap;
+  }
+
+
+
+
+
+
+
+  /*iglesia */
+  .iglesia {
+    width: 100%;
+    height: auto;
+    grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .iglesia__texto {
+    line-height: 8px;
+  }
+
+  .iglesia__titulo {
+    line-height: 1.2em;
+    letter-spacing: 8px;
+    font-weight: 400;
+  }
+
+  .iglesia__tituloPre {
+    font-size: 18px;
+  }
+
+  .iglesia__tituloSub {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 15px;
+  }
+
+  .iglesia__contenedor {
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+  /* Modal niños */
+
+
+
+  /*Galeria*/
+  .galeria {
+    grid-area: galeria;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: .8em;
+  }
+
+  .galeria__texto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: black;
+    z-index: 1;
+    margin: 5em auto 3em;
+  }
+
+  .galeria__titulo {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+  }
+
+  .galeria__subtitulo {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+
+
+  .galeria__picture {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .galeria__picture::before {
+    content: "Tristán Suárez";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6c678ba6;
+    transform: scale(0);
+    transition: transform .4s;
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .6em;
+  }
+
+  .galeria__picture:hover::before {
+    transform: scale(1) rotate(360deg);
+  }
+
+  .galeria__grid {
+    width: 100%;
+    height: auto;
+    background: #34495e;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "img1   img1    img1    img1"
+    "img2   img2    img2    img2"
+    "img3   img3    img3    img3"
+    "img4   img4    img4    img4"
+    "img5   img5    img5    img5"
+    "img6   img6    img6    img6"
+    "img7   img7    img7    img7"
+    "img8   img8    img8    img8";
+    gap: .5em;
+     
+
+  }
+
+  .galeria__picture--g1 {
+    grid-area: img1;
+  }
+
+  .galeria__picture--g2 {
+    grid-area: img2;
+  }
+
+  .galeria__picture--g3 {
+    grid-area: img3;
+  }
+
+  .galeria__picture--g4 {
+    grid-area: img4;
+  }
+
+  .galeria__picture--g5 {
+    grid-area: img5;
+  }
+
+  .galeria__picture--g6 {
+    grid-area: img6;
+  }
+
+  .galeria__picture--g7 {
+    grid-area: img7;
+  }
+
+  .galeria__picture--g8 {
+    grid-area: img8;
+  }
+
+  .galeria__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+
+
+
+
+
+
+
+
+  /*Formulario*/
+  .form__contenedor {
+    width: 90%;
+  }
+
+  /*footer*/
+
+  /*Grupo1*/
+  .footer__grupo1 {
+    padding: 2.5em;
+    grid-template-columns: 1fr;
+  }
+
+  /*Comunidad*/
+  .footer__texto {
+    text-align: center;
+  }
+
+  .footer__correo {
+    display: block;
+  }
+
+  .footer__titulo {
+    font-size: 23px;
+  }
+
+  .footer__parrafo {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+  }
+
+
+
+
+  /*Sobre nosotros*/
+  .footer__texto1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer__reuniones {
+    display: block;
+  }
+
+  .footer__titulo1 {
+    font-size: 23px;
+  }
+
+  .footer__parrafo1 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+
+  /*Siguenos*/
+  .footer__texto2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .footer__titulo2 {
+    font-size: 23px;
+  }
+
+  .footer__ubicacion {
+    display: block;
+  }
+
+  .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .footer__social a:hover {
+    transform: scale(1.1);
+  }
+
+  .footer__grupo2 {
+    font-size: 14px;
+    color: white;
+    margin: 0 auto;
+  }
+
 }

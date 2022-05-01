@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cardo:ital@1&family=Irish+Grover&family=Montserrat:wght@100;300;400;600;900&family=Poller+One&family=Poppins:wght@100&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    /*Colores web*/
+    --color-uno: #3498db;
+    --color-dos: #8e44ad;
+    --color-tres: #c0392b;
+    --color-cuatro: #16a085;
+    --color-cinco: #34495e;
+}
+
+body {
+    font-size: 15pt;
+    /* background: url('img/header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+    background-color: whitesmoke;
+
+}
+
+
+article[id] {
+    scroll-margin-top: -25px;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+
+/*Contenedor general (grilla layaut)*/
+.contenedor {
+    width: 95vw;
+    max-width: 65em;
+
+    margin: 1.2em auto;
+    grid-gap: 1.7em;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        'nav       nav       nav'
+        'aside     aside     aside '
+        'footer    footer    footer';
+}
+
+/*barra de navegacion*/
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+
+}
+
+/*Logo*/
+.navbar__logo {
+    width: 40px;
+    margin-left: 4em;
+}
+
+/*Lista enlaces*/
+.navbar__item {
+    margin-right: 4em;
+    font-weight: 600;
+    display: flex;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navbar__link {
+    font-size: 12px;
+    list-style: none;
+    letter-spacing: 0;
+    margin: 0 12px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.navbar__link:hover {
+    color: var(--color-tres);
+}
+
+.navbar__link--activo {
+    /* border-bottom: 2px solid var(--color-cuatro); */
+    color: var(--color-tres);
+}
+
+/*icono buscar*/
+.navbar__buscar {
+    margin-right: 20px;
+    color: var(--color-cinco);
+}
+
+/*icono hamburguesa*/
+.navbar__menu {
+    display: none;
+}
+
+.navbar__parrafo {
+    display: none;
+}
+
+/*Boton ir arriba*/
+.btn__scrolltop {
+    font-size: 20px;
+    position: fixed;
+    bottom: 10em;
+    right: 27px;
+    padding: 12px 16px;
+    background: var(--color-tres);
+    color: white;
+    border: none;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform: translateX(300px);
+    transition: .6s ease-in-out;
+    z-index: 2;
+}
+
+.btn__scrolltop--on {
+    transform: translateX(0px);
+}
+
+
+
+/*Precursores (Videos de Youtube*/
+.aside__podcast {
+    width: 100%;
+    height: auto;
+    grid-area: aside;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    background: url(img/main.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.aside__podcast::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 0;
+}
+
+.aside__texto2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    margin-top: 6em;
+}
+
+.aside__titulo2 {
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px auto;
+    letter-spacing: 8px;
+}
+
+.aside__subtitulo2 {
+    font-size: 1em;
+    margin-top: 30px;
+    letter-spacing: 10px;
+}
+
+.aside__iframe--podcast {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6em;
+    z-index: 1;
+}
+
+.aside__iframe--podcast iframe {
+    width: 400px;
+    height: 300px;
+    margin: 4em auto;
+}
+
+
+/*footer*/
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-cinco);
+    grid-area: footer;
+    overflow: hidden;
+}
+
+/* grupo 2 */
+.footer__grupo2 {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color-uno);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px;
+    color: white;
+}
+
+.footer__grupo2 strong {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 580px) {
+
+    /*Contenedor general (grilla layaut)*/
+    .contenedor {
+        width: 95vw;
+        margin: 0em auto;
+        grid-gap: 0em;
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            'nav'
+            'aside'
+            'footer';
+    }
+
+    .navbar__link:hover {
+        transform: scale(1.2);
+    }
+
+    .aside__titulo3--reuniones {
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 15px auto;
+        letter-spacing: 8px;
+        line-height: 45px;
+    }
+
+    .aside__subtitulo3--reuniones {
+        font-size: 15px;
+        margin-top: 10px;
+        letter-spacing: 8px;
+    }
+
+
+    .aside__iframe--reuniones {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .aside__iframe--reuniones iframe {
+        width: 500px;
+        height: 220px;
+        margin: 4em auto;
+    }
+
+}

@@ -134,12 +134,11 @@
 
     .contenedor {
         width: 95vw;
-
         margin: .6em auto;
-        grid-gap: .7em;
+        grid-gap: 1em;
         display: grid;
 
-        grid-template-columns: 1fr;
+        grid-template-columns:repeat(3, 1fr);
         grid-template-rows: repeat(13, auto);
         grid-template-areas:
 
@@ -849,6 +848,7 @@
 /*Small devices (landscape phones, less than 460px)*/
 @media only screen and (max-width: 460px) {
 
+
     .loader__imagen {
         width: 80px;
     }
@@ -1009,26 +1009,6 @@
     }
 
 
-
-    /* Galeria */
-    .galeria__titulo {
-        font-size: 35px;
-        text-align: center;
-        padding: 0;
-    }
-
-
-    .galeria__subtitulo {
-        font-size: 1em;
-        margin-top: 0px;
-        letter-spacing: 10px;
-    }
-
-    .galeria__texto {
-        margin: 1em auto 1em;
-    }
-
-
     /* Map */
     section .map {
         display: flex;
@@ -1040,6 +1020,297 @@
         margin: 1em auto;
         padding: 60px 40px;
 
+
+    }
+
+    /*footer*/
+    /*Grupo1*/
+    .footer__grupo1 {
+        padding: 2.5em;
+        grid-template-columns: 1fr;
+    }
+
+    /*Comunidad*/
+    .footer__texto {
+        text-align: left;
+        padding: 0;
+    }
+
+    .footer__correo {
+        display: block;
+    }
+
+    .footer__correo i {
+        display: none;
+    }
+
+    .footer__titulo {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 5px;
+    }
+
+    .footer__parrafo {
+        font-size: 12px;
+        font-weight: 100;
+        text-align: left;
+        margin-left: 0;
+    }
+
+
+
+
+    /*Sobre nosotros*/
+    .footer__texto1 {
+        text-align: left;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer__reuniones {
+        display: block;
+    }
+
+    .footer__reuniones i {
+        display: none;
+    }
+
+    .footer__titulo1 {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 5px;
+    }
+
+    .footer__parrafo1 {
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+
+    /*Siguenos*/
+    .footer__texto2 {
+        text-align: left;
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .footer__titulo2 {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 5px;
+    }
+
+    .footer__ubicacion {
+        display: block;
+    }
+
+    .footer__ubicacion i {
+        display: none;
+    }
+
+    .footer__social {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .footer__social a {
+        font-size: 20px;
+    }
+
+    .footer__social a:hover {
+        transform: scale(1.1);
+    }
+
+    .footer__grupo2 {
+        font-size: 14px;
+        color: white;
+        margin: 0 auto;
+    }
+
+}
+
+
+/*Small devices (landscape phones, less than 375px)*/
+@media only screen and (max-width: 375px) {
+
+
+    .loader__imagen {
+        width: 80px;
+    }
+
+    .loader__texto {
+        font-size: 12px;
+    }
+
+    .header__titulo {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    /* Modal */
+
+    .popup__img {
+        width: 100%;
+        background-image: url(img/alabanza3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .popup__text {
+        width: 90%;
+        height: auto;
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    .popup__text h1 {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+    }
+
+
+    .popup__text p {
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .popup__social {
+        display: flex;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        transition: all 300ms ease;
+        padding: 0;
+
+
+    }
+
+    .popup__social a {
+        padding: 10px;
+        color: black;
+
+    }
+
+    .popup__social a:hover {
+        color: aqua;
+    }
+
+
+    /* Nosotros */
+
+    /* left */
+    .dividida__left {
+        background-image: url(img/nosotros\ \(600x400px\).jpg);
+    }
+
+    .left__textoDos {
+        width: 85vw;
+        margin: 20px auto;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+
+        z-index: 1;
+    }
+
+    .dividida__left::before {
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .left__titulo--dos {
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    .left__tituloSub--dos {
+        text-align: center;
+        letter-spacing: 10px;
+        margin-top: 8px;
+    }
+
+    .left__parrafo--dos {
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .left__imagen--right {
+        width: 10%;
+        height: auto;
+    }
+
+    /* right */
+
+    .dividida__right {
+        background-image: url(img/javier.jpg);
+    }
+
+    .right__textoDos {
+        width: 85vw;
+        height: auto;
+        border-radius: 20px;
+        color: white;
+        margin: 20px auto;
+        padding: 40px;
+        background: #c03a2b75;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+
+    .dividida__right::before {
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    .right__titulo--dos {
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    .right__tituloSub--dos {
+        text-align: center;
+        letter-spacing: 10px;
+        margin-top: 8px;
+    }
+
+    .right__parrafo--dos {
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .right__imagen--left {
+        width: 10%;
+        height: auto;
+    }
+
+    /*aside*/
+    .aside__imagen {
+        width: 250px;
+        flex-wrap: wrap;
+    }
+
+    /* Iglesia */
+    .iglesia__titulo {
+        font-size: 35px;
+    }
+
+
+
+    /* Map */
+    section .map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 50%;
+        margin: 1em auto;
 
     }
 
