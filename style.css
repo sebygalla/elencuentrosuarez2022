@@ -2332,6 +2332,14 @@ section .map {
     width: 90%;
   }
 
+  /* Mapa */
+  section .map{
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+ 
+  }
+
   /*footer*/
   .footer {
     margin: 0 auto;
