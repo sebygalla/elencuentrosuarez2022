@@ -374,17 +374,18 @@ aside[class=aside] {
 }
 
 /*Rehma*/
-
 .article {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   grid-area: article;
   background-color: white;
   z-index: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .article__card {
@@ -436,6 +437,30 @@ aside[class=aside] {
 
 .article__articulo {
   grid-area: articulo;
+}
+
+/* flecha abajo */
+.flecha__abajo {
+  font-size: 70px;
+  position: absolute;
+  bottom: 70px;
+  cursor: pointer;
+  animation: flecha 1s ease-in-out infinite;
+}
+
+@keyframes flecha {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: .6;
+  }
+
+  100% {
+    scale: 1;
+  }
+
 }
 
 
@@ -611,7 +636,7 @@ aside[class=aside] {
 
 
 
-/* mision y vision */
+/* La vision */
 /* estructura de texto y foto */
 
 .mision {
@@ -678,10 +703,18 @@ aside[class=aside] {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   font-size: 16px;
+  line-height: 21px;
   font-weight: 300;
-  line-height: 25px;
   margin-top: 2em;
   text-align: justify;
+
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 2em;
+  text-align: left;
 }
 
 /*Banner*/
@@ -743,7 +776,7 @@ aside[class=aside] {
 /*Precursores (Videos de Youtube*/
 .aside {
   width: 100%;
-  height: auto;
+  height: 80vh;
   grid-area: aside;
   display: flex;
   flex-wrap: wrap;
@@ -1880,7 +1913,7 @@ section .map {
   .left__textoDos {
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 20px;
     color: white;
     text-align: center;
     margin: 0 auto;
@@ -1906,7 +1939,7 @@ section .map {
     width: 100%;
     color: white;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     background-color: rgba(131, 26, 26, 0.541);
 
@@ -1932,6 +1965,10 @@ section .map {
 
   .mision__tituloSub {
     margin-bottom: 10px;
+  }
+
+  .mision__parrafo{
+    line-height: normal;
   }
 
   /*Banner*/
@@ -2308,7 +2345,7 @@ section .map {
   }
 
   /* Mapa */
-  section .map{
+  section .map {
     margin: 0 auto;
     padding: 15px;
     width: 100%;
@@ -2388,7 +2425,7 @@ section .map {
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
 
 
   }
