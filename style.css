@@ -183,14 +183,14 @@ aside[class=aside] {
 /*Lista enlaces*/
 .navbar__item {
   margin-right: 4em;
-  font-weight: 400;
+  font-weight: 600;
   display: flex;
   text-transform: uppercase;
   color: black;
 }
 
 .navbar__link {
-  font-size: 12px;
+  font-size: 14px;
   list-style: none;
   letter-spacing: 0;
   margin: 0 12px;
@@ -1495,8 +1495,6 @@ section .map {
   margin-bottom: 12px;
   font-size: 25px;
   font-weight: 600;
-  letter-spacing: 6px;
-
 }
 
 /*ubicacion---*/
@@ -1531,17 +1529,9 @@ section .map {
 .footer__parrafo {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  letter-spacing: 2px;
   font-size: 14px;
-  line-height: 21px;
   margin-bottom: 10px;
 }
-
-
-
-
-
-
 
 /*Sobre nosotros*/
 .footer__texto1 {
@@ -1555,21 +1545,14 @@ section .map {
   margin-bottom: 10px;
   font-size: 25px;
   font-weight: 600;
-  letter-spacing: 6px;
 }
 
 .footer__parrafo1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  letter-spacing: 2px;
   font-size: 14px;
-  line-height: 21px;
   margin-bottom: 10px;
-
-
-
 }
-
 
 /*Siguenos*/
 .footer__texto2 {
@@ -1579,16 +1562,13 @@ section .map {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 25px;
-  letter-spacing: 2px;
 }
-
 
 .footer__titulo2 {
   color: #fff;
   margin-bottom: 10px;
   font-size: 25px;
   font-weight: 600;
-  letter-spacing: 2px;
 }
 
 .footer__social {
@@ -1768,6 +1748,8 @@ section .map {
 
   .navbar__link {
     padding: 1em;
+    font-size: 14px;
+    letter-spacing: 6px;
   }
 
 
@@ -2320,13 +2302,6 @@ section .map {
 
   }
 
-
-
-
-
-
-
-
   /*Formulario*/
   .form__contenedor {
     width: 90%;
@@ -2337,7 +2312,6 @@ section .map {
     margin: 0 auto;
     padding: 15px;
     width: 100%;
- 
   }
 
   /*footer*/
@@ -2345,13 +2319,13 @@ section .map {
     margin: 0 auto;
     text-align: center;
     background-color: rgba(59, 64, 134, 1);
-
   }
 
   /*Grupo1*/
   .footer__grupo1 {
-    padding: 2.5em;
+    padding: 0em;
     grid-template-columns: 1fr;
+    margin: 20px auto;
   }
 
   /*Comunidad*/
@@ -2414,6 +2388,7 @@ section .map {
     display: flex;
     align-items: center;
     justify-content: center;
+ 
 
 
   }
