@@ -104,7 +104,8 @@ aside[class=aside] {
   }
 
 }
-.loader__texto{
+
+.loader__texto {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   color: black;
@@ -253,7 +254,7 @@ aside[class=aside] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .main::before {
@@ -729,9 +730,17 @@ aside[class=aside] {
   letter-spacing: 2px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 20px;
   margin-top: 2em;
   text-align: justify;
+}
+
+.mision__img {
+  width: 600px;
+  float: left;
+  margin-top: 36px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /*Banner*/
@@ -753,7 +762,7 @@ aside[class=aside] {
   flex-flow: row nowrap;
   transition: all 1s ease-in-out;
 
- 
+
 
 
 }
@@ -1045,7 +1054,7 @@ aside[class=aside] {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: 210px 200px;
-  grid-template-areas: "image" "text";
+  grid-template-areas: "image""text";
   border-radius: 18px;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -1968,11 +1977,11 @@ section .map {
     background-color: rgba(59, 64, 134, .7);
   }
 
-  .left__titulo--dos{
+  .left__titulo--dos {
     margin-top: 20px;
   }
 
-  .left__parrafo--dos{
+  .left__parrafo--dos {
     margin-bottom: 20px;
   }
 
@@ -1999,11 +2008,11 @@ section .map {
     background-color: rgba(131, 26, 26, 0.541);
   }
 
-  .right__titulo--dos{
+  .right__titulo--dos {
     margin-top: 20px;
   }
 
-  .right__parrafo--dos{
+  .right__parrafo--dos {
     margin-bottom: 20px;
   }
 
@@ -2248,11 +2257,11 @@ section .map {
     text-align: center;
   }
 
- 
+
 
   .iglesia__texto {
     line-height: 8px;
- 
+
   }
 
   .iglesia__titulo {
