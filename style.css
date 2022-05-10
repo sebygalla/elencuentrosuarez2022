@@ -673,7 +673,7 @@ aside[class=aside] {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 3em;
   gap: 1em;
   background-color: rgba(59, 64, 134, 1);
@@ -736,14 +736,15 @@ aside[class=aside] {
 }
 
 .mision__imagen{
-  width: 600px;
+  width: 400px;
   z-index: 9;
+  
 }
 
 .mision__imagen img{
   margin-bottom: 50px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+  
 }
 
 /*Banner*/
@@ -807,7 +808,7 @@ aside[class=aside] {
 /*Precursores (Videos de Youtube*/
 .aside {
   width: 100%;
-  height: auto;
+  height: 100vh;
   grid-area: aside;
   display: flex;
   flex-wrap: wrap;
@@ -823,7 +824,7 @@ aside[class=aside] {
 
 .aside::before {
   width: 100%;
-  height: auto;
+  height: 100vh;
   content: '';
   position: absolute;
   top: 0;
@@ -2049,17 +2050,19 @@ section .map {
   }
 
   .mision__imagen{
-    width: 400px;
+    width: 300px;
     z-index: 9;
     margin: 0 auto;
     overflow: hidden;
-    padding: 2em;
+    padding: .5em;
+    margin: 0 auto;
+ 
   
   }
   
   .mision__imagen img{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   
+    
   }
 
   /*Banner*/
@@ -2126,6 +2129,17 @@ section .map {
   /*Precursores (Videos de Youtube*/
 
   /* aside presursores*/
+  .aside {
+    width: 100%;
+    height: auto;
+  }
+
+  .aside::before{
+    width: 100%;
+    height: auto;
+  }
+  
+
   .aside__texto {
     width: 100%;
     height: auto;
