@@ -26,43 +26,33 @@ navItem.addEventListener('click', function () {
     navItem.classList.remove('navbar__item--on');
 });
 
-// Carrousel
 
-// let grande = document.querySelector(".mision__grande");
-// let punto = document.querySelectorAll('.btn-punto');
-
-//Recorrer todos los punto
-// punto.forEach(function (cadaPunto, i) {
-//     //Asignamos el evento click a cada punto 
-//     punto[i].addEventListener('click', function () {
-
-//         //Obtenemos la posicion del punto y la guardamos
-//         let posicion = i;
-//         //Calculando el espacio que debe DESPLAZAR el carrousel (Grande)
-//         let operacion = posicion * -50;
-
-//         //Movemos el grande
-//         grande.style.transform = `translateX(${operacion}%)`;
-
-//         //ecorremos todos los puntos
-//         punto.forEach((cadaPunto, i) => {
-//             //Quitamos la clase activo a todos los puntos
-//             punto[i].classList.remove('carrousel__punto--activo')
-//         });
-//         //agregamos la clase activo al punto que hemos hecho click
-//         punto[i].classList.add('carrousel__punto--activo');
-
-//     });
+/* scroll navbar aparece o desaparece*/
 
 
-// });
+// window.onscroll = function () {
+//     let desplazamiento = window.pageYOffset;
+//     let ubicacion = window.pageYOffset;
+
+//     if (ubicacion >= desplazamiento) {
+
+//         document.getElementById('navbar').style.top = '0';
+//     } else {
+//         document.getElementById('navbar').style.top = '-100';
+//     }
+//     ubicacion = desplazamiento;
+// };
+
+
+
+
 
 //Banner
 let grande = document.querySelector(".banner__grande");
 let punto = document.querySelectorAll('.banner__punto');
 
-punto.forEach(function(cadaPunto, i){
-    punto[i].addEventListener('click', function(){
+punto.forEach(function (cadaPunto, i) {
+    punto[i].addEventListener('click', function () {
         let posicion = i;
         let operacion = posicion * -50;
 
@@ -71,36 +61,19 @@ punto.forEach(function(cadaPunto, i){
         punto.forEach((cadaPunto, i) => {
             punto[i].classList.remove('banner__punto--activo');
         });
-    
+
         punto.forEach((cadaPunto, i) => {
             punto[i].classList.add('banner__punto--activo');
         });
-        
-    });        
+
+    });
 });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Scroll Efect
-
 navbar = document.querySelector('.navbar');
 navbarLogo = document.querySelector('.navbar__logo');
-
-
-
 
 const btn_scrolltop = document.getElementById('btn_scrolltop')
 btn_scrolltop.addEventListener('click', function () {
@@ -113,9 +86,6 @@ window.onscroll = function () {
 
 };
 
-
-
-
 const add_btn_scrolltop = function () {
     if (window.scrollY < 300) {
         btn_scrolltop.classList.remove('btn__scrolltop--on')
@@ -123,6 +93,7 @@ const add_btn_scrolltop = function () {
         btn_scrolltop.classList.add('btn__scrolltop--on')
     }
 };
+
 
 
 /*formulario*/
@@ -162,9 +133,5 @@ btnModal.addEventListener('click', function () {
 close.addEventListener('click', function () {
     modal.classList.remove('modal--on');
 });
-
-
-
-
 
 
