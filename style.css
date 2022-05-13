@@ -740,7 +740,8 @@ aside[class=aside] {
 .mision__imagen{
   width: 600px;
   z-index: 9;
-  position: relative;
+  overflow: hidden;
+
 }
 
 .mision__imagen img{
@@ -2067,9 +2068,9 @@ section .map {
   }
 
   .mision__imagen{
-    width: 600px;
+    width: 300px;
     z-index: 9;
-    margin: 0 auto;
+    margin: 20px auto;
     overflow: hidden;
   
     
