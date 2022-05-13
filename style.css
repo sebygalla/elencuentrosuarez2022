@@ -737,14 +737,14 @@ aside[class=aside] {
   text-align: justify;
 }
 
-.mision__imagen{
+.mision__imagen {
   width: 600px;
   z-index: 9;
   overflow: hidden;
 
 }
 
-.mision__imagen img{
+.mision__imagen img {
   margin-bottom: 50px;
 }
 
@@ -2067,17 +2067,17 @@ section .map {
     text-align: justify;
   }
 
-  .mision__imagen{
-    width: 300px;
+  .mision__imagen {
+    width: 350px;
     z-index: 9;
-    margin: 20px auto;
+    margin-right: 2em;
     overflow: hidden;
-  
-    
 
-   
+
+
+
   }
-  
+
 
 
   /*Banner*/
@@ -2149,11 +2149,11 @@ section .map {
     height: auto;
   }
 
-  .aside::before{
+  .aside::before {
     width: 100%;
     height: auto;
   }
-  
+
 
   .aside__texto {
     width: 100%;
