@@ -27,26 +27,6 @@ navItem.addEventListener('click', function () {
 });
 
 
-/* scroll navbar aparece o desaparece*/
-
-
-// window.onscroll = function () {
-//     let desplazamiento = window.pageYOffset;
-//     let ubicacion = window.pageYOffset;
-
-//     if (ubicacion >= desplazamiento) {
-
-//         document.getElementById('navbar').style.top = '0';
-//     } else {
-//         document.getElementById('navbar').style.top = '-100';
-//     }
-//     ubicacion = desplazamiento;
-// };
-
-
-
-
-
 //Banner
 let grande = document.querySelector(".banner__grande");
 let punto = document.querySelectorAll('.banner__punto');
@@ -118,7 +98,6 @@ async function handleSubmit(event) {
 }
 
 /* Modal */
-
 const btnModal = document.querySelector('.iglesia__boton');
 const modal = document.querySelector('.modal');
 const close = document.querySelector('.modal__cerrar');

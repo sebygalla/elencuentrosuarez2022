@@ -1731,6 +1731,11 @@ section .map {
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media only screen and (max-width: 675px) {
 
+  section[class=left__textoDos] {
+    scroll-margin-top: 20px;
+  }
+
+
   body {
     background-color: whitesmoke;
     width: 100%;
@@ -1935,7 +1940,7 @@ section .map {
   }
 
   .article__parrafo {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0;
   }
 
@@ -1965,7 +1970,7 @@ section .map {
     }
 
     50% {
-      scale: .6;
+      scale: .9;
     }
 
     100% {
@@ -2135,12 +2140,6 @@ section .map {
   }
 
 
-
-
-
-
-
-
   /*Precursores (Videos de Youtube*/
 
   /* aside presursores*/
@@ -2153,7 +2152,6 @@ section .map {
     width: 100%;
     height: auto;
   }
-
 
   .aside__texto {
     width: 100%;
@@ -2332,6 +2330,17 @@ section .map {
 
 
   /* Modal niños */
+  .popup__img {
+    background-image: url(img/jovenes\(nuevo\).jpg);
+  }
+
+  .popup__text h2 {
+    font-size: 25px;
+  }
+
+  .popup__text p {
+    font-size: 12px;
+  }
 
 
 
@@ -2563,4 +2572,52 @@ section .map {
     margin: 0 auto;
   }
 
+}
+
+@media only screen and (max-width: 450px) {
+
+  /* Modal niños */
+
+  .popup__card {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup__img {
+    width: 100%;
+    height: 30%;
+    filter: contrast(1.2);
+  }
+
+  .popup__text {
+    width: 100%;
+    height: 70%;
+    padding: 30px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup__text h2 {
+    font-size: 22px;
+    font-weight: 600;
+
+  }
+
+  .popup__text p {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .popup__social a {
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+
+  }
+
+  .popup__social a:hover {
+    color: var(--color-tres);
+  }
 }
