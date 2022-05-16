@@ -81,14 +81,6 @@ aside[class=aside] {
   align-items: center;
 }
 
-.loader__imagen {
-  width: 60px;
-  height: auto;
-  z-index: 99999;
-  animation: move 2s ease-in-out infinite;
-  -webkit-animation: move 2s ease-in-out infinite;
-
-}
 
 .loader__texto {
   display: block;
@@ -115,6 +107,15 @@ aside[class=aside] {
     scale: 1;
   }
 
+}
+
+
+.loader__imagen {
+  width: 70px;
+  height: auto;
+  z-index: 99999;
+  animation: move 2s ease-in-out infinite;
+  -webkit-animation: move 2s ease-in-out infinite;
 }
 
 .loader__texto {
@@ -710,10 +711,19 @@ aside[class=aside] {
 }
 
 .mision__texto {
-  width: 50%;
+  width: 55%;
   color: black;
   z-index: 1;
   text-align: left;
+
+}
+
+.mision__texto svg {
+  width: 60vw;
+  position: absolute;
+  top: 287px;
+  left: 0px;
+  z-index: -1;
 
 }
 
@@ -746,10 +756,11 @@ aside[class=aside] {
   line-height: 20px;
   margin-top: 2em;
   text-align: justify;
+  position: relative;
 }
 
 .mision__imagen {
-  width: 600px;
+  width: 400px;
   z-index: 9;
   overflow: hidden;
 
@@ -2042,6 +2053,16 @@ section .map {
     margin-top: 50px auto;
   }
 
+
+  .mision__texto svg {
+    width: 120vw;
+    position: absolute;
+    top: 287px;
+    left: 0px;
+    z-index: -1;
+
+  }
+
   .mision__tituloSub {
     margin-bottom: 10px;
   }
@@ -2052,7 +2073,7 @@ section .map {
   }
 
   .mision__imagen {
-    width: 350px;
+    width: 260px;
     z-index: 9;
     margin-right: 2em;
     overflow: hidden;

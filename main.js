@@ -3,7 +3,11 @@
 window.onload = function () {
     var loader = document.querySelector('.loader__contenedor');
     loader.style.display = 'none';
+  
+
 }
+
+
 
 
 /*icono menu*/
@@ -112,5 +116,3 @@ btnModal.addEventListener('click', function () {
 close.addEventListener('click', function () {
     modal.classList.remove('modal--on');
 });
-
-
