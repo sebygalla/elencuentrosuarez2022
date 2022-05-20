@@ -45,7 +45,7 @@ aside[class=aside] {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(13, auto);
+  grid-template-rows: repeat(12, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -55,9 +55,9 @@ aside[class=aside] {
     'divLeft   divLeft   divLeft'
     'divRight  divRight  divRight'
     'mision    mision    mision'
-    'banner    banner    banner'
     'aside     aside     aside '
     'section   section   section'
+    'testimonios   testimonios   testimonios'
     'galeria   galeria   galeria'
     'form      form      form'
     'footer    footer    footer';
@@ -771,65 +771,6 @@ aside[class=aside] {
 }
 
 
-
-/*Banner*/
-.banner {
-  width: 100%;
-  height: auto;
-  grid-area: banner;
-  position: relative;
-  overflow: hidden;
-
-
-
-}
-
-.banner__grande {
-  width: 200%;
-  height: auto;
-  display: flex;
-  flex-flow: row nowrap;
-  transition: all 1s ease-in-out;
-
-
-
-
-}
-
-.banner--img {
-  width: calc(100% /2);
-  padding: 0;
-
-}
-
-.banner__carrousel--puntos {
-  width: 100%;
-  height: 20%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.banner__punto {
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  margin: .5em;
-  background-color: black;
-  cursor: pointer;
-
-}
-
-.banner__punto--activo {
-  background-color: orange;
-}
-
-
 /*Precursores (Videos de Youtube*/
 .aside {
   width: 100%;
@@ -1341,6 +1282,46 @@ aside[class=aside] {
   color: aqua;
 }
 
+
+/* Testimonios */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  grid-area: testimonios;
+  background: #0df053;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(149, 23, 23);
+
+
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
 /*Galeria*/
 .galeria {
   grid-area: galeria;
@@ -1785,9 +1766,9 @@ section .map {
       'divLeft   divLeft   divLeft'
       'divRight  divRight  divRight'
       'mision    mision    mision'
-      'banner    banner    banner'
       'aside     aside     aside '
       'section   section   section'
+      'testimonios testimonios testimonios'
       'galeria    galeria  galeria'
       'form      form      form'
       'footer    footer    footer';
@@ -2077,71 +2058,10 @@ section .map {
     z-index: 9;
     margin-right: 2em;
     overflow: hidden;
-
-
-
-
-  }
-
-
-
-  /*Banner*/
-  .banner {
-    width: 100%;
-    height: auto;
-    grid-area: banner;
-    position: relative;
-    overflow: hidden;
-
-  }
-
-  .banner__grande {
-    width: 200%;
-    height: 25vh;
-    display: flex;
-    flex-flow: row nowrap;
-    transition: all 1s ease-in-out;
-
-
-  }
-
-  .banner--img {
-    width: calc(100% /2);
-    padding: 1em;
-
-  }
-
-  .banner__carrousel--puntos {
-    width: 100%;
-    height: 20%;
-    /* background-color: #c0392b; */
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .banner__punto {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    margin: .5em;
-    background-color: black;
-    cursor: pointer;
-
-  }
-
-  .banner__punto--activo {
-    background-color: orange;
   }
 
 
   /*Precursores (Videos de Youtube*/
-
   /* aside presursores*/
   .aside {
     width: 100%;
@@ -2341,6 +2261,73 @@ section .map {
   .popup__text p {
     font-size: 12px;
   }
+
+
+  /* Testimonios */
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    grid-area: testimonios;
+    background: #0df053;
+  }
+
+  .swiper-slide {
+  
+    text-align: center;
+    font-size: 18px;
+    background: rgb(149, 23, 23);
+    position: relative;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+
+  .swiper-texto{
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    background: whitesmoke;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .swiper-texto h2{
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  .swiper-texto p{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .swiper-avatar{
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+  }
+
+  .swiper-avatar img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
 
 
 

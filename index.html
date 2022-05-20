@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Iglesia Cristiana 🙌 "El Encuentro"- Tristán Suárez</title>
+
   <link rel="icon" type="image/png" href="img/logotipo el encuentro.png">
 
   <!-- HTML -->
@@ -21,6 +22,8 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <!-- Custom Styles Media Querys -->
   <!-- <link rel="stylesheet" href="mediaQuerys.css"> -->
@@ -280,37 +283,8 @@
       </div>
     </section>
 
-    <section class="banner">
-      <div class="banner__grande">
-        <img src="img/banner-tienda-online.png" alt="imagen1" class="banner--img">
-        <img src="img/betania.png" alt="imagen2" class="banner--img">
-      </div>
-
-      <ul class="banner__carrousel--puntos">
-        <li class="banner__punto"></li>
-        <li class="banner__punto"></li>
-      </ul>
-    </section>
-
-    <!-- carrousel -->
-    <!-- <div class="mision__carrousel">
-
-        <div class="mision__grande">
-          <img src="img/main.png" alt="imagen1" class="grande--img">
-          <img src="img/alabanza3.jpg" alt="imagen2" class="grande--img">
-        </div>
-
-        <ul class="mision__carrousel--puntos">
-          <li class="btn-punto"></li>
-          <li class="btn-punto"></li>
-        </ul>
-
-      </div>
-
-    </section> -->
 
     <!--Precursores (Videos de Youtube)-->
-
     <aside class="aside" id="precursores">
 
 
@@ -483,11 +457,47 @@
 
         <a href="#iglesiaCardJovenes" class="popupBtn__close">X</a>
       </div>
-
     </div>
 
-    <!--Galeria de imagenes-->
+    <!-- Testimonios -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+     
+        <div class="swiper-slide">
+          <div class="swiper-avatar">
+            <img src="img/javier.jpg" alt="">
+          </div>
+          <div class="swiper-texto">
+            <h2>Testimonios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, sapiente!</p>
 
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-avatar">
+            <img src="img/javier.jpg" alt="">
+          </div>
+          <div class="swiper-texto">
+            <h2>Testimonios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, sapiente!</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+
+
+
+    <!--Galeria de imagenes-->
     <section class="galeria" id="galeria">
 
       <div class="galeria__texto">
@@ -619,6 +629,7 @@
   </div>
 
 
+
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -628,10 +639,35 @@
   <script src="scroll.js"></script>
   <script src="main.js"></script>
 
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
+
 
 
 </body>
