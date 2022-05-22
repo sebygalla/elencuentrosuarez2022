@@ -2269,32 +2269,21 @@ section .map {
     width: 100%;
     height: 60vh;
     grid-area: testimonios;
-    /* background: #0df053; */
-    background: url(img/rain.png);
-    background-size: cover;
+    background: whitesmoke;
+
+
   }
-  .swiper::before {
-    width: 100%;
-    height: 100vh;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* background-color: rgba(0, 0, 0, .5); */
-    background-color: rgba(59, 64, 134, .7);
-    z-index: 0;
-  }
+
+
 
   .swiper-slide {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
-    font-size: 18px;
-    /* background: rgb(149, 23, 23); */
+    font-size: 16px;
+  
     background: none;
-    position: relative;
+   
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2308,57 +2297,76 @@ section .map {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    overflow: hidden;
   }
-  
 
-  .swiper-texto{
-    width: 75%;
-    height: 50vh;
+
+  .swiper-texto {
+    width: 85%;
+    height: 45vh;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.30);
-    box-shadow: 0 8px 32px 0 rgba(31,38, 135, 0.37);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: white;
+ 
+    
+    border-radius: 18px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    text-align: center;
+    color: black;
     font-size: 18px;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
     border-radius: 20px;
     line-height: 22px;
+    overflow: hidden;
   }
 
-  .swiper-texto h2{
+
+  .swiper-footer {
+
+    height: 60%;
+    padding: 0;
+    
+    background-color: #686de0;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+   
+
+  }
+
+  .swiper-texto h2 {
     font-size: 25px;
     font-weight: 600;
-    margin-top: 5px;
- 
+    margin-top: 65px;
+    color: black;
   }
 
-  .swiper-texto p{
+
+
+  .swiper-texto p {
     width: 90%;
-    margin: 10px auto;
-    font-size: 12px;
+    margin: 0 auto;
+    font-size: 15px;
     margin-top: 10px;
     text-align: justify;
-    
+
   }
 
-  .swiper-avatar{
-    border-radius: 50%;
-    padding: 10px;
-   
-  
-  }
 
-  .swiper-avatar img{
+
+  .swiper-texto img {
     width: 100px;
     height: 100px;
-
+    margin: auto;
     object-fit: cover;
-    border: 2px solid white;
     border-radius: 50%;
-    margin: 0 auto;
+    z-index: 9;
+    position: absolute; 
+    top: 0px;
+    left: 35%;
+    right: 50%;
   }
 
 
