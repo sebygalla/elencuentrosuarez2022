@@ -1283,21 +1283,28 @@ aside[class=aside] {
 }
 
 
+
+
 /* Testimonios */
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 60vh;
   grid-area: testimonios;
-  background: #0df053;
+  background: whitesmoke;
+
+
 }
 
+
+
 .swiper-slide {
+  width: 100%;
+  height: 100vh;
   text-align: center;
-  font-size: 18px;
-  background: rgb(149, 23, 23);
+  font-size: 16px;
 
-
+  background: none;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -1312,12 +1319,76 @@ aside[class=aside] {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.swiper-slide img {
-  width: 300px;
-  height: 300px;
+
+.swiper-texto {
+  width: 85%;
+  height: 45vh;
+  padding: 10px;
+
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  line-height: 22px;
+  overflow: hidden;
+}
+
+
+.swiper-footer {
+
+  height: 60%;
+  padding: 0;
+
+  background-color: #686de0;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+
+
+}
+
+.swiper-texto h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 65px;
+  color: black;
+}
+
+
+
+.swiper-texto p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: justify;
+
+}
+
+
+
+.swiper-texto img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
   object-fit: cover;
+  border-radius: 50%;
+  z-index: 9;
+  position: absolute;
+  top: 0px;
+  left: 46%;
+  right: 50%;
 }
 
 
@@ -1734,9 +1805,9 @@ section .map {
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media only screen and (max-width: 675px) {
 
-  section[class=left__textoDos] {
+  /* section[class=left__textoDos] {
     scroll-margin-top: 20px;
-  }
+  } */
 
 
   body {
@@ -1745,7 +1816,10 @@ section .map {
   }
 
 
-  /*Louder*/
+  /*Loader*/
+  .loader__imagen {
+    width: 100px;
+  }
 
 
 
@@ -2281,9 +2355,9 @@ section .map {
     height: 100vh;
     text-align: center;
     font-size: 16px;
-  
+
     background: none;
-   
+
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2305,8 +2379,8 @@ section .map {
     width: 85%;
     height: 45vh;
     padding: 10px;
- 
-    
+
+
     border-radius: 18px;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
@@ -2326,13 +2400,13 @@ section .map {
 
     height: 60%;
     padding: 0;
-    
+
     background-color: #686de0;
     overflow: hidden;
     z-index: 1;
     position: absolute;
     top: 0;
-   
+
 
   }
 
@@ -2363,7 +2437,7 @@ section .map {
     object-fit: cover;
     border-radius: 50%;
     z-index: 9;
-    position: absolute; 
+    position: absolute;
     top: 0px;
     left: 35%;
     right: 50%;
