@@ -441,7 +441,7 @@ aside[class=aside] {
 }
 
 .article__texto {
-  width: 100%;
+  width: 86%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -695,29 +695,33 @@ aside[class=aside] {
   background-size: cover;
   background-attachment: fixed;
 
+  background: url(img/alabanza3.jpg) no-repeat;
+  background-size: cover;
+
 
 }
 
 .mision::before {
   width: 100%;
+  height: auto;
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: rgba(0, 0, 0, .6); */
+  background: rgba(52, 152, 219, 0.8);
   z-index: 0;
 }
 
 .mision__texto {
-  width: 55%;
+  width: 60%;
   color: black;
   z-index: 1;
-  text-align: left;
+  text-align: justify;
 
 }
-
+/* 
 .mision__texto svg {
   width: 60vw;
   position: absolute;
@@ -725,6 +729,12 @@ aside[class=aside] {
   left: 0px;
   z-index: -1;
 
+} */
+
+
+.mision__parrafo:active {
+  cursor: default;
+  display: block;
 }
 
 .mision__tituloPre {
@@ -757,10 +767,17 @@ aside[class=aside] {
   margin-top: 2em;
   text-align: justify;
   position: relative;
+
+  cursor: pointer;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 18;
+  line-clamp: 18;
+  overflow: hidden;
 }
 
 .mision__imagen {
-  width: 400px;
+  width: 600px;
   z-index: 9;
   overflow: hidden;
 
@@ -1289,9 +1306,12 @@ aside[class=aside] {
 
 .swiper {
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   grid-area: testimonios;
-  background: whitesmoke;
+  background: rgba(146, 138, 138, 0.253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 
 }
@@ -1324,7 +1344,7 @@ aside[class=aside] {
 
 
 .swiper-texto {
-  width: 85%;
+  width: 65%;
   height: 45vh;
   padding: 10px;
 
@@ -1365,12 +1385,16 @@ aside[class=aside] {
   color: black;
 }
 
+.swiper-texto h3{
+  font-size: 15px;
+}
+
 
 
 .swiper-texto p {
   width: 90%;
   margin: 0 auto;
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 10px;
   text-align: justify;
 
@@ -1379,16 +1403,17 @@ aside[class=aside] {
 
 
 .swiper-texto img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
   object-fit: cover;
   border-radius: 50%;
+  border: 5px solid white;
   z-index: 9;
   position: absolute;
-  top: 0px;
-  left: 46%;
-  right: 50%;
+  top: 80px;
+  left: 44%;
+ 
 }
 
 
@@ -2098,12 +2123,28 @@ section .map {
     flex-direction: column;
     margin: 0 auto;
     padding: 1.5em;
+
+    background: url(img/alabanza3.jpg) no-repeat center center;
+  }
+
+  .mision::before {
+    width: 100%;
+    height: auto;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(52, 152, 219, 0.8);
+    z-index: 0;
   }
 
   .mision__texto {
     width: 100%;
+    height: auto;
     padding: 0px 0 20px 0;
-    color: black;
+    color: white;
     text-align: center;
     margin-top: 50px auto;
   }
@@ -2125,13 +2166,21 @@ section .map {
   .mision__parrafo {
     line-height: 21px;
     text-align: justify;
+
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 20;
+    line-clamp: 20;
+    overflow: hidden;
   }
 
+  .mision__parrafo:active {
+    cursor: default;
+    display: block;
+  }
   .mision__imagen {
-    width: 260px;
-    z-index: 9;
-    margin-right: 2em;
-    overflow: hidden;
+    display: none;
   }
 
 
