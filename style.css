@@ -257,9 +257,10 @@ aside[class=aside] {
 .main {
   width: 100%;
   height: 600px;
-  background: url('img/main.jpg');
+  background: url('img/pastor\ javier\ corsi.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -140px;
   background-position-y: 1em;
   background-attachment: fixed;
   grid-area: main;
@@ -768,13 +769,14 @@ aside[class=aside] {
   margin-top: 2em;
   text-align: justify;
   position: relative;
+  overflow: hidden;
 
-  cursor: pointer;
+  /* cursor: pointer;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 18;
-  line-clamp: 18;
-  overflow: hidden;
+  line-clamp: 18; */
+ 
 }
 
 .mision__imagen {
@@ -1335,13 +1337,14 @@ aside[class=aside] {
   align-items: center;
   justify-content: center;
   position: relative;
+  color: white;
 }
 
 .swiper-slide {
   width: 100%;
   height: 100vh;
   text-align: center;
-;
+
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -2167,11 +2170,11 @@ section .map {
     line-height: 21px;
     text-align: justify;
 
-    cursor: pointer;
+    /* cursor: pointer;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 20;
-    line-clamp: 20;
+    line-clamp: 20; */
     overflow: hidden;
   }
 
