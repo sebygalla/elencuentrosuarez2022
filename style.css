@@ -1999,11 +1999,11 @@ section .map {
   .article__card {
     max-width: 600px;
     width: 95%;
-    padding: 30px;
+    padding: 34px;
   }
 
   .article__parrafo {
-    font-size: 25px;
+    font-size: 18px;
     padding: 0;
     text-align: center;
   }
@@ -2025,10 +2025,16 @@ section .map {
     bottom: 70px;
     cursor: pointer;
     z-index: 999;
-    animation: flecha .8s ease-in-out infinite;
+    /* animation: flecha .8s ease-in-out infinite; */
+    animation-name: flecha;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+   
   }
 
   @keyframes flecha {
+
     0% {
       scale: 1;
     }
