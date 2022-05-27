@@ -1835,7 +1835,8 @@ section .map {
 
   /*Loader*/
   .loader__imagen {
-    width: 100px;
+    width: 80px;
+    margin-bottom: 20px;
   }
 
 
@@ -1998,12 +1999,13 @@ section .map {
   .article__card {
     max-width: 600px;
     width: 95%;
-    padding: 60px;
+    padding: 30px;
   }
 
   .article__parrafo {
-    font-size: 18px;
+    font-size: 25px;
     padding: 0;
+    text-align: center;
   }
 
   .article__pie {
@@ -2018,12 +2020,12 @@ section .map {
 
   /* flecha abajo */
   .flecha__abajo {
-    font-size: 50px;
+    font-size: 60px;
     position: absolute;
     bottom: 70px;
     cursor: pointer;
     z-index: 999;
-    animation: flecha 1s ease-in infinite;
+    animation: flecha .8s ease-in-out infinite;
   }
 
   @keyframes flecha {
@@ -2032,7 +2034,7 @@ section .map {
     }
 
     50% {
-      scale: .9;
+      scale: .8;
     }
 
     100% {
@@ -2206,7 +2208,7 @@ section .map {
     text-align: center;
     line-height: 1.2em;
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: 400;
 
   }
 
@@ -2248,7 +2250,7 @@ section .map {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     line-height: 1.2em;
-    font-weight: 600;
+    font-weight: 400;
 
   }
 
@@ -2283,13 +2285,13 @@ section .map {
     font-size: 30px;
     letter-spacing: 8px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
 
   }
 
   .aside__subtitulo3 {
     font-size: 16px;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
 
   }
 
@@ -2411,9 +2413,9 @@ section .map {
 
 
   .swiper-texto {
-    width: 85%;
-    height: 45vh;
-    padding: 10px;
+    width: 80%;
+    height: auto;
+    padding: 20px;
 
 
     border-radius: 18px;
@@ -2439,9 +2441,8 @@ section .map {
 
   .swiper-texto p {
     width: 90%;
-    margin: 0 auto;
-    font-size: 15px;
-    margin-top: 10px;
+    margin: 20px auto;
+    font-size: 18px;
     text-align: justify;
   }
 
@@ -2452,7 +2453,7 @@ section .map {
     border-radius: 50%;
     z-index: 9;
     position: absolute;
-    top: 120px;
+    top: 140px;
     left: 50%;
     margin-left: -60px;
 

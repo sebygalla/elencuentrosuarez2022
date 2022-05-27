@@ -33,26 +33,26 @@ navItem.addEventListener('click', function () {
 
 
 //Banner
-let grande = document.querySelector(".banner__grande");
-let punto = document.querySelectorAll('.banner__punto');
+// let grande = document.querySelector(".banner__grande");
+// let punto = document.querySelectorAll('.banner__punto');
 
-punto.forEach(function (cadaPunto, i) {
-    punto[i].addEventListener('click', function () {
-        let posicion = i;
-        let operacion = posicion * -50;
+// punto.forEach(function (cadaPunto, i) {
+//     punto[i].addEventListener('click', function () {
+//         let posicion = i;
+//         let operacion = posicion * -50;
 
-        grande.style.transform = `translateX(${operacion}%)`;
+//         grande.style.transform = `translateX(${operacion}%)`;
 
-        punto.forEach((cadaPunto, i) => {
-            punto[i].classList.remove('banner__punto--activo');
-        });
+//         punto.forEach((cadaPunto, i) => {
+//             punto[i].classList.remove('banner__punto--activo');
+//         });
 
-        punto.forEach((cadaPunto, i) => {
-            punto[i].classList.add('banner__punto--activo');
-        });
+//         punto.forEach((cadaPunto, i) => {
+//             punto[i].classList.add('banner__punto--activo');
+//         });
 
-    });
-});
+//     });
+// });
 
 
 
