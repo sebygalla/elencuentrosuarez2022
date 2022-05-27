@@ -488,7 +488,7 @@ aside[class=aside] {
   -webkit-animation: flecha 1s ease-in-out infinite;
 }
 
-@keyframes flecha{
+@keyframes flecha {
   0% {
     scale: 1;
   }
@@ -507,7 +507,7 @@ aside[class=aside] {
 
 /* Pantalla dividida izquierda*/
 
-.dividida__left{
+.dividida__left {
   grid-area: divLeft;
   height: 100%;
   background-image: url(img/nosotros\ \(600x400px\).jpg);
@@ -721,6 +721,7 @@ aside[class=aside] {
   text-align: justify;
 
 }
+
 /* 
 .mision__texto svg {
   width: 60vw;
@@ -1304,27 +1305,43 @@ aside[class=aside] {
 
 /* Testimonios */
 
+
+.container__diagonal {
+  /* Absolute position */
+  left: 0px;
+  position: absolute;
+  top: 110px;
+
+  /* Take full size */
+  height: 100%;
+  width: 100%;
+
+  /* Create diagonal sides */
+  transform: skewY(-5deg);
+
+  /* Background color */
+  background-color: var(--color-uno);
+
+  /* Displayed under the main content */
+  z-index: -1;
+}
+
 .swiper {
   width: 100%;
   height: 100vh;
   grid-area: testimonios;
-  background: rgba(146, 138, 138, 0.253);
+  /* background: rgba(146, 138, 138, 0.253); */
   display: flex;
   align-items: center;
   justify-content: center;
-
-
+  position: relative;
 }
-
-
 
 .swiper-slide {
   width: 100%;
   height: 100vh;
   text-align: center;
-  font-size: 16px;
-
-  background: none;
+;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -1341,7 +1358,6 @@ aside[class=aside] {
   align-items: center;
   overflow: hidden;
 }
-
 
 .swiper-texto {
   width: 65%;
@@ -1361,21 +1377,6 @@ aside[class=aside] {
   overflow: hidden;
 }
 
-
-.swiper-footer {
-
-  height: 60%;
-  padding: 0;
-
-  background-color: #686de0;
-  overflow: hidden;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-
-
-}
-
 .swiper-texto h2 {
   font-size: 25px;
   font-weight: 600;
@@ -1383,20 +1384,17 @@ aside[class=aside] {
   color: black;
 }
 
-.swiper-texto h3{
+.swiper-texto h3 {
   font-size: 15px;
 }
-
-
 
 .swiper-texto p {
   width: 90%;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 20px;
   margin-top: 16px;
   text-align: justify;
   font-family: 'Cardo', serif;
-
 }
 
 .swiper-texto img {
@@ -2173,6 +2171,7 @@ section .map {
     cursor: default;
     display: block;
   }
+
   .mision__imagen {
     display: none;
   }
@@ -2201,20 +2200,19 @@ section .map {
   }
 
   .aside__titulo {
-    font-size: 40px;
-    letter-spacing: 8px;
+    font-size: 30px;
+    letter-spacing: 3px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     line-height: 1.2em;
     margin-top: 10px;
-    font-weight: 100;
+    font-weight: 600;
 
   }
 
   .aside__subtitulo {
-    font-size: 15px;
-    margin-top: 10px;
-    letter-spacing: 8px;
+    font-size: 16px;
+    letter-spacing: 3px;
 
   }
 
@@ -2245,20 +2243,18 @@ section .map {
   }
 
   .aside__titulo2 {
-    font-size: 40px;
-    letter-spacing: 8px;
+    font-size: 30px;
+    letter-spacing: 5px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     line-height: 1.2em;
-    margin-top: 10px;
-    font-weight: 100;
+    font-weight: 600;
 
   }
 
   .aside__subtitulo2 {
-    font-size: 15px;
-    margin-top: 10px;
-    letter-spacing: 8px;
+    font-size: 16px;
+    letter-spacing: 3px;
 
   }
 
@@ -2284,19 +2280,15 @@ section .map {
   }
 
   .aside__titulo3 {
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 8px;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
-    line-height: 1.2em;
-    margin-top: 10px;
-    font-weight: 100;
+    font-weight: 600;
 
   }
 
   .aside__subtitulo3 {
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 16px;
     letter-spacing: 8px;
 
   }
@@ -2386,7 +2378,7 @@ section .map {
     width: 100%;
     height: 100vh;
     grid-area: testimonios;
-   
+
 
 
   }
@@ -2438,19 +2430,6 @@ section .map {
     overflow: hidden;
   }
 
-
-  .swiper-footer {
-
-    height: 60%;
-    padding: 0;
-
-    background-color: #686de0;
-    overflow: hidden;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-  }
-
   .swiper-texto h2 {
     font-size: 25px;
     font-weight: 600;
@@ -2476,7 +2455,7 @@ section .map {
     top: 120px;
     left: 50%;
     margin-left: -60px;
-  
+
   }
 
 
