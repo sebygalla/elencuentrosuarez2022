@@ -252,7 +252,7 @@ aside[class=aside] {
   background: url('img/pastor\ javier\ corsi\ dos.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -140px;
+  background-position: 0px;
   background-position-y: 5em;
   background-attachment: fixed;
   grid-area: main;
@@ -1429,34 +1429,42 @@ aside[class=aside] {
 
 .galeria__picture--g1 {
   grid-area: img1;
+  filter: contrast(1.1) brightness(.9);
 }
 
 .galeria__picture--g2 {
   grid-area: img2;
+  filter: contrast(1.4) brightness(.9);
 }
 
 .galeria__picture--g3 {
   grid-area: img3;
+  filter: contrast(1.4) brightness(.9);
 }
 
 .galeria__picture--g4 {
   grid-area: img4;
+  filter: contrast(1) brightness(.9);
 }
 
 .galeria__picture--g5 {
   grid-area: img5;
+  filter: contrast(1.4) brightness(.9);
 }
 
 .galeria__picture--g6 {
   grid-area: img6;
+  filter: contrast(1.4) brightness(.9);
 }
 
 .galeria__picture--g7 {
   grid-area: img7;
+  filter: contrast(1.4) brightness(.9);
 }
 
 .galeria__picture--g8 {
   grid-area: img8;
+  filter: contrast(1.4) brightness(.9);
 }
 
 .galeria__img {
