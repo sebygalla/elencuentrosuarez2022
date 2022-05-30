@@ -2015,7 +2015,7 @@ section .map {
 
   /* Nosotros */
   .dividida__left {
-    scroll-margin-top: ;
+    scroll-margin-top: 80px;
     grid-area: divLeft;
     height: 100%;
     background-image: url(img/teclado.jpg);
