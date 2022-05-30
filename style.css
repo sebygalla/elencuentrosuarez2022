@@ -1974,23 +1974,8 @@ section .map {
 
   /* flecha abajo */
   .flecha__abajo {
-    font-size: 60px;
-    position: absolute;
-    bottom: 70px;
-    cursor: pointer;
-    z-index: 999;
-    /* animation: flecha .8s ease-in-out infinite; */
-    animation-name: flecha;
-    animation-duration: .8s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-
-  }
-
-
-  /* flecha abajo */
-  .flecha__abajo {
     font-size: 18px;
+    color: black;
     position: absolute;
     bottom: 80px;
     cursor: pointer;
