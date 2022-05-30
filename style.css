@@ -1737,6 +1737,7 @@ section .map {
     width: 60%;
     margin: 0 auto;
     font-size: 12px;
+    margin-bottom: 100px ;
   }
 
   .contenedor {
