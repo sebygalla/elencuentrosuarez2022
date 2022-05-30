@@ -11,29 +11,8 @@
 
 body {
   font-size: 15pt;
-  /* background: url('img/header.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; */
   background-color: whitesmoke;
-
 }
-
-article[id] {
-  scroll-margin-top: -25px;
-}
-
-section[id] {
-  scroll-margin-top: 80px;
-}
-
-section[class=galeria] {
-  scroll-margin-top: 20px;
-}
-
-aside[class=aside] {
-  scroll-margin-top: 80px;
-}
-
 
 /*Contenedor general (grilla layaut)*/
 .contenedor {
@@ -214,7 +193,6 @@ aside[class=aside] {
 
 /*Lista enlaces*/
 .navbar__item {
-  margin-right: 4em;
   font-weight: 600;
   display: flex;
   text-transform: uppercase;
@@ -222,11 +200,10 @@ aside[class=aside] {
 }
 
 .navbar__link {
-  font-size: 14px;
+  font-size: 12px;
   list-style: none;
-  letter-spacing: 0;
-  margin: 0 12px;
-  padding: 4px;
+  margin: 0 8px;
+  padding: 2px;
   cursor: pointer;
 }
 
@@ -235,9 +212,30 @@ aside[class=aside] {
 }
 
 .navbar__link--activo {
-  /* border-bottom: 2px solid var(--color-cuatro); */
   color: var(--color-tres);
 }
+
+.navbar__social {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: all 300ms ease;
+  padding: 0;
+  margin-right: 4em;
+
+}
+
+.navbar__social a {
+  padding: 8px;
+  color: black;
+
+}
+
+.navbar__social a:hover {
+  color: var(--color-cuatro);
+}
+
 
 /*icono hamburguesa*/
 .navbar__menu {
@@ -364,7 +362,7 @@ aside[class=aside] {
   text-align: center;
   font-size: 30px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 999;
+  z-index: 99;
   transition: all 300ms ease;
   cursor: pointer;
 }
@@ -390,7 +388,7 @@ aside[class=aside] {
   cursor: pointer;
   transform: translateX(300px);
   transition: .6s ease-in-out;
-  z-index: 999;
+  z-index: 99;
 }
 
 .btn__scrolltop--on {
@@ -493,6 +491,7 @@ aside[class=aside] {
 /* Pantalla dividida izquierda*/
 
 .dividida__left {
+  scroll-margin-top: 80px;
   grid-area: divLeft;
   height: 100%;
   background-image: url(img/nosotrosDos.jpg);
@@ -657,6 +656,7 @@ aside[class=aside] {
 /* estructura de texto y foto */
 
 .mision {
+  scroll-margin-top: 80px;
   width: 100%;
   height: 100%;
   grid-area: mision;
@@ -691,9 +691,15 @@ aside[class=aside] {
 
 .mision__texto {
   width: 60%;
-  color: black;
+  color: white;
   z-index: 1;
-  text-align: justify;
+  text-align: center;
+  background: #34495e53;
+  padding: 2em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  
 }
 
 .mision__parrafo:active {
@@ -724,12 +730,11 @@ aside[class=aside] {
 .mision__parrafo {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
+  font-size: 10px;
+  font-weight: 400;
   margin-top: 2em;
-  text-align: justify;
+  text-align: left;
   position: relative;
   overflow: hidden;
 }
@@ -772,6 +777,7 @@ h5 {
 
 /*Precursores (Videos de Youtube*/
 .aside {
+  scroll-margin-top: 80px;
   width: 100%;
   height: 100vh;
   grid-area: aside;
@@ -976,6 +982,7 @@ h5 {
 /*iglesia */
 
 .iglesia {
+  scroll-margin-top: 80px;
   width: 100%;
   height: auto;
   grid-area: section;
@@ -1288,6 +1295,7 @@ h5 {
 }
 
 .swiper {
+  scroll-margin-top: 80px;
   width: 100%;
   height: 100vh;
   grid-area: testimonios;
@@ -1771,10 +1779,6 @@ section .map {
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media only screen and (max-width: 675px) {
 
-  /* section[class=left__textoDos] {
-    scroll-margin-top: 20px;
-  } */
-
   body {
     background-color: whitesmoke;
     width: 100%;
@@ -1853,6 +1857,11 @@ section .map {
   .navbar__logo {
     width: 45px;
     margin-left: 20px;
+  }
+  
+  /* redes sociles */
+  .navbar__social {
+    display: none;
   }
 
   .header__titulo {
@@ -2006,6 +2015,7 @@ section .map {
 
   /* Nosotros */
   .dividida__left {
+    scroll-margin-top: ;
     grid-area: divLeft;
     height: 100%;
     background-image: url(img/teclado.jpg);
@@ -2069,10 +2079,11 @@ section .map {
   .mision {
     flex-direction: column;
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 1em;
     background: url(img/alabanza3.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
+    
   }
 
   .mision::before {
@@ -2091,10 +2102,11 @@ section .map {
   .mision__texto {
     width: 100%;
     height: auto;
-    padding: 0px 0 20px 0;
+    padding: 0;
     color: white;
-    text-align: center;
-    margin-top: 50px auto;
+    text-align: justify;
+    margin: 3em auto;
+    background: none;
   }
 
   .mision__texto svg {
@@ -2105,12 +2117,25 @@ section .map {
     z-index: -1;
   }
 
+  .mision__titulo{
+    text-align: center;
+  }
+
   .mision__tituloSub {
     margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .mision__tituloPre {
+    text-align: center;
   }
 
   .mision__parrafo {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
     line-height: 21px;
+    margin-top: 10px;
     text-align: justify;
     overflow: hidden;
   }
@@ -2143,7 +2168,6 @@ section .map {
   h5 {
     font-size: 90px;
     line-height: 60px;
-
   }
 
   .t-shadow {
