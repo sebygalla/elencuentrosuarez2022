@@ -1734,7 +1734,8 @@ section .map {
 
   /*Loader*/
   .loader__texto{
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
     font-size: 10px;
   }
 
