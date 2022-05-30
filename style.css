@@ -463,14 +463,16 @@ body {
 
 /* flecha abajo */
 .flecha__abajo {
+  display: flex;
+  flex-direction: column;
   font-size: 70px;
   color: black;
   position: absolute;
   bottom: 70px;
   cursor: pointer;
   z-index: 999;
-  animation: flecha 1s ease-in-out infinite;
-  -webkit-animation: flecha 1s ease-in-out infinite;
+  animation: flecha 1.5s ease-in-out infinite;
+  -webkit-animation: flecha 1.5s ease-in-out infinite;
 }
 
 @keyframes flecha {
@@ -571,6 +573,7 @@ body {
 /* Pantalla dividida derecha*/
 
 .dividida__right {
+  scroll-behavior: 80px;
   grid-area: divRight;
   height: 100%;
   background-image: url(img/javier.jpg);
