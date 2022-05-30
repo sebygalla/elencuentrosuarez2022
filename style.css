@@ -14,6 +14,10 @@ body {
   background-color: whitesmoke;
 }
 
+section[id] {
+  scroll-behavior: smooth;
+}
+
 /*Contenedor general (grilla layaut)*/
 .contenedor {
   width: 95vw;
@@ -397,6 +401,7 @@ body {
 
 /*Rehma*/
 .article {
+  scroll-margin-top: -100px;
   width: 100%;
   height: auto;
   display: flex;
@@ -463,32 +468,20 @@ body {
 
 /* flecha abajo */
 .flecha__abajo {
-  display: flex;
-  flex-direction: column;
-  font-size: 70px;
-  color: black;
+  font-size: 16px;
   position: absolute;
-  bottom: 70px;
+  bottom: 80px;
   cursor: pointer;
   z-index: 999;
-  animation: flecha 1.5s ease-in-out infinite;
-  -webkit-animation: flecha 1.5s ease-in-out infinite;
 }
 
-@keyframes flecha {
-  0% {
-    scale: 1;
-  }
-
-  50% {
-    scale: .6;
-  }
-
-  100% {
-    scale: 1;
-  }
-
+.flecha__abajo img {
+  filter: invert(1);
+  width: 20px;
+  margin: 5px auto;
 }
+
+
 
 /* Pantalla dividida izquierda*/
 
@@ -692,16 +685,14 @@ body {
 }
 
 .mision__texto {
-  width: 60%;
+  width: 70%;
   color: white;
   z-index: 1;
   text-align: center;
-  background: #34495e53;
-  padding: 2em;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  
+
+
+
+
 }
 
 .mision__parrafo:active {
@@ -733,10 +724,10 @@ body {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   line-height: 20px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   margin-top: 2em;
-  text-align: left;
+  text-align: justify;
   position: relative;
   overflow: hidden;
 }
@@ -746,12 +737,9 @@ body {
   z-index: 9;
   overflow: hidden;
   position: relative;
-
+  margin-top: 2em;
 }
 
-.mision__imagen img {
-  margin-bottom: 50px;
-}
 
 
 /* texto descontracturado */
@@ -1860,7 +1848,7 @@ section .map {
     width: 45px;
     margin-left: 20px;
   }
-  
+
   /* redes sociles */
   .navbar__social {
     display: none;
@@ -1999,6 +1987,28 @@ section .map {
 
   }
 
+
+  /* flecha abajo */
+  .flecha__abajo {
+    font-size: 18px;
+    position: absolute;
+    bottom: 80px;
+    cursor: pointer;
+    z-index: 9;
+    animation-name: flecha;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+
+  .flecha__abajo img {
+    filter: invert(1);
+    width: 20px;
+    margin: 5px auto;
+  }
+
+
+
   @keyframes flecha {
 
     0% {
@@ -2085,7 +2095,7 @@ section .map {
     background: url(img/alabanza3.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    
+
   }
 
   .mision::before {
@@ -2119,7 +2129,7 @@ section .map {
     z-index: -1;
   }
 
-  .mision__titulo{
+  .mision__titulo {
     text-align: center;
   }
 
