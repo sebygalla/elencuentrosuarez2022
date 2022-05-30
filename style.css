@@ -1736,7 +1736,7 @@ section .map {
   .loader__texto{
     width: 60%;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .contenedor {
@@ -1744,7 +1744,6 @@ section .map {
     margin: .6em auto;
     grid-gap: 1em;
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(13, auto);
     grid-template-areas:
