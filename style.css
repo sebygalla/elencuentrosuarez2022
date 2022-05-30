@@ -493,7 +493,6 @@ body {
 /* Pantalla dividida izquierda*/
 
 .dividida__left {
-  scroll-margin-top: 80px;
   grid-area: divLeft;
   height: 100%;
   background-image: url(img/nosotrosDos.jpg);
@@ -573,7 +572,7 @@ body {
 /* Pantalla dividida derecha*/
 
 .dividida__right {
-  scroll-behavior: 80px;
+
   grid-area: divRight;
   height: 100%;
   background-image: url(img/javier.jpg);
