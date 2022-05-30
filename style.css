@@ -70,7 +70,7 @@ section[id] {
   font-size: 25px;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 30ch;
+  width: 35ch;
 
   animation: typing 2s steps(12), blink .5s infinite step-end alternate;
   overflow: hidden;
