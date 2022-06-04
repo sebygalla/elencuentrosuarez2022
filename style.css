@@ -1933,10 +1933,10 @@ section .map {
 
   /* flecha abajo */
   .flecha__abajo {
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     cursor: pointer;
     z-index: 9;
     animation-name: flecha;
@@ -1948,7 +1948,7 @@ section .map {
   .flecha__abajo img {
     filter: invert(1);
     width: 20px;
-    margin: 5px auto;
+  
   }
 
 
@@ -1978,9 +1978,11 @@ section .map {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr;
     overflow: hidden;
+
   }
 
   .left__textoDos {
@@ -1991,6 +1993,7 @@ section .map {
     text-align: center;
     margin: 0 auto;
     background-color: rgba(59, 64, 134, .7);
+   
   }
 
   .left__titulo--dos {
@@ -2008,6 +2011,7 @@ section .map {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr;
     overflow: hidden;
@@ -2315,6 +2319,7 @@ section .map {
     -webkit-align-items: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 50px;
   }
 
 
