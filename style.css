@@ -1976,7 +1976,7 @@ section .map {
   /* Nosotros */
 
   .dividida__left {
-    scroll-margin-bottom: 0;
+    scroll-margin-bottom: 500px;
     grid-area: divLeft;
     height: 100%;
     background-size: cover;
