@@ -1976,6 +1976,7 @@ section .map {
   /* Nosotros */
 
   .dividida__left {
+    scroll-margin-top: 0;
     grid-area: divLeft;
     height: 100%;
     background-size: cover;
@@ -2039,6 +2040,7 @@ section .map {
   /* estructura de texto y foto */
 
   .mision {
+    scroll-margin-top: 0;
     flex-direction: column;
     margin: 0 auto;
     padding: 1em;
