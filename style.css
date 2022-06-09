@@ -16,7 +16,7 @@ body {
 
 section[id] {
   scroll-behavior: smooth;
-  scroll-margin-top: 0px;
+  
 }
 
 /*Contenedor general (grilla layaut)*/
@@ -444,7 +444,7 @@ section[id] {
 
 /* Pantalla dividida izquierda*/
 #dividida__left {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 70px;
 }
 
 .dividida__left {
@@ -614,7 +614,7 @@ section[id] {
 /* estructura de texto y foto */
 
 .mision {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 70px;
   width: 100%;
   height: 100%;
   grid-area: mision;
