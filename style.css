@@ -1747,7 +1747,8 @@ section .map {
   .contenedor {
     width: 95vw;
     margin: .6em auto;
-    grid-gap: 1em;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(13, auto);
