@@ -1973,6 +1973,10 @@ section .map {
   }
 
   /* Nosotros */
+  #dividida__left {
+    scroll-margin-top: 180px;
+  }
+
   .dividida__left {
     grid-area: divLeft;
     height: 100%;
