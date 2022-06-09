@@ -16,6 +16,7 @@ body {
 
 section[id] {
   scroll-behavior: smooth;
+  scroll-margin-top: 0px;
 }
 
 /*Contenedor general (grilla layaut)*/
@@ -1973,9 +1974,6 @@ section .map {
   }
 
   /* Nosotros */
-  #dividida__left {
-    scroll-margin: 200px;
-  }
 
   .dividida__left {
     grid-area: divLeft;
