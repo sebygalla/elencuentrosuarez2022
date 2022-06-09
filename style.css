@@ -1974,7 +1974,7 @@ section .map {
 
   /* Nosotros */
   #dividida__left {
-    scroll-margin-top: 180px;
+    scroll-margin-top: -180px;
   }
 
   .dividida__left {
