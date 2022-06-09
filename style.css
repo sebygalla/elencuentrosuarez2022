@@ -442,6 +442,9 @@ section[id] {
 
 
 /* Pantalla dividida izquierda*/
+#dividida__left {
+  scroll-margin-top: 80px;
+}
 
 .dividida__left {
   grid-area: divLeft;
@@ -521,9 +524,11 @@ section[id] {
 }
 
 /* Pantalla dividida derecha*/
+#dividida__right {
+  scroll-margin-top: 0px;
+}
 
 .dividida__right {
-
   grid-area: divRight;
   height: 100%;
   background-image: url(img/javier.jpg);
@@ -535,7 +540,6 @@ section[id] {
   padding: 0px;
   overflow: hidden;
   position: relative;
-
 }
 
 .dividida__right::before {
@@ -620,22 +624,27 @@ section[id] {
   justify-content: space-between;
   padding: 3em;
   gap: 1em;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  background: #360033;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0b8793, #360033);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0b8793, #360033);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
   background-attachment: fixed;
 
-  background: url(img/alabanza3.jpg) no-repeat;
-  background-size: cover;
+
 }
 
 .mision::before {
-  width: 100%;
+  width: 50%;
   height: auto;
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
   background: rgba(52, 152, 219, 0.8);
@@ -643,14 +652,10 @@ section[id] {
 }
 
 .mision__texto {
-  width: 70%;
+  width: 50%;
   color: white;
   z-index: 1;
   text-align: center;
-
-
-
-
 }
 
 .mision__parrafo:active {
@@ -679,7 +684,7 @@ section[id] {
 }
 
 .mision__parrafo {
-  width: 100%;
+  width: 90%;
   font-family: 'Montserrat', sans-serif;
   line-height: 20px;
   font-size: 12px;
@@ -750,7 +755,7 @@ h5 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, .7);
   z-index: 0;
 }
 
@@ -845,8 +850,6 @@ h5 {
   flex-wrap: wrap;
   text-align: center;
   z-index: 1;
-
-  background: rgba(63, 63, 63, 0.182);
   border-radius: 10px;
 
 }
@@ -1060,7 +1063,7 @@ h5 {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
-  background: url('img/aby.png');
+  background: url('img/preadolescente.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -1733,11 +1736,11 @@ section .map {
   }
 
   /*Loader*/
-  .loader__texto{
+  .loader__texto {
     width: 60%;
     margin: 0 auto;
     font-size: 12px;
-    margin-bottom: 100px ;
+    margin-bottom: 100px;
   }
 
   .contenedor {
@@ -1948,7 +1951,7 @@ section .map {
   .flecha__abajo img {
     filter: invert(1);
     width: 20px;
-  
+
   }
 
 
@@ -1971,10 +1974,8 @@ section .map {
 
   /* Nosotros */
   .dividida__left {
-    scroll-margin-top: 80px;
     grid-area: divLeft;
     height: 100%;
-    background-image: url(img/teclado.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1993,7 +1994,7 @@ section .map {
     text-align: center;
     margin: 0 auto;
     background-color: rgba(59, 64, 134, .7);
-   
+
   }
 
   .left__titulo--dos {
@@ -2007,7 +2008,6 @@ section .map {
   .dividida__right {
     grid-area: divRight;
     height: 100%;
-    background-image: url(img/alabanza4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -2091,6 +2091,7 @@ section .map {
   }
 
   .mision__parrafo {
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     font-size: 14px;
@@ -2364,7 +2365,7 @@ section .map {
     border-radius: 50%;
     z-index: 9;
     position: absolute;
-    top: 140px;
+    top: 80px;
     left: 50%;
     margin-left: -60px;
   }
