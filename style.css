@@ -9,14 +9,17 @@
   --color-cinco: #34495e;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 15pt;
   background-color: whitesmoke;
 }
 
-section[id] {
-  scroll-behavior: smooth;
-  
+id {
+  scroll-margin-top: 80px;
 }
 
 /*Contenedor general (grilla layaut)*/
@@ -213,6 +216,9 @@ section[id] {
   background: url('img/pastor\ javier\ corsi\ dos.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -3em ;
+  background-attachment: fixed;
+
   grid-area: main;
   position: relative;
   display: flex;
@@ -1977,7 +1983,7 @@ section .map {
   /* Nosotros */
 
   .dividida__left {
-   
+
     grid-area: divLeft;
     height: 100%;
     background-size: cover;
