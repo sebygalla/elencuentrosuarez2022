@@ -2465,7 +2465,7 @@ section .map {
     border-radius: 50%;
     z-index: 9;
     position: absolute;
-    top: 130px;
+    top: 90px;
     left: 50%;
     margin-left: -60px;
   }
