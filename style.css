@@ -41,6 +41,7 @@ id {
     'article   article   article'
     'divLeft   divLeft   divLeft'
     'divRight  divRight  divRight'
+    'banner    banner    banner'
     'mision    mision    mision'
     'aside     aside     aside '
     'section   section   section'
@@ -612,6 +613,50 @@ id {
   line-height: 21px;
   margin-top: 10px;
   text-align: justify;
+}
+
+/* banner */
+.banner{
+  grid-area: banner;
+  background: url(img/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.banner::before {
+  width: 100%;
+  height: 250px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.banner  cite{
+  color: wheat;
+  z-index: 2;
+}
+
+.banner__titulo{
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  color: white;
+  z-index: 2;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
 
@@ -1766,6 +1811,7 @@ section .map {
       'article   article   article'
       'divLeft   divLeft   divLeft'
       'divRight  divRight  divRight'
+      'banner    banner    banner'
       'mision    mision    mision'
       'aside     aside     aside '
       'section   section   section'
@@ -1808,9 +1854,9 @@ section .map {
   }
 
   .navbar__link {
-    padding: 1em;
-    font-size: 14px;
-    letter-spacing: 6px;
+    padding: .5em;
+    font-size: 12px;
+    letter-spacing: 5px;
   }
 
   /*Logo*/
@@ -1859,12 +1905,16 @@ section .map {
     display: none;
   }
 
+  .main__text{
+    width: 90%;
+  }
+
   .main__titulo {
-    font-size: 35px;
-    letter-spacing: 1px;
+    font-size: 2em;
+    line-height: 40px;
     font-weight: 600;
     margin: 5px auto;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
   }
 
   .main__tituloPre {
@@ -2044,8 +2094,28 @@ section .map {
     margin-bottom: 20px;
   }
 
-  /* estructura de texto y foto */
+  /* banner */
+  .banner {
+    width: 100%;
+    height: 150px;
+  }
 
+  .banner::before{
+    width: 100%;
+    height: 150px;
+  }
+
+  .banner__titulo{
+    padding: 5px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .banner cite{
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  /* estructura de texto y foto */
   .mision {
     scroll-margin-top: 0;
     flex-direction: column;
@@ -2334,13 +2404,10 @@ section .map {
     margin-top: 50px;
   }
 
-
   .swiper-texto {
     width: 80%;
     height: auto;
     padding: 20px;
-
-
     border-radius: 18px;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
@@ -2376,7 +2443,7 @@ section .map {
     border-radius: 50%;
     z-index: 9;
     position: absolute;
-    top: 140px;
+    top: 50px;
     left: 50%;
     margin-left: -60px;
   }
