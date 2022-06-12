@@ -2130,13 +2130,10 @@ section .map {
   .banner__img{
     width: 50px;
     height: 50px;
-    z-index: 2;
-    border: 3px solid white;
+    border: 1px solid white;
     border-radius: 50%;
-    position: absolute;
     right: 10px;
     bottom: 10px;
-    filter: contrast(100%), 
   }
   
 
