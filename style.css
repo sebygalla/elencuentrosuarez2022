@@ -2130,7 +2130,7 @@ section .map {
   .banner__img{
     width: 50px;
     height: 50px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     right: 10px;
     bottom: 10px;
@@ -2465,7 +2465,7 @@ section .map {
     border-radius: 50%;
     z-index: 9;
     position: absolute;
-    top: 50px;
+    top: 120px;
     left: 50%;
     margin-left: -60px;
   }
