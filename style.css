@@ -1054,8 +1054,6 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   line-height: 50px;
-
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
 .iglesia__tituloPre {
@@ -1396,7 +1394,6 @@ h5 {
   margin-top: 65px;
   color: black;
 
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
 .swiper-texto h3 {
@@ -1454,7 +1451,6 @@ h5 {
   font-weight: 600;
   line-height: 50px;
 
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
 .galeria__subtitulo {
