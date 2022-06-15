@@ -32,52 +32,43 @@ navItem.addEventListener('click', function () {
 });
 
 
-//Banner
-// let grande = document.querySelector(".banner__grande");
-// let punto = document.querySelectorAll('.banner__punto');
 
-// punto.forEach(function (cadaPunto, i) {
-//     punto[i].addEventListener('click', function () {
-//         let posicion = i;
-//         let operacion = posicion * -50;
-
-//         grande.style.transform = `translateX(${operacion}%)`;
-
-//         punto.forEach((cadaPunto, i) => {
-//             punto[i].classList.remove('banner__punto--activo');
-//         });
-
-//         punto.forEach((cadaPunto, i) => {
-//             punto[i].classList.add('banner__punto--activo');
-//         });
-
-//     });
-// });
-
-
-
-//Scroll Efect
-navbar = document.querySelector('.navbar');
-navbarLogo = document.querySelector('.navbar__logo');
-
-const btn_scrolltop = document.getElementById('btn_scrolltop')
-btn_scrolltop.addEventListener('click', function () {
-    window.scrollTo(0, 0)
-})
+/*evento ocultar navbar al hacer scroll*/
+let ubicacionPrincipal = window.pageYOffset;
 
 window.onscroll = function () {
-
-    add_btn_scrolltop()
-
-};
-
-const add_btn_scrolltop = function () {
-    if (window.scrollY < 300) {
-        btn_scrolltop.classList.remove('btn__scrolltop--on')
+    let desplazamientoActual = window.pageYOffset;
+    if (ubicacionPrincipal >= desplazamientoActual) {
+        document.querySelector('.navbar').style.top = '0';
     } else {
-        btn_scrolltop.classList.add('btn__scrolltop--on')
+        document.querySelector('.navbar').style.top = '-100px';
     }
-};
+    ubicacionPrincipal = desplazamientoActual;
+}
+
+//Scroll Efect
+// navbar = document.querySelector('.navbar');
+// navbarLogo = document.querySelector('.navbar__logo');
+
+// const btn_scrolltop = document.getElementById('btn_scrolltop')
+// btn_scrolltop.addEventListener('click', function () {
+//     window.scrollTo(0, 0)
+// })
+
+// window.onscroll = function abajo() {
+
+//     add_btn_scrolltop()
+
+// };
+
+// const add_btn_scrolltop = function () {
+//     if (window.scrollY < 300) {
+//         btn_scrolltop.classList.remove('btn__scrolltop--on')
+//     } else {
+//         btn_scrolltop.classList.add('btn__scrolltop--on')
+//     }
+// };
+
 
 
 
@@ -117,4 +108,3 @@ btnModal.addEventListener('click', function () {
 close.addEventListener('click', function () {
     modal.classList.remove('modal--on');
 });
-
