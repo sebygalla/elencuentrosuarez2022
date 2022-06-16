@@ -1992,8 +1992,9 @@ section .map {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: -90px;
-    background-position-y: -10px;
+    background-position: center;
+    /* background-position-x: -90px;
+    background-position-y: -10px; */
     grid-area: main;
     position: relative;
     display: flex;
@@ -2175,7 +2176,7 @@ section .map {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr;
