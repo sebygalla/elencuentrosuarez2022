@@ -33,6 +33,22 @@ navItem.addEventListener('click', function () {
 
 
 
+/* Scrolltop */
+const irArriba = document.querySelector('.btn__scrolltop');
+irArriba.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        irArriba.classList.add('btn__scrolltop--on');
+    } else {
+        irArriba.classList.remove('btn__scrolltop--on');
+    }
+});
+
+
+
 /*evento ocultar navbar al hacer scroll*/
 let ubicacionPrincipal = window.pageYOffset;
 
@@ -45,31 +61,6 @@ window.onscroll = function () {
     }
     ubicacionPrincipal = desplazamientoActual;
 }
-
-//Scroll Efect
-// navbar = document.querySelector('.navbar');
-// navbarLogo = document.querySelector('.navbar__logo');
-
-// const btn_scrolltop = document.getElementById('btn_scrolltop')
-// btn_scrolltop.addEventListener('click', function () {
-//     window.scrollTo(0, 0)
-// })
-
-// window.onscroll = function abajo() {
-
-//     add_btn_scrolltop()
-
-// };
-
-// const add_btn_scrolltop = function () {
-//     if (window.scrollY < 300) {
-//         btn_scrolltop.classList.remove('btn__scrolltop--on')
-//     } else {
-//         btn_scrolltop.classList.add('btn__scrolltop--on')
-//     }
-// };
-
-
 
 
 /*formulario*/

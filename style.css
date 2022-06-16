@@ -454,7 +454,7 @@ id {
 
 /* Pantalla dividida izquierda*/
 #dividida__left {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 0px;
 }
 
 .dividida__left {
@@ -681,7 +681,7 @@ id {
 /* estructura de texto y foto */
 
 .mision {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 0px;
   width: 100%;
   height: 100%;
   grid-area: mision;
@@ -780,7 +780,7 @@ h5 {
 
 /*Precursores (Videos de Youtube*/
 .aside {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 0px;
   width: 100%;
   height: 100vh;
   grid-area: aside;
@@ -989,7 +989,7 @@ h5 {
 /*iglesia */
 
 .iglesia {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 0px;
   width: 100%;
   height: auto;
   grid-area: section;
@@ -1302,7 +1302,7 @@ h5 {
 }
 
 .swiper {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 0px;
   width: 100%;
   height: 100vh;
   grid-area: testimonios;
@@ -1387,6 +1387,7 @@ h5 {
 
 /*Galeria*/
 .galeria {
+  scroll-margin-top: 0px;
   grid-area: galeria;
   width: 100%;
   height: auto;
@@ -1992,7 +1993,7 @@ section .map {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -90px;
-    background-position-y: 80px;
+    background-position-y: -10px;
     grid-area: main;
     position: relative;
     display: flex;
