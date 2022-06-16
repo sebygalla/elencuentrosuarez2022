@@ -436,7 +436,7 @@ id {
 }
 
 /* flecha abajo */
-.flecha__abajo {
+/* .flecha__abajo {
   font-size: 16px;
   position: absolute;
   bottom: 100px;
@@ -448,7 +448,7 @@ id {
   filter: invert(1);
   width: 20px;
   margin: 5px auto;
-}
+} */
 
 
 
@@ -1993,8 +1993,8 @@ section .map {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-position-x: -90px;
-    background-position-y: -10px; */
+    background-position-x: -90px;
+    background-position-y: -10px;
     grid-area: main;
     position: relative;
     display: flex;
@@ -2099,7 +2099,7 @@ section .map {
   }
 
   /* flecha abajo */
-  .flecha__abajo {
+  /* .flecha__abajo {
     font-size: 13px;
     color: black;
     position: absolute;
@@ -2134,7 +2134,7 @@ section .map {
       scale: 1;
     }
 
-  }
+  } */
 
   /* Nosotros */
 
