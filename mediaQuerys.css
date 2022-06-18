@@ -57,6 +57,7 @@
 
     .main {
         /* background-position-y: 2.5em; */
+        background-size: 600px;
     }
 
     .main__titulo {
@@ -1081,6 +1082,12 @@
 
 @media only screen and (max-width: 412px) {
 
+    .main {
+        /* background-position-y: 2.5em; */
+        background-size: 600px;
+    }
+
+
     .swiper-texto img {
         width: 90px;
         height: 90px;
@@ -1140,6 +1147,12 @@
 
 
 @media only screen and (max-width: 375px) {
+
+    .main {
+        /* background-position-y: 2.5em; */
+        background-size: 600px;
+    }
+
     .swiper-texto img {
         width: 100px;
         height: 100px;
