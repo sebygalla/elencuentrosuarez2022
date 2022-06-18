@@ -1924,7 +1924,7 @@ section .map {
 }
 
 @media only screen and (max-width: 768px) {
-  .igl
+  
  
   .swiper-texto img{
     width: 120px;
@@ -1938,10 +1938,6 @@ section .map {
   }
 }
 
-
-
-
-/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media only screen and (max-width: 675px) {
 
   body {
@@ -2115,46 +2111,7 @@ section .map {
     left: -60px;
   }
 
-  /* flecha abajo */
-  /* .flecha__abajo {
-    font-size: 13px;
-    color: black;
-    position: absolute;
-    bottom: 20px;
-    cursor: pointer;
-    z-index: 9;
-    animation-name: flecha;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-  }
-
-  .flecha__abajo img {
-    filter: invert(1);
-    width: 15px;
-
-  }
-
-
-
-  @keyframes flecha {
-
-    0% {
-      scale: 1;
-    }
-
-    50% {
-      scale: .8;
-    }
-
-    100% {
-      scale: 1;
-    }
-
-  } */
-
   /* Nosotros */
-
   .dividida__left {
     scroll-margin-top: 20px;
     grid-area: divLeft;
@@ -2814,7 +2771,7 @@ section .map {
     height: 90px;
     left: 0;
     right: 0;
-    bottom: 300em;
+    top: 100px;
     margin: auto;
   }
 
@@ -2871,7 +2828,7 @@ section .map {
     height: 100px;
     left: 0;
     right: 0;
-    bottom: 300em;
+    top: 160px;
     margin: auto;
   }
 }
@@ -2882,12 +2839,10 @@ section .map {
     background-position: center;
   }
 
-  .main__text {}
-
   .aside {
     height: auto;
   }
-
+ 
   .swiper-texto {
     width: 70%;
     height: auto;
@@ -2895,16 +2850,25 @@ section .map {
   }
 
   .swiper-texto img {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     left: 0;
     right: 0;
-    bottom: 920em;
+    top: 50px;
     margin: auto;
+  }
+  .swiper-texto h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .swiper-texto h3 {
+    font-size: .8em;
+    margin-bottom: 10px;
   }
 
   .swiper-texto p {
-    font-size: 12px;
+    font-size: 14px;
+    padding-bottom: 20px;
 
   }
 }
