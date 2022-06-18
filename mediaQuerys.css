@@ -216,6 +216,37 @@
     }
 }
 
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+    /* Testimonios */
+    .swiper-texto {
+        width: 70%;
+        height: auto;
+        padding: 10px;
+
+    }
+
+    .swiper-texto p {
+        width: 80%;
+        margin: 20px auto;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .swiper-texto img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        z-index: 9;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        margin-left: -60px;
+    }
+
+}
+
 @media only screen and (max-width: 675px) {
 
     body {
@@ -747,7 +778,7 @@
         top: 180px;
         left: 50%;
         margin-left: -40px;
-        
+
     }
 
     /*Galeria*/
