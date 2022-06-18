@@ -453,11 +453,8 @@ id {
 
 
 /* Pantalla dividida izquierda*/
-#dividida__left {
-  scroll-margin-top: 0px;
-}
-
 .dividida__left {
+  scroll-margin-top: 0px;
   grid-area: divLeft;
   height: 100%;
   background-image: url(img/nosotrosDos.jpg);
@@ -744,7 +741,7 @@ id {
   text-align: justify;
 }
 
-.mision__texto img{
+.mision__texto img {
   width: 400px;
   z-index: 0;
   overflow: hidden;
@@ -1836,7 +1833,8 @@ section .map {
   .mision__texto {
     width: 100%;
   }
-  .mision::before{
+
+  .mision::before {
     display: none;
   }
 
@@ -1893,32 +1891,51 @@ section .map {
     text-shadow: 7px 7px var(--color-uno);
   }
 
-  .aside__titulo{
+  .aside__titulo {
     font-size: 30px;
     font-weight: 400;
   }
-  .aside__titulo2{
+
+  .aside__titulo2 {
     font-size: 30px;
     font-weight: 400;
   }
-  .aside__titulo3{
+
+  .aside__titulo3 {
     font-size: 30px;
     font-weight: 400;
   }
-  
-  .aside__texto{
-    width: 250px;
-    height: 300px;
-  }
-  .aside__texto2{
-    width: 250px;
-    height: 300px;
-  }
-  .aside__texto3{
+
+  .aside__texto {
     width: 250px;
     height: 300px;
   }
 
+  .aside__texto2 {
+    width: 250px;
+    height: 300px;
+  }
+
+  .aside__texto3 {
+    width: 250px;
+    height: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .igl
+ 
+  .swiper-texto img{
+    width: 120px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 450px;
+    margin: auto;
+   
+  }
 }
 
 
@@ -2139,7 +2156,7 @@ section .map {
   /* Nosotros */
 
   .dividida__left {
-
+    scroll-margin-top: 20px;
     grid-area: divLeft;
     height: 100%;
     background-size: cover;
@@ -2182,10 +2199,12 @@ section .map {
     grid-template-columns: 1fr;
     overflow: hidden;
   }
-  .right__frase{
+
+  .right__frase {
     display: none;
   }
-  .left__frase{
+
+  .left__frase {
     display: none;
   }
 
@@ -2240,7 +2259,7 @@ section .map {
 
   /* estructura de texto y foto */
   .mision {
-    scroll-margin-top: 0;
+    scroll-margin-top: 20px;
     flex-direction: column;
     margin: 0 auto;
     padding: 1em;
@@ -2290,7 +2309,7 @@ section .map {
 
   .mision__texto img {
     display: block;
-    max-width:400px;
+    max-width: 400px;
     padding: 0;
     margin: 50px auto;
   }
@@ -2320,6 +2339,7 @@ section .map {
   /*Precursores (Videos de Youtube*/
   /* aside presursores*/
   .aside {
+    scroll-margin-top: 20px;
     width: 100%;
     height: auto;
   }
@@ -2336,7 +2356,6 @@ section .map {
     color: white;
     z-index: 1;
     margin-top: 50px;
-
   }
 
   .aside__titulo {
@@ -2347,29 +2366,23 @@ section .map {
     line-height: 1.2em;
     margin-top: 10px;
     font-weight: 400;
-
   }
 
   .aside__subtitulo {
     font-size: 16px;
     letter-spacing: 3px;
-
   }
 
   .aside__iframe {
     width: 90%;
     display: block;
-
   }
 
   .aside__iframe iframe {
-
     width: 500px;
     height: 220px;
     margin: 4em auto;
   }
-
-
 
   /* aside podcast */
   .aside__texto2 {
@@ -2379,7 +2392,6 @@ section .map {
     color: white;
     z-index: 1;
     margin-top: 50px;
-
   }
 
   .aside__titulo2 {
@@ -2389,13 +2401,11 @@ section .map {
     text-align: center;
     line-height: 1.2em;
     font-weight: 400;
-
   }
 
   .aside__subtitulo2 {
     font-size: 16px;
     letter-spacing: 3px;
-
   }
 
   .aside__iframe {
@@ -2450,6 +2460,7 @@ section .map {
 
   /*iglesia */
   .iglesia {
+    scroll-margin-top: 20px;
     width: 100%;
     height: auto;
     grid-area: section;
@@ -2573,6 +2584,7 @@ section .map {
 
   /*Galeria*/
   .galeria {
+    scroll-margin-top: 20px;
     grid-area: galeria;
     width: 100%;
     height: auto;
@@ -2791,7 +2803,21 @@ section .map {
   }
 }
 
+
+
+
+
 @media only screen and (max-width: 450px) {
+
+  .swiper-texto img {
+    width: 90px;
+    height: 90px;
+    left: 0;
+    right: 0;
+    bottom: 300em;
+    margin: auto;
+  }
+
 
   /* Modal niños */
 
@@ -2836,5 +2862,49 @@ section .map {
 
   .popup__social a:hover {
     color: var(--color-tres);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .swiper-texto img {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    bottom: 300em;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 734px) and (orientation: landscape) {
+  .main {
+    background-position: center;
+  }
+
+  .main__text {}
+
+  .aside {
+    height: auto;
+  }
+
+  .swiper-texto {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .swiper-texto img {
+    width: 90px;
+    height: 90px;
+    left: 0;
+    right: 0;
+    bottom: 920em;
+    margin: auto;
+  }
+
+  .swiper-texto p {
+    font-size: 12px;
+
   }
 }
