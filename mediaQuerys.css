@@ -1083,8 +1083,8 @@
 @media only screen and (max-width: 412px) {
 
     .main {
-        /* background-position-y: 2.5em; */
-        background-size: 600px;
+        background-position: center;
+        background-size: 1200px;
     }
 
 
@@ -1149,8 +1149,8 @@
 @media only screen and (max-width: 375px) {
 
     .main {
-        /* background-position-y: 2.5em; */
-        background-size: 600px;
+        background-position: center;
+        background-size: 1200px;
     }
 
     .swiper-texto img {
