@@ -1290,7 +1290,7 @@ h5 {
   transform: skewY(-5deg);
 
   /* Background color */
-  background-color: var(--color-uno);
+  background-color: rgb(44, 94, 125);
 
   /* Displayed under the main content */
   z-index: -1;
@@ -1325,14 +1325,14 @@ h5 {
   -webkit-align-items: center;
   align-items: center;
   overflow: hidden;
-  background: #0df053;
+  
 }
 
 .swiper-texto {
   width: 40%;
   height: 70vh;
   border-radius: 18px;
-  background: rgb(167, 26, 26);
+  background: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
   text-align: center;
   color: black;

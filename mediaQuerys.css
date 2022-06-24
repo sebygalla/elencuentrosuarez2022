@@ -226,7 +226,10 @@
         height: auto;
     }
 
-
+    .main {
+        background-position: center;
+        background-size: 1200px;
+    }
 
     /* testimonios */
     .swiper-texto {
@@ -308,7 +311,6 @@
         margin: 0;
         padding: 0;
     }
-
 
     .main {
         width: 100%;
@@ -1019,7 +1021,10 @@
 
 @media only screen and (max-width: 450px) {
 
-
+    .main {
+        background-position: center;
+        background-size: 1200px;
+    }
 
     /* testimonios */
     .swiper-texto {
@@ -1211,7 +1216,20 @@
 }
 
 @media only screen and (max-width: 854px) and (orientation: landscape) {
-
+    .main{
+        background-size: cover;
+        background-position: top;
+    }
+    /* multimedia */
+    .aside__texto{
+        height: 40%;
+    }
+    .aside__texto2{
+        height: 40%;
+    }
+    .aside__texto3{
+        height: 40%;
+    }
     /* testimonios */
     .swiper-texto {
         width: 80%;
