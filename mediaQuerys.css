@@ -1210,4 +1210,33 @@
 
 }
 
-@media only screen and (max-width: 1199.98px) and (orientation: landscape) {}
+@media only screen and (max-width: 854px) and (orientation: landscape) {
+
+    /* testimonios */
+    .swiper-texto {
+        width: 80%;
+        height: 80vh;
+        color: black;
+    }
+
+    .swiper-texto h2 {
+        margin-top: 75px;
+        color: black;
+        margin-top: 2em;
+    }
+
+    .swiper-texto p {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .swiper-fondoImg {
+        height: 25%;
+    }
+
+    .swiper-imagen {
+        width: 90px;
+        height: 90px;
+        top: 1.5em;
+    }
+}
