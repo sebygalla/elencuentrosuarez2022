@@ -1036,6 +1036,23 @@
         background-size: 1200px;
     }
 
+    .t-stroke {
+        width: 280px;
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        margin: -140px 0 0 -140px;
+
+        color: transparent;
+        -moz-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 2px;
+        -moz-text-stroke-color: #000000;
+        -webkit-text-stroke-color: #ffffff;
+
+        font-size: 78px;
+        line-height: 80px;
+    }
+
     /* testimonios */
     .swiper-texto {
         width: 80%;
@@ -1139,6 +1156,23 @@
     .swiper-imagen {
         width: 90px;
         height: 90px;
+    }
+
+    .t-stroke {
+        width: 280px;
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        margin: -140px 0 0 -140px;
+
+        color: transparent;
+        -moz-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 2px;
+        -moz-text-stroke-color: #000000;
+        -webkit-text-stroke-color: #ffffff;
+
+        font-size: 78px;
+        line-height: 80px;
     }
 
 
