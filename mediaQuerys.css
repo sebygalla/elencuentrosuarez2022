@@ -125,9 +125,7 @@
         -webkit-text-stroke-width: 2px;
         -moz-text-stroke-color: #000000;
         -webkit-text-stroke-color: #ffffff;
-    }
 
-    h5 {
         font-size: 60px;
         line-height: 80px;
     }
@@ -232,6 +230,19 @@
         background-size: 1200px;
     }
 
+    /* vision */
+    .mision__texto img {
+        margin-top: 90px;
+    }
+
+    /* banner */
+    .banner__img {
+        width: 60px;
+        height: 60px;
+        top: 9em;
+        left: 3em;
+    }
+
     /* testimonios */
     .swiper-texto {
         width: 60%;
@@ -248,7 +259,7 @@
         font-size: 17px;
     }
 
-    .swiper-imagen{
+    .swiper-imagen {
         top: 3em;
     }
 
@@ -590,26 +601,21 @@
     }
 
     /* texto descontracturado */
-
-    /* .t-stroke {
+    .t-stroke {
         position: absolute;
-        top: 81%;
-        left: 1%;
+        top: 78%;
+        left: 0;
+        margin: auto;
         color: transparent;
         -moz-text-stroke-width: 2px;
         -webkit-text-stroke-width: 2px;
         -moz-text-stroke-color: #000000;
         -webkit-text-stroke-color: #ffffff;
+
+        font-size: 60px;
+        line-height: 80px;
     }
 
-    h5 {
-        font-size: 100px;
-        line-height: 60px;
-    }
-
-    .t-shadow {
-        text-shadow: 7px 7px var(--color-uno);
-    } */
 
     /*Precursores (Videos de Youtube*/
     /* aside presursores*/
@@ -1138,7 +1144,6 @@
 
 
     /* Modal niños */
-
     .popup__card {
         height: 85%;
         display: flex;
@@ -1192,7 +1197,31 @@
         background-size: 1200px;
     }
 
-    /* testimonios */
+    /*banner*/
+    .banner__img {
+        top: 4.5em;
+    }
+
+    /* mision */
+    .t-stroke {
+        width: 280px;
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        margin: -140px 0 0 -140px;
+
+        color: transparent;
+        -moz-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 2px;
+        -moz-text-stroke-color: #000000;
+        -webkit-text-stroke-color: #ffffff;
+
+        font-size: 78px;
+        line-height: 80px;
+    }
+
+
+    /*testimonios*/
     .swiper-texto {
         width: 80%;
         height: 50vh;
@@ -1217,8 +1246,13 @@
         height: 90px;
     }
 
+    /* popus */
     .popup__img {
         background-position: center;
+    }
+    .popup__text p{
+        font-size: 10px;
+        line-height: 14px;
     }
 
     .mision img {
