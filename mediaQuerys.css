@@ -778,17 +778,26 @@
 
 
     /* Modal jovenes */
+    .popup__card{
+        width: 90%;
+    }
+    .popup__text{
+        width: 90%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .popup__text h2 {
         font-size: 25px;
     }
 
     .popup__text p {
         font-size: 12px;
+        line-height: normal;
     }
 
-    .popup__img img {
-        background: url(img/jovenes.jpg);
-    }
 
 
     /* testimonios */
@@ -1241,6 +1250,8 @@
 
 
 
+
+
 @media only screen and (max-width: 375px) {
 
     .main {
@@ -1305,6 +1316,9 @@
     .popup__text p {
         font-size: 10px;
         line-height: 14px;
+    }
+    .popup__card{
+        height: 65%;
     }
 
     .mision img {
