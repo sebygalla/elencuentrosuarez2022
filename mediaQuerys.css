@@ -538,8 +538,8 @@
         height: 50px;
         border: 2px solid white;
         border-radius: 50%;
-        left: 10px;
-        bottom: 10px;
+        left: 100px;
+        top: 85px;
     }
 
 
@@ -601,20 +601,24 @@
     }
 
     /* texto descontracturado */
+
     .t-stroke {
+        width: 280px;
         position: absolute;
-        top: 78%;
-        left: 0;
-        margin: auto;
+        top: 82%;
+        left: 41%;
+        margin: -140px 0 0 -140px;
+
         color: transparent;
         -moz-text-stroke-width: 2px;
         -webkit-text-stroke-width: 2px;
         -moz-text-stroke-color: #000000;
         -webkit-text-stroke-color: #ffffff;
 
-        font-size: 60px;
+        font-size: 98px;
         line-height: 80px;
     }
+
 
 
     /*Precursores (Videos de Youtube*/
@@ -1046,7 +1050,7 @@
     .t-stroke {
         width: 280px;
         position: absolute;
-        top: 90%;
+        top: 87%;
         left: 45%;
         margin: -140px 0 0 -140px;
 
@@ -1174,7 +1178,7 @@
     .t-stroke {
         width: 280px;
         position: absolute;
-        top: 90%;
+        top: 87%;
         left: 45%;
         margin: -140px 0 0 -140px;
 
@@ -1254,7 +1258,7 @@
         width: 280px;
         position: absolute;
         top: 90%;
-        left: 45%;
+        left: 49%;
         margin: -140px 0 0 -140px;
 
         color: transparent;
@@ -1263,7 +1267,7 @@
         -moz-text-stroke-color: #000000;
         -webkit-text-stroke-color: #ffffff;
 
-        font-size: 78px;
+        font-size: 70px;
         line-height: 80px;
     }
 
