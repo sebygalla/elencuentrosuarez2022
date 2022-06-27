@@ -1036,6 +1036,13 @@
         background-size: 1200px;
     }
 
+    /*banner*/
+    .banner__img {
+        top: 4em;
+        left: 1.5em;
+    }
+
+
     .t-stroke {
         width: 280px;
         position: absolute;
@@ -1130,6 +1137,12 @@
     .main {
         background-position: center;
         background-size: 1200px;
+    }
+
+    /*banner*/
+    .banner__img {
+        top: 3.5em;
+        left: 2em;
     }
 
 
@@ -1284,7 +1297,8 @@
     .popup__img {
         background-position: center;
     }
-    .popup__text p{
+
+    .popup__text p {
         font-size: 10px;
         line-height: 14px;
     }
