@@ -172,7 +172,6 @@ id {
   list-style: none;
   margin: 0 8px;
   padding: 2px;
-  cursor: pointer;
 }
 
 .navbar__link:hover {
@@ -201,7 +200,7 @@ id {
 }
 
 .navbar__social a:hover {
-  color: var(--color-cuatro);
+  color: var(--color-tres);
 }
 
 
@@ -215,7 +214,7 @@ id {
 .main {
   width: 100%;
   height: 600px;
-  background: url('img/pastor\ javier\ corsi\ dos.jpg');
+  background: url(img/main.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -3em;
@@ -432,6 +431,8 @@ id {
 .article__articulo {
   grid-area: articulo;
 }
+
+
 
 /* flecha abajo */
 /* .flecha__abajo {
@@ -1213,9 +1214,9 @@ h5 {
 
 .popup__img {
   width: 40%;
-  background-image: url(img/alabanza3.jpg);
+  background-image: url(img/jovenesDos.png);
   background-size: cover;
-  background-position: center;
+  background-position: left;
 }
 
 .popup__text {
@@ -1271,7 +1272,7 @@ h5 {
 }
 
 .popup__social a:hover {
-  color: aqua;
+  color: var(--color-tres);
 }
 
 /* Testimonios */
@@ -1325,7 +1326,7 @@ h5 {
   -webkit-align-items: center;
   align-items: center;
   overflow: hidden;
-  
+
 }
 
 .swiper-texto {
@@ -1435,6 +1436,8 @@ h5 {
       background-position: 19% 0%
     }
   }
+
+
 }
 
 
@@ -1521,6 +1524,7 @@ h5 {
 .galeria__picture--g1 {
   grid-area: img1;
   filter: contrast(1.1) brightness(.9);
+  
 }
 
 .galeria__picture--g2 {
@@ -1786,7 +1790,7 @@ section .map {
 }
 
 .footer__social a:hover {
-  color: aqua;
+  color: var(--color-tres);
 }
 
 .footer__grupo2 {

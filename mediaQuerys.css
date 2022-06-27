@@ -315,7 +315,6 @@
     .main {
         width: 100%;
         height: 600px;
-        background: url('img/pastor\ javier\ corsi\ dos.jpg');
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1213,23 +1212,42 @@
         height: 90px;
     }
 
+    .popup__img{
+        background-position: center;
+    }
+
+    .mision img{
+        width: 300px;
+    }
+ 
+    h5{
+        font-size: 70px;
+
+    }
+    
+
 }
 
+/* Landscape */
 @media only screen and (max-width: 854px) and (orientation: landscape) {
-    .main{
+    .main {
         background-size: cover;
         background-position: top;
     }
+
     /* multimedia */
-    .aside__texto{
+    .aside__texto {
         height: 40%;
     }
-    .aside__texto2{
+
+    .aside__texto2 {
         height: 40%;
     }
-    .aside__texto3{
+
+    .aside__texto3 {
         height: 40%;
     }
+
     /* testimonios */
     .swiper-texto {
         width: 80%;
