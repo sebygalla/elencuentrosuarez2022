@@ -778,10 +778,11 @@
 
 
     /* Modal jovenes */
-    .popup__card{
+    .popup__card {
         width: 90%;
     }
-    .popup__text{
+
+    .popup__text {
         width: 90%;
         padding: 20px;
         display: flex;
@@ -789,6 +790,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .popup__text h2 {
         font-size: 25px;
     }
@@ -1060,7 +1062,7 @@
         width: 280px;
         position: absolute;
         top: 87%;
-        left: 45%;
+        left: 48%;
         margin: -140px 0 0 -140px;
 
         color: transparent;
@@ -1069,9 +1071,11 @@
         -moz-text-stroke-color: #000000;
         -webkit-text-stroke-color: #ffffff;
 
-        font-size: 78px;
+        font-size: 70px;
         line-height: 80px;
     }
+    
+    
 
     /* testimonios */
     .swiper-texto {
@@ -1098,9 +1102,15 @@
         height: 90px;
     }
 
+    .iglesia__titulo {
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
 
     /* Modal niños */
-
     .popup__card {
         height: 85%;
         display: flex;
@@ -1201,7 +1211,12 @@
         line-height: 80px;
     }
 
-
+    .iglesia__titulo {
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 50px;
+    }
 
     /* Modal niños */
     .popup__card {
@@ -1269,7 +1284,7 @@
         width: 280px;
         position: absolute;
         top: 90%;
-        left: 49%;
+        left: 50%;
         margin: -140px 0 0 -140px;
 
         color: transparent;
@@ -1280,6 +1295,13 @@
 
         font-size: 70px;
         line-height: 80px;
+    }
+
+    .iglesia__titulo {
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 50px;
     }
 
 
@@ -1317,7 +1339,8 @@
         font-size: 10px;
         line-height: 14px;
     }
-    .popup__card{
+
+    .popup__card {
         height: 65%;
     }
 
