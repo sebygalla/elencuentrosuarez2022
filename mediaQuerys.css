@@ -1284,7 +1284,7 @@
         width: 280px;
         position: absolute;
         top: 90%;
-        left: 50%;
+        left: 55%;
         margin: -140px 0 0 -140px;
 
         color: transparent;
@@ -1293,7 +1293,7 @@
         -moz-text-stroke-color: #000000;
         -webkit-text-stroke-color: #ffffff;
 
-        font-size: 70px;
+        font-size: 60px;
         line-height: 80px;
     }
 
