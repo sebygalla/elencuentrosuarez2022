@@ -214,10 +214,10 @@ id {
 .main {
   width: 100%;
   height: 600px;
-  background: url(img/main.jpg);
+  background: url(img/portadaaa.jpg);
   background-size: cover;
   background-repeat: repeat;
-  background-position-y: -3em;
+  background-position-y: -1em;
   background-attachment: fixed;
 
   grid-area: main;
