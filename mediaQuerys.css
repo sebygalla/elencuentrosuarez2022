@@ -213,6 +213,56 @@
     }
 }
 
+/* Samsung TabE (Martina) */
+@media only screen and (max-width: 821px) {
+
+    .main {
+        height: 78vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .main::before {
+        height: 78vh;
+    }
+
+    .main__titulo {
+        font-size: 4em;
+        line-height: none;
+        margin: 0;
+    }
+
+    .main__tituloPre {
+        margin-top: 5em;
+    }
+
+    /* article (rehma 2022) */
+    .article__card{
+        width: 95vw;
+        height: 50vh;
+    }
+
+    .article__parrafo{
+        font-size: 1.7em;
+    }
+
+    .article__card svg {
+        width: 50vw;
+        position: absolute;
+        top: 300px;
+        left: -20px;
+      
+      }
+
+
+}
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
 
     /* Multimedia */
@@ -1044,6 +1094,7 @@
 }
 
 
+
 @media only screen and (max-width: 450px) {
 
     .main {
@@ -1074,8 +1125,8 @@
         font-size: 70px;
         line-height: 80px;
     }
-    
-    
+
+
 
     /* testimonios */
     .swiper-texto {
