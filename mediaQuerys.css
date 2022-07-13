@@ -221,6 +221,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
+        background-position-x: -12em;
     }
 
     .main::before {
