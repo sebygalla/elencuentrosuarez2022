@@ -217,14 +217,14 @@
 @media only screen and (max-width: 821px) {
 
     .main {
-        height: 78vh;
+        height: 70vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
     }
 
     .main::before {
-        height: 78vh;
+        height: 70vh;
     }
 
     .main__titulo {
@@ -239,7 +239,7 @@
 
     /* article (rehma 2022) */
     .article__card{
-        width: 95vw;
+        width: 80vw;
         height: 50vh;
     }
 
