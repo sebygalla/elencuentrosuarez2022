@@ -282,6 +282,10 @@
         line-height: 90px;
     }
 
+    .aside{
+        height: 45vh;
+    }
+
     .aside__texto{
         width: 10em;
         height: 10em;
