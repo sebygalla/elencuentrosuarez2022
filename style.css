@@ -1289,7 +1289,7 @@ id {
   transform: skewY(-5deg);
 
   /* Background color */
-  background-color: rgb(44, 94, 125);
+  background-color: gray;
 
   /* Displayed under the main content */
   z-index: -1;

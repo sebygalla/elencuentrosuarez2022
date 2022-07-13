@@ -281,7 +281,7 @@
         font-size: 7em;
         line-height: 90px;
     }
-
+    
     .aside{
         height: 45vh;
     }
@@ -316,6 +316,17 @@
     }
     .aside__subtitulo3{
         font-size: 14px;
+    }
+
+    /* testimonios */
+    .swiper-texto{
+        height: 45%;
+    }
+    .swiper-texto h2{
+        padding-top: 1em;
+    }
+    .swiper-imagen{
+        top: 3.7em;
     }
 
 }
