@@ -238,6 +238,12 @@
         margin-top: 5em;
     }
 
+    .navbar__link {
+        padding: .8em;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
     /* article (rehma 2022) */
     .article__card {
         width: 80vw;
@@ -271,7 +277,7 @@
         margin-top: 4em;
     }
 
-    .mision__parrafo{
+    .mision__parrafo {
         padding-top: 2em;
     }
 
@@ -282,52 +288,81 @@
         font-size: 7em;
         line-height: 90px;
     }
-    
-    .aside{
+
+    .aside {
         height: 45vh;
     }
 
-    .aside__texto{
+    .aside__texto {
         width: 10em;
         height: 10em;
     }
-    .aside__texto2{
+
+    .aside__texto2 {
         width: 10em;
         height: 10em;
     }
-    .aside__texto3{
+
+    .aside__texto3 {
         width: 10em;
         height: 10em;
     }
-    .aside__titulo{
-        font-size: 20px;
-    }
-    .aside__titulo2{
-        font-size: 20px;
-    }
-    .aside__titulo3{
+
+    .aside__titulo {
         font-size: 20px;
     }
 
-    .aside__subtitulo{
+    .aside__titulo2 {
+        font-size: 20px;
+    }
+
+    .aside__titulo3 {
+        font-size: 20px;
+    }
+
+    .aside__subtitulo {
         font-size: 14px;
     }
-    .aside__subtitulo2{
+
+    .aside__subtitulo2 {
         font-size: 14px;
     }
-    .aside__subtitulo3{
+
+    .aside__subtitulo3 {
         font-size: 14px;
     }
 
     /* testimonios */
-    .swiper-texto{
+    .swiper-texto {
         height: 45%;
     }
-    .swiper-texto h2{
+
+    .swiper-texto h2 {
         padding-top: 1em;
     }
-    .swiper-imagen{
+
+    .swiper-imagen {
         top: 3.7em;
+    }
+
+    .container__diagonal {
+        /* Absolute position */
+        left: 0px;
+        position: absolute;
+        top: 500px;
+
+        /* Take full size */
+        height: 50%;
+        width: 100%;
+
+        /* Create diagonal sides */
+        transform: skewY(-5deg);
+
+        /* Background color */
+        background-color: gray;
+
+        /* Displayed under the main content */
+        z-index: -1;
     }
 
 }
@@ -568,7 +603,7 @@
     .dividida__left {
         scroll-margin-top: 20px;
         grid-area: divLeft;
-        height: 100%;
+        /* height: 100%; */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -600,7 +635,7 @@
 
     .dividida__right {
         grid-area: divRight;
-        height: 100%;
+        /* height: 100%; */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1280,11 +1315,16 @@
     }
 }
 
-@media only screen and (max-width: 412px) {
+/* Samsung Galaxy A20 (Sebastian) */
+@media only screen and (max-width: 425px) {
 
     .main {
         background-position: center;
         background-size: 1200px;
+    }
+
+    .main::before {
+        height: auto;
     }
 
     /*banner*/
@@ -1319,11 +1359,17 @@
         height: 90px;
     }
 
+    /* imagen mision */
+    .mision__texto img {
+        width: 350px;
+    }
+
+    /* texto descontracturado */
     .t-stroke {
         width: 280px;
         position: absolute;
         top: 87%;
-        left: 45%;
+        left: 50%;
         margin: -140px 0 0 -140px;
 
         color: transparent;
@@ -1332,7 +1378,7 @@
         -moz-text-stroke-color: #000000;
         -webkit-text-stroke-color: #ffffff;
 
-        font-size: 78px;
+        font-size: 70px;
         line-height: 80px;
     }
 
@@ -1385,6 +1431,26 @@
 
     .popup__social a:hover {
         color: var(--color-tres);
+    }
+
+    .container__diagonal {
+        /* Absolute position */
+        left: 0px;
+        position: absolute;
+        top: 400px;
+
+        /* Take full size */
+        height: 35%;
+        width: 100%;
+
+        /* Create diagonal sides */
+        transform: skewY(-5deg);
+
+        /* Background color */
+        background-color: gray;
+
+        /* Displayed under the main content */
+        z-index: -1;
     }
 }
 
