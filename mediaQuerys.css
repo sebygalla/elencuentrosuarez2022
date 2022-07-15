@@ -215,6 +215,48 @@
 
 /* Samsung TabE (Martina) */
 @media only screen and (max-width: 821px) {
+    /* preloader */
+    /*flecha viene*/
+    .elemento__1 {
+        width: 8%;
+    }
+
+    /*cruz*/
+    .elemento__2 {
+        width: 12%;
+    }
+
+    .vertical {
+        width: 6px;
+    }
+
+    .horizontal {
+        height: 6px;
+    }
+
+    /*tumba*/
+    .elemento__3 {
+        width: 18%;
+    }
+
+    .circulo__1 {
+        border: 3px solid white;
+    }
+
+    .circulo__2 {
+        border: 6px solid white;
+    }
+
+    /*flecha q va */
+    .elemento__4 {
+        width: 8%;
+    }
+
+    /*flecha q vuelve */
+    .elemento__5 {
+        width: 8%;
+    }
+
 
     .main {
         height: 70vh;
@@ -1317,6 +1359,50 @@
 
 /* Samsung Galaxy A20 (Sebastian) */
 @media only screen and (max-width: 425px) {
+
+    /* preloader */
+    /*flecha viene*/
+    .elemento__1 {
+        width: 12%;
+    }
+
+    /*cruz*/
+    .elemento__2 {
+        width: 16%;
+    }
+
+    .vertical {
+        width: 6px;
+    }
+
+    .horizontal {
+        height: 6px;
+    }
+
+    /*tumba*/
+    .elemento__3 {
+        width: 20%;
+    }
+
+    .circulo__1 {
+        border: 3px solid white;
+    }
+
+    .circulo__2 {
+        border: 6px solid white;
+    }
+
+    /*flecha q va */
+    .elemento__4 {
+        width: 12%;
+    }
+
+    /*flecha q vuelve */
+    .elemento__5 {
+        width: 12%;
+    }
+
+
 
     .main {
         background-position: center;
