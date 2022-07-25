@@ -744,7 +744,7 @@ id {
 }
 
 .banner__titulo {
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   line-height: 50px;
@@ -760,7 +760,7 @@ id {
   border: 3px solid white;
   border-radius: 50%;
   position: absolute;
-  left: 25px;
+  left: 35%;
   bottom: 25px;
   filter: contrast(100%),
 }
@@ -1071,7 +1071,6 @@ id {
 }
 
 /*iglesia */
-
 .iglesia {
   scroll-margin-top: 0px;
   width: 100%;
@@ -1379,7 +1378,7 @@ id {
   transform: skewY(-5deg);
 
   /* Background color */
-  background-color: gray;
+    background: linear-gradient(90deg, #f1f1f1, #d5d5d5);
 
   /* Displayed under the main content */
   z-index: -1;

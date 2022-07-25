@@ -1402,6 +1402,14 @@
         width: 12%;
     }
 
+    .elemento__titulo {
+        font-size: 12px;
+    }
+
+    .navbar__link{
+        font-size: 16px;
+    }
+
 
 
     .main {
