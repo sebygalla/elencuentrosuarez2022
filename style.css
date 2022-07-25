@@ -32,7 +32,7 @@ id {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, auto);
+  grid-template-rows: repeat(13, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -45,6 +45,7 @@ id {
     'mision    mision    mision'
     'aside     aside     aside '
     'section   section   section'
+    'cuarto   cuarto   cuarto'
     'testimonios   testimonios   testimonios'
     'galeria   galeria   galeria'
     'form      form      form'
@@ -99,11 +100,13 @@ id {
   padding: 10px;
   width: 6%;
 }
+
 .vertical {
   width: 7px;
   height: 55px;
   background: white;
 }
+
 .horizontal {
   width: 40px;
   height: 7px;
@@ -121,6 +124,7 @@ id {
   position: relative;
   width: 10%;
 }
+
 .circulo__1 {
   width: 3.2em;
   height: 3.2em;
@@ -131,6 +135,7 @@ id {
   animation: mymove 7s ease-out infinite;
   z-index: 1;
 }
+
 .circulo__2 {
   width: 3em;
   height: 3em;
@@ -184,7 +189,7 @@ id {
   /* Equal to rotateZ(45deg) */
 }
 
-.elemento__texto{
+.elemento__texto {
   width: 100vw;
   height: auto;
   text-align: center;
@@ -323,7 +328,7 @@ id {
 .main {
   width: 100%;
   height: 600px;
-  background: url(img/portadaaa.jpg);
+  background: url(img/main2.jpg);
   background-size: cover;
   background-repeat: repeat;
   background-position-y: -1em;
@@ -346,7 +351,7 @@ id {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .7);
   z-index: 0;
 }
 
@@ -362,7 +367,7 @@ id {
 }
 
 .main__titulo {
-  font-size: 4em;
+  font-size: 6em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   margin: 55px auto;
@@ -427,7 +432,6 @@ id {
 }
 
 /*botón flotante de WhatsApp */
-
 .btn__wsp {
   position: fixed;
   width: 55px;
@@ -453,7 +457,6 @@ id {
 }
 
 /*Boton ir arriba*/
-
 .btn__scrolltop {
   font-size: 20px;
   position: fixed;
@@ -491,7 +494,7 @@ id {
 }
 
 .article__card {
-  width: 60%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -500,7 +503,7 @@ id {
   text-align: center;
   position: relative;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   margin: 10em auto;
   padding: 40px;
 }
@@ -516,14 +519,14 @@ id {
   text-align: center;
   padding: 2em;
   color: black;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1.3em;
   font-family: 'Cardo', serif;
   z-index: 1;
 }
 
 .article__pie {
-  font-size: 12px;
+  font-size: 14px;
   color: black;
   letter-spacing: 5px;
   margin-top: 2em;
@@ -567,7 +570,7 @@ id {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .8);
   z-index: 1;
 }
 
@@ -652,7 +655,7 @@ id {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .8);
   z-index: 1;
 }
 
@@ -716,7 +719,7 @@ id {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 250px;
+  height: 220px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -727,7 +730,7 @@ id {
 
 .banner::before {
   width: 100%;
-  height: 250px;
+  height: 220px;
   content: '';
   position: absolute;
   top: 0;
@@ -735,7 +738,7 @@ id {
   right: 0;
   bottom: 0;
   z-index: 1;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .banner cite {
@@ -744,7 +747,7 @@ id {
 }
 
 .banner__titulo {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   line-height: 50px;
@@ -754,14 +757,14 @@ id {
 }
 
 .banner__img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   z-index: 2;
   border: 3px solid white;
   border-radius: 50%;
   position: absolute;
   left: 35%;
-  bottom: 25px;
+  bottom: 35px;
   filter: contrast(100%),
 }
 
@@ -874,7 +877,7 @@ id {
   justify-content: space-between;
   padding: 30px;
   position: relative;
-  background: url(img/teclado.jpg);
+  background: url(img/multimedia.jpg);
   background-size: cover;
   background-attachment: fixed;
   gap: 5px;
@@ -889,7 +892,7 @@ id {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .8);
   z-index: 0;
 }
 
@@ -981,7 +984,6 @@ id {
 }
 
 /* aside ultimas reuniones */
-
 .aside__reuniones {
   width: 30%;
   display: flex;
@@ -1138,16 +1140,16 @@ id {
 
 .iglesia__cardTexto {
   grid-area: text;
-  width: 95%;
+  width: 90%;
   display: block;
   margin: 0 auto;
   text-align: center;
 }
 
 .iglesia__cardTitulo {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
   color: black;
   margin-top: 20px;
 }
@@ -1221,8 +1223,8 @@ id {
   filter: contrast(1.2);
 }
 
-/*modificadores de matrimonios*/
-.iglesia__imagen--matrimonios {
+/*modificadores de matrimonios grandes*/
+.iglesia__imagen--matrimoniosGrandes {
   grid-area: image;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -1233,28 +1235,20 @@ id {
   filter: contrast(1.2) brightness(1.4);
 }
 
-/*modificadores de Alabanza*/
-.iglesia__imagen--alabanza {
+/*modificadores de matrimonios jovenes*/
+.iglesia__imagen--matrimoniosJovenes {
   grid-area: image;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
-  background: url('img/abalanza\ \(mariano\).jpg');
+  background: url('img/matrimoniosjoven.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: center;
+  background-position-y: top;
+  filter: contrast(1.2) brightness(1.4);
 }
 
-/*modificadores de evangelismo*/
-.iglesia__imagen--evangelismo {
-  grid-area: image;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background: url('img/evangelismo.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: contrast(1.8) brightness(.9);
-}
+
 
 /* Modal niños */
 
@@ -1362,8 +1356,70 @@ id {
   color: var(--color-tres);
 }
 
-/* Testimonios */
+/* Cuarto */
+.cuarto{
+  width: 100%;
+  height: 200px;
+  background: url('img/cuartodeoracion.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+  grid-area: cuarto;
 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cuarto::before{
+  content: "";
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cuarto__titulo{
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.cuarto__btn {
+  width: 100px;
+  z-index: 1;
+  background-color: var(--color-uno);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.cuarto__btn input {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.cuarto__btn:hover {
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-tres);
+}
+
+/* Testimonios */
 .container__diagonal {
   /* Absolute position */
   left: 0px;
@@ -1378,7 +1434,7 @@ id {
   transform: skewY(-5deg);
 
   /* Background color */
-    background: linear-gradient(90deg, #f1f1f1, #d5d5d5);
+  background: linear-gradient(90deg, #f1f1f1, #d5d5d5);
 
   /* Displayed under the main content */
   z-index: -1;

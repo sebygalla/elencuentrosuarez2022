@@ -215,6 +215,7 @@
 
 /* Samsung TabE (Martina) */
 @media only screen and (max-width: 821px) {
+
     /* preloader */
     /*flecha viene*/
     .elemento__1 {
@@ -272,12 +273,19 @@
 
     .main__titulo {
         font-size: 4em;
-        line-height: none;
+        line-height: 1em;
         margin: 0;
     }
 
     .main__tituloPre {
         margin-top: 5em;
+    }
+
+    .main__tituloSub {
+        font-size: .7em;
+        margin-top: -1em;
+        margin-bottom: 1em;
+        letter-spacing: 10px;
     }
 
     .navbar__link {
@@ -309,8 +317,10 @@
     }
 
     .banner__img {
-        width: 70px;
+        width: 50px;
         height: auto;
+        left: 30%;
+        bottom: 20%;
     }
 
     /* vision */
@@ -405,6 +415,21 @@
 
         /* Displayed under the main content */
         z-index: -1;
+    }
+
+    /* Cuarto */
+    .cuarto {
+        flex-direction: column;
+        background-position-y: -100px;
+    }
+
+    .cuarto__titulo {
+        font-size: 2em;
+        margin-top: 1em;
+    }
+
+    .cuarto__btn {
+        margin-top: 1.5em;
     }
 
 }
@@ -515,6 +540,7 @@
             'mision    mision    mision'
             'aside     aside     aside '
             'section   section   section'
+            'cuarto   cuarto   cuarto'
             'testimonios testimonios testimonios'
             'galeria    galeria  galeria'
             'form      form      form'
@@ -1001,6 +1027,25 @@
         line-height: normal;
     }
 
+    /* Cuarto */
+    .cuarto {
+        height: 150px;
+        flex-direction: column;
+        background-position-y: 0px;
+    }
+    .cuarto::before{
+        height: 150px;
+    }
+
+    .cuarto__titulo {
+        font-size: 1em;
+        margin-top: .5em;
+    }
+
+    .cuarto__btn {
+        margin-top: .5em;
+    }
+
 
 
     /* testimonios */
@@ -1406,11 +1451,9 @@
         font-size: 12px;
     }
 
-    .navbar__link{
+    .navbar__link {
         font-size: 16px;
     }
-
-
 
     .main {
         background-position: center;
@@ -1419,6 +1462,20 @@
 
     .main::before {
         height: auto;
+    }
+
+    /*Rehma*/
+    .article__card {
+        box-shadow: none;
+    }
+
+    /* Dividida Left y Rigth */
+    .dividida__left {
+        background: none;
+    }
+
+    .dividida__right {
+        background: none;
     }
 
     /*banner*/
