@@ -427,9 +427,12 @@
         font-size: 2em;
         margin-top: 1em;
     }
+    .cuarto__parrafo{
+        font-size: 10px;
+    }
 
     .cuarto__btn {
-        margin-top: 1.5em;
+        margin-top: 0;
     }
 
 }
@@ -1033,7 +1036,8 @@
         flex-direction: column;
         background-position-y: 0px;
     }
-    .cuarto::before{
+
+    .cuarto::before {
         height: 150px;
     }
 
@@ -1457,7 +1461,7 @@
 
     .main {
         background-position: center;
-        background-size: 1200px;
+        background-size: cover;
     }
 
     .main::before {
@@ -1602,6 +1606,21 @@
 
         /* Displayed under the main content */
         z-index: -1;
+    }
+
+    .cuarto{
+        padding: 10px;
+    }
+    .cuarto__titulo{
+        margin: 0;
+    }
+    .cuarto__parrafo{
+        width: 90%;
+        font-size: 10px;
+        line-height: normal;
+    }
+    .cuarto__btn{
+        margin: 10px;
     }
 }
 
