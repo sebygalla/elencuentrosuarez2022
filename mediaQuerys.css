@@ -1483,11 +1483,21 @@
     }
 
     /*Rehma*/
+    .article {
+        height: 100vh;
+    }
+
     .article__card {
+        width: 100%;
         box-shadow: none;
     }
-    .article__parrafo{
-        font-size: 25px;
+
+    .article__parrafo {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .article__pie{
+        font-size: 15px;
     }
 
     /* Dividida Left y Rigth */
