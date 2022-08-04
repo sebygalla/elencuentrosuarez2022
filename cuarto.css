@@ -232,12 +232,14 @@ section[id] {
     }
 
     .cuarto__contenedor{
-        height: 100%;
-        background-size: 1400px;
+        height: 100vh;
+
+        background-size: 1600px;
         background-position: top;
     }
     .cuarto__contenedor::before{
         height: 100%;
+        z-index: 0;
     }
     .cuarto__titulo {
         font-size: 50px;

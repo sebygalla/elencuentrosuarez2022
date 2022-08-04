@@ -1486,6 +1486,9 @@
     .article__card {
         box-shadow: none;
     }
+    .article__parrafo{
+        font-size: 25px;
+    }
 
     /* Dividida Left y Rigth */
     .dividida__left {
