@@ -1242,11 +1242,11 @@ id {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
-  background: url('img/matrimoniosjoven.jpg');
+  background: url('img/matri\ joven.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: top;
-  filter: contrast(1.2) brightness(1.4);
+  filter: contrast(1.9) brightness(1);
 }
 
 
