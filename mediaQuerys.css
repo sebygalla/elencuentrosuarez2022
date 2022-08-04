@@ -1642,10 +1642,13 @@
         padding: 10px;
         align-items: center;
         justify-content: space-evenly;
+        border-radius: 18px;
+        box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
     }
 
     .cuarto::before {
         height: 300px;
+        border-radius: 18px;
     }
 
     .cuarto i {
