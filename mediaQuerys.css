@@ -1636,22 +1636,25 @@
     }
 
     .cuarto {
-        height: 200px;
+        background-size: 600px;
+        background-position: top ;
+        height: 300px;
         padding: 10px;
         align-items: center;
         justify-content: space-evenly;
     }
 
     .cuarto::before {
-        height: 200px;
+        height: 300px;
     }
 
     .cuarto i {
-        font-size: 30px;
+        font-size: 35px;
         margin: 0;
     }
 
     .cuarto__titulo {
+        font-size: 30px;
         margin: 0;
     }
 
