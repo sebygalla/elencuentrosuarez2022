@@ -1496,7 +1496,8 @@
         font-size: 30px;
         line-height: 39px;
     }
-    .article__pie{
+
+    .article__pie {
         font-size: 15px;
     }
 
@@ -1514,6 +1515,21 @@
         top: 3.5em;
         left: 2em;
     }
+
+    .detalles {
+       
+        font-size: 15px;
+        letter-spacing: 2px;
+        line-height: 25px;
+        margin-top: 1em;
+        text-align: justify;
+    }
+
+    summary {
+        color: black;
+        margin: 20px 0;
+    }
+
 
 
     /* testimonios */
@@ -1637,7 +1653,7 @@
 
     .cuarto {
         background-size: 600px;
-        background-position: top ;
+        background-position: top;
         height: 300px;
         padding: 10px;
         align-items: center;

@@ -838,6 +838,7 @@ id {
 }
 
 .detalles {
+  display: block;
   font-size: 14px;
   line-height: 21px;
   margin-top: 1em;
@@ -845,8 +846,10 @@ id {
 }
 
 summary{
-  color: #360033;
+  color: black;
+  margin: 20px 0;
 }
+
 
 .mision__texto img {
   width: 400px;
