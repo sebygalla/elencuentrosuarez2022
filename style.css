@@ -378,13 +378,14 @@ id {
 }
 
 .main__tituloPre {
-  font-size: 25px;
+  font-size: 35px;
   font-family: 'Cardo', serif;
   font-weight: 100;
 }
 
 .main__tituloSub {
-  font-size: 15px;
+  font-size: 25px;
+  margin: 25px;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -836,6 +837,17 @@ id {
   text-align: justify;
 }
 
+.detalles {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 1em;
+  text-align: justify;
+}
+
+summary{
+  color: #360033;
+}
+
 .mision__texto img {
   width: 400px;
   z-index: 0;
@@ -1072,6 +1084,31 @@ id {
   margin: 3em auto;
   gap: 10em;
 }
+
+
+.multimedia__texto {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin: 5em auto 3em;
+}
+
+.multimedia__titulo {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+
+}
+
+.multimedia__subtitulo {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
 
 /*iglesia */
 .iglesia {
@@ -1388,8 +1425,8 @@ id {
   bottom: 0;
 }
 
-.cuarto i{
-  font-size: 100px;
+.cuarto i {
+  font-size: 60px;
   margin: 20px;
   color: white;
   z-index: 1;
@@ -1407,7 +1444,7 @@ id {
 
 .cuarto__parrafo {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 100;
   text-align: center;
   margin: 20px auto;
