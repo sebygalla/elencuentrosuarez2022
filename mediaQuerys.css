@@ -745,7 +745,7 @@
         margin: 0 auto;
         padding: 20px;
         text-align: center;
-        background-color: rgba(131, 26, 26, 0.541);
+        background-color: var(--color-uno);
     }
 
     .right__titulo--dos {
