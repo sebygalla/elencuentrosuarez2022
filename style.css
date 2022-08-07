@@ -32,7 +32,7 @@ id {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(13, auto);
+  grid-template-rows: repeat(14, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -45,6 +45,7 @@ id {
     'mision    mision    mision'
     'aside     aside     aside '
     'section   section   section'
+    'ministerios   ministerios   ministerios'
     'cuarto   cuarto   cuarto'
     'testimonios   testimonios   testimonios'
     'galeria   galeria   galeria'
@@ -687,7 +688,7 @@ id {
   padding: 60px;
   text-align: right;
   /* background: linear-gradient( var(--color-tres), rgba(255, 255, 255, 0.289), rgba(0, 0, 255, 0.1)); */
-  background: #c03a2b75;
+  background: #3498dba1;
   z-index: 9;
 }
 
@@ -838,17 +839,22 @@ id {
 }
 
 .detalles {
-  display: block;
   font-size: 14px;
   line-height: 21px;
   margin-top: 1em;
   text-align: justify;
 }
 
-summary{
-  color: black;
+summary {
+  color: rgb(42, 40, 40);
   margin: 20px 0;
+  cursor: pointer;
+  outline: none;
 }
+
+
+
+
 
 
 .mision__texto img {
@@ -1396,6 +1402,89 @@ summary{
 .popup__social a:hover {
   color: var(--color-tres);
 }
+
+
+/* Ministerios */
+.ministerios {
+  width: 100%;
+  height: 500px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQYV2NkwAT/gUKM6MLoAjBFGIqRFaJLovBhCrFaB7QeLg5SiEsRzJlgeQxHY/EcSOg/sQoxgwGHiQwA+f4KCL3Y/AQAAAAASUVORK5CYII=) repeat;
+  grid-area: ministerios;
+  filter: contrast(100%) brightness(100%);
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.ministerios::before {
+  content: "";
+  width: 100%;
+  height: 500px;
+  background: rgba(255, 255, 255, .9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ministerios i {
+  font-size: 60px;
+  margin: 20px;
+  color: black;
+  z-index: 1;
+}
+
+.ministerios__titulo {
+  color: black;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px auto;
+  z-index: 1;
+
+}
+
+.ministerios__parrafo {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px auto;
+  z-index: 1;
+}
+
+.ministerios__btn {
+  width: 100px;
+  z-index: 1;
+  background-color: var(--color-tres);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.ministerios__btn input {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.ministerios__btn:hover {
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-uno);
+
+}
+
+
 
 /* Cuarto */
 .cuarto {

@@ -544,7 +544,7 @@
         grid-column-gap: 1em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(13, auto);
+        grid-template-rows: repeat(14, auto);
         grid-template-areas:
 
             'header    header    header'
@@ -557,6 +557,7 @@
             'mision    mision    mision'
             'aside     aside     aside '
             'section   section   section'
+            'ministerios   ministerios   ministerios'
             'cuarto   cuarto   cuarto'
             'testimonios testimonios testimonios'
             'galeria    galeria  galeria'
@@ -1650,6 +1651,8 @@
         /* Displayed under the main content */
         z-index: -1;
     }
+
+    /* ministerios */
 
     .cuarto {
         background-size: 600px;
