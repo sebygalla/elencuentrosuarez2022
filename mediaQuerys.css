@@ -1518,7 +1518,7 @@
     }
 
     .detalles {
-       
+
         font-size: 15px;
         letter-spacing: 2px;
         line-height: 25px;
@@ -1653,7 +1653,39 @@
     }
 
     /* ministerios */
+    .ministerios {
+        background-size: 600px;
+        background-position: top;
+        height: 300px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 18px;
+        box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    }
 
+    .ministerios::before {
+        height: 300px;
+        border-radius: 18px;
+    }
+
+    .ministerios__titulo {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .ministerios__parrafo {
+        width: 90%;
+        font-size: 10px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .ministerios__btn {
+        margin: 0px;
+    }
+
+    /* Cuarto */
     .cuarto {
         background-size: 600px;
         background-position: top;
