@@ -1518,7 +1518,6 @@
     }
 
     .detalles {
-
         font-size: 15px;
         letter-spacing: 2px;
         line-height: 25px;
@@ -1531,6 +1530,7 @@
         margin: 20px 0;
     }
 
+  
 
 
     /* testimonios */
@@ -1656,7 +1656,7 @@
     .ministerios {
         background-size: 600px;
         background-size: cover;
-        height: 300px;
+        height: 250px;
         padding: 10px;
         align-items: center;
         justify-content: space-evenly;
@@ -1665,12 +1665,12 @@
     }
 
     .ministerios::before {
-        height: 300px;
+        height: 250px;
         border-radius: 18px;
     }
 
     .ministerios__titulo {
-        font-size: 40px;
+        font-size: 50px;
         margin: 0;
     }
 
@@ -1708,7 +1708,7 @@
     }
 
     .cuarto__titulo {
-        font-size: 30px;
+        font-size: 35px;
         margin: 0;
     }
 
