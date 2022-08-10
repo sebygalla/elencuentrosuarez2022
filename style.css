@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cardo:ital@1&family=Irish+Grover&family=Montserrat:wght@100;300;400;600;900&family=Poller+One&family=Poppins:wght@100&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cardo:ital@1&family=Irish+Grover&family=Montserrat:wght@100;300;400;600;900&family=Nunito+Sans:wght@300;400;600;900&family=Poller+One&family=Poppins:wght@100;200;300;600;900&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap');
 
 :root {
   /*Colores web*/
@@ -46,7 +46,7 @@ id {
     'aside     aside     aside '
     'section   section   section'
     'ministerios   ministerios   ministerios'
-    'cuarto   cuarto   cuarto'
+    'cuarto     cuarto    cuarto'
     'testimonios   testimonios   testimonios'
     'galeria   galeria   galeria'
     'form      form      form'
@@ -1407,163 +1407,194 @@ summary {
 }
 
 
-/* Ministerios */
+/* MINISTERIOS SECTION */
 .ministerios {
   width: 100%;
-  height: 500px;
-  background: url(img/banner_header.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: auto;
   grid-area: ministerios;
-  filter: contrast(100%) brightness(80%);
+  background: #0b2e41;
 
 
+}
+
+/* Ministerios card */
+.ministeriosCard {
+  width: 60%;
+  height: 350px;
+  border-radius: 8px;
+  margin: 0 auto;
+  background: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
   display: flex;
+  margin: 1em auto;
+
+}
+
+.ministeriosCard__imagen {
+  width: 100em;
+  height: auto;
+  background: url(img/main.png);
+  background-size: 50em;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+  filter: contrast(1.7) brightness(1.4);
+
+}
+
+
+.ministeriosCard__texto {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  position: relative;
+  text-align: justify;
+  padding: 20px;
 }
 
-.ministerios::before {
-  content: "";
-  width: 100%;
-  height: 500px;
-  background: #3498dba1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  background: #360033;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0b8793, #360033);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0b8893c5, #360033);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-  background-attachment: fixed;
+.ministeriosCard__tituloPre {
+  font-size: 15px;
+  font-family: 'Cardo', serif;
+  font-weight: 100;
+  margin-bottom: 10px;
 }
 
-.ministerios__titulo {
-  color: white;
-  font-size: 60px;
+.ministeriosCard__titulo {
+  font-size: 25px;
   font-weight: 600;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-  text-align: center;
-  margin: 10px auto;
-  z-index: 1;
+  margin-bottom: 10px;
 
 }
 
-.ministerios__parrafo {
-  width: 80%;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
+.ministeriosCard__linea {
+  width: 90px;
+  height: 2px;
+  background-color: var(--color-uno);
   text-align: center;
-  margin: 20px auto;
-  z-index: 1;
+
 }
 
-.ministerios__btn {
-  width: 130px;
+.ministeriosCard__parrafo {
+  font-size: 10px;
+  line-height: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.ministeriosCard__btn {
+  width: 100px;
   z-index: 1;
-  background-color: var(--color-tres);
+  background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
   margin: 0 auto;
   cursor: pointer;
 }
 
-.ministerios__btn input {
-  font-size: 16px;
+.ministeriosCard__btn input {
+  font-size: 12px;
   font-weight: 600;
   margin: 0 auto;
   border: none;
   cursor: pointer;
   color: white;
-  z-index: 1;
 }
 
-.ministerios__btn:hover {
+.ministeriosCard__btn:hover {
   border: none;
   cursor: pointer;
   background-color: var(--color-uno);
 
 }
 
-
-
-/* Cuarto */
+/* CUARTO SECTION */
 .cuarto {
   width: 100%;
-  height: 400px;
-  background: url('img/cuartodeoracion.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -200px;
+  height: auto;
   grid-area: cuarto;
-  filter: contrast(100%) brightness(100%);
+  background: #0b2e41;
 
+
+}
+
+/* Cuarto card */
+.cuartoCard {
+  width: 60%;
+  height: 350px;
+  border-radius: 8px;
+  margin: 0 auto;
+  background: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
 
   display: flex;
+  margin: 1em auto;
+
+}
+
+.cuartoCard__imagen {
+  width: 100em;
+  height: auto;
+  background: url(img/cuartodeoracion.jpg);
+  background-size: 50em;
+  background-repeat: no-repeat;
+  background-position: top;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+  filter: contrast(1.7) brightness(1.4);
+}
+
+
+.cuartoCard__texto {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
-
-.cuarto::before {
-  content: "";
-  width: 100%;
-  height: 400px;
-  background: rgba(0, 0, 0, .7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.cuarto i {
-  font-size: 60px;
-  margin: 20px;
-  color: white;
-  z-index: 1;
-}
-
-.cuarto__titulo {
-  color: white;
-  font-size: 60px;
-  font-weight: 600;
   text-align: center;
-  margin: 10px auto;
-  z-index: 1;
-
+  padding: 20px;
 }
 
-.cuarto__parrafo {
-  color: white;
-  font-size: 18px;
+.cuartoCard__tituloPre {
+  font-size: 15px;
+  font-family: 'Cardo', serif;
   font-weight: 100;
-  text-align: center;
-  margin: 20px auto;
-  z-index: 1;
+  margin-bottom: 10px;
 }
 
-.cuarto__btn {
+.cuartoCard__titulo {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+
+.cuartoCard__linea {
+  width: 90px;
+  height: 2px;
+  background-color: var(--color-uno);
+  text-align: center;
+
+}
+
+.cuartoCard__parrafo {
+  font-size: 10px;
+  line-height: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cuartoCard__btn {
   width: 100px;
   z-index: 1;
-  background-color: var(--color-tres);
+  background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
   margin: 0 auto;
   cursor: pointer;
 }
 
-.cuarto__btn input {
-  font-size: 16px;
+.cuartoCard__btn input {
+  font-size: 12px;
   font-weight: 600;
   margin: 0 auto;
   border: none;
@@ -1571,7 +1602,7 @@ summary {
   color: white;
 }
 
-.cuarto__btn:hover {
+.cuartoCard__btn:hover {
   border: none;
   cursor: pointer;
   background-color: var(--color-uno);
