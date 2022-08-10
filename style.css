@@ -786,12 +786,13 @@ id {
   justify-content: space-between;
   padding: 3em;
   gap: 1em;
+  background: #0b2e41;
 
-  background: #360033;
+  /* background: #360033; */
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0b8793, #360033);
+  /* background: -webkit-linear-gradient(to right, #0b8793, #360033); */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0b8793, #360033);
+  /* background: linear-gradient(to right, #0b8793, #360033); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-attachment: fixed;
   position: relative;
@@ -1584,7 +1585,7 @@ summary {
 }
 
 .cuartoCard__parrafo {
-  color: black;
+   color: black;
   font-size: 10px;
   line-height: 20px;
   padding: 10px;
