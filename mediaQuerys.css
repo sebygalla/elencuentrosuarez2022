@@ -1407,19 +1407,24 @@
     /*flecha viene*/
     .elemento__1 {
         width: 12%;
+        font-size: 30px;
     }
 
     /*cruz*/
     .elemento__2 {
-        width: 16%;
+        width: 6%;
+
     }
 
     .vertical {
-        width: 6px;
+        width: 4px;
+        height: 36px;
     }
 
     .horizontal {
-        height: 6px;
+        width: 25px;
+        height: 5px;
+        top: 20px;
     }
 
     /*tumba*/
@@ -1428,25 +1433,32 @@
     }
 
     .circulo__1 {
+        width: 40px;
+        height: 40px;
         border: 3px solid white;
     }
 
     .circulo__2 {
+        width: 40px;
+        height: 40px;
         border: 6px solid white;
     }
 
     /*flecha q va */
     .elemento__4 {
-        width: 12%;
+        width: 2%;
+        font-size: 30px;
     }
 
     /*flecha q vuelve */
     .elemento__5 {
-        width: 12%;
+        width: 10%;
+        font-size: 30px;
+        padding: 10px;
     }
 
     .elemento__titulo {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     .navbar__link {
@@ -1559,9 +1571,6 @@
         text-align: justify;
     }
   
-
-
-
 
     /* testimonios */
     .swiper-texto {
