@@ -1445,6 +1445,7 @@ summary {
 
 
 .ministeriosCard__texto {
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1454,6 +1455,7 @@ summary {
 }
 
 .ministeriosCard__tituloPre {
+  color: black;
   font-size: 15px;
   font-family: 'Cardo', serif;
   font-weight: 100;
@@ -1461,6 +1463,7 @@ summary {
 }
 
 .ministeriosCard__titulo {
+  color: black;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -1476,6 +1479,7 @@ summary {
 }
 
 .ministeriosCard__parrafo {
+  color: black;
   font-size: 10px;
   line-height: 20px;
   padding: 10px;
@@ -1546,6 +1550,7 @@ summary {
 
 
 .cuartoCard__texto {
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1555,6 +1560,7 @@ summary {
 }
 
 .cuartoCard__tituloPre {
+  color: black;
   font-size: 15px;
   font-family: 'Cardo', serif;
   font-weight: 100;
@@ -1562,6 +1568,7 @@ summary {
 }
 
 .cuartoCard__titulo {
+  color: black;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -1577,6 +1584,7 @@ summary {
 }
 
 .cuartoCard__parrafo {
+  color: black;
   font-size: 10px;
   line-height: 20px;
   padding: 10px;
