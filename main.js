@@ -1,7 +1,7 @@
 /*loader*/
 
 window.onload = function () {
-    var loader = docuent.querySelector('.loader__contenedor');
+    var loader = document.querySelector('.loader__contenedor');
     loader.style.display = 'none';
 
 
