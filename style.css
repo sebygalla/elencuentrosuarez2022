@@ -1414,6 +1414,7 @@ summary {
   height: auto;
   grid-area: ministerios;
   background: #0b2e41;
+  padding: 2em 0;
 
 
 }
@@ -1519,6 +1520,7 @@ summary {
   height: auto;
   grid-area: cuarto;
   background: #0b2e41;
+  
 
 
 }
@@ -1533,7 +1535,7 @@ summary {
   box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
 
   display: flex;
-  margin: 1em auto;
+  margin: 3em auto;
 
 }
 
