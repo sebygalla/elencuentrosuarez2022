@@ -21,7 +21,7 @@ article[id] {
 }
 
 section[id] {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 0;
 }
 
 
@@ -37,10 +37,12 @@ section[id] {
 
 
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
         'nav            nav             nav'
         'cuartos        cuartos         cuartos'
+        'contenido      contenido       contenido'
+        'galeria        galeria         galeria'
         'footer         footer          footer';
 }
 
@@ -138,6 +140,7 @@ section[id] {
     background: url(img/cuartodeoracion.jpg);
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -191,6 +194,215 @@ section[id] {
     font-size: 18px;
 }
 
+.cuarto__btn {
+    z-index: 1;
+    background-color: var(--color-uno);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 15px auto;
+}
+
+.cuarto__btn input {
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    color: white;
+}
+
+.cuarto__btn:hover {
+    border: none;
+    background-color: var(--color-tres);
+}
+
+/* Contenido */
+.contenido {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); */
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-area: contenido;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido__texto {
+    width: 50%;
+    height: 50vh;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contenido__titulo {
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+.contenido__parrafo {
+    text-align: center;
+    padding: 2em;
+    color: black;
+    font-size: 20px;
+    line-height: 1.3em;
+    font-family: 'Cardo', serif;
+    z-index: 1;
+}
+
+.contenido__parrafo span {
+    color: black;
+    font-weight: 600;
+}
+
+blockquote {
+    color: black;
+    font-weight: 600;
+}
+
+
+
+/*Galeria Cuarto*/
+.galeria {
+    scroll-margin-top: 0px;
+    grid-area: galeria;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: .8em;
+}
+
+.galeria__texto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: black;
+    z-index: 1;
+    margin: 5em auto 3em;
+}
+
+.galeria__titulo {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+
+}
+
+.galeria__subtitulo {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.galeria__picture {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.galeria__picture::before {
+    content: "Cuarto!";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6c678ba6;
+    transform: scale(0);
+    transition: transform .4s;
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .6em;
+}
+
+.galeria__picture:hover::before {
+    transform: scale(1) rotate(360deg);
+}
+
+.galeria__grid {
+    padding-bottom: 3em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    grid-template-areas:
+        "img1 img1 img2 img3"
+        "img1 img1 img4 img4"
+        "img1 img1 img4 img4"
+        "img5 img5 img6 img7"
+        "img5 img5 img8 img8"
+        "img5 img5 img8 img8";
+    gap: .8em;
+}
+
+.galeria__picture--g1 {
+    grid-area: img1;
+    filter: contrast(1.1) brightness(.9);
+
+}
+
+.galeria__picture--g2 {
+    grid-area: img2;
+    filter: contrast(1.4) brightness(.9);
+}
+
+.galeria__picture--g3 {
+    grid-area: img3;
+    filter: contrast(1.4) brightness(.9);
+}
+
+.galeria__picture--g4 {
+    grid-area: img4;
+    filter: contrast(1) brightness(.9);
+    
+}
+
+.galeria__picture--g5 {
+    grid-area: img5;
+    filter: contrast(1.4) brightness(.9);
+}
+
+.galeria__picture--g6 {
+    grid-area: img6;
+    filter: contrast(1.4) brightness(.9);
+}
+
+.galeria__picture--g7 {
+    grid-area: img7;
+    filter: contrast(1.4) brightness(.9);
+}
+
+.galeria__picture--g8 {
+    grid-area: img8;
+    filter: contrast(1.4) brightness(.9);
+}
+
+.galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 /*footer*/
@@ -224,35 +436,41 @@ section[id] {
 /* Samsung Galaxy A20 (Sebastian) */
 @media only screen and (max-width: 425px) {
 
-    .navbar__logo{
+    .navbar__logo {
         margin-left: 20px;
     }
-    .navbar__item{
+
+    .navbar__item {
         margin-right: 20px;
     }
 
-    .cuarto__contenedor{
+    .cuarto__contenedor {
         height: 100vh;
 
         background-size: 1600px;
         background-position: top;
     }
-    .cuarto__contenedor::before{
+
+    .cuarto__contenedor::before {
         height: 100%;
         z-index: 0;
     }
+
     .cuarto__titulo {
         font-size: 50px;
         line-height: 40px;
     }
-    .cuarto__texto i{
+
+    .cuarto__texto i {
         font-size: 50px;
     }
-    .cuarto__subtitulo{
+
+    .cuarto__subtitulo {
         font-size: 20px;
         margin-top: 20px;
     }
-    .cuarto__parrafo{
+
+    .cuarto__parrafo {
         font-size: 12px;
         padding: 20px;
         margin-bottom: 30px;
@@ -260,7 +478,49 @@ section[id] {
         line-height: normal;
     }
 
-    .footer__grupo2{
+    /* contenido */
+    .contenido {
+        height: 70vh;
+    }
+
+    .contenido__texto {
+        width: 90%;
+        height: auto;
+        padding: 25px 0px;
+    }
+
+    .contenido__parrafo {
+        text-align: justify;
+    }
+
+    .contenido__titulo {
+        font-size: 25px;
+    }
+
+    /* Galeria */
+    .galeria__grid {
+        width: 100%;
+        height: auto;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "img1   img1    img1    img1"
+            "img2   img2    img2    img2"
+            "img3   img3    img3    img3"
+            "img4   img4    img4    img4"
+            "img5   img5    img5    img5"
+            "img6   img6    img6    img6"
+            "img7   img7    img7    img7"
+            "img8   img8    img8    img8";
+        gap: .5em;
+
+
+    }
+
+    .footer__grupo2 {
         font-size: 15px;
     }
 
