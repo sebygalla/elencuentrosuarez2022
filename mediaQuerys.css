@@ -258,15 +258,6 @@
         width: 8%;
     }
 
-
-    .main {
-        height: 70vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left;
-        background-position-x: -12em;
-    }
-
     .main::before {
         height: 70vh;
     }
@@ -1485,6 +1476,17 @@
     .navbar__link {
         font-size: 16px;
     }
+
+    /*Contenedor general (grilla layaut)*/
+    .contenedor {
+        width: 95vw;
+        max-width: 65em;
+        margin: 1.2em auto;
+        grid-gap: .5em;
+        display: grid;
+
+    }
+
 
     .main {
         background-position: center;
