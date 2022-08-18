@@ -286,7 +286,8 @@
     }
 
     .main__btn{
-        width: 30%;
+        width: 35%;
+        padding: 10px;
         text-align: center;
     }
     .main__btn input{
