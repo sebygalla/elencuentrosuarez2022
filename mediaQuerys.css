@@ -261,6 +261,7 @@
     .main {
         height: 100vh;
         background-position: bottom;
+        background-attachment: inherit;
     }
 
     .main::before {
