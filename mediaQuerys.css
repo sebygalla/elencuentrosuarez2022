@@ -293,12 +293,12 @@
 
     /* article (rehma 2022) */
     .article__card {
-        width: 80vw;
-        height: 50vh;
+        width: 100vw;
+        height: 100vh;
     }
 
     .article__parrafo {
-        font-size: 1.4em;
+        font-size: 2.2em;
     }
 
     .article__card svg {
