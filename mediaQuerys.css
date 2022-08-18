@@ -260,7 +260,7 @@
 
     .main {
         height: 100vh;
-        background-position: bottom;
+        background-position: top;
         background-attachment: inherit;
     }
 
