@@ -285,6 +285,14 @@
         letter-spacing: 10px;
     }
 
+    .main__btn{
+        width: 30%;
+        text-align: center;
+    }
+    .main__btn input{
+        margin: 0 auto;
+    }
+
     .navbar__link {
         padding: .8em;
         font-size: 20px;
@@ -293,8 +301,7 @@
 
     /* article (rehma 2022) */
     .article__card {
-        width: 100vw;
-        height: 100vh;
+        height: 80vh;
     }
 
     .article__parrafo {
