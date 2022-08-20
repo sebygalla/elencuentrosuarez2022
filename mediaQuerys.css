@@ -285,12 +285,13 @@
         letter-spacing: 10px;
     }
 
-    .main__btn{
+    .main__btn {
         width: 35%;
         padding: 10px;
         text-align: center;
     }
-    .main__btn input{
+
+    .main__btn input {
         margin: 0 auto;
     }
 
@@ -389,8 +390,8 @@
         font-size: 14px;
     }
 
-       /* ministerio */
-       .ministerios {
+    /* ministerio */
+    .ministerios {
         height: 60vh;
     }
 
@@ -1049,6 +1050,37 @@
         line-height: normal;
     }
 
+    /* ribbon */
+    .ribbonUno {
+        width: 100%;
+        height: 150px;
+    }
+
+    .ribbonUno::before {
+        width: 100%;
+        height: 150px;
+    }
+
+    .ribbonUno__titulo {
+        padding: 5px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .ribbonUno cite {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .ribbonUno__img {
+        width: 50px;
+        height: 50px;
+        border: 2px solid white;
+        border-radius: 50%;
+        left: 100px;
+        top: 85px;
+    }
+
 
 
 
@@ -1584,15 +1616,26 @@
         text-align: justify;
     }
 
-    /* ribbon */
-.ribbon{
-    height: 25px;
-  }
-  
-  /* ribbon */
-  .ribbonUno{
-    height: 25px;  
-  }
+    /* ribbonUno */
+    .ribbonUno {
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .ribbonUno::before {
+        height: 30vh;
+    }
+
+    .ribbonUno__titulo {
+        font-size: 28px;
+    }
+
+    .ribbonUno__img {
+        top: 7em;
+        left: 2em;
+    }
+
 
 
     /* Cuarto */
