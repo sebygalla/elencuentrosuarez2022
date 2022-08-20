@@ -811,6 +811,7 @@ id {
   color: white;
   z-index: 1;
   text-align: center;
+  margin: 5em auto 3em;
 }
 
 .mision__parrafo:active {
@@ -1151,7 +1152,7 @@ summary {
 .iglesia__texto {
   text-align: center;
   color: black;
-  margin: 3em;
+  margin: 5em auto 3em;
   z-index: 1;
 
 }
