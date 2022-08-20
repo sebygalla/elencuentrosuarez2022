@@ -861,11 +861,6 @@ summary {
   outline: none;
 }
 
-
-
-
-
-
 .mision__texto img {
   width: 400px;
   z-index: 0;
@@ -878,7 +873,7 @@ summary {
 /* texto descontracturado */
 .t-stroke {
   position: absolute;
-  top: 72%;
+  top: 70%;
   left: 0;
   right: 0;
   margin: auto;
@@ -1310,7 +1305,6 @@ summary {
 
 
 /* Modal niños */
-
 .popup__container {
   width: 100%;
   height: 100%;
@@ -1529,7 +1523,7 @@ summary {
 /* ribbon */
 .ribbon {
   width: 100%;
-  height: 50vh;
+  height: 30vh;
   /* background-color: var(--color-cinco); */
   grid-area: ribbon;
   position: relative;
@@ -1539,7 +1533,7 @@ summary {
   /* Absolute position */
   left: 0px;
   position: absolute;
-  top: 250px;
+  top: 150px;
 
   /* Take full size */
   height: 60%;

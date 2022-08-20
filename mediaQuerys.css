@@ -1583,7 +1583,7 @@
     .detalles {
         font-size: 15px;
         letter-spacing: 2px;
-        line-height: 20px;
+        line-height: 21px;
         margin-top: 1em;
         text-align: justify;
     }
@@ -1635,6 +1635,26 @@
     .ribbonUno__img {
         top: 7em;
         left: 2em;
+    }
+
+    .ribbon__diagonal {
+        /* Absolute position */
+        left: 0px;
+        position: absolute;
+        top: 125px;
+
+        /* Take full size */
+        height: 60%;
+        width: 100%;
+
+        /* Create diagonal sides */
+        transform: skewY(-5deg);
+
+        /* Background color */
+        background: linear-gradient(90deg, #f1f1f1, #d5d5d5);
+
+        /* Displayed under the main content */
+        z-index: -1;
     }
 
 
@@ -1709,7 +1729,7 @@
         width: 280px;
         position: absolute;
         top: 87%;
-        left: 50%;
+        left: 36%;
         margin: -140px 0 0 -140px;
 
         color: transparent;
@@ -1718,7 +1738,7 @@
         -moz-text-stroke-color: #000000;
         -webkit-text-stroke-color: #ffffff;
 
-        font-size: 70px;
+        font-size: 100px;
         line-height: 80px;
     }
 
