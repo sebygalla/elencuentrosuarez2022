@@ -695,8 +695,7 @@ id {
   margin: 0 auto;
   padding: 60px;
   text-align: right;
-  /* background: linear-gradient( var(--color-tres), rgba(255, 255, 255, 0.289), rgba(0, 0, 255, 0.1)); */
-  background: #3498dba1;
+  background: #c03a2b66;
   z-index: 9;
 }
 

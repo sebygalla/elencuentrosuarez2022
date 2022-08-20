@@ -750,7 +750,8 @@
         margin: 0 auto;
         padding: 20px;
         text-align: center;
-        background-color: var(--color-uno);
+        /* background-color: var(--color-uno); */
+        background: #c03a2b66;
     }
 
     .right__titulo--dos {
