@@ -546,7 +546,7 @@
         grid-column-gap: 1em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(14, auto);
+        grid-template-rows: repeat(18, auto);
         grid-template-areas:
 
             'header    header    header'
@@ -559,7 +559,9 @@
             'banner    banner    banner'
             'aside     aside     aside '
             'section   section   section'
+            'ribbonUno     ribbonUno     ribbonUno'
             'ministerios   ministerios   ministerios'
+            'ribbon     ribbon     ribbon '
             'cuarto     cuarto    cuarto'
             'testimonios testimonios testimonios'
             'galeria    galeria  galeria'
@@ -1581,6 +1583,16 @@
         line-height: 15px;
         text-align: justify;
     }
+
+    /* ribbon */
+.ribbon{
+    height: 25px;
+  }
+  
+  /* ribbon */
+  .ribbonUno{
+    height: 25px;  
+  }
 
 
     /* Cuarto */

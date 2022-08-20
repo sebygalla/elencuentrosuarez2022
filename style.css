@@ -32,7 +32,7 @@ id {
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(14, auto);
+  grid-template-rows: repeat(18, auto);
   grid-template-areas:
 
     'header    header    header'
@@ -45,7 +45,9 @@ id {
     'banner    banner    banner'
     'aside     aside     aside '
     'section   section   section'
+    'ribbonUno     ribbonUno     ribbonUno'
     'ministerios   ministerios   ministerios'
+    'ribbon     ribbon     ribbon'
     'cuarto     cuarto    cuarto'
     'testimonios   testimonios   testimonios'
     'galeria   galeria   galeria'
@@ -1522,6 +1524,24 @@ summary {
   border: none;
   cursor: pointer;
   background-color: var(--color-uno);
+
+}
+
+/* ribbon */
+.ribbon{
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-cinco);
+  grid-area: ribbon;
+
+}
+
+/* ribbon */
+.ribbonUno{
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-cinco);
+  grid-area: ribbonUno;
 
 }
 
