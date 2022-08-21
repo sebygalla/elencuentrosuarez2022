@@ -581,7 +581,7 @@
     .main {
         width: 100%;
         height: 600px;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
