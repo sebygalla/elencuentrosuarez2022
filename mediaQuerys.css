@@ -1529,6 +1529,13 @@
     .navbar__link {
         font-size: 16px;
     }
+    .navbar__social{
+        display: none;
+    }
+    .navbarSocial--on{
+        display: flex;
+        margin: 25px auto;
+    }
 
     /*Contenedor general (grilla layaut)*/
     .contenedor {
@@ -1549,6 +1556,8 @@
     .main::before {
         height: auto;
     }
+
+  
 
     /*Rehma*/
     .article {

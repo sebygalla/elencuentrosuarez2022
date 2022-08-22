@@ -307,6 +307,7 @@ id {
 }
 
 .navbar__social {
+
   display: flex;
   text-decoration: none;
   color: #fff;
@@ -316,15 +317,25 @@ id {
   margin-right: 4em;
 
 }
-
-.navbar__social a {
-  padding: 8px;
-  color: black;
-
+.navbarSocial--on{
+  display: none;
 }
 
-.navbar__social a:hover {
-  color: var(--color-tres);
+.navbar__social img {
+  margin: 12px;
+}
+
+.navFace{
+  width: 25px;
+  height: auto;
+}
+.navInsta{
+  width: 25px;
+  height: auto;
+}
+.navYoutube{
+  width: 25px;
+  height: auto;
 }
 
 
