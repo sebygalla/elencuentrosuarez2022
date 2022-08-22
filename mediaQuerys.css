@@ -390,16 +390,20 @@
         font-size: 14px;
     }
 
-    /* ministerio */
-    .ministerios {
-        height: 60vh;
+    /* ribbon Uno card */
+    .ribbonUno{
+        padding: 0;
     }
 
-    .ministeriosCard {
+    .ribbonUno__titulo{
+        margin-top: 130px;
+    }
+
+    .ribbonUno__card {
         width: 90%;
     }
 
-    .ministeriosCard__imagen {
+    .ribbonUno__card__imagen {
         width: 150%;
     }
 
@@ -429,11 +433,11 @@
         top: 3.7em;
     }
 
-    .container__diagonal {
+    .ribbon__diagonal {
         /* Absolute position */
         left: 0px;
         position: absolute;
-        top: 500px;
+        top: 310px;
 
         /* Take full size */
         height: 50%;
@@ -561,7 +565,7 @@
             'aside     aside     aside '
             'section   section   section'
             'ribbonUno     ribbonUno     ribbonUno'
-            'ministerios   ministerios   ministerios'
+            /* 'ministerios   ministerios   ministerios' */
             'ribbon     ribbon     ribbon '
             'cuarto     cuarto    cuarto'
             'testimonios testimonios testimonios'
@@ -1593,49 +1597,53 @@
         color: aqua;
     }
 
-    /* Ministerios */
-    .ministerios {
-        height: 70vh;
+
+
+    /* ribbonUno */
+    .ribbonUno {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        padding: 0;
     }
 
-    .ministeriosCard {
+    .ribbonUno::before {
+        height: auto;
+    }
+
+    .ribbonUno__titulo {
+        font-size: 28px;
+        padding: 10px 20px;
+        margin-top: 100px;
+    }
+
+    .ribbonUno__img {
+        top: 8.5em;
+        left: 4em;
+    }
+
+    /* ribbonUno card */
+    .ribbonUno__card {
         width: 95%;
     }
 
-    .ministeriosCard__imagen {
+    .ribbonUno__card__imagen {
         width: 40%;
     }
 
-    .ministeriosCard__texto {
+    .ribbonUno__card__texto {
         width: 90%;
         padding: 10px;
     }
 
-    .ministeriosCard__parrafo {
+    .ribbonUno__card__parrafo {
         font-size: 12px;
         line-height: 15px;
         text-align: justify;
     }
 
-    /* ribbonUno */
-    .ribbonUno {
-        height: 30vh;
-        background-size: cover;
-        background-position: center;
-    }
 
-    .ribbonUno::before {
-        height: 30vh;
-    }
 
-    .ribbonUno__titulo {
-        font-size: 28px;
-    }
-
-    .ribbonUno__img {
-        top: 7em;
-        left: 2em;
-    }
 
     .ribbon__diagonal {
         /* Absolute position */

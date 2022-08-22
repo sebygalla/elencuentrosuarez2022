@@ -46,7 +46,7 @@ id {
     'aside     aside     aside '
     'section   section   section'
     'ribbonUno     ribbonUno     ribbonUno'
-    'ministerios   ministerios   ministerios'
+    /* 'ministerios   ministerios   ministerios' */
     'ribbon     ribbon     ribbon'
     'cuarto     cuarto    cuarto'
     'testimonios   testimonios   testimonios'
@@ -1409,36 +1409,79 @@ summary {
   color: var(--color-tres);
 }
 
-
-/* MINISTERIOS SECTION */
-.ministerios {
+/* ribbonUno */
+.ribbonUno {
   width: 100%;
-  height: 80vh;
-  grid-area: ministerios;
-  background-color: white;
-  background: linear-gradient(90deg, #f1f1f1, #d5d5d5);
-  padding: 2em 0;
+  height: auto;
+  grid-area: ribbonUno;
+  background: url(img/main2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-
-
+  flex-direction: column;
+  position: relative;
+  padding: 150px;
 }
 
-/* Ministerios card */
-.ministeriosCard {
+.ribbonUno::before {
+  width: 100%;
+  height: auto;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.ribbonUno cite {
+  color: wheat;
+  z-index: 2;
+}
+
+.ribbonUno__titulo {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  color: white;
+  z-index: 2;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.ribbonUno__img {
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  filter: contrast(100%),
+}
+
+/* card ribbon */
+.ribbonUno__card {
   width: 60%;
   height: 350px;
   border-radius: 8px;
-  margin: 0 auto;
   background: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
   display: flex;
-  margin: 1em auto;
+  margin: 6em auto;
+  z-index: 2;
+
 
 }
 
-.ministeriosCard__imagen {
+.ribbonUno__card__imagen {
   width: 100em;
   height: auto;
   background: url(img/main.png);
@@ -1452,7 +1495,7 @@ summary {
 }
 
 
-.ministeriosCard__texto {
+.ribbonUno__card__texto {
   color: black;
   display: flex;
   flex-direction: column;
@@ -1462,7 +1505,7 @@ summary {
   padding: 20px;
 }
 
-.ministeriosCard__tituloPre {
+.ribbonUno__card__tituloPre {
   color: black;
   font-size: 15px;
   font-family: 'Cardo', serif;
@@ -1470,7 +1513,7 @@ summary {
   margin-bottom: 10px;
 }
 
-.ministeriosCard__titulo {
+.ribbonUno__card__titulo {
   color: black;
   font-size: 25px;
   font-weight: 600;
@@ -1478,7 +1521,7 @@ summary {
 
 }
 
-.ministeriosCard__linea {
+.ribbonUno__card__linea {
   width: 90px;
   height: 2px;
   background-color: var(--color-uno);
@@ -1486,7 +1529,7 @@ summary {
 
 }
 
-.ministeriosCard__parrafo {
+.ribbonUno__card__parrafo {
   color: black;
   font-size: 10px;
   line-height: 20px;
@@ -1494,7 +1537,7 @@ summary {
   margin-bottom: 10px;
 }
 
-.ministeriosCard__btn {
+.ribbonUno__card__btn {
   width: 100px;
   z-index: 1;
   background-color: var(--color-uno);
@@ -1504,7 +1547,7 @@ summary {
   cursor: pointer;
 }
 
-.ministeriosCard__btn input {
+.ribbonUno__card__btn input {
   font-size: 12px;
   font-weight: 600;
   margin: 0 auto;
@@ -1513,7 +1556,7 @@ summary {
   color: white;
 }
 
-.ministeriosCard__btn:hover {
+.ribbonUno__card__btn:hover {
   border: none;
   cursor: pointer;
   background-color: var(--color-uno);
@@ -1549,63 +1592,6 @@ summary {
   z-index: -1;
 }
 
-/* ribbon */
-.ribbonUno {
-  width: 100%;
-  height: 40vh;
-  grid-area: ribbonUno;
-  background: url(img/main2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  padding: 20px;
-}
-
-.ribbonUno::before {
-  width: 100%;
-  height: 40vh;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, .8);
-}
-
-.ribbonUno cite {
-  color: wheat;
-  z-index: 2;
-}
-
-.ribbonUno__titulo {
-  font-size: 50px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  line-height: 50px;
-  color: white;
-  z-index: 2;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-}
-
-.ribbonUno__img {
-  width: 60px;
-  height: 60px;
-  z-index: 2;
-  border: 3px solid white;
-  border-radius: 50%;
-  position: absolute;
-  left: 35%;
-  bottom: 35px;
-  filter: contrast(100%),
-}
 
 /* CUARTO SECTION */
 .cuarto {
