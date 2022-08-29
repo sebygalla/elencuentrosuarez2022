@@ -325,7 +325,7 @@
     .banner__img {
         width: 50px;
         height: auto;
-        left: 30%;
+        left: 25%;
         bottom: 20%;
     }
 
@@ -336,7 +336,7 @@
         line-height: 45px;
 
         position: absolute;
-        margin-top: 310%;
+        margin-top: 270%;
     }
 
     #bannerTitulo {
@@ -1606,8 +1606,16 @@
     }
 
     /*banner*/
+    .banner{
+        height: 170px;
+    }
+
+    .banner::before{
+        height: 170px;
+    }
+
     .banner__img {
-        top: 4.5em;
+        top: 5em;
         left: 2em;
     }
 
@@ -1617,13 +1625,12 @@
         line-height: 25px;
 
         position: absolute;
-        margin-top: 410%;
+        margin-top: 380%;
     }
 
     #bannerTitulo {
         width: 100%;
         position: relative;
-
     }
 
     .detalles {

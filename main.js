@@ -61,11 +61,11 @@ window.onscroll = function () {
     }
     ubicacionPrincipal = desplazamientoActual;
 
-    
     /*paralax banner*/
     var posicion = window.pageYOffset || documentElement.scrollTop;
     var elementoTitulo = document.getElementById("bannerTitulo");
-    elementoTitulo.style.bottom = ubicacionPrincipal *  .2 + "px";
+    elementoTitulo.style.bottom = ubicacionPrincipal * .17 + "px";
+
 }
 
 

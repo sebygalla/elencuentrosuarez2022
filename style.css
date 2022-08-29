@@ -748,6 +748,8 @@ id {
   flex-direction: column;
   position: relative;
   padding: 20px;
+
+  overflow: hidden;
 }
 
 .banner::before {
@@ -783,7 +785,7 @@ id {
   justify-content: center;
 
   position: absolute;
-  margin-top: 125%;
+  margin-top: 100%;
 
 
 }
@@ -913,6 +915,10 @@ summary {
 
   font-size: 60px;
   line-height: 80px;
+}
+
+#stroke{
+
 }
 
 .t-shadow {
@@ -1603,7 +1609,7 @@ summary {
   /* Absolute position */
   left: 0px;
   position: absolute;
-  top: 150px;
+  top: 180px;
 
   /* Take full size */
   height: 60%;
