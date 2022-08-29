@@ -60,7 +60,15 @@ window.onscroll = function () {
         document.querySelector('.navbar').style.top = '-100px';
     }
     ubicacionPrincipal = desplazamientoActual;
+
+    
+    /*paralax banner*/
+    var posicion = window.pageYOffset || documentElement.scrollTop;
+    var elementoTitulo = document.getElementById("bannerTitulo");
+    elementoTitulo.style.bottom = ubicacionPrincipal *  .2 + "px";
 }
+
+
 
 
 /*formulario*/

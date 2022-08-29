@@ -329,6 +329,22 @@
         bottom: 20%;
     }
 
+    
+    .banner__titulo {
+        height: 100vh;
+        font-size: 38px;
+        line-height: 45px;
+
+        position: absolute;
+        margin-top: 310%;
+    }
+
+    #bannerTitulo {
+        width: 100%;
+        position: relative;
+
+    }
+
     /* vision */
     .mision__texto img {
         width: 600px;
@@ -391,11 +407,11 @@
     }
 
     /* ribbon Uno card */
-    .ribbonUno{
+    .ribbonUno {
         padding: 0;
     }
 
-    .ribbonUno__titulo{
+    .ribbonUno__titulo {
         margin-top: 130px;
     }
 
@@ -1529,10 +1545,12 @@
     .navbar__link {
         font-size: 16px;
     }
-    .navbar__social{
+
+    .navbar__social {
         display: none;
     }
-    .navbarSocial--on{
+
+    .navbarSocial--on {
         display: flex;
         margin: 25px auto;
     }
@@ -1557,7 +1575,7 @@
         height: auto;
     }
 
-  
+
 
     /*Rehma*/
     .article {
@@ -1589,8 +1607,23 @@
 
     /*banner*/
     .banner__img {
-        top: 3.5em;
+        top: 4.5em;
         left: 2em;
+    }
+
+    .banner__titulo {
+        height: 100vh;
+        font-size: 18px;
+        line-height: 25px;
+
+        position: absolute;
+        margin-top: 410%;
+    }
+
+    #bannerTitulo {
+        width: 100%;
+        position: relative;
+
     }
 
     .detalles {
