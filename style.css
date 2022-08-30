@@ -27,8 +27,8 @@ id {
   width: 95vw;
   max-width: 65em;
 
-  margin: 1.2em auto;
-  grid-gap: .7em;
+  margin: .5em auto;
+  grid-gap: .5em;
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
@@ -210,11 +210,6 @@ id {
   font-weight: 600;
   color: white;
 }
-
-
-
-
-
 
 /*header*/
 .header {
@@ -743,7 +738,7 @@ id {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 320px;
+  height: 350px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -756,7 +751,7 @@ id {
 
 .banner::before {
   width: 100%;
-  height: 320px;
+  height: 350px;
   content: '';
   position: absolute;
   top: 0;
@@ -787,7 +782,7 @@ id {
   justify-content: center;
 
   position: absolute;
-  margin-top: 100%;
+  margin-top: 110%;
 
 
 }
@@ -1481,7 +1476,7 @@ summary {
   text-align: center;
   color: white;
   z-index: 1;
-  margin: 1em auto 3em;
+  margin: 0em auto 3em;
 }
 
 .ministerio__titulo {
@@ -1534,7 +1529,7 @@ summary {
 .ministerio__card__imagen {
   width: 40em;
   height: auto;
-  background-size: 50em;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
@@ -1622,7 +1617,7 @@ summary {
   /* Absolute position */
   left: 0px;
   position: absolute;
-  top: 200px;
+  top: 150px;
 
   /* Take full size */
   height: 60%;
@@ -1655,7 +1650,7 @@ summary {
 
 
 .cuarto__imagen {
-  width: 20em;
+  width: 25em;
   height: auto;
   background-size: 50em;
   background-repeat: no-repeat;
@@ -1673,7 +1668,7 @@ summary {
   flex-direction: column;
   align-items: baseline;
   text-align: left;
-  padding: 20px;
+  padding: 50px;
 }
 
 .cuarto__tituloPre {
@@ -1695,7 +1690,7 @@ summary {
 }
 
 .cuarto__linea {
-  width: 500px;
+  width: 300px;
   height: 2px;
   background-color: var(--color-uno);
   text-align: center;
@@ -1703,7 +1698,7 @@ summary {
 
 .cuarto__parrafo {
   color: black;
-  font-size: 10px;
+  font-size: 15px;
   line-height: 20px;
   margin: 20px 0;
 }

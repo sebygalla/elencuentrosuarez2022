@@ -1596,11 +1596,11 @@
 
     /*banner*/
     .banner {
-        height: 170px;
+        height: 190px;
     }
 
     .banner::before {
-        height: 170px;
+        height: 190px;
     }
 
     .banner__img {
@@ -1614,7 +1614,7 @@
         line-height: 25px;
 
         position: absolute;
-        margin-top: 380%;
+        margin-top: 435%;
     }
 
     #bannerTitulo {
