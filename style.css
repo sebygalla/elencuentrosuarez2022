@@ -372,7 +372,7 @@ id {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 0;
 }
 
@@ -1453,11 +1453,13 @@ summary {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+
   display: flex;
   text-align: center;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
+  gap: 50px;
   padding: 150px;
 }
 
@@ -1503,20 +1505,18 @@ summary {
 
 /* card ribbon */
 .ribbonUno__card {
-  width: 60%;
-  height: 350px;
+  width: 22em;
+  height: 15em;
   border-radius: 8px;
   background: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
   display: flex;
-  margin: 6em auto;
+  flex-wrap: nowrap;
   z-index: 2;
-
-
 }
 
 .ribbonUno__card__imagen {
-  width: 100em;
+  width: 40em;
   height: auto;
   background: url(img/main.png);
   background-size: 50em;
@@ -1525,7 +1525,6 @@ summary {
   object-fit: cover;
   border-radius: 8px 0 0 8px;
   filter: contrast(1.7) brightness(1.4);
-
 }
 
 
@@ -1536,7 +1535,7 @@ summary {
   align-items: center;
   justify-content: center;
   text-align: justify;
-  padding: 20px;
+  padding: 35px 10px;
 }
 
 .ribbonUno__card__tituloPre {

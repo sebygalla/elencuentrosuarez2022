@@ -1653,7 +1653,7 @@
         height: auto;
         background-size: cover;
         background-position: center;
-        padding: 0;
+       
     }
 
     .ribbonUno::before {
@@ -1673,7 +1673,9 @@
 
     /* ribbonUno card */
     .ribbonUno__card {
-        width: 95%;
+        width: 90%;
+        height: auto;
+
     }
 
     .ribbonUno__card__imagen {
