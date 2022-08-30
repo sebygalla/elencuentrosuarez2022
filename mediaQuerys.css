@@ -329,7 +329,7 @@
         bottom: 20%;
     }
 
-    
+
     .banner__titulo {
         height: 100vh;
         font-size: 38px;
@@ -409,6 +409,7 @@
     /* ministerio card */
     .ministerio {
         padding: 0;
+        padding-bottom: 50px;
     }
 
     .ministerio__titulo {
@@ -416,7 +417,7 @@
     }
 
     .ministerio__card {
-        width: 90%;
+        width: 17em;
     }
 
     .ministerio__card__imagen {
@@ -425,15 +426,17 @@
 
     /* cuarto */
     .cuarto {
-        height: 60vh;
+        width: 100%;
+        height: auto;
+        padding: 50px 20px;
     }
 
-    .cuartoCard {
-        width: 90%;
+    .cuarto__imagen {
+        width: 50%;
     }
 
-    .cuartoCard__imagen {
-        width: 150%;
+    .cuarto__linea {
+        width: 200px;
     }
 
     /* testimonios */
@@ -473,11 +476,6 @@
 
 
 }
-
-
-
-
-
 
 @media only screen and (max-width: 768px) {
 
@@ -1597,11 +1595,11 @@
     }
 
     /*banner*/
-    .banner{
+    .banner {
         height: 170px;
     }
 
-    .banner::before{
+    .banner::before {
         height: 170px;
     }
 
@@ -1644,7 +1642,8 @@
         height: auto;
         background-size: cover;
         background-position: center;
-       
+        padding: 0 0 30px 0;
+
     }
 
     .ministerio::before {
@@ -1670,12 +1669,12 @@
     }
 
     .ministerio__card__imagen {
-        width: 40%;
+        width: 50%;
     }
 
     .ministerio__card__texto {
         width: 90%;
-        padding: 10px;
+        padding: 25px;
     }
 
     .ministerio__card__parrafo {
@@ -1691,7 +1690,7 @@
         /* Absolute position */
         left: 0px;
         position: absolute;
-        top: 125px;
+        top: 185px;
 
         /* Take full size */
         height: 60%;
@@ -1711,33 +1710,41 @@
 
     /* Cuarto */
     .cuarto {
-        height: 70vh;
-        padding: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
     }
 
-    .cuartoCard {
-        width: 95%;
-    }
-
-    .cuartoCard__imagen {
-        width: 40%;
-    }
-
-    .cuartoCard__texto {
+    .cuarto__imagen {
         width: 90%;
-        padding: 10px;
     }
 
-    .cuartoCard__tituloPre {
+    .cuarto__texto {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 0px;
+    }
+
+    .cuarto__tituloPre {
         font-size: 15px;
     }
 
-    .cuartoCard__titulo {
-        font-size: 20px;
-        line-height: 22px;
+    .cuarto__titulo {
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
     }
 
-    .cuartoCard__parrafo {
+
+    .cuarto__linea {
+        width: 90px;
+
+    }
+
+    .cuarto__parrafo {
         font-size: 12px;
         line-height: 15px;
         text-align: justify;

@@ -1622,7 +1622,7 @@ summary {
   /* Absolute position */
   left: 0px;
   position: absolute;
-  top: 180px;
+  top: 200px;
 
   /* Take full size */
   height: 60%;
@@ -1643,33 +1643,20 @@ summary {
 /* CUARTO SECTION */
 .cuarto {
   width: 100%;
-  height: auto;
+  height: 100vh;
   grid-area: cuarto;
   background-color: white;
   background: linear-gradient(90deg, #f1f1f1, #d5d5d5);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
-/* Cuarto card */
-.cuartoCard {
-  width: 60%;
-  height: 350px;
-  border-radius: 8px;
-  margin: 0 auto;
-  background: whitesmoke;
-  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
 
-  display: flex;
-  margin: 3em auto;
-
-}
-
-.cuartoCard__imagen {
-  width: 100em;
+.cuarto__imagen {
+  width: 20em;
   height: auto;
-  background: url(img/cuartodeoracion.jpg);
   background-size: 50em;
   background-repeat: no-repeat;
   background-position: top;
@@ -1679,17 +1666,17 @@ summary {
 }
 
 
-.cuartoCard__texto {
+.cuarto__texto {
+  width: 50%;
   color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: baseline;
+  text-align: left;
   padding: 20px;
 }
 
-.cuartoCard__tituloPre {
+.cuarto__tituloPre {
   color: black;
   font-size: 15px;
   font-family: 'Cardo', serif;
@@ -1697,41 +1684,40 @@ summary {
   margin-bottom: 10px;
 }
 
-.cuartoCard__titulo {
+.cuarto__titulo {
   color: black;
-  font-size: 25px;
+  font-size: 45px;
   font-weight: 600;
+  line-height: 40px;
   margin-bottom: 10px;
+  text-align: left;
 
 }
 
-.cuartoCard__linea {
-  width: 90px;
+.cuarto__linea {
+  width: 500px;
   height: 2px;
   background-color: var(--color-uno);
   text-align: center;
-
 }
 
-.cuartoCard__parrafo {
+.cuarto__parrafo {
   color: black;
   font-size: 10px;
   line-height: 20px;
-  padding: 10px;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
-.cuartoCard__btn {
+.cuarto__btn {
   width: 100px;
   z-index: 1;
   background-color: var(--color-uno);
   border-radius: 8px;
   padding: 8px;
-  margin: 0 auto;
   cursor: pointer;
 }
 
-.cuartoCard__btn input {
+.cuarto__btn input {
   font-size: 12px;
   font-weight: 600;
   margin: 0 auto;
@@ -1740,7 +1726,7 @@ summary {
   color: white;
 }
 
-.cuartoCard__btn:hover {
+.cuarto__btn:hover {
   border: none;
   cursor: pointer;
   background-color: var(--color-uno);
