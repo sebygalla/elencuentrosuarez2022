@@ -45,8 +45,7 @@ id {
     'banner    banner    banner'
     'aside     aside     aside '
     'section   section   section'
-    'ribbonUno     ribbonUno     ribbonUno'
-    /* 'ministerios   ministerios   ministerios' */
+    'ministerio   ministerio   ministerio'
     'ribbon     ribbon     ribbon'
     'cuarto     cuarto    cuarto'
     'testimonios   testimonios   testimonios'
@@ -317,7 +316,8 @@ id {
   margin-right: 4em;
 
 }
-.navbarSocial--on{
+
+.navbarSocial--on {
   display: none;
 }
 
@@ -325,15 +325,17 @@ id {
   margin: 12px;
 }
 
-.navFace{
+.navFace {
   width: 25px;
   height: auto;
 }
-.navInsta{
+
+.navInsta {
   width: 25px;
   height: auto;
 }
-.navYoutube{
+
+.navYoutube {
   width: 25px;
   height: auto;
 }
@@ -372,7 +374,7 @@ id {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 0;
 }
 
@@ -388,24 +390,24 @@ id {
 }
 
 .main__titulo {
-  font-size: 6em;
+  font-size: 4em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  margin: 55px auto;
+  margin: 10px auto;
   letter-spacing: 0px;
   padding: 20px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
 .main__tituloPre {
-  font-size: 35px;
+  font-size: 25px;
   font-family: 'Cardo', serif;
   font-weight: 100;
 }
 
 .main__tituloSub {
-  font-size: 25px;
-  margin: 25px;
+  font-size: 15px;
+  margin: 18px;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -790,7 +792,7 @@ id {
 
 }
 
-#bannerTitulo{
+#bannerTitulo {
   width: 100%;
   position: relative;
 
@@ -917,9 +919,7 @@ summary {
   line-height: 80px;
 }
 
-#stroke{
-
-}
+#stroke {}
 
 .t-shadow {
   text-shadow: 7px 7px var(--color-uno);
@@ -1272,64 +1272,35 @@ summary {
 
 
 
-/*modificadores de imagen*/
+/*modificadores de imagen Actividades*/
 .iglesia__imagen--niños {
-  grid-area: image;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-
   background: url('img/niñosDos.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  filter: contrast(1.4) brightness(.9);
 }
 
-
-/*modificadores de preAdolescentes*/
+/*preAdolescentes*/
 .iglesia__imagen--preAdolescentes {
-  grid-area: image;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-
   background: url('img/preadolescentes.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
 }
 
-/*modificadores de jovenes*/
+/*jovenes*/
 .iglesia__imagen--jovenes {
-  grid-area: image;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-
   background: url('img/jovenes(nuevo).jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-  filter: contrast(1.2);
 }
 
-/*modificadores de matrimonios grandes*/
+/*matrimonios grandes*/
 .iglesia__imagen--matrimoniosGrandes {
-  grid-area: image;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-
   background: url('img/matrimonios\(nuevo\).jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: contrast(1.2) brightness(1.4);
 }
 
-/*modificadores de matrimonios jovenes*/
+/*matrimonios jovenes*/
 .iglesia__imagen--matrimoniosJovenes {
+  background: url('img/matri\ joven.jpg');
+}
+
+.iglesia__imagen {
   grid-area: image;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-
-  background: url('img/matri\ joven.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: top;
@@ -1444,10 +1415,10 @@ summary {
 }
 
 /* ribbonUno */
-.ribbonUno {
+.ministerio {
   width: 100%;
   height: auto;
-  grid-area: ribbonUno;
+  grid-area: ministerio;
   background: url(img/main2.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -1463,7 +1434,7 @@ summary {
   padding: 150px;
 }
 
-.ribbonUno::before {
+.ministerio::before {
   width: 100%;
   height: auto;
   content: '';
@@ -1476,12 +1447,12 @@ summary {
   background-color: rgba(0, 0, 0, .8);
 }
 
-.ribbonUno cite {
+.ministerio cite {
   color: wheat;
   z-index: 2;
 }
 
-.ribbonUno__titulo {
+.ministerio__titulo {
   font-size: 50px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -1491,7 +1462,7 @@ summary {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
-.ribbonUno__img {
+.ministerio__img {
   width: 60px;
   height: 60px;
   z-index: 2;
@@ -1503,8 +1474,32 @@ summary {
   filter: contrast(100%),
 }
 
+/* Titulo ministerios */
+.ministerio__texto {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin: 1em auto 3em;
+}
+
+.ministerio__titulo {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  z-index: 9;
+}
+
+.ministerio__subtitulo {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
 /* card ribbon */
-.ribbonUno__card {
+.ministerio__card {
   width: 22em;
   height: 15em;
   border-radius: 8px;
@@ -1515,10 +1510,30 @@ summary {
   z-index: 2;
 }
 
-.ribbonUno__card__imagen {
+/* Modificadores imagenes Cards 1-5 */
+.ministerio__card__imagen--social {
+  background: url(img/niñosDos.jpg);
+}
+
+.ministerio__card__imagen--evangelismo {
+  background: url(img/evangelismo.jpg);
+}
+
+.ministerio__card__imagen--enseñanza {
+  background: url(img/cuarto3.jpg);
+}
+
+.ministerio__card__imagen--intersecion {
+  background: url(img/galeriaOcho.jpg);
+}
+
+.ministerio__card__imagen--alabanza {
+  background: url(img/galeriaUno.jpg);
+}
+
+.ministerio__card__imagen {
   width: 40em;
   height: auto;
-  background: url(img/main.png);
   background-size: 50em;
   background-repeat: no-repeat;
   background-position: center;
@@ -1527,8 +1542,7 @@ summary {
   filter: contrast(1.7) brightness(1.4);
 }
 
-
-.ribbonUno__card__texto {
+.ministerio__card__texto {
   color: black;
   display: flex;
   flex-direction: column;
@@ -1538,7 +1552,7 @@ summary {
   padding: 35px 10px;
 }
 
-.ribbonUno__card__tituloPre {
+.ministerio__card__tituloPre {
   color: black;
   font-size: 15px;
   font-family: 'Cardo', serif;
@@ -1546,7 +1560,7 @@ summary {
   margin-bottom: 10px;
 }
 
-.ribbonUno__card__titulo {
+.ministerio__card__titulo {
   color: black;
   font-size: 25px;
   font-weight: 600;
@@ -1554,7 +1568,7 @@ summary {
 
 }
 
-.ribbonUno__card__linea {
+.ministerio__card__linea {
   width: 90px;
   height: 2px;
   background-color: var(--color-uno);
@@ -1562,7 +1576,7 @@ summary {
 
 }
 
-.ribbonUno__card__parrafo {
+.ministerio__card__parrafo {
   color: black;
   font-size: 10px;
   line-height: 20px;
@@ -1570,7 +1584,7 @@ summary {
   margin-bottom: 10px;
 }
 
-.ribbonUno__card__btn {
+.ministerio__card__btn {
   width: 100px;
   z-index: 1;
   background-color: var(--color-uno);
@@ -1580,7 +1594,7 @@ summary {
   cursor: pointer;
 }
 
-.ribbonUno__card__btn input {
+.ministerio__card__btn input {
   font-size: 12px;
   font-weight: 600;
   margin: 0 auto;
@@ -1589,7 +1603,7 @@ summary {
   color: white;
 }
 
-.ribbonUno__card__btn:hover {
+.ministerio__card__btn:hover {
   border: none;
   cursor: pointer;
   background-color: var(--color-uno);

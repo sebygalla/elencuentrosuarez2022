@@ -406,20 +406,20 @@
         font-size: 14px;
     }
 
-    /* ribbon Uno card */
-    .ribbonUno {
+    /* ministerio card */
+    .ministerio {
         padding: 0;
     }
 
-    .ribbonUno__titulo {
+    .ministerio__titulo {
         margin-top: 130px;
     }
 
-    .ribbonUno__card {
+    .ministerio__card {
         width: 90%;
     }
 
-    .ribbonUno__card__imagen {
+    .ministerio__card__imagen {
         width: 150%;
     }
 
@@ -580,8 +580,7 @@
             'banner    banner    banner'
             'aside     aside     aside '
             'section   section   section'
-            'ribbonUno     ribbonUno     ribbonUno'
-            /* 'ministerios   ministerios   ministerios' */
+            'ministerio   ministerio   ministerio'
             'ribbon     ribbon     ribbon '
             'cuarto     cuarto    cuarto'
             'testimonios testimonios testimonios'
@@ -1071,29 +1070,29 @@
         line-height: normal;
     }
 
-    /* ribbon */
-    .ribbonUno {
+    /* ministerio */
+    .ministerio {
         width: 100%;
         height: 150px;
     }
 
-    .ribbonUno::before {
+    .ministerio::before {
         width: 100%;
         height: 150px;
     }
 
-    .ribbonUno__titulo {
+    .ministerio__titulo {
         padding: 5px;
         font-size: 16px;
         line-height: 25px;
     }
 
-    .ribbonUno cite {
+    .ministerio cite {
         font-size: 12px;
         line-height: 25px;
     }
 
-    .ribbonUno__img {
+    .ministerio__img {
         width: 50px;
         height: 50px;
         border: 2px solid white;
@@ -1101,10 +1100,6 @@
         left: 100px;
         top: 85px;
     }
-
-
-
-
 
     /* testimonios */
     .swiper-texto {
@@ -1362,7 +1357,6 @@
         left: 1.5em;
     }
 
-
     .t-stroke {
         width: 280px;
         position: absolute;
@@ -1379,8 +1373,6 @@
         font-size: 70px;
         line-height: 80px;
     }
-
-
 
     /* testimonios */
     .swiper-texto {
@@ -1413,7 +1405,6 @@
         font-weight: 600;
         line-height: 50px;
     }
-
 
     /* Modal niños */
     .popup__card {
@@ -1648,46 +1639,46 @@
 
 
 
-    /* ribbonUno */
-    .ribbonUno {
+    /* ministerio */
+    .ministerio {
         height: auto;
         background-size: cover;
         background-position: center;
        
     }
 
-    .ribbonUno::before {
+    .ministerio::before {
         height: auto;
     }
 
-    .ribbonUno__titulo {
+    .ministerio__titulo {
         font-size: 28px;
         padding: 10px 20px;
         margin-top: 100px;
     }
 
-    .ribbonUno__img {
+    .ministerio__img {
         top: 8.5em;
         left: 4em;
     }
 
-    /* ribbonUno card */
-    .ribbonUno__card {
+    /* ministerio card */
+    .ministerio__card {
         width: 90%;
         height: auto;
 
     }
 
-    .ribbonUno__card__imagen {
+    .ministerio__card__imagen {
         width: 40%;
     }
 
-    .ribbonUno__card__texto {
+    .ministerio__card__texto {
         width: 90%;
         padding: 10px;
     }
 
-    .ribbonUno__card__parrafo {
+    .ministerio__card__parrafo {
         font-size: 12px;
         line-height: 15px;
         text-align: justify;
