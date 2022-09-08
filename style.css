@@ -1302,6 +1302,81 @@ summary {
   filter: contrast(1.9) brightness(1);
 }
 
+/* iglesia modal */
+.iglesia__modal {
+  background-color: #000000e6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+  z-index: 999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+
+
+
+.iglesia__modal--active {
+  display: flex;
+}
+
+
+.iglesia__modal__card {
+  width: 50%;
+  height: auto;
+  background: white;
+  padding: 30px;
+  transition: all 800ms;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+.iglesia__modal__contenedor--titulo{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-uno);
+}
+
+.iglesia__modal__titulo {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 35px;
+  color: white;
+}
+
+.iglesia__modal__parrafo {
+  font-size: 12px;
+  text-align: justify;
+  line-height: 25px;
+  margin-top: 100px;
+}
+
+.iglesia__btn__cerrar {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  margin: 20px auto 0;
+  padding: 10px;
+  background-color: var(--color-uno);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  text-align: center;
+  cursor: pointer;
+}
+
+
 
 
 /* Modal niños */
@@ -1319,6 +1394,7 @@ summary {
   transition: all 800ms;
   z-index: 999;
 }
+
 
 .popup__container:target {
   background: rgba(0, 0, 0, 0.9);

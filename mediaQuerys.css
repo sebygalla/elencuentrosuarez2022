@@ -424,6 +424,20 @@
         width: 150%;
     }
 
+    /* Actividades modal */
+    .iglesia__modal__card {
+        width: 70%;
+    }
+
+    .iglesia__modal__titulo {
+        font-size: 30px;
+    }
+
+    .iglesia__modal__parrafo {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
     /* cuarto */
     .cuarto {
         width: 100%;
@@ -1682,6 +1696,21 @@
         line-height: 15px;
         text-align: justify;
     }
+
+    /* Actividades modal */
+    .iglesia__modal__card {
+        width: 95%;
+    }
+
+    .iglesia__modal__titulo {
+        font-size: 20px;
+    }
+
+    .iglesia__modal__parrafo {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
 
 
 

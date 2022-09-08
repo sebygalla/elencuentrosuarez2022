@@ -93,17 +93,138 @@ async function handleSubmit(event) {
 }
 
 /* Modal */
-const btnModal = document.querySelector('.iglesia__boton');
-const modal = document.querySelector('.modal');
-const close = document.querySelector('.modal__cerrar');
+// const btnModal = document.querySelector('.iglesia__boton');
+// const modal = document.querySelector('.modal');
+// const close = document.querySelector('.modal__cerrar');
+// const ninios = document.querySelector('.iglesia__ninios');
+// const iglesiaContenedor = document.querySelector('.iglesia__contenedor');
+// const modalNuevo = document.getElementById('modalNuevo');
+
+// iglesiaContenedor.addEventListener('click', (e) => {
+
+// const btnClick = e.target.classList[1];
+// console.log(btnClick);
+
+// if(btnClick == 'iglesia__ninios'){
+//     alert('Hola Mundo2...')
+// } else if(btnClick == 'iglesia__preadolescentes'){
+//     alert('Hola Mundo2...')
+// } else if(btnClick == 'iglesia__jovenes'){
+//     alert('Hola Mundo3...')
+// } else if(btnClick== 'iglesia__matriJovenes'){
+//     alert('Hola Mundo4...') 
+// } else if(btnClick == 'iglesia__matriAdultos'){
+//     alert('Hola Mundo5...') 
+// }
+
+
+
+// });
+// const ninios = document.querySelector('.iglesia__ninios');
+const iglesiaContenedor = document.querySelector('.iglesia__contenedor');
+const iglesiaModal = document.getElementById('iglesiaModal')
+
+// variables de parrafos y titulos
+const modalTitulo = document.querySelector('.iglesia__modal__titulo');
+const modalParrafo = document.querySelector('.iglesia__modal__parrafo');
 
 
 
 
-btnModal.addEventListener('click', function () {
-    modal.classList.add('modal--on');
-});
+iglesiaContenedor.addEventListener('click', (e) => {
+    const btnClick = e.target.classList[1];
 
-close.addEventListener('click', function () {
-    modal.classList.remove('modal--on');
+    //Creamos la funcion abrir y cerrar modal
+    function abrirCerrarModal() {
+
+        iglesiaModal.classList.add('iglesia__modal--active');
+        const btnCerrar = document.querySelector('.iglesia__btn__cerrar');
+
+        btnCerrar.addEventListener('click', () => {
+            iglesiaModal.classList.remove('iglesia__modal--active');
+        });
+
+    }
+
+    //Condicional para agregar el texto correspondiente a la Card
+    if (btnClick == 'iglesia__ninios') {
+
+        // funcion abrir y cerrar modal
+        abrirCerrarModal();
+        // reemplazamos el titulo
+        modalTitulo.innerHTML = 'Ministerio Niños! 👦👧';
+        // reemplazamos el parrafo
+        modalParrafo.innerHTML = `Un espacio donde cientos de chicos y chicas descubren su propósito divino para nunca más soltarlo.
+        Cada sábado nos juntamos para acercarnos al corazón de nuestro Creador; para disfrutar de amistades que
+        sacan lo mejor de nosotros, para soñar, reír y llorar juntos. Anhelamos que cada joven descubra el
+        potencial
+        que Dios depósito en él, que sueñe en grande y que deje huella en nuestra sociedad.
+        Somos jóvenes con propósito, que desarrollan su potencial, predican a Jesús y sirven a los demás.
+        Horario de reunion:
+        Todos los sábados a las 20hs.`
+
+    } else if (btnClick == 'iglesia__preadolescentes') {
+
+        // funcion abrir y cerrar modal
+        abrirCerrarModal();
+        // reemplazamos el titulo
+        modalTitulo.innerHTML = 'Ministerio preadolescentes! 🧒​🤳​​';
+        // reemplazamos el parrafo
+        modalParrafo.innerHTML = `Un espacio donde cientos de chicos y chicas descubren su propósito divino para nunca más soltarlo.
+        Cada sábado nos juntamos para acercarnos al corazón de nuestro Creador; para disfrutar de amistades que
+        sacan lo mejor de nosotros, para soñar, reír y llorar juntos. Anhelamos que cada joven descubra el
+        potencial
+        que Dios depósito en él, que sueñe en grande y que deje huella en nuestra sociedad.
+        Somos jóvenes con propósito, que desarrollan su potencial, predican a Jesús y sirven a los demás.
+        Horario de reunion:
+        Todos los sábados a las 20hs.`
+
+    } else if (btnClick == 'iglesia__jovenes') {
+
+         // funcion abrir y cerrar modal
+         abrirCerrarModal();
+         // reemplazamos el titulo
+         modalTitulo.innerHTML = 'Ministerio Jovenes! 🧑​👩​';
+         // reemplazamos el parrafo
+         modalParrafo.innerHTML = `Un espacio donde cientos de chicos y chicas descubren su propósito divino para nunca más soltarlo.
+         Cada sábado nos juntamos para acercarnos al corazón de nuestro Creador; para disfrutar de amistades que
+         sacan lo mejor de nosotros, para soñar, reír y llorar juntos. Anhelamos que cada joven descubra el
+         potencial
+         que Dios depósito en él, que sueñe en grande y que deje huella en nuestra sociedad.
+         Somos jóvenes con propósito, que desarrollan su potencial, predican a Jesús y sirven a los demás.
+         Horario de reunion:
+         Todos los sábados a las 20hs.`
+
+    } else if(btnClick =='iglesia__matriJovenes'){
+
+         // funcion abrir y cerrar modal
+         abrirCerrarModal();
+         // reemplazamos el titulo
+         modalTitulo.innerHTML = 'Matrimonios Jovenes! 👩‍❤️‍👨';
+         // reemplazamos el parrafo
+         modalParrafo.innerHTML = `Un espacio donde cientos de chicos y chicas descubren su propósito divino para nunca más soltarlo.
+         Cada sábado nos juntamos para acercarnos al corazón de nuestro Creador; para disfrutar de amistades que
+         sacan lo mejor de nosotros, para soñar, reír y llorar juntos. Anhelamos que cada joven descubra el
+         potencial
+         que Dios depósito en él, que sueñe en grande y que deje huella en nuestra sociedad.
+         Somos jóvenes con propósito, que desarrollan su potencial, predican a Jesús y sirven a los demás.
+         Horario de reunion:
+         Todos los sábados a las 20hs.`
+
+    } else if(btnClick =='iglesia__matriAdultos'){
+
+        // funcion abrir y cerrar modal
+         abrirCerrarModal();
+         // reemplazamos el titulo
+         modalTitulo.innerHTML = 'Matrimonios Adultos! ​👫​';
+         // reemplazamos el parrafo
+         modalParrafo.innerHTML = `Un espacio donde cientos de chicos y chicas descubren su propósito divino para nunca más soltarlo.
+         Cada sábado nos juntamos para acercarnos al corazón de nuestro Creador; para disfrutar de amistades que
+         sacan lo mejor de nosotros, para soñar, reír y llorar juntos. Anhelamos que cada joven descubra el
+         potencial
+         que Dios depósito en él, que sueñe en grande y que deje huella en nuestra sociedad.
+         Somos jóvenes con propósito, que desarrollan su potencial, predican a Jesús y sirven a los demás.
+         Horario de reunion:
+         Todos los sábados a las 20hs.`
+    }
 });
