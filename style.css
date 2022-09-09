@@ -746,10 +746,6 @@ id {
   position: relative;
   padding: 20px;
 
-<<<<<<< Updated upstream
-  overflow: hidden;
-=======
->>>>>>> Stashed changes
 }
 
 .banner::before {
@@ -912,7 +908,7 @@ summary {
 .t-stroke {
   position: absolute;
   top: 40%;
-  left: 0;
+  left: 10%;
   right: 0;
   margin: auto;
   color: transparent;
