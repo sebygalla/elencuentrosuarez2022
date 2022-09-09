@@ -125,7 +125,7 @@ iglesiaContenedor.addEventListener('click', (e) => {
         // funcion abrir y cerrar modal
         abrirCerrarModal();
         // reemplazamos el titulo
-        modalTitulo.innerHTML = 'Ministerio Niños! 👦👧';
+        modalTitulo.innerHTML = 'Niños! 👦👧';
         // reemplazamos el parrafo
         modalParrafo.innerHTML = `Un espacio donde cientos de chicos y chicas descubren su propósito divino para nunca más soltarlo.
         Cada sábado nos juntamos para acercarnos al corazón de nuestro Creador; para disfrutar de amistades que
@@ -141,7 +141,7 @@ iglesiaContenedor.addEventListener('click', (e) => {
         // funcion abrir y cerrar modal
         abrirCerrarModal();
         // reemplazamos el titulo
-        modalTitulo.innerHTML = 'Ministerio preadolescentes! 🧒​🤳​​';
+        modalTitulo.innerHTML = 'Preadolescentes! 🧒​🤳​​';
         // reemplazamos el parrafo
         modalParrafo.innerHTML = `Un espacio donde cientos de chicos y chicas descubren su propósito divino para nunca más soltarlo.
         Cada sábado nos juntamos para acercarnos al corazón de nuestro Creador; para disfrutar de amistades que
@@ -157,7 +157,7 @@ iglesiaContenedor.addEventListener('click', (e) => {
          // funcion abrir y cerrar modal
          abrirCerrarModal();
          // reemplazamos el titulo
-         modalTitulo.innerHTML = 'Ministerio Jovenes! 🧑​👩​';
+         modalTitulo.innerHTML = 'Jovenes! 🧑​👩​';
          // reemplazamos el parrafo
          modalParrafo.innerHTML = `Un espacio donde cientos de chicos y chicas descubren su propósito divino para nunca más soltarlo.
          Cada sábado nos juntamos para acercarnos al corazón de nuestro Creador; para disfrutar de amistades que

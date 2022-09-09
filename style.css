@@ -820,15 +820,6 @@ id {
   gap: 1em;
   background: #0b2e41;
 
-  /* background: #360033; */
-  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to right, #0b8793, #360033); */
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to right, #0b8793, #360033); */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-attachment: fixed;
-  position: relative;
-  overflow: hidden;
 }
 
 .mision__texto {
@@ -1151,7 +1142,6 @@ summary {
   font-weight: 600;
   line-height: 50px;
   z-index: 9;
-
 }
 
 .multimedia__subtitulo {
@@ -1159,8 +1149,6 @@ summary {
   font-weight: 400;
   margin-top: 5px;
 }
-
-
 
 /*iglesia */
 .iglesia {
@@ -1272,8 +1260,6 @@ summary {
   background-color: var(--color-cinco);
 }
 
-
-
 /*modificadores de imagen Actividades*/
 .iglesia__imagen--niños {
   background: url('img/niñosDos.jpg');
@@ -1324,18 +1310,22 @@ summary {
 
   display: none;
   align-items: center;
-  justify-content: center;
-
-  
+  justify-content: center;  
 }
-
-
-
 
 .iglesia__modal--active {
   display: flex;
+  
 }
 
+@keyframes myMove {
+  from{
+scale: .5;
+  } to{
+scale: 1;
+  }
+  
+}
 
 .iglesia__modal__card {
   width: 50%;
@@ -1345,6 +1335,8 @@ summary {
   transition: all 800ms;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  animation: myMove .5s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .iglesia__modal__contenedor--titulo{
@@ -1381,115 +1373,6 @@ summary {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
   text-align: center;
   cursor: pointer;
-}
-
-
-
-
-/* Modal niños */
-.popup__container {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 40px;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 800ms;
-  z-index: 999;
-}
-
-
-.popup__container:target {
-  background: rgba(0, 0, 0, 0.9);
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup__container:target .popup__card {
-  top: 50%;
-  left: 50%;
-  transform: rotate(0deg) translate(-50%, -50%);
-  visibility: visible;
-}
-
-.popup__card {
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  position: relative;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: rotate(90deg) translate(-150%, 230%);
-  transition: all 800ms;
-  background-color: white;
-}
-
-.popup__img {
-  width: 40%;
-  background-image: url(img/jovenesDos.png);
-  background-size: cover;
-  background-position: left;
-}
-
-.popup__text {
-  font-family: 'Montserrat', sans-serif;
-  width: 60%;
-  padding: 50px;
-  overflow-y: auto;
-  text-align: center;
-}
-
-.popup__text h2 {
-  font-size: 30px;
-  color: black;
-  text-align: center;
-}
-
-.popup__text p {
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  margin-top: 20px;
-  font-size: 12px;
-  line-height: 21px;
-}
-
-.popupBtn__close {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: -18px;
-  top: -18px;
-  padding: 18px;
-  background: black;
-  color: white;
-  border-radius: 50%;
-  line-height: 10px;
-}
-
-
-.popup__social {
-  display: flex;
-  text-decoration: none;
-  text-align: left;
-  align-items: center;
-  justify-content: center;
-  transition: all 300ms ease;
-  padding: 0;
-  margin: 10px;
-}
-
-.popup__social a {
-  padding: 10px;
-  color: black;
-}
-
-.popup__social a:hover {
-  color: var(--color-tres);
 }
 
 /* ribbonUno */
