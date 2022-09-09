@@ -746,7 +746,10 @@ id {
   position: relative;
   padding: 20px;
 
+<<<<<<< Updated upstream
   overflow: hidden;
+=======
+>>>>>>> Stashed changes
 }
 
 .banner::before {
