@@ -64,7 +64,7 @@ window.onscroll = function () {
     /*paralax banner*/
     var posicion = window.pageYOffset || documentElement.scrollTop;
     var elementoTitulo = document.getElementById("bannerTitulo");
-    elementoTitulo.style.bottom = ubicacionPrincipal * .17 + "px";
+    elementoTitulo.style.bottom = ubicacionPrincipal * .2 + "px";
 
 }
 
@@ -93,34 +93,7 @@ async function handleSubmit(event) {
 }
 
 /* Modal */
-// const btnModal = document.querySelector('.iglesia__boton');
-// const modal = document.querySelector('.modal');
-// const close = document.querySelector('.modal__cerrar');
-// const ninios = document.querySelector('.iglesia__ninios');
-// const iglesiaContenedor = document.querySelector('.iglesia__contenedor');
-// const modalNuevo = document.getElementById('modalNuevo');
 
-// iglesiaContenedor.addEventListener('click', (e) => {
-
-// const btnClick = e.target.classList[1];
-// console.log(btnClick);
-
-// if(btnClick == 'iglesia__ninios'){
-//     alert('Hola Mundo2...')
-// } else if(btnClick == 'iglesia__preadolescentes'){
-//     alert('Hola Mundo2...')
-// } else if(btnClick == 'iglesia__jovenes'){
-//     alert('Hola Mundo3...')
-// } else if(btnClick== 'iglesia__matriJovenes'){
-//     alert('Hola Mundo4...') 
-// } else if(btnClick == 'iglesia__matriAdultos'){
-//     alert('Hola Mundo5...') 
-// }
-
-
-
-// });
-// const ninios = document.querySelector('.iglesia__ninios');
 const iglesiaContenedor = document.querySelector('.iglesia__contenedor');
 const iglesiaModal = document.getElementById('iglesiaModal')
 

@@ -816,7 +816,6 @@ id {
   width: 100%;
   height: 100%;
   grid-area: mision;
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
@@ -837,11 +836,11 @@ id {
 }
 
 .mision__texto {
-  width: 100%;
+  width: 60%;
   color: white;
   z-index: 1;
-  text-align: center;
-  margin: 5em auto 3em;
+  text-align: left;
+  margin: 5em auto ;
 }
 
 .mision__parrafo:active {
@@ -871,6 +870,7 @@ id {
 }
 
 .mision__parrafo {
+  width: 90%;
   font-size: 14px;
   line-height: 21px;
   margin-top: 3em;
@@ -882,7 +882,7 @@ id {
   line-height: 21px;
   margin-top: 1em;
   text-align: justify;
-  
+
 }
 
 summary {
@@ -892,8 +892,15 @@ summary {
   outline: none;
 }
 
-.mision__texto img {
-  width: 400px;
+.mision__imagen{
+  display: flex;
+  position: relative;
+
+
+}
+
+.mision__imagen img {
+  width: 450px;
   z-index: 0;
   overflow: hidden;
   margin: 0 auto;
@@ -904,7 +911,7 @@ summary {
 /* texto descontracturado */
 .t-stroke {
   position: absolute;
-  top: 70%;
+  top: 40%;
   left: 0;
   right: 0;
   margin: auto;
@@ -913,12 +920,12 @@ summary {
   -webkit-text-stroke-width: 2px;
   -moz-text-stroke-color: #000000;
   -webkit-text-stroke-color: #ffffff;
-
-  font-size: 60px;
+  width: 80%;
+  font-size: 80px;
   line-height: 80px;
 }
 
-#stroke {}
+
 
 .t-shadow {
   text-shadow: 7px 7px var(--color-uno);
