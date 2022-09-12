@@ -345,10 +345,10 @@ id {
 .main {
   width: 100%;
   height: 600px;
-  background: url(img/main\ portada.png);
-  background-size: cover;
+  background: url(img/priscilla-du-preez-9CMUPez8wLo-unsplash.jpg);
+  background-size: 70em;
   background-repeat: no-repeat;
-  background-position-y: -3em;
+  /* background-position-y: -3em; */
   /* background-attachment: fixed; */
 
   grid-area: main;
@@ -358,6 +358,16 @@ id {
   align-items: center;
   justify-content: center;
   filter: contrast(100%);
+
+  animation: movimiento 9s linear alternate infinite;
+}
+
+@keyframes movimiento {
+  from{
+    background-position: bottom left;
+  } to{
+    background-position: top right;
+  }
 }
 
 .main::before {
@@ -369,7 +379,7 @@ id {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 

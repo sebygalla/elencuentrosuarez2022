@@ -259,6 +259,7 @@
     }
 
     .main {
+        background-size: 120em;
         height: 100vh;
         background-position: top;
         background-attachment: inherit;
@@ -1589,8 +1590,9 @@
 
 
     .main {
-        background-position: center;
-        background-size: cover;
+        background: url(img/main\ portada.png);
+        background-position: bottom;
+        background-size: 40em;
     }
 
     .main::before {
@@ -1610,12 +1612,13 @@
     }
 
     .article__parrafo {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 33px;
     }
 
     .article__pie {
-        font-size: 12px;
+        font-size: 15px;
+        font-weight: 900;
     }
 
     /* Dividida Left y Rigth */
