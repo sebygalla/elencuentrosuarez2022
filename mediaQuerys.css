@@ -75,7 +75,7 @@
     }
 
     .mision__texto {
-        width: 100%;
+        width: 95%;
     }
 
     .mision::before {
@@ -109,7 +109,7 @@
     }
 
     .mision__texto img {
-        width: 350px;
+        width: 300px;
         margin: 0 auto;
     }
 
@@ -307,7 +307,7 @@
     }
 
     .article__parrafo {
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
 
     .article__card svg {
@@ -336,7 +336,7 @@
         line-height: 45px;
 
         position: absolute;
-        margin-top: 270%;
+        margin-top: 0%;
     }
 
     #bannerTitulo {
@@ -347,16 +347,17 @@
 
 
     /* vision */
-    .mision{
+    .mision {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
         padding: 50px;
     }
-    .mision__texto{
-        width: 100%;
+
+    .mision__texto {
+
         margin: auto;
-        
+
     }
 
     .mision__parrafo {
@@ -376,23 +377,24 @@
     }
 
     .aside {
+        padding-bottom: 120px;
         height: auto;
     }
 
     .aside__texto {
-        width: 15em;
-        height: 10em;
-        margin: 30px;
+        width: 16em;
+        height: 14em;
+    
     }
 
     .aside__texto2 {
-        width: 15em;
-        height: 10em;
+        width: 16em;
+        height: 14em;
     }
 
     .aside__texto3 {
-        width: 15em;
-        height: 10em;
+        width: 16em;
+        height: 14em;
     }
 
     .aside__titulo {
@@ -422,7 +424,7 @@
     /* ministerio card */
     .ministerio {
         padding: 0;
-        padding-bottom: 50px;
+        padding-bottom: 120px;
     }
 
     .ministerio__titulo {
@@ -435,6 +437,10 @@
 
     .ministerio__card__imagen {
         width: 150%;
+    }
+
+    .iglesia{
+        padding-bottom: 120px;
     }
 
     /* Actividades modal */
@@ -850,7 +856,7 @@
     }
 
     .mision__texto {
-        width: 100%;
+
         height: auto;
         padding: 0;
         color: white;
@@ -1639,15 +1645,16 @@
         height: 100vh;
         font-size: 18px;
         line-height: 25px;
-
         position: absolute;
-        margin-top: 435%;
+        margin-top: 0%;
     }
 
     #bannerTitulo {
         width: 100%;
         position: relative;
     }
+
+   
 
     .detalles {
         font-size: 15px;
@@ -1710,11 +1717,13 @@
 
     /* Actividades modal */
     .iglesia__modal__card {
-        width: 95%;
+        width: 100%;
+        border-radius: 20px;
     }
 
-    .iglesia__modal__contenedor--titulo{
+    .iglesia__modal__contenedor--titulo {
         height: 100px;
+      
     }
 
     .iglesia__modal__titulo {
@@ -1816,6 +1825,18 @@
     .swiper-imagen {
         width: 90px;
         height: 90px;
+    }
+
+    .mision{
+        padding-bottom: 120px;
+    }
+
+    .mision__texto{
+        width: 95%;
+    }
+    .mision__parrafo{
+        width: 100%;
+     
     }
 
     /* imagen mision */
