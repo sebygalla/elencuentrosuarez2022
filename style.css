@@ -25,7 +25,7 @@ id {
 /*Contenedor general (grilla layaut)*/
 .contenedor {
   width: 95vw;
-  max-width: 65em;
+  max-width: 80em;
 
   margin: .5em auto;
   grid-gap: .5em;
