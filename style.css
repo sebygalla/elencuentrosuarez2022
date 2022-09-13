@@ -345,8 +345,8 @@ id {
 .main {
   width: 100%;
   height: 600px;
-  background: url(img/priscilla-du-preez-9CMUPez8wLo-unsplash.jpg);
-  background-size: 70em;
+  background: url(img/portadaaa.jpg);
+  background-size: 75em;
   background-repeat: no-repeat;
   /* background-position-y: -3em; */
   /* background-attachment: fixed; */
@@ -379,7 +379,7 @@ id {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 0;
 }
 
@@ -875,6 +875,7 @@ id {
 }
 
 .detalles {
+  width: 90%;
   font-size: 14px;
   line-height: 21px;
   margin-top: 1em;
@@ -938,12 +939,13 @@ summary {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  /* padding: 30px; */
   position: relative;
   background: url(img/multimedia.jpg);
   background-size: cover;
   background-attachment: fixed;
   gap: 5px;
+  padding-bottom: 120px;
 }
 
 .aside::before {
@@ -1615,51 +1617,65 @@ scale: 1;
 
 /* CUARTO SECTION */
 .cuarto {
-  width: 100%;
-  height: 100vh;
+  width: 80%;
   grid-area: cuarto;
   background-color: white;
-  background: linear-gradient(90deg, #f1f1f1, #d5d5d5);
+  /* background: linear-gradient(90deg, #f1f1f1, #d5d5d5); */
+  background: url(img/cuartodeoracion.jpg);
+  background-size: 80em;
+  background-position-y: -6em;
+  background-attachment: fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  border-radius: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  position: relative;
+  filter: contrast(1) brightness(1);
+  margin-top: 120px;
 }
 
 
-.cuarto__imagen {
-  width: 25em;
+.cuarto::before {
+  width: 100%;
   height: auto;
-  background-size: 50em;
-  background-repeat: no-repeat;
-  background-position: top;
-  object-fit: cover;
-  border-radius: 8px 0 0 8px;
-  filter: contrast(1.7) brightness(1.4);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: 28px;
 }
 
 
 .cuarto__texto {
-  width: 50%;
-  color: black;
+  width: 70%;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   text-align: left;
   padding: 50px;
+  z-index: 1;
 }
 
 .cuarto__tituloPre {
-  color: black;
-  font-size: 15px;
+  color: white;
+  font-size: 20px;
   font-family: 'Cardo', serif;
   font-weight: 100;
   margin-bottom: 10px;
 }
 
 .cuarto__titulo {
-  color: black;
-  font-size: 45px;
+  color: white;
+  font-size: 50px;
   font-weight: 600;
   line-height: 40px;
   margin-bottom: 10px;
@@ -1668,14 +1684,14 @@ scale: 1;
 }
 
 .cuarto__linea {
-  width: 300px;
+  width: 100%;
   height: 2px;
   background-color: var(--color-uno);
   text-align: center;
 }
 
 .cuarto__parrafo {
-  color: black;
+  color: white;
   font-size: 15px;
   line-height: 20px;
   margin: 20px 0;

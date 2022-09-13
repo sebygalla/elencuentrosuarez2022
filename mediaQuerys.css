@@ -462,7 +462,11 @@
     .cuarto {
         width: 100%;
         height: auto;
-        padding: 50px 20px;
+        padding: 30px 10px;
+        box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    }
+    .cuarto__texto{
+        width: 90%;
     }
 
     .cuarto__imagen {
@@ -1716,6 +1720,16 @@
         font-size: 12px;
         line-height: 15px;
         text-align: justify;
+    }
+
+    .aside__texto{
+        width: 90%;
+    }
+    .aside__texto2{
+        width: 90%;
+    }
+    .aside__texto3{
+        width: 90%;
     }
 
     /* Actividades modal */
