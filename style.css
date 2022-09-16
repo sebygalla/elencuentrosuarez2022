@@ -1626,7 +1626,7 @@ summary {
 
 /* CUARTO SECTION */
 .cuarto {
-  width: 80%;
+  width: 100%;
   grid-area: cuarto;
   background-color: white;
   /* background: linear-gradient(90deg, #f1f1f1, #d5d5d5); */
@@ -1637,7 +1637,7 @@ summary {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0 auto;
-  border-radius: 28px;
+  /* border-radius: 28px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1659,7 +1659,7 @@ summary {
   bottom: 0;
   z-index: 0;
   background-color: rgba(0, 0, 0, .2);
-  border-radius: 28px;
+  /* border-radius: 28px; */
 }
 
 
