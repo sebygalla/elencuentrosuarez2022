@@ -1603,6 +1603,29 @@
         height: auto;
     }
 
+    .main__text{
+        width: 100%;
+        margin-right: 35px;
+        background: none;
+        text-align: right;
+        align-items: flex-end;
+    }
+    .main__titulo{
+        margin: 20px 0;
+    }
+    .main__social--lateral{
+        top: 10px;
+    }
+
+    /* whatsapp */
+    .btn__wsp{
+        left: 20px;
+        bottom: 60px;
+    }
+    .btn__scrolltop{
+        bottom: 60px;
+    }
+
 
 
     /*Rehma*/

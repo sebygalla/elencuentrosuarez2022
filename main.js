@@ -50,23 +50,23 @@ window.addEventListener('scroll', () => {
 
 
 /*evento ocultar navbar al hacer scroll*/
-let ubicacionPrincipal = window.pageYOffset;
+// let ubicacionPrincipal = window.pageYOffset;
 
-window.onscroll = function () {
-    let desplazamientoActual = window.pageYOffset;
-    if (ubicacionPrincipal >= desplazamientoActual) {
-        document.querySelector('.navbar').style.top = '0';
-    } else {
-        document.querySelector('.navbar').style.top = '-100px';
-    }
-    ubicacionPrincipal = desplazamientoActual;
+// window.onscroll = function () {
+//     let desplazamientoActual = window.pageYOffset;
+//     if (ubicacionPrincipal >= desplazamientoActual) {
+//         document.querySelector('.navbar').style.top = '0';
+//     } else {
+//         document.querySelector('.navbar').style.top = '-100px';
+//     }
+//     ubicacionPrincipal = desplazamientoActual;
 
     /*paralax banner*/
     // var posicion = window.pageYOffset || documentElement.scrollTop;
     // var elementoTitulo = document.getElementById("bannerTitulo");
     // elementoTitulo.style.bottom = ubicacionPrincipal * .2 + "px";
 
-}
+// }
 
 
 
