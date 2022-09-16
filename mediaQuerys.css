@@ -1782,7 +1782,7 @@
     /* Actividades modal */
     .iglesia__modal__card {
         width: 100%;
-        border-radius: 20px;
+        border-radius: 8px;
     }
 
     .iglesia__modal__contenedor--titulo {
