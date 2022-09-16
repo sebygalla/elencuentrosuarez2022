@@ -1600,13 +1600,31 @@
     .main::before {
         height: auto;
     }
+    .main__text{
+        margin-top: 50px;
+    }
+
+    .main__tituloPre{
+        text-align: center;
+        margin: 0;
+    }
+    .main__linea{
+        margin: 10px 0;
+    }
+    .main__tituloSub{
+        width: 80%;
+        text-align: center;
+        margin: 0;
+    }
+    .main__btn{
+        margin: 20px 0;
+    }
 
     .main__text{
         width: 100%;
-        margin-right: 35px;
         background: none;
-        text-align: right;
-        align-items: flex-end;
+        text-align: center;
+        align-items: center;
     }
     .main__titulo{
         margin: 20px 0;
@@ -1616,13 +1634,13 @@
     }
 
     /* whatsapp */
-    .btn__wsp{
+    /* .btn__wsp{
         left: 20px;
         bottom: 40px;
-    }
-    .btn__scrolltop{
+    } */
+    /* .btn__scrolltop{
         bottom: 60px;
-    }
+    } */
 
 
 
