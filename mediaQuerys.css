@@ -1848,6 +1848,7 @@
     }
 
     .cuarto__titulo {
+        width: 100%;
         font-size: 30px;
         line-height: 32px;
         text-align: center;
