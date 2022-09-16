@@ -1589,9 +1589,7 @@
         margin: .5em auto;
         grid-gap: .5em;
         display: grid;
-
     }
-
 
     .main {
         background: url(img/main\ portada.png);
@@ -1614,13 +1612,13 @@
         margin: 20px 0;
     }
     .main__social--lateral{
-        top: 10px;
+        display: none;
     }
 
     /* whatsapp */
     .btn__wsp{
         left: 20px;
-        bottom: 60px;
+        bottom: 40px;
     }
     .btn__scrolltop{
         bottom: 60px;
