@@ -1762,14 +1762,21 @@
         text-align: justify;
     }
 
+    .aside{
+        height: 1800px;
+    }
+
     .aside__texto{
         width: 90%;
+        height: 20%;
     }
     .aside__texto2{
         width: 90%;
+        height: 20%;
     }
     .aside__texto3{
         width: 90%;
+        height: 20%;
     }
 
     /* Actividades modal */
