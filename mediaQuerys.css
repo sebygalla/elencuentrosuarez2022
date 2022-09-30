@@ -259,20 +259,25 @@
     }
 
     .main {
-        background-size: 120em;
-        height: 100vh;
+        background-size: 80em;
+        height: 80vh;
         background-position: top;
         background-attachment: inherit;
     }
 
     .main::before {
-        height: 100vh;
+        height: 80vh;
+    }
+
+    .main__text {
+        width: 80%;
     }
 
     .main__titulo {
-        font-size: 4em;
+        width: 100%;
+        font-size: 3em;
         line-height: 1em;
-        margin: 0;
+        margin: 0 0 30px 0;
     }
 
     .main__tituloPre {
@@ -283,7 +288,7 @@
         font-size: .7em;
         margin-top: -1em;
         margin-bottom: 1em;
-        letter-spacing: 10px;
+
     }
 
     .main__btn {
@@ -304,12 +309,17 @@
 
     /* article (rehma 2022) */
     .article__card {
+        width: 100%;
         height: 80vh;
+
     }
 
     .article__parrafo {
         font-size: 1.8em;
+        text-align: center;
     }
+
+
 
     .article__card svg {
         width: 50vw;
@@ -385,7 +395,7 @@
     .aside__texto {
         width: 16em;
         height: 14em;
-    
+
     }
 
     .aside__texto2 {
@@ -440,7 +450,7 @@
         width: 150%;
     }
 
-    .iglesia{
+    .iglesia {
         padding-bottom: 120px;
     }
 
@@ -464,13 +474,39 @@
         height: auto;
         padding: 30px 10px;
         box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+        background-size: cover;
     }
-    .cuarto__texto{
-        width: 90%;
+
+    .cuarto__texto {
+        width: 100%;
+    }
+
+
+    .cuarto__parrafo {
+        width: 90%
     }
 
     .cuarto__imagen {
-        width: 50%;
+        width: 400px;
+        margin-right: 2em;
+        border: 3px solid white;
+    }
+
+
+    .cuarto__imagen--dos {
+        width: 200px;
+        position: absolute;
+        top: 370px;
+        left: 520px;
+        z-index: 99;
+    }
+
+    .cuarto__imagen--tres {
+        width: 200px;
+        position: absolute;
+        top: 180px;
+        right: 100px;
+        z-index: 9;
     }
 
     .cuarto__linea {
@@ -1601,49 +1637,44 @@
     .main::before {
         height: auto;
     }
-    .main__text{
+
+    .main__text {
         margin-top: 50px;
     }
 
-    .main__tituloPre{
+    .main__tituloPre {
         text-align: center;
         margin: 0;
     }
-    .main__linea{
+
+    .main__linea {
         margin: 10px 0;
     }
-    .main__tituloSub{
+
+    .main__tituloSub {
         width: 80%;
         text-align: center;
         margin: 0;
     }
-    .main__btn{
+
+    .main__btn {
         margin: 20px 0;
     }
 
-    .main__text{
+    .main__text {
         width: 100%;
         background: none;
         text-align: center;
         align-items: center;
     }
-    .main__titulo{
+
+    .main__titulo {
         margin: 20px 0;
     }
-    .main__social--lateral{
+
+    .main__social--lateral {
         display: none;
     }
-
-    /* whatsapp */
-    /* .btn__wsp{
-        left: 20px;
-        bottom: 40px;
-    } */
-    /* .btn__scrolltop{
-        bottom: 60px;
-    } */
-
-
 
     /*Rehma*/
     .article {
@@ -1701,7 +1732,7 @@
         position: relative;
     }
 
-   
+
 
     .detalles {
         font-size: 15px;
@@ -1762,19 +1793,21 @@
         text-align: justify;
     }
 
-    .aside{
+    .aside {
         height: 1800px;
     }
 
-    .aside__texto{
+    .aside__texto {
         width: 90%;
         height: 20%;
     }
-    .aside__texto2{
+
+    .aside__texto2 {
         width: 90%;
         height: 20%;
     }
-    .aside__texto3{
+
+    .aside__texto3 {
         width: 90%;
         height: 20%;
     }
@@ -1787,7 +1820,7 @@
 
     .iglesia__modal__contenedor--titulo {
         height: 100px;
-      
+
     }
 
     .iglesia__modal__titulo {
@@ -1825,26 +1858,18 @@
 
     /* Cuarto */
     .cuarto {
-        width: 100%;
-        flex-wrap: wrap;
-        height: auto;
-        padding: 20px;
+        padding: 50px 20px;
     }
 
     .cuarto__imagen {
-        width: 90%;
+        display: none;
     }
 
     .cuarto__texto {
-        width: 90%;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 50px 0px;
-    }
-
-    .cuarto__tituloPre {
-        font-size: 15px;
+        margin: 20px auto;
     }
 
     .cuarto__titulo {
@@ -1854,18 +1879,20 @@
         text-align: center;
     }
 
-
     .cuarto__linea {
-        width: 90px;
-
+        width: 190px;
     }
 
     .cuarto__parrafo {
-        font-size: 12px;
-        line-height: 15px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
         text-align: justify;
     }
 
+    .cuarto__btn{
+        width: 100%;
+    }
 
     /* testimonios */
     .swiper-texto {
@@ -1892,16 +1919,17 @@
         height: 90px;
     }
 
-    .mision{
+    .mision {
         padding-bottom: 120px;
     }
 
-    .mision__texto{
+    .mision__texto {
         width: 95%;
     }
-    .mision__parrafo{
+
+    .mision__parrafo {
         width: 100%;
-     
+
     }
 
     /* imagen mision */
