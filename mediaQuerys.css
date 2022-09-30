@@ -1639,7 +1639,7 @@
     }
 
     .main__text {
-        margin-top: 50px;
+        margin: 50px 0 0 0;
     }
 
     .main__tituloPre {
@@ -1705,6 +1705,18 @@
         background: none;
     }
 
+    .left__titulo--dos{
+        margin-left: 0;
+    }
+
+    .left__tituloSub--dos{
+        margin-left: 0;
+    }
+
+    .left__parrafo--dos{
+        margin: 20px auto;
+    }
+
     /*banner*/
     .banner {
         height: 190px;
@@ -1735,6 +1747,7 @@
 
 
     .detalles {
+        width: 100%;
         font-size: 15px;
         letter-spacing: 2px;
         line-height: 21px;
@@ -1862,6 +1875,12 @@
     }
 
     .cuarto__imagen {
+        display: none;
+    }
+    .cuarto__imagen--dos{
+        display: none;
+    }
+    .cuarto__imagen--tres{
         display: none;
     }
 
