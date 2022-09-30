@@ -260,7 +260,6 @@ id {
 .navbar__logo {
   width: 45px;
   margin-left: 4em;
-
 }
 
 /*Lista enlaces*/
@@ -269,7 +268,6 @@ id {
   display: flex;
   text-transform: uppercase;
   color: black;
-
 }
 
 .navbar__link {
@@ -346,7 +344,6 @@ id {
   align-items: baseline;
   justify-content: center;
   margin-left: 4em;
-
 }
 
 
@@ -385,7 +382,6 @@ id {
   font-family: 'Cardo', serif;
   color: rgba(138, 128, 128, 0.05);
   overflow: hidden;
-
 }
 
 .main__linea {
@@ -468,7 +464,6 @@ id {
 
 /*Rehma*/
 .article {
-  scroll-margin-top: 150px;
   width: 100%;
   height: auto;
   display: flex;
@@ -534,9 +529,7 @@ id {
 
 /* Pantalla dividida izquierda*/
 .dividida__left {
-  scroll-margin-top: 280px;
   grid-area: divLeft;
-  /* height: 100%; */
   height: auto;
   background-image: url(img/nosotrosDos.jpg);
   background-size: cover;
@@ -586,7 +579,6 @@ id {
   margin: 0 auto;
   padding: 50px 4em 50px 0;
   text-align: left;
-  /* background: linear-gradient( var(--color-tres), rgba(255, 255, 255, 0.289), rgba(0, 0, 255, 0.1)); */
   background-color: rgba(59, 64, 134, 0.275);
   z-index: 9;
 }
@@ -605,8 +597,6 @@ id {
   font-weight: 400;
   margin-top: 10px;
   margin-left: 2.8em;
-
-
 }
 
 .left__parrafo--dos {
@@ -617,14 +607,12 @@ id {
   margin-top: 10px;
   text-align: justify;
   margin-left: 4em;
-
 }
 
 /* Pantalla dividida derecha*/
 
 .dividida__right {
   grid-area: divRight;
-  /* height: 100%; */
   height: auto;
   background-image: url(img/javier.jpg);
   background-size: cover;
@@ -650,14 +638,12 @@ id {
   z-index: 1;
 }
 
-
 .right__imagen--left {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 
 .right__frase {
   color: white;
@@ -717,7 +703,6 @@ id {
   flex-direction: column;
   position: relative;
   padding: 20px;
-
 }
 
 .banner::before {
@@ -751,17 +736,13 @@ id {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   position: absolute;
-  margin-top: 0%;
-
-
+  margin-top: 0;
 }
 
 #bannerTitulo {
   width: 100%;
   position: relative;
-
 }
 
 .banner__img {
@@ -778,9 +759,7 @@ id {
 
 /* La vision */
 /* estructura de texto y foto */
-
 .mision {
-  /* scroll-margin-top: 0px; */
   width: 100%;
   height: 100%;
   grid-area: mision;
@@ -791,7 +770,6 @@ id {
   padding: 3em;
   gap: 1em;
   background: #0b2e41;
-
 }
 
 .mision__texto {
@@ -842,7 +820,6 @@ id {
   line-height: 21px;
   margin-top: 1em;
   text-align: justify;
-
 }
 
 summary {
@@ -855,8 +832,6 @@ summary {
 .mision__imagen {
   display: flex;
   position: relative;
-
-
 }
 
 .mision__imagen img {
@@ -885,15 +860,12 @@ summary {
   line-height: 80px;
 }
 
-
-
 .t-shadow {
   text-shadow: 7px 7px var(--color-uno);
 }
 
 /*Precursores (Videos de Youtube*/
 .aside {
-  /* scroll-margin-top: 0px; */
   width: 100%;
   height: 100vh;
   grid-area: aside;
@@ -901,7 +873,6 @@ summary {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  /* padding: 30px; */
   position: relative;
   background: url(img/multimedia.jpg);
   background-size: cover;
@@ -936,7 +907,6 @@ summary {
   padding: 30px;
   margin: 0 auto;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -988,7 +958,6 @@ summary {
   padding: 30px;
   margin: 0 auto;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1001,7 +970,6 @@ summary {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0px;
   padding: 5px;
-
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
@@ -1019,7 +987,6 @@ summary {
   text-align: center;
   z-index: 1;
   border-radius: 10px;
-
 }
 
 .aside__reuniones i {
@@ -1042,12 +1009,10 @@ summary {
   padding: 30px;
   margin: 0 auto;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .aside__titulo3 {
@@ -1055,7 +1020,6 @@ summary {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0px;
   padding: 5px;
-
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
@@ -1100,7 +1064,6 @@ summary {
   gap: 10em;
 }
 
-
 .multimedia__texto {
   width: 100%;
   height: auto;
@@ -1126,7 +1089,6 @@ summary {
 
 /*iglesia */
 .iglesia {
-  /* scroll-margin-top: 0px; */
   width: 100%;
   height: auto;
   grid-area: section;
@@ -1147,7 +1109,6 @@ summary {
   color: black;
   margin: 5em auto 3em;
   z-index: 1;
-
 }
 
 .iglesia__titulo {
@@ -1201,7 +1162,6 @@ summary {
 .iglesia__cardTitulo {
   font-size: 18px;
   font-weight: 600;
-  /* letter-spacing: 3px; */
   color: black;
   margin-top: 20px;
 }
@@ -1281,17 +1241,14 @@ summary {
   bottom: 0;
   padding: 40px;
   z-index: 999;
-
   display: none;
   align-items: center;
   justify-content: center;
-
 }
 
 .iglesia__modal--active {
   display: flex;
   transition: all 2s ease-in-out;
-
 }
 
 @keyframes myMove {
@@ -1302,7 +1259,6 @@ summary {
   to {
     transform: translateX(0);
   }
-
 }
 
 .iglesia__modal__card {
@@ -1351,7 +1307,6 @@ summary {
   margin: 20px auto 0;
   padding: 10px;
   background-color: var(--color-uno);
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   text-align: center;
   cursor: pointer;
 }
@@ -1605,7 +1560,6 @@ summary {
   background-size: cover;
 }
 
-
 .cuarto::before {
   width: 100%;
   height: auto;
@@ -1619,10 +1573,7 @@ summary {
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   opacity: 0.7;
-
-  
 }
-
 
 .cuarto__texto {
   width: 50%;
@@ -1651,7 +1602,6 @@ summary {
   line-height: 50px;
   margin-bottom: 10px;
   text-align: left;
-
 }
 
 .cuarto__linea {
@@ -1739,7 +1689,6 @@ summary {
 }
 
 .swiper {
-  /* scroll-margin-top: 0px; */
   width: 100%;
   height: 100vh;
   grid-area: testimonios;
@@ -1767,7 +1716,6 @@ summary {
   -webkit-align-items: center;
   align-items: center;
   overflow: hidden;
-
 }
 
 .swiper-texto {
@@ -1884,7 +1832,6 @@ summary {
 
 /*Galeria*/
 .galeria {
-  /* scroll-margin-top: 0px; */
   grid-area: galeria;
   width: 100%;
   height: auto;
@@ -2043,13 +1990,11 @@ summary {
   font-size: 1em;
   margin-bottom: 20px;
   letter-spacing: 5px;
-
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
 .form__input {
   width: 100%;
-  /* background: rgba(0, 0, 0, .6); */
   margin-bottom: 20px;
   padding: 7px;
   font-size: 14px;
@@ -2098,7 +2043,6 @@ section .map {
 }
 
 /*footer*/
-
 .footer {
   width: 100%;
   height: auto;
@@ -2116,8 +2060,6 @@ section .map {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   position: relative;
-
-
 }
 
 .footer__grupo1 strong {
@@ -2146,7 +2088,6 @@ section .map {
   color: #efefef;
   margin-bottom: 10px;
   font-size: 16px;
-
 }
 
 /*email---*/
@@ -2221,13 +2162,11 @@ section .map {
   transition: all 300ms ease;
   padding: 0;
   margin: 0;
-
 }
 
 .footer__social a {
   padding: 10px;
   color: white;
-
 }
 
 .footer__social a:hover {
