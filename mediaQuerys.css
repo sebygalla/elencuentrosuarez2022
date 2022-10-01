@@ -1588,21 +1588,21 @@
     }
 
     /*flecha q va */
-    .elemento__4 {
+    /* .elemento__4 {
         width: 2%;
         font-size: 30px;
-    }
+    } */
 
     /*flecha q vuelve */
-    .elemento__5 {
+    /* .elemento__5 {
         width: 10%;
         font-size: 30px;
         padding: 10px;
-    }
+    } */
 
-    .elemento__titulo {
+    /* .elemento__titulo {
         font-size: 10px;
-    }
+    } */
 
     /* NavBar */
     .navbar__link {
@@ -1682,8 +1682,9 @@
     }
 
     .article__card {
-        width: 100%;
+        width: 95%;
         box-shadow: none;
+        border: 1px solid black;
     }
 
     .article__parrafo {
@@ -1692,8 +1693,14 @@
     }
 
     .article__pie {
+        width: 100%;
         font-size: 15px;
         font-weight: 600;
+        margin-top: 20px ;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 8px;
+        text-align: center;
     }
 
     /* Dividida Left y Rigth */
