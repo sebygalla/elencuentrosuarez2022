@@ -11,9 +11,6 @@
 
 body {
     font-size: 15pt;
-    /* background: url('img/header.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; */
     background-color: whitesmoke;
 
 }
@@ -36,6 +33,7 @@ section[id] {
     margin: 1.2em auto;
     grid-gap: .7em;
     display: grid;
+
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -134,7 +132,7 @@ section[id] {
 
 
 /*Precursores (Videos de Youtube*/
-.aside__reuniones {
+.aside__youtube {
     width: 100%;
     height: auto;
     grid-area: aside;
@@ -144,12 +142,12 @@ section[id] {
     justify-content: center;
     padding: 0;
     position: relative;
-    background: url(img/main.png);
+    background: url(/img/main.png);
     background-size: cover;
     background-attachment: fixed;
 }
 
-.aside__reuniones::before {
+.aside__youtube::before {
     width: 100%;
     height: 100%;
     content: '';
@@ -162,7 +160,7 @@ section[id] {
     z-index: 0;
 }
 
-.aside__texto--reuniones {
+.aside__texto {
     width: 100%;
     height: auto;
     text-align: center;
@@ -171,20 +169,20 @@ section[id] {
     margin-top: 6em;
 }
 
-.aside__titulo--reuniones {
+.aside__titulo {
     font-size: 65px;
     font-family: 'Montserrat', sans-serif;
     margin: 15px auto;
     letter-spacing: 8px;
 }
 
-.aside__subtitulo--reuniones {
+.aside__subtitulo {
     font-size: 1em;
     margin-top: 30px;
     letter-spacing: 10px;
 }
 
-.aside__iframe--reuniones {
+.aside__iframe{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
@@ -194,58 +192,10 @@ section[id] {
     z-index: 1;
 }
 
-.aside__iframe--reuniones iframe {
+.aside__iframe iframe {
     width: 400px;
     height: 300px;
     margin: 4em auto;
-}
-
-/* aside ultimas reuniones */
-.aside__texto3--reuniones {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: white;
-    z-index: 1;
-    margin: 6em auto 2em;
-}
-
-.aside__titulo3--reuniones {
-    font-size: 65px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 15px auto;
-    letter-spacing: 8px;
-}
-
-.aside__subtitulo3--reuniones {
-    font-size: 1em;
-    margin-top: 30px;
-    letter-spacing: 10px;
-}
-
-.aside__btn {
-    z-index: 1;
-    background-color: var(--color-uno);
-    border-radius: 8px;
-    padding: 8px;
-    margin: 2em auto 4em;
-    cursor: pointer;
-}
-
-.aside__social {
-    font-size: 1em;
-    display: inline-flex;
-    color: white;
-    z-index: 999
-}
-
-.aside__social i {
-    margin: 15px;
-}
-
-.aside__social i:hover {
-    color: var(--color-tres);
-    transform: scale(1.2);
 }
 
 
@@ -273,7 +223,6 @@ section[id] {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
-
 
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
@@ -329,5 +278,3 @@ section[id] {
     }
 
 }
-
-
