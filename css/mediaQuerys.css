@@ -1555,13 +1555,14 @@
     }
 
     .main {
-        background-position: bottom;
-        background-size: 40em;
-        background-attachment: fixed;
+        background-position-y: -3em;
+        background-position-x: -25em ;
+        background-size: 50em;
+        background-attachment: none;
     }
 
     .main::before {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.6);
         height: auto;
     }
 
