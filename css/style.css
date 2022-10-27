@@ -1198,7 +1198,7 @@ summary {
 
 /*modificadores de imagen Actividades*/
 .iglesia__imagen--niños {
-  background: url('/img/niñosDos.jpg');
+  background: url('../img/niñosDos.jpg');
 }
 
 /*preAdolescentes*/
@@ -1558,7 +1558,7 @@ summary {
   position: relative;
   filter: contrast(1) brightness(1);
   margin-top: 120px;
-  background: url('../img/Alabanza4.jpg');
+  background: url('../img/alabanza4.jpg');
   background-size: cover;
 }
 
