@@ -1419,7 +1419,7 @@
 @media only screen and (max-width: 450px) {
 
     .main {
-        background: url(/img/main\ portada.png);
+        background: url('../img/main\ portada.png');
         background-position: center;
         background-size: cover;
     }
